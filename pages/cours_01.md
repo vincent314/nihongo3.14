@@ -52,8 +52,8 @@ Niveau 3 Oral d'entrée
 * 物（ぶつ）理（り）= physique
 
 
-読みましょう。	
---------------
+読みましょう
+------------
 
 わたしはお母さんと<ruby><rb>妹</rb><rp>【</rp><rt>いもうと</rt><rp>】</rp></ruby>と 3 人どうぶつ<ruby><rb>園</rb><rp>【</rp><rt>えん</rt><rp>】</rp></ruby>に行きました。	
   

@@ -20,7 +20,7 @@ tocTitle = "Table des matières"
 //staticDirectoryPath = "static"
 
 // The path of directory to be outputted a document
-//outputDirectoryPath = "build/html"
+outputDirectoryPath = "../nihongo3.14_gh-pages"
 
 // The encoding of input Markdown resource
 //inputEncoding = "UTF-8"

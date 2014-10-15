@@ -12,3 +12,4 @@
 "cours_01.md"(title:"Cours 1")
 "vocabulaire_lecon_1.md"(title:"Vocabulaire de la leçon 1")
 "cours_02.md"(title:"Cours 2")
+"cours_03.md"(title:"Cours 3")
