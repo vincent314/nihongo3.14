@@ -5,7 +5,7 @@ title = "Cours de japonais niveau 3a année 2014-2015"
 tocTitle = "Table des matières"
 
 // The path of template file
-//templateFilePath = "templates/layout.html"
+templateFilePath = "templates/layout.html"
 
 // The path of TOC file
 //tocFilePath = "pages/toc.groovy"
@@ -20,7 +20,7 @@ tocTitle = "Table des matières"
 //staticDirectoryPath = "static"
 
 // The path of directory to be outputted a document
-outputDirectoryPath = "../nihongo3.14_gh-pages"
+outputDirectoryPath = "grunt/.tmp"
 
 // The encoding of input Markdown resource
 //inputEncoding = "UTF-8"
