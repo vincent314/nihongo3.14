@@ -1,5 +1,5 @@
 {
-  "name": "grunt",
+  "name": "nihongo3-14",
   "devDependencies": {
     "apache-server-configs": "^2.7.1",
     "grunt": "^0.4.5",
@@ -11,12 +11,12 @@
     "grunt-contrib-copy": "^0.5.0",
     "grunt-contrib-cssmin": "^0.10.0",
     "grunt-contrib-htmlmin": "^0.3.0",
+    "grunt-contrib-imagemin": "^0.8.0",
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-contrib-uglify": "^0.5.1",
     "grunt-contrib-watch": "^0.6.1",
-    "grunt-exec": "^0.4.6",
-    "grunt-markdown": "^0.6.1",
     "grunt-mocha": "^0.4.10",
+    "grunt-modernizr": "^0.5.2",
     "grunt-newer": "^0.7.0",
     "grunt-rev": "^0.1.0",
     "grunt-svgmin": "^0.4.0",

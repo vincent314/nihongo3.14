@@ -1,6 +1,3 @@
-# Created by .gitignore support plugin (hsz.mobi)
-build
-.idea
 node_modules
 dist
 .tmp
