@@ -3,12 +3,12 @@ describe("Test routes over configuration", function () {
     var $location, $route, $rootScope;
 
     beforeEach( function(){
-        module('nihongo',function ($provide) {
+        module('nihongo.config', function ($provide) {
             $provide.constant('CONFIG', {
                 categories: [
                     {
                         title: "Category1",
-                        dir: "dir/",
+                        dir: "dir",
                         pages: [
                             {title: 'Page 1',
                                 file: 'page1.html'},
@@ -19,6 +19,9 @@ describe("Test routes over configuration", function () {
                 ]
             });
         });
+
+        module('nihongo');
+
         inject(function (_$location_, _$route_, _$rootScope_) {
             $location = _$location_;
             $route = _$route_;
@@ -32,6 +35,6 @@ describe("Test routes over configuration", function () {
     }));
 
     it("test page routing", function () {
-
+        expect($route.routes['/category1/page-1'].templateUrl).toEqual('dir/page1.html');
     });
 });

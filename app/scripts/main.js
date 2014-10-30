@@ -1,13 +1,19 @@
 "use strict";
 
-angular.module('nihongo', ['ngRoute','nihongo.controllers','nihongo.config'])
-    .config(function ($routeProvider,CONFIG) {
+angular.module('nihongo', ['ngRoute', 'nihongo.controllers', 'nihongo.config'])
+    .config(function ($routeProvider, CONFIG) {
+
+        _(CONFIG.categories).forEach(function (category) {
+            _(category.pages).forEach(function (page) {
+                var route = "/" + getSlug(category.title) + "/" + getSlug(page.title)
+                $routeProvider.when(route, {
+                    templateUrl: category.dir + "/" + page.file
+                });
+            });
+        });
         $routeProvider
-            .when('/page1', {
-                templateUrl: 'pages/page1.html'
-            })
             .otherwise({
                 templateUrl: 'pages/toc.html',
-                controller:'TocController'
+                controller: 'TocController'
             });
     });
