@@ -7,13 +7,14 @@ angular.module('nihongo', ['ngRoute', 'nihongo.controllers', 'nihongo.config'])
             _(category.pages).forEach(function (page) {
                 var route = "/" + getSlug(category.title) + "/" + getSlug(page.title)
                 $routeProvider.when(route, {
-                    templateUrl: category.dir + "/" + page.file
+                    templateUrl: category.dir + "/" + page.file,
+                    controller: 'PageController'
                 });
             });
         });
         $routeProvider
             .otherwise({
-                templateUrl: 'pages/toc.html',
+                templateUrl: CONFIG.toc.templateUrl,
                 controller: 'TocController'
             });
     });
