@@ -4,5 +4,5 @@ angular.module('nihongo').controller('TocController', ['$scope','CONFIG',functio
     $scope.categories = CONFIG.categories;
     $scope.buildRoute = function(categoryTitle,pageTitle){
         return '#/' + getSlug(categoryTitle) + '/' + getSlug(pageTitle);
-    }
+    };
 }]);

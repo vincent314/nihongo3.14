@@ -3,28 +3,38 @@
 angular.module('nihongo').constant('CONFIG', {
     categories: [
         {
-            title: '2014-2015',
-            dir: 'pages/2014/',
+            title: '3ème année 2013-2014',
+            dir: 'docs/html/Cours_3annee',
             pages: [
-                {title: 'Page 1',
-                    file: 'page1.html'},
-                {title: 'Page 2',
-                    file: 'page2.html'}
+                {title: 'Cours 1',
+                    file: 'cours_1.html'
+                },
+                {title: 'Cours 2',
+                    file: 'cours_2.html'},
+                {title: 'Cours 3',
+                    file: 'cours_3.html'},
+                {title: 'Cours 4',
+                    file: 'cours_4.html'},
+                {title: 'Cours 5',
+                    file: 'cours_5.html'}
             ]
         },
         {
-            title: 'Test',
-            dir: 'pages/test/',
+            title: '3ème année 2014-2015',
+            dir: 'docs/html/Cours_3b',
             pages: [
-                {title: 'page test',
-                    file: 'test.html'
-                },
-                {title: 'page test2',
-                    file: 'test2.html'}
+                {title: 'Cours 1',
+                    file: 'cours_01.html'},
+                {title: 'Les Furigana',
+                    file: 'furigana.html'},
+                {title: 'Cours 2',
+                    file: 'cours_02.html'},
+                {title: 'Les Furigana',
+                    file: 'furigana.html'},
             ]
         }
     ],
     toc: {
-        templateUrl: 'pages/toc.html'
+        templateUrl: 'toc.html'
     }
 });

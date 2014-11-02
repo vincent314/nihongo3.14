@@ -364,6 +364,20 @@ module.exports = function (grunt) {
                 configFile: 'karma.conf.js',
                 singleRun: true
             }
+        },
+        markdown:{
+            all:{
+                files:[{
+                    expand:true,
+                    cwd:'docs/src',
+                    src: '**/*.md',
+                    dest: 'app/docs/html',
+                    ext: '.html'
+                }],
+                options:{
+                    template:'app/templates/page.html'
+                }
+            }
         }
     });
 
@@ -409,6 +423,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('build', [
         'clean:dist',
+        'markdown',
         'wiredep',
         'useminPrepare',
         'concurrent:dist',

@@ -21,7 +21,6 @@ describe('Test TOC controller', function () {
     }));
 
     it('Should mock CONFIG be injected',function(){
-        expect(CONFIG).toBeDefined();
         expect(CONFIG.categories).toBeDefined();
         expect(CONFIG.categories[0].pages).toBeDefined();
         expect(CONFIG.categories[0].pages[0].title).toBe('Page 1');

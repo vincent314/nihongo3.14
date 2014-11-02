@@ -14,6 +14,7 @@ module.exports = function (config) {
             'bower_components/angular-route/angular-route.js',
             'bower_components/lodash/dist/lodash.js',
             'bower_components/speakingurl/speakingurl.min.js',
+            'test/bower_components/chai/chai.js',
             'app/scripts/app.js',
             'app/scripts/controllers/*.js',
             'app/scripts/services/*.js',

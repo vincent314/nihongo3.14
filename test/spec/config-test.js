@@ -1,8 +1,8 @@
 angular.module('nihongo').constant('CONFIG', {
     categories: [
         {
-            title: "Category1",
-            dir: "dir",
+            title: 'Category1',
+            dir: 'dir',
             pages: [
                 {title: 'Page 1',
                     file: 'page1.html'},

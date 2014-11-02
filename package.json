@@ -17,6 +17,7 @@
     "grunt-contrib-uglify": "^0.5.1",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-karma": "^0.9.0",
+    "grunt-markdown": "^0.6.1",
     "grunt-mocha": "^0.4.10",
     "grunt-modernizr": "^0.5.2",
     "grunt-newer": "^0.7.0",
@@ -35,5 +36,10 @@
   },
   "engines": {
     "node": ">=0.10.0"
+  },
+  "jshintConfig": {
+    "predef": [
+      "angular"
+    ]
   }
 }
