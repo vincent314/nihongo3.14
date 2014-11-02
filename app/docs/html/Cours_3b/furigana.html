@@ -1,0 +1,58 @@
+<header>
+    <a ng-href="{{previous.path}}">{{previous.page.title}}</a> |
+    <a ng-href="{{next.path}}">{{next.page.title}}</a> |
+    <a ng-href="/">Table des matières</a>
+</header>
+
+<h1 id="furigana">Furigana</h1>
+<h2 id="les-navigateurs">Les navigateurs</h2>
+<p>Ce site utilise abondamment les <a href="http://en.wikipedia.org/wiki/Furigana">furigana</a>, ces petits kana au dessus des kanji pour indiquer la prononciation. Je les trouve extrèmement pratiques pour l&#39;apprentissage du Japonais, et plus particulièrement pour lire ou apprendre les Kanji.</p>
+<p>Cela est rendu possible par la nouvelle balise <ruby> introduite par HTML5, mais qui n&#39;est pas forcément <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ruby">supportée</a> par tous les navigateurs.</p>
+<ul>
+<li>Chrome : depuis la version 5</li>
+<li>Internet Explorer : depuis la version 5</li>
+<li>Firefox : non supporté de base, utiliser l&#39;extension <a href="https://addons.mozilla.org/en-US/firefox/addon/html-ruby/">HTML ruby</a></li>
+<li>Opera : depuis la version 15</li>
+<li>Android : oui</li>
+<li>Firefox mobile : non</li>
+<li>IE mobile : oui</li>
+<li>Opera mobile : non</li>
+<li>Safari mobile : oui</li>
+</ul>
+<p>Vous avez peut-être rencontré des problèmes de lecture de ces articles, dans ce cas pouvez vérifier la version de votre navigateur et vérifier les furigana ci-dessous :</p>
+<p><ruby>漢字<rp>（</rp><rt>かんじ</rt><rp>）</rp></ruby> <strong><ruby><rp>Si vous lisez ceci, </rp><rt></rt><rp>votre navigateur ne supporte pas la balise ruby et affichera les furigana entre parenthèses !</rp></ruby></strong></p>
+<h2 id="comment-marche-la-balise-ruby-">Comment marche la balise ruby ?</h2>
+<p>La balise <strong>ruby</strong> fonctionne de la manière suivante :</p>
+<pre><code>&lt;ruby&gt;Kanji&lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;furigana&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;&lt;/ruby&gt;
+</code></pre><p>avec :</p>
+<ul>
+<li><code>&lt;ruby&gt;</code> la balise parente</li>
+<li><code>&lt;rp&gt;</code> (au nombre de 2) les informations à afficher avant et après les furigana si la fonctionnalité n&#39;est pas supportée. Typiquement des paranthèses.</li>
+<li><code>&lt;rt&gt;</code> les furigana, affichés au dessus des Kanji ou entre les éléments définis par <code>&lt;rp&gt;</code></li>
+</ul>
+<h2 id="markdown">Markdown</h2>
+<p><em>C&#39;est un peu long à écrire tout ça ?</em> me diriez-vous …</p>
+<p>Houlà, oui ! D&#39;une manière générale, je ne saisi les articles ni en HTML, ni à travers un « éditeur riche ». J&#39;utilise le <a href="http://daringfireball.net/projects/markdown/">Markdown</a>, qui une syntaxe extrêmement légère destinée à générer de l&#39;HTML et dont les sources sont elles-même très lisibles.</p>
+<p>Quelques outils existent :</p>
+<ul>
+<li><a href="http://sourceforge.net/projects/retext/">Retext</a> éditeur pour Linux ou OSX et écrit en python</li>
+<li><a href="http://macdown.uranusjr.com/">Macdown</a> éditeur pour OSX</li>
+<li><a href="https://github.com/kobo/gaiden">Gaiden</a> pour générer des sites statiques</li>
+</ul>
+<p>Cependant, de base ces outils ne supportent pas les furigana. Markdown ne possède pas de syntaxe pour écrire des furigana à part en injectant de l&#39;HTML.</p>
+<h3 id="furigana-markdown">furigana-markdown</h3>
+<p>Pour Linux en général et Retext en particulier, il existe l&#39;excellente extension Markdown Python <a href="https://github.com/djfun/furigana_markdown">furigana markdown</a> qui introduit les 2 syntaxes suivantes en markdown :</p>
+<ol>
+<li><code>[字](-じ)</code> (ne pas oublier le tiret)</li>
+<li>ma préférée : <code>字（じ）</code> (avec les parenthèses longues du clavier japonais)</li>
+</ol>
+<h3 id="pegdown">Pegdown</h3>
+<p><a href="https://github.com/sirthias/pegdown">Pegdown</a> est une librairie JAVA qui transforme les sources Markdown en HTML, est open-source et complétement ouverte aux extensions. Elle est notamment utilisée par <a href="https://github.com/kobo/gaiden">Gaiden</a>.</p>
+<p>J&#39;ai donc réalisé l&#39;extensions <a href="https://github.com/vincent314/pegdown-furigana">pegdown-furigana</a> afin que Pegdown puisse supporter les furigana. Très inspirée de l&#39;extension Python de <a href="https://github.com/djfun/furigana_markdown/blob/master/furigana.py">Djfun</a>, cette extension supporte pour le moment uniquement la seconde syntaxe <code>字（じ）</code>.</p>
+
+
+<footer>
+    <a ng-href="{{previous.path}}">{{previous.page.title}}</a> |
+    <a ng-href="{{next.path}}">{{next.page.title}}</a> |
+    <a ng-href="/">Table des matières</a>
+</footer>
