@@ -1,5 +1,8 @@
 <h1>Table des matières</h1>
 
+<div ng-repeat="category in categories">
+        <h3>{{category.title}}</h3>
 <ul>
-    <li ng-repeat="page in pages"><a ng-href="{{page.route}}">{{page.title}}</a></li>
+    <li ng-repeat="page in category.pages"><a ng-href="{{buildRoute(category.title,page.title)}}">{{page.title}}</a></li>
 </ul>
+</div>

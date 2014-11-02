@@ -1,4 +1,4 @@
-angular.module('nihongo.config', []).constant('CONFIG_TEST', {
+angular.module('nihongo').constant('CONFIG', {
     categories: [
         {
             title: "Category1",

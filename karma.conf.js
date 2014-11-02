@@ -14,8 +14,10 @@ module.exports = function (config) {
             'bower_components/angular-route/angular-route.js',
             'bower_components/lodash/dist/lodash.js',
             'bower_components/speakingurl/speakingurl.min.js',
-            'app/scripts/*.js',
-            'app/scripts/**/*.js',
+            'app/scripts/main.js',
+            'app/scripts/controllers/*.js',
+            'app/scripts/services/*.js',
+            'test/spec/*.js',
             'test/spec/**/*.js',
             'node_modules/ng-midway-tester/src/ngMidwayTester.js'
         ],

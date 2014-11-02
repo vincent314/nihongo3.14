@@ -3,13 +3,9 @@ describe("Test routes over configuration", function () {
     var $location, $route, $rootScope;
 
     beforeEach( function(){
-        module()
-
-        module('nihongo.config', function ($provide,CONFIG_TEST){
-            $provide.constant('CONFIG', CONFIG_TEST);
+        module('nihongo',function ($provide,CONFIG){
+            $provide.constant('CONFIG', CONFIG);
         });
-
-        module('nihongo');
 
         inject(function (_$location_, _$route_, _$rootScope_) {
             $location = _$location_;
