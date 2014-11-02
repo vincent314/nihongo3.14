@@ -1,4 +1,6 @@
-describe("Test routes over configuration", function () {
+'use strict';
+
+describe('Test routes over configuration', function () {
 
     var $location, $route, $rootScope;
 
@@ -15,11 +17,11 @@ describe("Test routes over configuration", function () {
     });
 
 
-    it("test config injection", inject(function (CONFIG) {
+    it('test config injection', inject(function (CONFIG) {
         expect(CONFIG.categories[0].title).toBe('Category1');
     }));
 
-    it("test page routing", function () {
+    it('test page routing', function () {
         expect($route.routes['/category1/page-1'].templateUrl).toEqual('dir/page1.html');
         expect($route.routes['/category1/page-2'].templateUrl).toEqual('dir/page2.html');
         expect($route.routes[null].templateUrl).toEqual('tocTemplate.html');
