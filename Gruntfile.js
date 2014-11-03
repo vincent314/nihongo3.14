@@ -373,10 +373,7 @@ module.exports = function (grunt) {
                     src: '**/*.md',
                     dest: 'app/docs/html',
                     ext: '.html'
-                }],
-                options:{
-                    template:'app/templates/page.html'
-                }
+                }]
             }
         }
     });

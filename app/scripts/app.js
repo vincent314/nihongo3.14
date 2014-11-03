@@ -5,7 +5,7 @@ angular.module('nihongo', ['ngRoute'])
 
         _(CONFIG.categories).forEach(function (category) {
             _(category.pages).forEach(function (page) {
-                var route = '/' + getSlug(category.title) + '/' + getSlug(page.title);
+                var route = "/" + getSlug(category.title) + "/" + getSlug(page.title);
                 $routeProvider.when(route, {
                     templateUrl: category.dir + '/' + page.file,
                     controller: 'PageController'

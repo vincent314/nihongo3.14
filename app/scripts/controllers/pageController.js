@@ -1,13 +1,11 @@
 'use strict';
 
-angular.module('nihongo').controller('PageController',function($scope,$location,CONFIG){
-    console.log($location.path());
-
+angular.module('nihongo').controller('PageController',function($rootScope,$location,CONFIG,NihongoService){
     var currentPath = '#' + $location.path();
     var pagesFlatten = [];
     _(CONFIG.categories).forEach(function(category){
         _(category.pages).forEach(function(page){
-            var path = '#/' + getSlug(category.title) + '/' + getSlug(page.title);
+            var path = new NihongoService().buildRoute(category.title,page.title,true);
             pagesFlatten.push({
                 path:path,
                 page:page,
@@ -17,16 +15,19 @@ angular.module('nihongo').controller('PageController',function($scope,$location,
     });
 
     var i = _(pagesFlatten).findIndex(function(item){
-        console.log(currentPath + ' ===?' + item.path);
         return currentPath === item.path;
     });
 
     if(i>=0){
         if(i > 0){
-            $scope.previous = pagesFlatten[i-1];
+            $rootScope.previous = pagesFlatten[i-1];
+        } else {
+            delete $rootScope.previous;
         }
         if(i<pagesFlatten.length-1){
-            $scope.next = pagesFlatten[i+1];
+            $rootScope.next = pagesFlatten[i+1];
+        } else {
+            delete $rootScope.next;
         }
     }
 });

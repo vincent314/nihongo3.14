@@ -28,9 +28,7 @@ angular.module('nihongo').constant('CONFIG', {
                 {title: 'Les Furigana',
                     file: 'furigana.html'},
                 {title: 'Cours 2',
-                    file: 'cours_02.html'},
-                {title: 'Les Furigana',
-                    file: 'furigana.html'},
+                    file: 'cours_02.html'}
             ]
         }
     ],

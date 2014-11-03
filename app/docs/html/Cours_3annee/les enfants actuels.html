@@ -1,10 +1,118 @@
-<header>
-    <a ng-href="{{previous.path}}">{{previous.page.title}}</a> |
-    <a ng-href="{{next.path}}">{{next.page.title}}</a> |
-    <a ng-href="/">Table des matières</a>
-</header>
-
-<h1 id="-"><ruby>最<rp>(</rp><rt>さい</rt><rp>)</rp></ruby><ruby>近<rp>(</rp><rt>きん</rt><rp>)</rp></ruby>の<ruby>子<rp>(</rp><rt>こ</rt><rp>)</rp></ruby><ruby>供<rp>(</rp><rt>ども</rt><rp>)</rp></ruby></h1>
+<!DOCTYPE  html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <title>doc</title>
+    <style>
+      /*github.com style (c) Vasily Polovnyov <vast@whiteants.net>*/
+      pre code {
+        display: block; padding: 0.5em;
+        color: #333;
+        background: #f8f8ff
+      }
+      pre .comment,
+      pre .template_comment,
+      pre .diff .header,
+      pre .javadoc {
+        color: #998;
+        font-style: italic
+      }
+      pre .keyword,
+      pre .css .rule .keyword,
+      pre .winutils,
+      pre .javascript .title,
+      pre .nginx .title,
+      pre .subst,
+      pre .request,
+      pre .status {
+        color: #333;
+        font-weight: bold
+      }
+      pre .number,
+      pre .hexcolor,
+      pre .ruby .constant {
+        color: #099;
+      }
+      pre .string,
+      pre .tag .value,
+      pre .phpdoc,
+      pre .tex .formula {
+        color: #d14
+      }
+      pre .title,
+      pre .id {
+        color: #900;
+        font-weight: bold
+      }
+      pre .javascript .title,
+      pre .lisp .title,
+      pre .clojure .title,
+      pre .subst {
+        font-weight: normal
+      }
+      pre .class .title,
+      pre .haskell .type,
+      pre .vhdl .literal,
+      pre .tex .command {
+        color: #458;
+        font-weight: bold
+      }
+      pre .tag,
+      pre .tag .title,
+      pre .rules .property,
+      pre .django .tag .keyword {
+        color: #000080;
+        font-weight: normal
+      }
+      pre .attribute,
+      pre .variable,
+      pre .lisp .body {
+        color: #008080
+      }
+      pre .regexp {
+        color: #009926
+      }
+      pre .class {
+        color: #458;
+        font-weight: bold
+      }
+      pre .symbol,
+      pre .ruby .symbol .string,
+      pre .lisp .keyword,
+      pre .tex .special,
+      pre .prompt {
+        color: #990073
+      }
+      pre .built_in,
+      pre .lisp .title,
+      pre .clojure .built_in {
+        color: #0086b3
+      }
+      pre .preprocessor,
+      pre .pi,
+      pre .doctype,
+      pre .shebang,
+      pre .cdata {
+        color: #999;
+        font-weight: bold
+      }
+      pre .deletion {
+        background: #fdd
+      }
+      pre .addition {
+        background: #dfd
+      }
+      pre .diff .change {
+        background: #0086b3
+      }
+      pre .chunk {
+        color: #aaa
+      }
+    </style>
+  </head>
+  <body>  
+    <h1 id="-"><ruby>最<rp>(</rp><rt>さい</rt><rp>)</rp></ruby><ruby>近<rp>(</rp><rt>きん</rt><rp>)</rp></ruby>の<ruby>子<rp>(</rp><rt>こ</rt><rp>)</rp></ruby><ruby>供<rp>(</rp><rt>ども</rt><rp>)</rp></ruby></h1>
 <p><ruby>携<rp>(</rp><rt>けい</rt><rp>)</rp></ruby><ruby>帯<rp>(</rp><rt>たい</rt><rp>)</rp></ruby><ruby>電<rp>(</rp><rt>でん</rt><rp>)</rp></ruby><ruby>話<rp>(</rp><rt>わ</rt><rp>)</rp></ruby>で話している子供をよく<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>ませんか。２００１<ruby>年<rp>(</rp><rt>ねん</rt><rp>)</rp></ruby>の<ruby>調<rp>(</rp><rt>ちょう</rt><rp>)</rp></ruby><ruby>査<rp>(</rp><rt>さ</rt><rp>)</rp></ruby>¹によると、<ruby>小<rp>(</rp><rt>しょう</rt><rp>)</rp></ruby><ruby>学<rp>(</rp><rt>がく</rt><rp>)</rp></ruby><ruby>生<rp>(</rp><rt>せい</rt><rp>)</rp></ruby>²は３０％の子どもが携帯電話を<ruby>持<rp>(</rp><rt>も</rt><rp>)</rp></ruby>しょうっているそうです。また³、<ruby>自<rp>(</rp><rt>じ</rt><rp>)</rp></ruby><ruby>分<rp>(</rp><rt>ぶん</rt><rp>)</rp></ruby><ruby>専<rp>(</rp><rt>せん</rt><rp>)</rp></ruby><ruby>用<rp>(</rp><rt>よう</rt><rp>)</rp></ruby>⁴のパソコンを持っている子供も１３．３％います。町で<ruby>大<rp>(</rp><rt>おと</rt><rp>)</rp></ruby><ruby>人<rp>(</rp><rt>な</rt><rp>)</rp></ruby>が<ruby>着<rp>(</rp><rt>き</rt><rp>)</rp></ruby>るようなブランドの<ruby>服<rp>(</rp><rt>ふく</rt><rp>)</rp></ruby>を着ている子どもを見て、びっくり⁵したこともあるでしょう。これらはでれもお<ruby>金<rp>(</rp><rt>かね</rt><rp>)</rp></ruby>がかかるものばかりです。
 どうして⁶子どもたちがこんなに<ruby>高<rp>(</rp><rt>こう</rt><rp>)</rp></ruby><ruby>価<rp>(</rp><rt>か</rt><rp>)</rp></ruby>⁷なものを持っているのでしょうか。それは、子どもが欲しがるものを親がつい⁸<ruby>買<rp>(</rp><rt>か</rt><rp>)</rp></ruby>ってしまう⁹からかもしれません。子どもの<ruby>数<rp>(</rp><rt>かず</rt><rp>)</rp></ruby>¹⁰が<ruby>年<rp>(</rp><rt>ねん</rt><rp>)</rp></ruby>々（ねん）<ruby>減<rp>(</rp><rt>へ</rt><rp>)</rp></ruby>って¹¹いて、<ruby>王<rp>(</rp><rt>おう</rt><rp>)</rp></ruby><ruby>様<rp>(</rp><rt>さま</rt><rp>)</rp></ruby>¹²のような子どもが<ruby>増<rp>(</rp><rt>ふ</rt><rp>)</rp></ruby>えているようです。</p>
 <ol>
@@ -22,9 +130,5 @@
 <li><ruby>王<rp>(</rp><rt>おう</rt><rp>)</rp></ruby><ruby>様<rp>(</rp><rt>さま</rt><rp>)</rp></ruby> = roi</li>
 </ol>
 
-
-<footer>
-    <a ng-href="{{previous.path}}">{{previous.page.title}}</a> |
-    <a ng-href="{{next.path}}">{{next.page.title}}</a> |
-    <a ng-href="/">Table des matières</a>
-</footer>
+  </body>
+</html>

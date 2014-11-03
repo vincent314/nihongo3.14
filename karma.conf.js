@@ -16,8 +16,8 @@ module.exports = function (config) {
             'bower_components/speakingurl/speakingurl.min.js',
             'test/bower_components/chai/chai.js',
             'app/scripts/app.js',
-            'app/scripts/controllers/*.js',
             'app/scripts/services/*.js',
+            'app/scripts/controllers/*.js',
             'test/spec/*.js',
             'test/spec/**/*.js',
             'node_modules/ng-midway-tester/src/ngMidwayTester.js'
