@@ -1,294 +1,37 @@
-<!DOCTYPE  html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    
-    <title>doc</title>
-    <style>
-      /*github.com style (c) Vasily Polovnyov <vast@whiteants.net>*/
-      pre code {
-        display: block; padding: 0.5em;
-        color: #333;
-        background: #f8f8ff
-      }
-      pre .comment,
-      pre .template_comment,
-      pre .diff .header,
-      pre .javadoc {
-        color: #998;
-        font-style: italic
-      }
-      pre .keyword,
-      pre .css .rule .keyword,
-      pre .winutils,
-      pre .javascript .title,
-      pre .nginx .title,
-      pre .subst,
-      pre .request,
-      pre .status {
-        color: #333;
-        font-weight: bold
-      }
-      pre .number,
-      pre .hexcolor,
-      pre .ruby .constant {
-        color: #099;
-      }
-      pre .string,
-      pre .tag .value,
-      pre .phpdoc,
-      pre .tex .formula {
-        color: #d14
-      }
-      pre .title,
-      pre .id {
-        color: #900;
-        font-weight: bold
-      }
-      pre .javascript .title,
-      pre .lisp .title,
-      pre .clojure .title,
-      pre .subst {
-        font-weight: normal
-      }
-      pre .class .title,
-      pre .haskell .type,
-      pre .vhdl .literal,
-      pre .tex .command {
-        color: #458;
-        font-weight: bold
-      }
-      pre .tag,
-      pre .tag .title,
-      pre .rules .property,
-      pre .django .tag .keyword {
-        color: #000080;
-        font-weight: normal
-      }
-      pre .attribute,
-      pre .variable,
-      pre .lisp .body {
-        color: #008080
-      }
-      pre .regexp {
-        color: #009926
-      }
-      pre .class {
-        color: #458;
-        font-weight: bold
-      }
-      pre .symbol,
-      pre .ruby .symbol .string,
-      pre .lisp .keyword,
-      pre .tex .special,
-      pre .prompt {
-        color: #990073
-      }
-      pre .built_in,
-      pre .lisp .title,
-      pre .clojure .built_in {
-        color: #0086b3
-      }
-      pre .preprocessor,
-      pre .pi,
-      pre .doctype,
-      pre .shebang,
-      pre .cdata {
-        color: #999;
-        font-weight: bold
-      }
-      pre .deletion {
-        background: #fdd
-      }
-      pre .addition {
-        background: #dfd
-      }
-      pre .diff .change {
-        background: #0086b3
-      }
-      pre .chunk {
-        color: #aaa
-      }
-    </style>
-  </head>
-  <body>  
-    <h1 id="vocabulaire-le-on-3">Vocabulaire leçon 3</h1>
-<table>
-<thead>
-<tr>
-<th>かな</th>
-<th>漢字</th>
-<th>フランスで</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>これら</td>
-<td></td>
-<td>ils</td>
-</tr>
-<tr>
-<td>さぼる</td>
-<td></td>
-<td>sécher le cours, manquer le travail</td>
-</tr>
-<tr>
-<td>うつす</td>
-<td>写す</td>
-<td>recopier</td>
-</tr>
-<tr>
-<td>おこる</td>
-<td>怒る</td>
-<td>se fâcher</td>
-</tr>
-<tr>
-<td>あらわす</td>
-<td>表す</td>
-<td>exprimer, indiquer</td>
-</tr>
-<tr>
-<td>きこくする</td>
-<td>帰国する</td>
-<td>rentrer dans son pays</td>
-</tr>
-<tr>
-<td>いたずらをする</td>
-<td>悪戯をする</td>
-<td>faire des bêtises</td>
-</tr>
-<tr>
-<td>こうかな</td>
-<td>高価な</td>
-<td>cher, coûteux</td>
-</tr>
-<tr>
-<td>こまった</td>
-<td>困った</td>
-<td>ennuyé</td>
-</tr>
-<tr>
-<td>つい</td>
-<td></td>
-<td>malgré moi, involontairement</td>
-</tr>
-<tr>
-<td>ねんねん</td>
-<td>年々</td>
-<td>d&#39;année en année</td>
-</tr>
-<tr>
-<td>また</td>
-<td></td>
-<td>aussi, également</td>
-</tr>
-<tr>
-<td>なぜなら</td>
-<td></td>
-<td>c&#39;est parce que</td>
-</tr>
-<tr>
-<td>おや</td>
-<td>親</td>
-<td>parents</td>
-</tr>
-<tr>
-<td>ちょうさ</td>
-<td>調査</td>
-<td>investigation, enquête, recherche</td>
-</tr>
-<tr>
-<td>しょうがくせい</td>
-<td>小学生</td>
-<td>écolier</td>
-</tr>
-<tr>
-<td>ちゅうがくせい</td>
-<td>中学生</td>
-<td>collégien</td>
-</tr>
-<tr>
-<td>せんよう</td>
-<td>専用</td>
-<td>dédié pour</td>
-</tr>
-<tr>
-<td>おとな</td>
-<td>大人</td>
-<td>adulte</td>
-</tr>
-<tr>
-<td>ブランド</td>
-<td></td>
-<td>marque</td>
-</tr>
-<tr>
-<td>おうさま</td>
-<td>王様</td>
-<td>rois</td>
-</tr>
-<tr>
-<td>わりあい</td>
-<td>割合</td>
-<td>pourcentage</td>
-</tr>
-<tr>
-<td>パーセント</td>
-<td></td>
-<td>pourcent</td>
-</tr>
-<tr>
-<td>こ</td>
-<td>子</td>
-<td>enfant</td>
-</tr>
-<tr>
-<td>カップラーメヌ</td>
-<td></td>
-<td>cup ramen</td>
-</tr>
-<tr>
-<td>メール</td>
-<td></td>
-<td>e-mail</td>
-</tr>
-<tr>
-<td>おすもうさん</td>
-<td>お相撲さん</td>
-<td>joueur de sumo</td>
-</tr>
-<tr>
-<td>しろ</td>
-<td>城</td>
-<td>château</td>
-</tr>
-<tr>
-<td>なま</td>
-<td>生</td>
-<td>cru</td>
-</tr>
-<tr>
-<td>おに</td>
-<td>鬼</td>
-<td>démon japonais</td>
-</tr>
-<tr>
-<td>ぼう</td>
-<td>棒</td>
-<td>bâton</td>
-</tr>
-<tr>
-<td>ほっぺた</td>
-<td></td>
-<td>joue</td>
-</tr>
-<tr>
-<td>ぎょうめ（〜ぉううめ）</td>
-<td></td>
-<td>-ème ligne</td>
-</tr>
-</tbody>
-</table>
+<h1 id="vocabulaireleon3">Vocabulaire leçon 3</h1>
 
-  </body>
-</html>
+<p>かな      |   漢字          |   フランスで
+----------|----------------|---------------------
+これら     |               |   ils
+さぼる     |               |   sécher le cours, manquer le travail
+うつす     |   写す        |     recopier
+おこる     |   怒る        |     se fâcher
+あらわす    |   表す        |     exprimer, indiquer
+きこくする   |   帰国する    |   rentrer dans son pays
+いたずらをする |   悪戯をする   |   faire des bêtises
+こうかな    |   高価な      |  cher, coûteux
+こまった    |   困った     |   ennuyé
+つい      |               |   malgré moi, involontairement
+ねんねん    |   年々      |   d'année en année
+また          |           |   aussi, également
+なぜなら    |               |   c'est parce que
+おや      |   親           |   parents
+ちょうさ    |   調査      |   investigation, enquête, recherche
+しょうがくせい |   小学生     |   écolier
+ちゅうがくせい |   中学生     |   collégien
+せんよう    |   専用          |   dédié pour
+おとな     |   大人          |   adulte
+ブランド    |               |   marque
+おうさま    |   王様          |   rois
+わりあい    |   割合          |   pourcentage
+パーセント   |               |   pourcent
+こ       |      子          |     enfant
+カップラーメヌ|                |   cup ramen
+メール     |               |   e-mail
+おすもうさん  |   お相撲さん   |   joueur de sumo
+しろ      |       城       |   château
+なま      |   生           |   cru
+おに      |    鬼          |   démon japonais
+ぼう      |   棒           |   bâton
+ほっぺた    |               |   joue
+ぎょうめ（〜ぉううめ）|        |   -ème ligne</p>

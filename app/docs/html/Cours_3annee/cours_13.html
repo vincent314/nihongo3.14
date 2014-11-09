@@ -1,144 +1,46 @@
-<!DOCTYPE  html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    
-    <title>doc</title>
-    <style>
-      /*github.com style (c) Vasily Polovnyov <vast@whiteants.net>*/
-      pre code {
-        display: block; padding: 0.5em;
-        color: #333;
-        background: #f8f8ff
-      }
-      pre .comment,
-      pre .template_comment,
-      pre .diff .header,
-      pre .javadoc {
-        color: #998;
-        font-style: italic
-      }
-      pre .keyword,
-      pre .css .rule .keyword,
-      pre .winutils,
-      pre .javascript .title,
-      pre .nginx .title,
-      pre .subst,
-      pre .request,
-      pre .status {
-        color: #333;
-        font-weight: bold
-      }
-      pre .number,
-      pre .hexcolor,
-      pre .ruby .constant {
-        color: #099;
-      }
-      pre .string,
-      pre .tag .value,
-      pre .phpdoc,
-      pre .tex .formula {
-        color: #d14
-      }
-      pre .title,
-      pre .id {
-        color: #900;
-        font-weight: bold
-      }
-      pre .javascript .title,
-      pre .lisp .title,
-      pre .clojure .title,
-      pre .subst {
-        font-weight: normal
-      }
-      pre .class .title,
-      pre .haskell .type,
-      pre .vhdl .literal,
-      pre .tex .command {
-        color: #458;
-        font-weight: bold
-      }
-      pre .tag,
-      pre .tag .title,
-      pre .rules .property,
-      pre .django .tag .keyword {
-        color: #000080;
-        font-weight: normal
-      }
-      pre .attribute,
-      pre .variable,
-      pre .lisp .body {
-        color: #008080
-      }
-      pre .regexp {
-        color: #009926
-      }
-      pre .class {
-        color: #458;
-        font-weight: bold
-      }
-      pre .symbol,
-      pre .ruby .symbol .string,
-      pre .lisp .keyword,
-      pre .tex .special,
-      pre .prompt {
-        color: #990073
-      }
-      pre .built_in,
-      pre .lisp .title,
-      pre .clojure .built_in {
-        color: #0086b3
-      }
-      pre .preprocessor,
-      pre .pi,
-      pre .doctype,
-      pre .shebang,
-      pre .cdata {
-        color: #999;
-        font-weight: bold
-      }
-      pre .deletion {
-        background: #fdd
-      }
-      pre .addition {
-        background: #dfd
-      }
-      pre .diff .change {
-        background: #0086b3
-      }
-      pre .chunk {
-        color: #aaa
-      }
-    </style>
-  </head>
-  <body>  
-    <h1 id="cours-13">Cours 13</h1>
-<p>２０１４年０１月２７日</p>
-<h2 id="-">最近、何をしましたか</h2>
-<p>ツィッター = Twitter</p>
-<p><ruby>正<rp>(</rp><rt>せい</rt><rp>)</rp></ruby><ruby>方<rp>(</rp><rt>ほう</rt><rp>)</rp></ruby><ruby>形<rp>(</rp><rt>けい</rt><rp>)</rp></ruby> = Forme carrée</p>
-<p><ruby>長<rp>(</rp><rt>ちょう</rt><rp>)</rp></ruby><ruby>方<rp>(</rp><rt>ほう</rt><rp>)</rp></ruby><ruby>形<rp>(</rp><rt>けい</rt><rp>)</rp></ruby> = Forme rectangulaire</p>
-<p>なつかしい = nostalgique</p>
-<p>せつない = triste (poignant, déchirant)</p>
-<p>かなしい = triste (sens général)</p>
-<h2 id="p41-pratique-de-la-langue">p41. ことばの<ruby>練<rp>(</rp><rt>れん</rt><rp>)</rp></ruby><ruby>習<rp>(</rp><rt>しゅう</rt><rp>)</rp></ruby> - pratique de la langue</h2>
-<ol>
-<li>インターネットを<ruby>利<rp>(</rp><rt>り</rt><rp>)</rp></ruby><ruby>用<rp>(</rp><rt>よう</rt><rp>)</rp></ruby>する。Utiliser Internet</li>
-<li><ruby>懸<rp>(</rp><rt>けん</rt><rp>)</rp></ruby><ruby>賞<rp>(</rp><rt>しょう</rt><rp>)</rp></ruby>に<ruby>応<rp>(</rp><rt>おう</rt><rp>)</rp></ruby><ruby>募<rp>(</rp><rt>ぼ</rt><rp>)</rp></ruby>する。Participer à un concours à prix.</li>
-<li>インターネットで<ruby>本<rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>を<ruby>購<rp>(</rp><rt>こう</rt><rp>)</rp></ruby><ruby>入<rp>(</rp><rt>にゅう</rt><rp>)</rp></ruby>する<ruby>人<rp>(</rp><rt>ひと</rt><rp>)</rp></ruby>が<ruby>多<rp>(</rp><rt>おお</rt><rp>)</rp></ruby>くなった。la personne a acheté beaucoup de livre par internet.</li>
-<li>インターネットに<ruby>関<rp>(</rp><rt>かん</rt><rp>)</rp></ruby><ruby>連<rp>(</rp><rt>れん</rt><rp>)</rp></ruby>する<ruby>仕<rp>(</rp><rt>し</rt><rp>)</rp></ruby><ruby>事<rp>(</rp><rt>ごと</rt><rp>)</rp></ruby>がしたい。Je souhaite que mon travail concerne Internet.</li>
-</ol>
-<h2 id="n1-n2-exemple-repr-sent-tel-que-">N1　のような　N2 - exemple représenté, tel que ~</h2>
-<p>例：<ruby>字<rp>(</rp><rt>じ</rt><rp>)</rp></ruby>が<ruby>少<rp>(</rp><rt>すく</rt><rp>)</rp></ruby>ない本をよみます・まんが　(Lire des livres avec peu de lettres / Mangas)</p>
-<blockquote>
-<p>まんが<u>のような</u>　字が少ない本をよんで　ばかりいます。<br>Il ne lit que des livres avec peu de caractères comme des mangas</p>
-</blockquote>
-<p>例：<ruby>天<rp>(</rp><rt>てん</rt><rp>)</rp></ruby><ruby>気<rp>(</rp><rt>き</rt><rp>)</rp></ruby><ruby>予<rp>(</rp><rt>よ</rt><rp>)</rp></ruby><ruby>報<rp>(</rp><rt>ほう</rt><rp>)</rp></ruby><u>のような</u>　<ruby>生<rp>(</rp><rt>せい</rt><rp>)</rp></ruby><ruby>活<rp>(</rp><rt>かつ</rt><rp>)</rp></ruby>に　<ruby>必<rp>(</rp><rt>ひつ</rt><rp>)</rp></ruby><ruby>要<rp>(</rp><rt>よう</rt><rp>)</rp></ruby>な　<ruby>情<rp>(</rp><rt>じょう</rt><rp>)</rp></ruby><ruby>報<rp>(</rp><rt>ほう</rt><rp>)</rp></ruby>を　<ruby>調<rp>(</rp><rt>しら</rt><rp>)</rp></ruby>べます。</p>
-<blockquote>
-<p>Vérifier quotidiennement les informations comme les prévisions météo est nécessaire.</p>
-</blockquote>
-<h2 id="x-y-forme-n-gative-x-n-est-pas-aussi-que-y">Xは　Yほど + forme négative = X n&#39;est pas aussi ~ que Y</h2>
-<p>例：インドは<ruby>中<rp>(</rp><rt>ちゅう</rt><rp>)</rp></ruby><ruby>国<rp>(</rp><rt>ごく</rt><rp>)</rp></ruby>ほど　<ruby>人<rp>(</rp><rt>ひと</rt><rp>)</rp></ruby>が<ruby>多<rp>(</rp><rt>おお</rt><rp>)</rp></ruby>くないです。<br>L&#39;Inde n&#39;est pas aussi peuplé que la Chine.</p>
+<h1 id="cours13">Cours 13</h1>
 
-  </body>
-</html>
+<p>２０１４年０１月２７日</p>
+
+<h2 id="">最近、何をしましたか</h2>
+
+<p>ツィッター = Twitter</p>
+
+<p><ruby><rb>正</rb><rp>(</rp><rt>せい</rt><rp>)</rp></ruby><ruby><rb>方</rb><rp>(</rp><rt>ほう</rt><rp>)</rp></ruby><ruby><rb>形</rb><rp>(</rp><rt>けい</rt><rp>)</rp></ruby> = Forme carrée</p>
+
+<p><ruby><rb>長</rb><rp>(</rp><rt>ちょう</rt><rp>)</rp></ruby><ruby><rb>方</rb><rp>(</rp><rt>ほう</rt><rp>)</rp></ruby><ruby><rb>形</rb><rp>(</rp><rt>けい</rt><rp>)</rp></ruby> = Forme rectangulaire</p>
+
+<p>なつかしい = nostalgique</p>
+
+<p>せつない = triste (poignant, déchirant)</p>
+
+<p>かなしい = triste (sens général)</p>
+
+<h2 id="p41rubyrbrbrprprtrtrprprubyrubyrbrbrprprtrtrprprubypratiquedelalangue">p41. ことばの<ruby><rb>練</rb><rp>(</rp><rt>れん</rt><rp>)</rp></ruby><ruby><rb>習</rb><rp>(</rp><rt>しゅう</rt><rp>)</rp></ruby> - pratique de la langue</h2>
+
+<ol>
+<li>インターネットを<ruby><rb>利</rb><rp>(</rp><rt>り</rt><rp>)</rp></ruby><ruby><rb>用</rb><rp>(</rp><rt>よう</rt><rp>)</rp></ruby>する。Utiliser Internet</li>
+<li><ruby><rb>懸</rb><rp>(</rp><rt>けん</rt><rp>)</rp></ruby><ruby><rb>賞</rb><rp>(</rp><rt>しょう</rt><rp>)</rp></ruby>に<ruby><rb>応</rb><rp>(</rp><rt>おう</rt><rp>)</rp></ruby><ruby><rb>募</rb><rp>(</rp><rt>ぼ</rt><rp>)</rp></ruby>する。Participer à un concours à prix.</li>
+<li>インターネットで<ruby><rb>本</rb><rp>(</rp><rt>ほん</rt><rp>)</rp></ruby>を<ruby><rb>購</rb><rp>(</rp><rt>こう</rt><rp>)</rp></ruby><ruby><rb>入</rb><rp>(</rp><rt>にゅう</rt><rp>)</rp></ruby>する<ruby><rb>人</rb><rp>(</rp><rt>ひと</rt><rp>)</rp></ruby>が<ruby><rb>多</rb><rp>(</rp><rt>おお</rt><rp>)</rp></ruby>くなった。la personne a acheté beaucoup de livre par internet.</li>
+<li>インターネットに<ruby><rb>関</rb><rp>(</rp><rt>かん</rt><rp>)</rp></ruby><ruby><rb>連</rb><rp>(</rp><rt>れん</rt><rp>)</rp></ruby>する<ruby><rb>仕</rb><rp>(</rp><rt>し</rt><rp>)</rp></ruby><ruby><rb>事</rb><rp>(</rp><rt>ごと</rt><rp>)</rp></ruby>がしたい。Je souhaite que mon travail concerne Internet.</li>
+</ol>
+
+<h2 id="n1n2exemplereprsenttelquet">N1　のような　N2 - exemple représenté, tel que ~</h2>
+
+<p>例：<ruby><rb>字</rb><rp>(</rp><rt>じ</rt><rp>)</rp></ruby>が<ruby><rb>少</rb><rp>(</rp><rt>すく</rt><rp>)</rp></ruby>ない本をよみます・まんが　(Lire des livres avec peu de lettres / Mangas)</p>
+
+<blockquote>
+  <p>まんが<u>のような</u>　字が少ない本をよんで　ばかりいます。 <br />
+  Il ne lit que des livres avec peu de caractères comme des mangas</p>
+</blockquote>
+
+<p>例：<ruby><rb>天</rb><rp>(</rp><rt>てん</rt><rp>)</rp></ruby><ruby><rb>気</rb><rp>(</rp><rt>き</rt><rp>)</rp></ruby><ruby><rb>予</rb><rp>(</rp><rt>よ</rt><rp>)</rp></ruby><ruby><rb>報</rb><rp>(</rp><rt>ほう</rt><rp>)</rp></ruby><u>のような</u>　<ruby><rb>生</rb><rp>(</rp><rt>せい</rt><rp>)</rp></ruby><ruby><rb>活</rb><rp>(</rp><rt>かつ</rt><rp>)</rp></ruby>に　<ruby><rb>必</rb><rp>(</rp><rt>ひつ</rt><rp>)</rp></ruby><ruby><rb>要</rb><rp>(</rp><rt>よう</rt><rp>)</rp></ruby>な　<ruby><rb>情</rb><rp>(</rp><rt>じょう</rt><rp>)</rp></ruby><ruby><rb>報</rb><rp>(</rp><rt>ほう</rt><rp>)</rp></ruby>を　<ruby><rb>調</rb><rp>(</rp><rt>しら</rt><rp>)</rp></ruby>べます。</p>
+
+<blockquote>
+  <p>Vérifier quotidiennement les informations comme les prévisions météo est nécessaire.</p>
+</blockquote>
+
+<h2 id="xyformengativexnestpasaussitquey">Xは　Yほど + forme négative = X n'est pas aussi ~ que Y</h2>
+
+<p>例：インドは<ruby><rb>中</rb><rp>(</rp><rt>ちゅう</rt><rp>)</rp></ruby><ruby><rb>国</rb><rp>(</rp><rt>ごく</rt><rp>)</rp></ruby>ほど　<ruby><rb>人</rb><rp>(</rp><rt>ひと</rt><rp>)</rp></ruby>が<ruby><rb>多</rb><rp>(</rp><rt>おお</rt><rp>)</rp></ruby>くないです。 <br />
+L'Inde n'est pas aussi peuplé que la Chine.</p>

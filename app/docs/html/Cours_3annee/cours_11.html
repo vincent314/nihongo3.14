@@ -1,205 +1,83 @@
-<!DOCTYPE  html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    
-    <title>doc</title>
-    <style>
-      /*github.com style (c) Vasily Polovnyov <vast@whiteants.net>*/
-      pre code {
-        display: block; padding: 0.5em;
-        color: #333;
-        background: #f8f8ff
-      }
-      pre .comment,
-      pre .template_comment,
-      pre .diff .header,
-      pre .javadoc {
-        color: #998;
-        font-style: italic
-      }
-      pre .keyword,
-      pre .css .rule .keyword,
-      pre .winutils,
-      pre .javascript .title,
-      pre .nginx .title,
-      pre .subst,
-      pre .request,
-      pre .status {
-        color: #333;
-        font-weight: bold
-      }
-      pre .number,
-      pre .hexcolor,
-      pre .ruby .constant {
-        color: #099;
-      }
-      pre .string,
-      pre .tag .value,
-      pre .phpdoc,
-      pre .tex .formula {
-        color: #d14
-      }
-      pre .title,
-      pre .id {
-        color: #900;
-        font-weight: bold
-      }
-      pre .javascript .title,
-      pre .lisp .title,
-      pre .clojure .title,
-      pre .subst {
-        font-weight: normal
-      }
-      pre .class .title,
-      pre .haskell .type,
-      pre .vhdl .literal,
-      pre .tex .command {
-        color: #458;
-        font-weight: bold
-      }
-      pre .tag,
-      pre .tag .title,
-      pre .rules .property,
-      pre .django .tag .keyword {
-        color: #000080;
-        font-weight: normal
-      }
-      pre .attribute,
-      pre .variable,
-      pre .lisp .body {
-        color: #008080
-      }
-      pre .regexp {
-        color: #009926
-      }
-      pre .class {
-        color: #458;
-        font-weight: bold
-      }
-      pre .symbol,
-      pre .ruby .symbol .string,
-      pre .lisp .keyword,
-      pre .tex .special,
-      pre .prompt {
-        color: #990073
-      }
-      pre .built_in,
-      pre .lisp .title,
-      pre .clojure .built_in {
-        color: #0086b3
-      }
-      pre .preprocessor,
-      pre .pi,
-      pre .doctype,
-      pre .shebang,
-      pre .cdata {
-        color: #999;
-        font-weight: bold
-      }
-      pre .deletion {
-        background: #fdd
-      }
-      pre .addition {
-        background: #dfd
-      }
-      pre .diff .change {
-        background: #0086b3
-      }
-      pre .chunk {
-        color: #aaa
-      }
-    </style>
-  </head>
-  <body>  
-    <h1 id="cours-11">Cours 11</h1>
+<h1 id="cours11">Cours 11</h1>
+
 <p>２０１３年０１月１３日</p>
-<h2 id="-">最近、何をしましたか</h2>
-<p>はたらしいレストランに行って<ruby>見<rp>(</rp><rt>み</rt><rp>)</rp></ruby>ました。</p>
+
+<h2 id="">最近、何をしましたか</h2>
+
+<p>はたらしいレストランに行って<ruby><rb>見</rb><rp>(</rp><rt>み</rt><rp>)</rp></ruby>ました。</p>
+
 <blockquote>
-<p>J&#39;ai essayé un nouveau restaurant</p>
+  <p>J'ai essayé un nouveau restaurant</p>
 </blockquote>
-<p><ruby>風<rp>(</rp><rt>ふう</rt><rp>)</rp></ruby><ruby>景<rp>(</rp><rt>けい</rt><rp>)</rp></ruby><ruby>画<rp>(</rp><rt>が</rt><rp>)</rp></ruby> = tableau de paysage</p>
+
+<p><ruby><rb>風</rb><rp>(</rp><rt>ふう</rt><rp>)</rp></ruby><ruby><rb>景</rb><rp>(</rp><rt>けい</rt><rp>)</rp></ruby><ruby><rb>画</rb><rp>(</rp><rt>が</rt><rp>)</rp></ruby> = tableau de paysage</p>
+
 <ul>
-<li><ruby>和<rp>(</rp><rt>わ</rt><rp>)</rp></ruby><ruby>仏<rp>(</rp><rt>ふつ</rt><rp>)</rp></ruby><ruby>辞<rp>(</rp><rt>じ</rt><rp>)</rp></ruby><ruby>典<rp>(</rp><rt>てん</rt><rp>)</rp></ruby> = Dictionnaire Japonais-Français</li>
+<li><ruby><rb>和</rb><rp>(</rp><rt>わ</rt><rp>)</rp></ruby><ruby><rb>仏</rb><rp>(</rp><rt>ふつ</rt><rp>)</rp></ruby><ruby><rb>辞</rb><rp>(</rp><rt>じ</rt><rp>)</rp></ruby><ruby><rb>典</rb><rp>(</rp><rt>てん</rt><rp>)</rp></ruby> = Dictionnaire Japonais-Français</li>
 <li>仏和辞典 = Dictionnaire Français-Japonais</li>
-<li><ruby>辞<rp>(</rp><rt>じ</rt><rp>)</rp></ruby><ruby>典<rp>(</rp><rt>てん</rt><rp>)</rp></ruby> ~ じしょう</li>
+<li><ruby><rb>辞</rb><rp>(</rp><rt>じ</rt><rp>)</rp></ruby><ruby><rb>典</rb><rp>(</rp><rt>てん</rt><rp>)</rp></ruby> ~ じしょう</li>
 </ul>
+
 <p>おさけ = alcool en général</p>
-<p>おさけにつよい = supporter l&#39;alcool</p>
+
+<p>おさけにつよい = supporter l'alcool</p>
+
 <p>バーゲン=  soldes</p>
-<h2 id="nom-on-dirait-nom">Nom + のようだ : On dirait + Nom</h2>
-<p>例１：「<ruby>冬<rp>(</rp><rt>ふゆ</rt><rp>)</rp></ruby>」　今日は　あたたかくて，<ruby>春<rp>(</rp><rt>はる</rt><rp>)</rp></ruby>のようだ。</p>
-<p>例２：「<ruby>秋<rp>(</rp><rt>あき</rt><rp>)</rp></ruby>」　今日は　さむくて、冬のようです。</p>
-<h2 id="nom-adj-">Nom + のように + Adj.</h2>
+
+<h2 id="nomondiraitnom">Nom + のようだ : On dirait + Nom</h2>
+
+<p>例１：「<ruby><rb>冬</rb><rp>(</rp><rt>ふゆ</rt><rp>)</rp></ruby>」　今日は　あたたかくて，<ruby><rb>春</rb><rp>(</rp><rt>はる</rt><rp>)</rp></ruby>のようだ。</p>
+
+<p>例２：「<ruby><rb>秋</rb><rp>(</rp><rt>あき</rt><rp>)</rp></ruby>」　今日は　さむくて、冬のようです。</p>
+
+<h2 id="nomadj">Nom + のように + Adj.</h2>
+
 <p>例１：「秋」　今日は、春のようにあたたかい。</p>
+
 <blockquote>
-<p>Aujourd&#39;hui, il fait doux comme au printemps</p>
+  <p>Aujourd'hui, il fait doux comme au printemps</p>
 </blockquote>
+
 <p>例２：「秋」　今日は、冬のようにさむい。</p>
+
 <blockquote>
-<p>Aujourd&#39;hui, il fait frois comme en hivers</p>
+  <p>Aujourd'hui, il fait frois comme en hivers</p>
 </blockquote>
-<h2 id="nom-nom">Nom + のような + Nom</h2>
-<p>例１：「冬」　今日は、春のような<ruby>天<rp>(</rp><rt>てん</rt><rp>)</rp></ruby><ruby>気<rp>(</rp><rt>き</rt><rp>)</rp></ruby>です。</p>
+
+<h2 id="nomnom">Nom + のような + Nom</h2>
+
+<p>例１：「冬」　今日は、春のような<ruby><rb>天</rb><rp>(</rp><rt>てん</rt><rp>)</rp></ruby><ruby><rb>気</rb><rp>(</rp><rt>き</rt><rp>)</rp></ruby>です。</p>
+
 <blockquote>
-<p>Aujourd&#39;hui, il fait un temps comme au printemps</p>
+  <p>Aujourd'hui, il fait un temps comme au printemps</p>
 </blockquote>
+
 <p>例２：「春」　今日は、冬のような天気です。</p>
+
 <blockquote>
-<p>Aujourd&#39;hui, il fait un temps comme en hivers</p>
+  <p>Aujourd'hui, il fait un temps comme en hivers</p>
 </blockquote>
+
 <h2 id="vocabulaire">Vocabulaire</h2>
+
 <ul>
-<li><ruby>計<rp>(</rp><rt>けい</rt><rp>)</rp></ruby><ruby>算<rp>(</rp><rt>さん</rt><rp>)</rp></ruby>= calculer</li>
+<li><ruby><rb>計</rb><rp>(</rp><rt>けい</rt><rp>)</rp></ruby><ruby><rb>算</rb><rp>(</rp><rt>さん</rt><rp>)</rp></ruby>= calculer</li>
 <li>はやい = rapide</li>
-<li><ruby>言<rp>(</rp><rt>い</rt><rp>)</rp></ruby>われています = Forme passive «il se dit que …»</li>
+<li><ruby><rb>言</rb><rp>(</rp><rt>い</rt><rp>)</rp></ruby>われています = Forme passive «il se dit que …»</li>
 <li>はなふだ = jeu de cartes fleurs</li>
 </ul>
-<h2 id="kanji">Kanji</h2>
-<table>
-<thead>
-<tr>
-<th>漢字</th>
-<th>かな</th>
-<th>フランス語で</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>悪</td>
-<td>わるーい・アク</td>
-<td>mauvais</td>
-</tr>
-<tr>
-<td>安</td>
-<td>やすーい・アン</td>
-<td>moins cher</td>
-</tr>
-<tr>
-<td>深</td>
-<td>ふかーい・じん</td>
-<td>profond</td>
-</tr>
-<tr>
-<td>速</td>
-<td>はやーい・ソク</td>
-<td>rapide</td>
-</tr>
-<tr>
-<td>等</td>
-<td>ひとーしい・トウ</td>
-<td>égal</td>
-</tr>
-<tr>
-<td>苦</td>
-<td>くるーしい・ク</td>
-<td>douloureux</td>
-</tr>
-</tbody>
-</table>
-<h2 id="pour-la-prochaine-fois">Pour la prochaine fois</h2>
-<p>5p35. Traduire des expressions françaises</p>
 
-  </body>
-</html>
+<h2 id="kanji">Kanji</h2>
+
+<p>漢字 | かな | フランス語で
+----|------|----------
+悪 | わるーい・アク | mauvais
+安 | やすーい・アン | moins cher
+深 | ふかーい・じん | profond
+速 | はやーい・ソク | rapide
+等 | ひとーしい・トウ | égal
+苦 | くるーしい・ク | douloureux</p>
+
+<h2 id="pourlaprochainefois">Pour la prochaine fois</h2>
+
+<p>5p35. Traduire des expressions françaises</p>

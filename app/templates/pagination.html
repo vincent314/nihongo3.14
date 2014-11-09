@@ -1,5 +1,12 @@
-<div ng-show="next || previous">
-    <a ng-show="previous" ng-href="{{previous.path}}">{{previous.page.title}}</a> |
-    <a ng-show="next" ng-href="{{next.path}}">{{next.page.title}}</a> |
-    <a ng-href="#/">Table des matières</a>
+<div class="row" ng-show="next || previous">
+  <a class="col-md-4" ng-show="previous" ng-href="{{previous.path}}">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    {{previous.page.title}}</a>
+  <a class="col-md-4" ng-href="#/">
+    <span class="glyphicon glyphicon-list"></span>
+    Table des matières</a>
+  <a class="col-md-4" ng-show="next" ng-href="{{next.path}}">{{next.page.title}}
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+
 </div>

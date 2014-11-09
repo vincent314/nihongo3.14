@@ -1,269 +1,32 @@
-<!DOCTYPE  html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    
-    <title>doc</title>
-    <style>
-      /*github.com style (c) Vasily Polovnyov <vast@whiteants.net>*/
-      pre code {
-        display: block; padding: 0.5em;
-        color: #333;
-        background: #f8f8ff
-      }
-      pre .comment,
-      pre .template_comment,
-      pre .diff .header,
-      pre .javadoc {
-        color: #998;
-        font-style: italic
-      }
-      pre .keyword,
-      pre .css .rule .keyword,
-      pre .winutils,
-      pre .javascript .title,
-      pre .nginx .title,
-      pre .subst,
-      pre .request,
-      pre .status {
-        color: #333;
-        font-weight: bold
-      }
-      pre .number,
-      pre .hexcolor,
-      pre .ruby .constant {
-        color: #099;
-      }
-      pre .string,
-      pre .tag .value,
-      pre .phpdoc,
-      pre .tex .formula {
-        color: #d14
-      }
-      pre .title,
-      pre .id {
-        color: #900;
-        font-weight: bold
-      }
-      pre .javascript .title,
-      pre .lisp .title,
-      pre .clojure .title,
-      pre .subst {
-        font-weight: normal
-      }
-      pre .class .title,
-      pre .haskell .type,
-      pre .vhdl .literal,
-      pre .tex .command {
-        color: #458;
-        font-weight: bold
-      }
-      pre .tag,
-      pre .tag .title,
-      pre .rules .property,
-      pre .django .tag .keyword {
-        color: #000080;
-        font-weight: normal
-      }
-      pre .attribute,
-      pre .variable,
-      pre .lisp .body {
-        color: #008080
-      }
-      pre .regexp {
-        color: #009926
-      }
-      pre .class {
-        color: #458;
-        font-weight: bold
-      }
-      pre .symbol,
-      pre .ruby .symbol .string,
-      pre .lisp .keyword,
-      pre .tex .special,
-      pre .prompt {
-        color: #990073
-      }
-      pre .built_in,
-      pre .lisp .title,
-      pre .clojure .built_in {
-        color: #0086b3
-      }
-      pre .preprocessor,
-      pre .pi,
-      pre .doctype,
-      pre .shebang,
-      pre .cdata {
-        color: #999;
-        font-weight: bold
-      }
-      pre .deletion {
-        background: #fdd
-      }
-      pre .addition {
-        background: #dfd
-      }
-      pre .diff .change {
-        background: #0086b3
-      }
-      pre .chunk {
-        color: #aaa
-      }
-    </style>
-  </head>
-  <body>  
-    <h1 id="vocabulaire-chapitre-4">Vocabulaire chapitre 4</h1>
-<table>
-<thead>
-<tr>
-<th>漢字とカタカナ</th>
-<th>ひらがな</th>
-<th>フランス語</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>進む</td>
-<td>すすむ</td>
-<td>avancer, progresser</td>
-</tr>
-<tr>
-<td>技術が進む</td>
-<td>ぎじゅつがすすむ</td>
-<td>la technologie progresse</td>
-</tr>
-<tr>
-<td>送る</td>
-<td>おくる</td>
-<td>envoyer</td>
-</tr>
-<tr>
-<td>応募する</td>
-<td>おうぼする</td>
-<td>s’inscrire, participer (à un jeu)</td>
-</tr>
-<tr>
-<td>関連する</td>
-<td>かんれんする</td>
-<td>concerner</td>
-</tr>
-<tr>
-<td>購入する</td>
-<td>こうにゅうする</td>
-<td>acheter (forme très polie)</td>
-</tr>
-<tr>
-<td>なくてはならない</td>
-<td></td>
-<td>indispensable (= on ne peut rester sans)</td>
-</tr>
-<tr>
-<td>表</td>
-<td>ひょう</td>
-<td>tableau (grille)</td>
-</tr>
-<tr>
-<td>検索エンジン</td>
-<td>けんさくエンジン</td>
-<td>moteur de recherche</td>
-</tr>
-<tr>
-<td>飲食店</td>
-<td>いんしょくてん</td>
-<td>restaurants, cafés…</td>
-</tr>
-<tr>
-<td>サイト</td>
-<td></td>
-<td>site internet</td>
-</tr>
-<tr>
-<td>懸賞</td>
-<td>けんしょう</td>
-<td>concours (à prix)</td>
-</tr>
-<tr>
-<td>レジャー</td>
-<td></td>
-<td>loisirs (en dehors de chez soi)</td>
-</tr>
-<tr>
-<td>グラフ</td>
-<td></td>
-<td>graphique</td>
-</tr>
-<tr>
-<td>エスニック料理</td>
-<td>エスニックりょうり</td>
-<td>cuisine exotique</td>
-</tr>
-<tr>
-<td>文字</td>
-<td>もじ</td>
-<td>des lettres</td>
-</tr>
-<tr>
-<td>デジタルカメラ</td>
-<td></td>
-<td>appareil photo numérique</td>
-</tr>
-<tr>
-<td>電磁製品</td>
-<td>でんしせいひん</td>
-<td>produits électroniques</td>
-</tr>
-<tr>
-<td>文</td>
-<td>ぶん</td>
-<td>phrase</td>
-</tr>
-<tr>
-<td>ピーエイチエス</td>
-<td>PHS</td>
-<td>téléphone portable PHS</td>
-</tr>
-<tr>
-<td>運転免許証</td>
-<td>うんてんめんきょしょう</td>
-<td>permis de conduire</td>
-</tr>
-<tr>
-<td>CDラジカセ</td>
-<td>シーデイーラジカセ</td>
-<td>lecteur CD</td>
-</tr>
-<tr>
-<td>風景</td>
-<td>ふうけい</td>
-<td>vue, paysage</td>
-</tr>
-<tr>
-<td>定年</td>
-<td>ていねん</td>
-<td>retraite</td>
-</tr>
-<tr>
-<td>外国語</td>
-<td>がいこくご</td>
-<td>langue étrangère</td>
-</tr>
-<tr>
-<td>その他</td>
-<td>そのた</td>
-<td>autres</td>
-</tr>
-<tr>
-<td>どのように</td>
-<td></td>
-<td>comment</td>
-</tr>
-<tr>
-<td>アンケート</td>
-<td></td>
-<td>questionnaire (formulaire)</td>
-</tr>
-</tbody>
-</table>
+<h1 id="vocabulairechapitre4">Vocabulaire chapitre 4</h1>
 
-  </body>
-</html>
+<p>漢字とカタカナ  | ひらがな        | フランス語
+-------------|---------------|---------
+進む          | すすむ         | avancer, progresser
+技術が進む     |ぎじゅつがすすむ   | la technologie progresse
+送る         | おくる          | envoyer
+応募する      | おうぼする       | s’inscrire, participer (à un jeu)
+関連する      | かんれんする      |concerner
+購入する      | こうにゅうする    |acheter (forme très polie)
+なくてはならない|                |indispensable (= on ne peut rester sans)
+表           | ひょう          | tableau (grille)
+検索エンジン   | けんさくエンジン   | moteur de recherche
+飲食店        | いんしょくてん    | restaurants, cafés…
+サイト        |                |site internet
+懸賞          |けんしょう        |concours (à prix)
+レジャー       |                |loisirs (en dehors de chez soi)
+グラフ        |                |graphique
+エスニック料理  | エスニックりょうり |cuisine exotique
+文字          |もじ             |des lettres
+デジタルカメラ  |                |appareil photo numérique
+電磁製品       |でんしせいひん     |produits électroniques
+文            |ぶん            |phrase
+ピーエイチエス |PHS            |téléphone portable PHS
+運転免許証    |うんてんめんきょしょう|permis de conduire
+CDラジカセ    |シーデイーラジカセ |lecteur CD
+風景         |ふうけい          |vue, paysage
+定年         | ていねん          |retraite
+外国語        |がいこくご         |langue étrangère
+その他        |そのた            |autres
+どのように     |                |comment
+アンケート     |                |questionnaire (formulaire)</p>

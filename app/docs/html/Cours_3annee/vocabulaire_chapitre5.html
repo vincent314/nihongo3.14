@@ -1,274 +1,33 @@
-<!DOCTYPE  html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    
-    <title>doc</title>
-    <style>
-      /*github.com style (c) Vasily Polovnyov <vast@whiteants.net>*/
-      pre code {
-        display: block; padding: 0.5em;
-        color: #333;
-        background: #f8f8ff
-      }
-      pre .comment,
-      pre .template_comment,
-      pre .diff .header,
-      pre .javadoc {
-        color: #998;
-        font-style: italic
-      }
-      pre .keyword,
-      pre .css .rule .keyword,
-      pre .winutils,
-      pre .javascript .title,
-      pre .nginx .title,
-      pre .subst,
-      pre .request,
-      pre .status {
-        color: #333;
-        font-weight: bold
-      }
-      pre .number,
-      pre .hexcolor,
-      pre .ruby .constant {
-        color: #099;
-      }
-      pre .string,
-      pre .tag .value,
-      pre .phpdoc,
-      pre .tex .formula {
-        color: #d14
-      }
-      pre .title,
-      pre .id {
-        color: #900;
-        font-weight: bold
-      }
-      pre .javascript .title,
-      pre .lisp .title,
-      pre .clojure .title,
-      pre .subst {
-        font-weight: normal
-      }
-      pre .class .title,
-      pre .haskell .type,
-      pre .vhdl .literal,
-      pre .tex .command {
-        color: #458;
-        font-weight: bold
-      }
-      pre .tag,
-      pre .tag .title,
-      pre .rules .property,
-      pre .django .tag .keyword {
-        color: #000080;
-        font-weight: normal
-      }
-      pre .attribute,
-      pre .variable,
-      pre .lisp .body {
-        color: #008080
-      }
-      pre .regexp {
-        color: #009926
-      }
-      pre .class {
-        color: #458;
-        font-weight: bold
-      }
-      pre .symbol,
-      pre .ruby .symbol .string,
-      pre .lisp .keyword,
-      pre .tex .special,
-      pre .prompt {
-        color: #990073
-      }
-      pre .built_in,
-      pre .lisp .title,
-      pre .clojure .built_in {
-        color: #0086b3
-      }
-      pre .preprocessor,
-      pre .pi,
-      pre .doctype,
-      pre .shebang,
-      pre .cdata {
-        color: #999;
-        font-weight: bold
-      }
-      pre .deletion {
-        background: #fdd
-      }
-      pre .addition {
-        background: #dfd
-      }
-      pre .diff .change {
-        background: #0086b3
-      }
-      pre .chunk {
-        color: #aaa
-      }
-    </style>
-  </head>
-  <body>  
-    <h1 id="vocabulaire-le-on-5">Vocabulaire Leçon 5</h1>
-<table>
-<thead>
-<tr>
-<th>漢字</th>
-<th>かな</th>
-<th>フランス語で</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>に関して</td>
-<td>　にかんして(Nにかんして)</td>
-<td>　sur N, concernant N</td>
-</tr>
-<tr>
-<td>動かす</td>
-<td>　うごかす</td>
-<td>bouger</td>
-</tr>
-<tr>
-<td>気に入る</td>
-<td>　きにいる</td>
-<td>se plaire</td>
-</tr>
-<tr>
-<td>できあがる</td>
-<td></td>
-<td>s&#39;achever</td>
-</tr>
-<tr>
-<td>目が覚める</td>
-<td>　めがさめる</td>
-<td>se réveiller</td>
-</tr>
-<tr>
-<td>体の不調を訴える</td>
-<td>からだのふちょうをうったえる</td>
-<td>se plaindre de la mauvaise situation de la santé</td>
-</tr>
-<tr>
-<td>活動する</td>
-<td>　かつどうする</td>
-<td>s&#39;activer</td>
-</tr>
-<tr>
-<td>減少する</td>
-<td>　げんしょうする</td>
-<td>diminuer</td>
-</tr>
-<tr>
-<td>寝坊する</td>
-<td>　ねぼうする</td>
-<td>faire la grasse matinée</td>
-</tr>
-<tr>
-<td>満足する</td>
-<td>　まんぞくする</td>
-<td>se contenter</td>
-</tr>
-<tr>
-<td>蒸し暑い</td>
-<td>　むしあつい</td>
-<td>chaud et humide</td>
-</tr>
-<tr>
-<td>神経質な</td>
-<td>しんけいしつな</td>
-<td>nerveux</td>
-</tr>
-<tr>
-<td>神聖な</td>
-<td>　しんせいな</td>
-<td>sacré</td>
-</tr>
-<tr>
-<td>自由な</td>
-<td>　じゆうな</td>
-<td>libre</td>
-</tr>
-<tr>
-<td>自然に</td>
-<td>　しぜんに</td>
-<td>naturellement</td>
-</tr>
-<tr>
-<td>睡眠</td>
-<td>　すいみん</td>
-<td>sommeil</td>
-</tr>
-<tr>
-<td>通勤</td>
-<td>　つうきん</td>
-<td>aller au travail</td>
-</tr>
-<tr>
-<td>不調</td>
-<td>　ふちょう</td>
-<td>mauvaise situation</td>
-</tr>
-<tr>
-<td>体の不調</td>
-<td>　からだのふちょう</td>
-<td>mauvaise situation de santé</td>
-</tr>
-<tr>
-<td>最低</td>
-<td>　さいてい</td>
-<td>le pire</td>
-</tr>
-<tr>
-<td>地域</td>
-<td>　ちいき</td>
-<td>zone, région, quartier</td>
-</tr>
-<tr>
-<td>満足度</td>
-<td>　まんぞくど</td>
-<td>degré de contentement</td>
-</tr>
-<tr>
-<td>暮らしやすさ</td>
-<td>　くらしやすさ</td>
-<td>aisance de vivre</td>
-</tr>
-<tr>
-<td>梅雨</td>
-<td>　つゆ</td>
-<td>saison des pluies au Japon</td>
-</tr>
-<tr>
-<td>エーテイーエム</td>
-<td>ATM</td>
-<td>distributeur automatique de billets</td>
-</tr>
-<tr>
-<td>宗教</td>
-<td>しゅうきょう</td>
-<td>religion</td>
-</tr>
-<tr>
-<td>知識</td>
-<td>　ちしき</td>
-<td>connaissance</td>
-</tr>
-<tr>
-<td>平日</td>
-<td>　へいじつ</td>
-<td>jours ouvrés</td>
-</tr>
-<tr>
-<td>遅くまで</td>
-<td>　おそくまで</td>
-<td>jusqu&#39;à tard le soir</td>
-</tr>
-</tbody>
-</table>
+<h1 id="vocabulaireleon5">Vocabulaire Leçon 5</h1>
 
-  </body>
-</html>
+<p>漢字                  | かな                  | フランス語で
+---------------------|----------------------|--------------
+に関して                |　にかんして(Nにかんして)|　sur N, concernant N
+動かす                 |　うごかす              | bouger
+気に入る                |　きにいる              | se plaire
+できあがる               |                     | s'achever
+目が覚める               |　めがさめる           | se réveiller
+体の不調を訴える          | からだのふちょうをうったえる| se plaindre de la mauvaise situation de la santé
+活動する             |　かつどうする               | s'activer
+減少する            |　げんしょうする               | diminuer
+寝坊する            |　ねぼうする                 | faire la grasse matinée
+満足する            |　まんぞくする                | se contenter
+蒸し暑い            |　むしあつい                 | chaud et humide
+神経質な            | しんけいしつな               | nerveux
+神聖な             |　しんせいな                 | sacré
+自由な             |　じゆうな                  | libre
+自然に             |　しぜんに                  | naturellement
+睡眠              |　すいみん                   | sommeil
+通勤              |　つうきん                  | aller au travail
+不調              |　ふちょう                  | mauvaise situation
+体の不調            |　からだのふちょう          | mauvaise situation de santé
+最低               |　さいてい                 | le pire
+地域              |　ちいき                   | zone, région, quartier
+満足度             |　まんぞくど                 | degré de contentement
+暮らしやすさ      |　くらしやすさ                | aisance de vivre
+梅雨              |　つゆ                    | saison des pluies au Japon
+エーテイーエム     | ATM                       | distributeur automatique de billets
+宗教              | しゅうきょう                | religion
+知識             |　ちしき                    | connaissance
+平日              |　へいじつ                 | jours ouvrés
+遅くまで            |　おそくまで                 | jusqu'à tard le soir</p>
