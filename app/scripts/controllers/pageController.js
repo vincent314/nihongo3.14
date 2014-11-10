@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('nihongo').controller('PageController',function($rootScope,$location,CONFIG,NihongoService){
+angular.module('nihongo').controller('PageController',['$rootScope','$location','CONFIG','NihongoService',function($rootScope,$location,CONFIG,NihongoService){
     var currentPath = '#' + $location.path();
     var pagesFlatten = [];
     _(CONFIG.categories).forEach(function(category){
@@ -30,4 +30,4 @@ angular.module('nihongo').controller('PageController',function($rootScope,$locat
             delete $rootScope.next;
         }
     }
-});
+}]);

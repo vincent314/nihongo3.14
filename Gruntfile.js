@@ -19,7 +19,7 @@ module.exports = function (grunt) {
   // Configurable paths
   var config = {
     app: 'app',
-    dist: 'dist'
+    dist: '../nihongo3.14_gh-pages'
   };
 
   // Define the configuration for all the tasks
@@ -301,7 +301,8 @@ module.exports = function (grunt) {
               '*.{ico,png,txt}',
               'images/{,*/}*.webp',
               '{,*/}*.html',
-              'styles/fonts/{,*/}*.*'
+              'styles/fonts/{,*/}*.*',
+              'docs/**/*.html'
             ]
           },
           {
@@ -375,6 +376,7 @@ module.exports = function (grunt) {
           dest: 'app/docs/html/Cours_3b/'
         }],
         options: {
+          extensions:['table'],
           customExtensions: ['showdown-furigana-extension']
         }
       }
