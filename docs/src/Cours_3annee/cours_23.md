@@ -56,62 +56,62 @@ Forme passive
 Verbes
 -----
 
-フランス語 | Actif | Passif
----------|-------|---------
-tirer   | 抜（ぬ）く | 抜かれる
-laver   | 洗（あら）う | 洗われる
-placer  | 入（い）れる | 入れられる
-transporter | 運（はこ）ぶ | 運ばれる
-aligner | 並（なら）べる     | 並べられる
-acheter | 買（か）う | 買（か）われる
-cuisiner | 料（りょう）理（り）する | 料理される
+|フランス語 | Actif | Passif|
+|========|============|=========|
+|tirer   | 抜（ぬ）く | 抜かれる|
+|laver   | 洗（あら）う | 洗われる|
+|placer  | 入（い）れる | 入れられる|
+|transporter | 運（はこ）ぶ | 運ばれる|
+|aligner | 並（なら）べる     | 並べられる|
+|acheter | 買（か）う | 買（か）われる|
+|cuisiner | 料（りょう）理（り）する | 料理される|
 
 ###Verbes 1er groupe
 
-フランス語 | Actif     | Passif
----------|-----------|-------
-dire     | 言（い）う  | 言われる
-utiliser | 使（つか）う | 使われる
-organiser   | 行（おこな）う | 行われる
-entendre | 聞（き）く | 聞かれる
-écrire | 書（か）く   | 書かれる
-parler  | 話（はな）す    | 話される
-casser  | 壊（こわ）す    | 壊される
-salir   | 汚（よご）す    | 汚される
-attendre| 待（まつ）つ    | 待たされる
-appeler | 呼（よ）ぶ     | 呼ばれる
-choisir | 選（えら）ぶ    | 選ばれる
-lire    | 読（よ）む     |読まれる
-écraser (avec le pied)| 踏（ふ）む|踏まれる
-demander un service|頼（たの）む|頼まれる
-prendre | とる        |とられる
-fabriquer | 作（つく）る|作られる
-disputer | しかる      |しかられる
+|フランス語 | Actif     | Passif|
+|==========|=============|============|
+|dire     | 言（い）う  | 言われる|
+|utiliser | 使（つか）う | 使われる|
+|organiser   | 行（おこな）う | 行われる|
+|entendre | 聞（き）く | 聞かれる|
+|écrire | 書（か）く   | 書かれる|
+|parler  | 話（はな）す    | 話される|
+|casser  | 壊（こわ）す    | 壊される|
+|salir   | 汚（よご）す    | 汚される|
+|attendre| 待（まつ）つ    | 待たされる|
+|appeler | 呼（よ）ぶ     | 呼ばれる|
+|choisir | 選（えら）ぶ    | 選ばれる|
+|lire    | 読（よ）む     |読まれる|
+|écraser (avec le pied)| 踏（ふ）む|踏まれる|
+|demander un service|頼（たの）む|頼まれる|
+|prendre | とる        |とられる|
+|fabriquer | 作（つく）る|作られる|
+|disputer | しかる      |しかられる|
 
 ###Verbes 2nd groupe
 
-フランス語 | Actif     | Passif
----------|-----------|-------
-manger  | 食（た）べる       | 食べられる
-féliciter| 褒（ほ）める       |褒められる
-consulter, rechercher | 調（しら）べる|調べられる
-ériger  | 建（た）てる       | 建てられる
-se tromper | まちがえる  |まちがえられる
-jeter | 捨（す）てる      |　捨てられる
-regarder | 見（み）る    |見られる
+|フランス語 | Actif     | Passif|
+|=========|=================|==========|
+|manger  | 食（た）べる       | 食べられる|
+|féliciter| 褒（ほ）める       |褒められる|
+|consulter, rechercher | 調（しら）べる|調べられる|
+|ériger  | 建（た）てる       | 建てられる|
+|se tromper | まちがえる  |まちがえられる|
+|jeter | 捨（す）てる      |　捨てられる|
+|regarder | 見（み）る    |見られる|
 
 ###Verbes 3ème groupe
 
 
-フランス語 | Actif     | Passif
----------|-----------|-------
-faire   | する      | される
-inventer | 発（はつ）明（めい）する|発明される
-découvrir|発（はっ）見（けん）する|発見される
-importer|輸（ゆ）入（にゅう）する|輸入される
-faire attention|注（ちゅう）意（い）する|注意される
-venir   |来（く）る  |くられる
-amener qq'un|連（つ）れて来（く）る| 連れてくられる
+|フランス語 | Actif     | Passif|
+|==========|=============|============|
+|faire   | する      | される|
+|inventer | 発（はつ）明（めい）する|発明される|
+|découvrir|発（はっ）見（けん）する|発見される|
+|importer|輸（ゆ）入（にゅう）する|輸入される|
+|faire attention|注（ちゅう）意（い）する|注意される|
+|venir   |来（く）る  |くられる|
+|amener qq'un|連（つ）れて来（く）る| 連れてくられる|
 
 
 しゅくだい - Devoirs
