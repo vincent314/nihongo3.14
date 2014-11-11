@@ -7,7 +7,7 @@
 
 /* Space out content a bit */
 body {
-  padding-top: 20px;
+  padding-top: 70px;
   padding-bottom: 20px;
 }
 
@@ -65,9 +65,9 @@ body {
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
+  /*.container {*/
+    /*max-width: 730px;*/
+  /*}*/
 
   /* Remove the padding we set earlier */
   .header,

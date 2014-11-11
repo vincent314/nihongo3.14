@@ -1,5 +1,9 @@
 {
   "name": "nihongo3-14",
+  "scripts":{
+    "build":"grunt build --force",
+    "start":"grunt serve"
+  },
   "devDependencies": {
     "apache-server-configs": "^2.7.1",
     "chai": "^1.9.2",

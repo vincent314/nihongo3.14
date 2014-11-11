@@ -303,7 +303,7 @@ module.exports = function (grunt) {
               'images/{,*/}*.webp',
               '{,*/}*.html',
               'styles/fonts/{,*/}*.*',
-              'docs/**/*.html'
+              'docs/**/*.*'
             ]
           },
           {
