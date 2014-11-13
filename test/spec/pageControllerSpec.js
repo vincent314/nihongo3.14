@@ -30,7 +30,7 @@ describe('Test page controller', function () {
         $scope.$digest();
         expect($scope.previous).toBeDefined();
         expect($scope.previous.path).toBe('#/category1/page-1');
-        expect($scope.next).toBeUndefined();
+        expect($scope.next).toBeDefined();
     }));
 
     it('Should previous link unavailable',inject(function($controller){

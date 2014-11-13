@@ -1,5 +1,11 @@
 <h1>Table des matières</h1>
 
+  <div>
+    <h4>Derniers articles</h4>
+  <ul>
+    <li ng-repeat="page in latest"><a href="{{buildRoute}}">{{page.title}}</a></li>
+  </ul>
+  </div>
 
 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
   <div ng-repeat="category in categories" class="panel panel-default">
