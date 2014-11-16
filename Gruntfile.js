@@ -290,6 +290,15 @@ module.exports = function (grunt) {
 
     // Copies remaining files to places other tasks can use
     copy: {
+      docs: {
+        files: [{
+          expand: true,
+          dots: true,
+          cwd: 'docs/src/',
+          src: '**/*.html',
+          dest: 'app/docs/html'
+        }]
+      },
       dist: {
         files: [
           {
@@ -369,7 +378,11 @@ module.exports = function (grunt) {
     },
     showdown: {
       default: {
-        files: [{
+        files: [
+          {
+          src: 'docs/src/Cours_2annee/**/*.md',
+          dest: 'app/docs/html/Cours_2annee/'
+        }, {
           src: 'docs/src/Cours_3annee/**/*.md',
           dest: 'app/docs/html/Cours_3annee/'
         }, {
@@ -377,7 +390,7 @@ module.exports = function (grunt) {
           dest: 'app/docs/html/Cours_3b/'
         }],
         options: {
-          extensions:['table'],
+          extensions: ['table'],
           customExtensions: ['showdown-furigana-extension']
         }
       }
@@ -426,7 +439,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
-    'showdown',
+    'buildDocs',
     'wiredep',
     'useminPrepare',
     'concurrent:dist',
@@ -445,5 +458,10 @@ module.exports = function (grunt) {
     'newer:jshint',
     'test',
     'build'
+  ]);
+
+  grunt.registerTask('buildDocs',[
+    'copy:docs',
+    'showdown'
   ]);
 };
