@@ -3,8 +3,112 @@
 angular.module('nihongo').constant('CONFIG', {
   categories: [
     {
+      title: 'Articles annexes'
+    },
+    {
+      title: '1ère année 2011-2012',
+      pdf: 'docs/pdf/Cours_japonais_1annee.pdf',
+      dir: 'docs/html/Cours_1annee',
+      pages: [
+        {
+          title: 'Cours 1',
+          file: 'cours_1.html'
+        },
+        {
+          title: 'Cours 3',
+          file: 'cours_3.html'
+        },
+        {
+          title: 'Cours 4',
+          file: 'cours_4.html'
+        },
+        {
+          title: 'Cours 5',
+          file: 'cours_5.html'
+        },
+        {
+          title: 'Cours 6',
+          file: 'cours_6.html'
+        },
+        {
+          title: 'Cours 7',
+          file: 'cours_7.html'
+        },
+        {
+          title: 'Cours 8',
+          file: 'cours_8.html'
+        },
+        {
+          title: 'Cours 9',
+          file: 'cours_9.html'
+        },
+        {
+          title: 'Cours 10',
+          file: 'cours_10.html'
+        },
+        {
+          title: 'Cours 11',
+          file: 'cours_11.html'
+        },
+        {
+          title: 'Cours 12',
+          file: 'cours_12.html'
+        },
+        {
+          title: 'Cours 13',
+          file: 'cours_13.html'
+        },
+        {
+          title: 'Cours 14',
+          file: 'cours_14.html'
+        },
+        {
+          title: 'Cours 16',
+          file: 'cours_16.html'
+        },
+        {
+          title: 'Cours 17',
+          file: 'cours_17.html'
+        },
+        {
+          title: 'Cours 18',
+          file: 'cours_18.html'
+        },
+        {
+          title: 'Cours 19',
+          file: 'cours_19.html'
+        },
+        {
+          title: 'Cours 20',
+          file: 'cours_20.html'
+        },
+        {
+          title: 'Cours 21',
+          file: 'cours_21.html'
+        },
+        {
+          title: 'Cours 23',
+          file: 'cours_23.html'
+        },
+        {
+          title: 'Cours 25',
+          file: 'cours_25.html'
+        },
+        {
+          title: 'Cours 26',
+          file: 'cours_26.html'
+        },
+        {
+          title: 'Cours 27',
+          file: 'cours_27.html'
+        }
+      ]
+    }
+    , {
       title: '2ème année 2012-1013',
       dir: 'docs/html/Cours_2annee',
+      pdf: 'docs/pdf/Cours_japonais_2annee.pdf',
+      epub: 'docs/epub/Cours de japonais 2eme annee - Vincent M_.epub',
       pages: [
         {
           title: 'Cours 1',
@@ -117,6 +221,7 @@ angular.module('nihongo').constant('CONFIG', {
     {
       title: '3ème année 2013-2014',
       dir: 'docs/html/Cours_3annee',
+      epub: 'docs/epub/Japonais niveau 3 - Vincent M_.epub',
       pages: [
         {
           title: 'Cours 1',
@@ -259,6 +364,10 @@ angular.module('nihongo').constant('CONFIG', {
         {
           title: 'Cours 5',
           file: 'cours_05.html'
+        },
+        {
+          title: 'Cours 6',
+          file: 'cours_06.html'
         }
       ]
     }

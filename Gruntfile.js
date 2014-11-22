@@ -380,15 +380,10 @@ module.exports = function (grunt) {
       default: {
         files: [
           {
-          src: 'docs/src/Cours_2annee/**/*.md',
-          dest: 'app/docs/html/Cours_2annee/'
-        }, {
-          src: 'docs/src/Cours_3annee/**/*.md',
-          dest: 'app/docs/html/Cours_3annee/'
-        }, {
-          src: 'docs/src/Cours_3b/**/*.md',
-          dest: 'app/docs/html/Cours_3b/'
-        }],
+            cwd: 'docs/src',
+            src: '**/*.md',
+            dest: 'app/docs/html/'
+          }],
         options: {
           extensions: ['table'],
           customExtensions: ['showdown-furigana-extension']
@@ -409,6 +404,7 @@ module.exports = function (grunt) {
     grunt.task.run([
       'clean:server',
       'wiredep',
+      'buildDocs',
       'concurrent:server',
       'autoprefixer',
       'connect:livereload',
@@ -460,7 +456,7 @@ module.exports = function (grunt) {
     'build'
   ]);
 
-  grunt.registerTask('buildDocs',[
+  grunt.registerTask('buildDocs', [
     'copy:docs',
     'showdown'
   ]);
