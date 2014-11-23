@@ -3,7 +3,22 @@
 angular.module('nihongo').constant('CONFIG', {
   categories: [
     {
-      title: 'Articles annexes'
+      title: 'Articles annexes',
+      dir: 'docs/html',
+      pages: [
+        {
+          title: 'Anki',
+          file: '/Cours_1annee/anki.html'
+        },
+        {
+          title: 'Taper au clavier en japonais',
+          file: '/Cours_1annee/clavier_japonais.html'
+        },
+        {
+          title: 'LaTex',
+          file: '/Cours_1annee/Latex.html'
+        }
+      ]
     },
     {
       title: '1ère année 2011-2012',
@@ -23,6 +38,14 @@ angular.module('nihongo').constant('CONFIG', {
           file: 'cours_4.html'
         },
         {
+          title: 'Compter en japonais',
+          file: 'compter.html'
+        },
+        {
+          title: 'Miscellaneous',
+          file: 'miscellaneous.html'
+        },
+        {
           title: 'Cours 5',
           file: 'cours_5.html'
         },
@@ -35,12 +58,20 @@ angular.module('nihongo').constant('CONFIG', {
           file: 'cours_7.html'
         },
         {
+          title: 'Vocabulaire nourriture',
+          file: 'vocabulaire_nourriture.html'
+        },
+        {
           title: 'Cours 8',
           file: 'cours_8.html'
         },
         {
           title: 'Cours 9',
           file: 'cours_9.html'
+        },
+        {
+          title: 'Leçon 3 du livre',
+          file: 'Lecon_3_du_livre.html'
         },
         {
           title: 'Cours 10',
@@ -51,8 +82,16 @@ angular.module('nihongo').constant('CONFIG', {
           file: 'cours_11.html'
         },
         {
+          title: 'Les adjectifs',
+          file: 'liste_adjectifs_1.html'
+        },
+        {
           title: 'Cours 12',
           file: 'cours_12.html'
+        },
+        {
+          title: 'Les nombres',
+          file: 'les_nombres.html'
         },
         {
           title: 'Cours 13',
@@ -101,10 +140,14 @@ angular.module('nihongo').constant('CONFIG', {
         {
           title: 'Cours 27',
           file: 'cours_27.html'
+        },
+        {
+          title: 'Les adjectifs',
+          file: 'adjectifs.html'
         }
       ]
-    }
-    , {
+    },
+    {
       title: '2ème année 2012-1013',
       dir: 'docs/html/Cours_2annee',
       pdf: 'docs/pdf/Cours_japonais_2annee.pdf',
@@ -138,6 +181,10 @@ angular.module('nihongo').constant('CONFIG', {
         {
           title: 'Cours 4 formes verbales',
           file: 'cours_4_formes_verbales.html'
+        },
+        {
+          title: 'Cours 4 vocabulaire',
+          file: 'cours_4_vocabulaire.html'
         },
         {
           title: 'Cours 5',
@@ -203,6 +250,10 @@ angular.module('nihongo').constant('CONFIG', {
         {
           title: 'Cours 22',
           file: 'cours_22.html'
+        },
+        {
+          title: 'Lecture p160',
+          file: 'lecture_p160.html'
         },
         {
           title: 'Cours 23',
