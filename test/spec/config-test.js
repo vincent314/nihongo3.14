@@ -22,6 +22,6 @@ angular.module('nihongo').constant('CONFIG', {
         }
     ],
     toc: {
-        templateUrl: 'tocTemplate.html'
+        templateUrl: 'toc.html'
     }
 });

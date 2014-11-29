@@ -1,7 +1,7 @@
 {
   "name": "nihongo3-14",
   "scripts": {
-    "build": "grunt build --force",
+    "build": "grunt --force",
     "start": "grunt serve"
   },
   "devDependencies": {
@@ -33,6 +33,7 @@
     "karma": "^0.12.24",
     "karma-chrome-launcher": "^0.1.5",
     "karma-jasmine": "^0.1.5",
+    "karma-ng-html2js-preprocessor": "^0.1.2",
     "karma-phantomjs-launcher": "^0.1.4",
     "load-grunt-tasks": "^0.4.0",
     "ng-midway-tester": "^2.0.5",

@@ -21,7 +21,7 @@ angular.module('nihongo', ['ngRoute'])
       });
   }])
   .run(['$rootScope','$route',function($rootScope,$route){
-    $rootScope.$on("$routeChangeSuccess", function(currentRoute, previousRoute){
+    $rootScope.$on('$routeChangeSuccess', function(){
       //Change page title, based on Route information
       $rootScope.title = $route.current.title;
     });

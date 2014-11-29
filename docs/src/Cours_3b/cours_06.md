@@ -45,8 +45,8 @@ Quand je suis fatigué, je bois un café.
 ###Adjな - adjectif en な
 
 ひきな　+　本を読みます。
-> ひきな**とき**、本（ほん）を読（よ）みます。  
-Quand je ????, je lis un livre.
+> ひまな**とき**、本（ほん）を読（よ）みます。  
+Quand je suis libre, je lis un livre.
 
 ###Nom
 
