@@ -61,8 +61,7 @@ module.exports = function (config) {
 
     ngHtml2JsPreprocessor: {
       cacheIdFromPath: function(filepath) {
-        var result = filepath.replace(new RegExp('(^app/|^test/html/)'),'');
-        return result;
+        return filepath.replace(new RegExp('(^app/|^test/html/)'),'');
       },
       moduleName: 'templates'
     }
