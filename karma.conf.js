@@ -12,6 +12,8 @@ module.exports = function (config) {
       'bower_components/angular/angular.js',
       'bower_components/angular-mocks/angular-mocks.js',
       'bower_components/angular-route/angular-route.js',
+      'bower_components/angular-sanitize/angular-sanitize.js',
+      'bower_components/ngInfiniteScroll/build/ng-infinite-scroll.js',
       'bower_components/lodash/dist/lodash.js',
       'bower_components/speakingurl/speakingurl.min.js',
       'app/scripts/app.js',
@@ -20,7 +22,8 @@ module.exports = function (config) {
       'test/spec/*.js',
       'test/spec/**/*.js',
       'node_modules/ng-midway-tester/src/ngMidwayTester.js',
-      'test/html/**/*.html'
+      'test/html/**/*.html',
+      'app/templates/*.html'
     ],
 
     // list of files / patterns to exclude
@@ -52,20 +55,15 @@ module.exports = function (config) {
     singleRun: false,
 
     preprocessors: {
-      "test/html/**/*.html": ["ng-html2js"]
+      "app/templates/*.html":"ng-html2js",
+      "test/html/dir/*.html": "ng-html2js"
     },
 
     ngHtml2JsPreprocessor: {
-      // strip this from the file path
-      stripPrefix: ['test/html/'],
-      //stripSufix: '.ext',
-      // prepend this to the
-      //prependPrefix: 'served/',
-
-      // or define a custom transform function
-      //cacheIdFromPath: function(filepath) {
-      //  return cacheId;
-      //},
+      cacheIdFromPath: function(filepath) {
+        var result = filepath.replace(new RegExp('(^app/|^test/html/)'),'');
+        return result;
+      },
       moduleName: 'templates'
     }
   });

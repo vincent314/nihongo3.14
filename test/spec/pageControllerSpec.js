@@ -16,7 +16,6 @@ describe('Test page controller', function () {
     $rootScope = _$rootScope_;
     $location = _$location_;
     CONFIG = _CONFIG_;
-
   }));
 
   it('Should previous link available', inject(function ($controller) {

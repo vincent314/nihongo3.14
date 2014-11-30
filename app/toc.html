@@ -1,10 +1,11 @@
 <h1>Table des matières</h1>
 
+  <a href="#/timeline">Les derniers cours &infin;</a>
+
 <div ng-show="categories" class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
   <div ng-repeat="category in categories" class="panel panel-default">
     <div class="panel-heading" role="tab" id="heading{{$index}}">
 
-      <h4>
         <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{$index}}" aria-expanded="true"
            aria-controls="collapse{{$index}}">
           {{category.title}}</a>
@@ -14,7 +15,6 @@
       <button type="button" class="btn btn-primary btn-sm" ng-show="category.epub">
         EPUB
       </button>
-      </h4>
     </div>
     <div id="collapse{{$index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading{{$index}}">
       <div class="panel-body">
@@ -24,6 +24,7 @@
             ng-href="{{buildRoute(category.title,page.title)}}">{{page.title}}</a>
           </li>
         </ul>
+
       </div>
     </div>
   </div>

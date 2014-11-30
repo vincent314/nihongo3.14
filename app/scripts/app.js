@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('nihongo', ['ngRoute'])
+angular.module('nihongo', ['ngRoute','infinite-scroll','ngSanitize'])
   .config(['$routeProvider', 'CONFIG', function ($routeProvider, CONFIG) {
 
     _(CONFIG.categories).forEach(function (category) {
@@ -12,6 +12,11 @@ angular.module('nihongo', ['ngRoute'])
           title: page.title
         });
       });
+    });
+    $routeProvider.when('/timeline',{
+      templateUrl:'templates/timeline.html',
+      controller:'TimelineController',
+      title: 'Timeline'
     });
     $routeProvider
       .otherwise({

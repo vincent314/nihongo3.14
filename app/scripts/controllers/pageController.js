@@ -5,7 +5,7 @@ angular.module('nihongo').controller('PageController',['$rootScope','$location',
     var pagesFlatten = [];
     _(CONFIG.categories).forEach(function(category){
         _(category.pages).forEach(function(page){
-            var path = new NihongoService().buildRoute(category.title,page.title,true);
+            var path = NihongoService.buildRoute(category.title,page.title,true);
             pagesFlatten.push({
                 path:path,
                 page:page,
