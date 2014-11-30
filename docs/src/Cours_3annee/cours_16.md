@@ -67,39 +67,39 @@ La nominalisation de certains adjectifs, même si elle est grammaticalement corr
 
 
 
-adjectif    | フランス語で      | Nom
-------------|----------------|-----
-いい・よう     | Bon, Bien      | よさ
-かっこいい    | attirant, cool | <strike>かっこよさ</strike>
-かわいい     | mignon         | <strike>かわよさ</strike>
-さびしい     | seul           | さびしさ
-なつかしい    | désiré         | なつかしさ
-うつくしい    | joli           | うつくしさ
-大きい       | grand           | おおきさ
-小さい       | petit          | <strike>小ささ</strike>
-むずかしい    | difficile     | むずかしさ
-くろい       | noir          | <strike>くろさ</strike>
-ながい       | long          | ながさ
-たかい       | haut          | たかさ
-やすい       | bon marché    | やすさ
-おもい       | lourd         | おもさ
-かるい       | léger         | かるさ
-おもしろい    | intéressant   | おもしろさ
-やさしい     | gentil        | やさしさ
-あつい       | épais         | あつさ
-あまい       | sucré         | あまさ
-からい       | épicé         | からさ
-ひろい       | spacieux      | ひろさ
+|adjectif    | フランス語で      | Nom|
+|------------|----------------|-----|
+|いい・よう     | Bon, Bien      | よさ|
+|かっこいい    | attirant, cool | <strike>かっこよさ</strike>|
+|かわいい     | mignon         | <strike>かわよさ</strike>|
+|さびしい     | seul           | さびしさ|
+|なつかしい    | désiré         | なつかしさ|
+|うつくしい    | joli           | うつくしさ|
+|大きい       | grand           | おおきさ|
+|小さい       | petit          | <strike>小ささ</strike>|
+|むずかしい    | difficile     | むずかしさ|
+|くろい       | noir          | <strike>くろさ</strike>|
+|ながい       | long          | ながさ|
+|たかい       | haut          | たかさ|
+|やすい       | bon marché    | やすさ|
+|おもい       | lourd         | おもさ|
+|かるい       | léger         | かるさ|
+|おもしろい    | intéressant   | おもしろさ|
+|やさしい     | gentil        | やさしさ|
+|あつい       | épais         | あつさ|
+|あまい       | sucré         | あまさ|
+|からい       | épicé         | からさ|
+|ひろい       | spacieux      | ひろさ|
 
 ### ~な Adjectifs
 
-adjectif    | フランス語で      | Nom
-------------|----------------|-----
-かんたんな    | simple          | <strike>かんたんさ</strike>
-しずかな     | calme           | しずかさ
-ゆうめいな    | connu, populaire | <strike>ゆうめいさ</strike>
-べんりな     | pratique        | べんりさ
-きれいな     | joli            | きれいさ
+|adjectif    | フランス語で      | Nom|
+|------------|----------------|-----|
+|かんたんな    | simple          | <strike>かんたんさ</strike>|
+|しずかな     | calme           | しずかさ|
+|ゆうめいな    | connu, populaire | <strike>ゆうめいさ</strike>|
+|べんりな     | pratique        | べんりさ|
+|きれいな     | joli            | きれいさ|
 
 Liens utils
 -----------

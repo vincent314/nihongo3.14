@@ -73,14 +73,14 @@ Dans la langue écrite, utilisé dans les notices et d'un aspect plus officiel :
 Kanji
 -----------
 
-漢字                             | かな        | フランス語で 
---------------------------------|------------|------------
-<font size="+3">投</font>       | なーげる・トウ    | lancer
-<font size="+3">打</font>       |　うーつ・ダ     | taper
-<font size="+3">受</font>       | うーける・ジュ  | recevoir
-<font size="+3">泳</font>       |　およーぐ・エイ   | nager
-<font size="+3">登</font>       | のぼーる・ト    | grimper
-<font size="+3">転</font>       |　ころーぶ・テン   | tomber
+|漢字                             | かな        | フランス語で |
+|--------------------------------|------------|------------|
+|<font size="+3">投</font>       | なーげる・トウ    | lancer|
+|<font size="+3">打</font>       |　うーつ・ダ     | taper|
+|<font size="+3">受</font>       | うーける・ジュ  | recevoir|
+|<font size="+3">泳</font>       |　およーぐ・エイ   | nager|
+|<font size="+3">登</font>       | のぼーる・ト    | grimper|
+|<font size="+3">転</font>       |　ころーぶ・テン   | tomber|
 
 
 Pour la fois prochaine

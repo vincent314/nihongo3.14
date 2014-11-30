@@ -19,39 +19,39 @@ Forme passive
 
 **Thème は、 complément + forme passive**
 
-13. この美（び）術（じゅつ）館（かん）は、２００年（ねん）前（まえ）に　建（た）てられました
-> Ce musée a été érigé il y a 200 ans
-14. このお寺（てら）は、江（え）戸（ど）時（じ）代（だい）に　建てられました。
-> Ce temple a été érigé à l'aire Edo.
-15. この美術館は、来（らい）年（ねん）　こわされます。
-> Ce musée sera détruit l'année prochaine.
-16. 次（つぎ）の会（かい）議（ぎ）は、神（こう）戸（べ）で開（ひら）かれます。
-> La prochaine réunion se déroulera à Kōbe.
-17. 運（うん）動（どう）会（かい）は、今（こん）度（どう）の日曜日に　行（おこな）われます。
-> La rencontre sportive se déroulera dimanche prochain.
-18. この小（しょう）説（せつ）は、５００年（ねん）ぐらい前（まえ）に　書（か）かれました。
-> Ce roman a été écrit il y 500 ans.
-19. この車は、世（せ）界（かい）中（じゅう）へ　輸（ゆ）出（しゅつ）されます。
-> Cette voiture est exportée dans le monde entier.
-20. ビールは、麦（むぎ）から　つくられます。
-> La bière est fabriquée à partir de l'orge
-21. 昔（むかし）、日本の家（いえ）は、木（き）で　作（つく）られました。
-> Autrefois, les maisons japonaises était fabriquée en bois.
+13. この美（び）術（じゅつ）館（かん）は、２００年（ねん）前（まえ）に　建（た）てられました    
+Ce musée a été érigé il y a 200 ans
+14. このお寺（てら）は、江（え）戸（ど）時（じ）代（だい）に　建てられました。    
+Ce temple a été érigé à l'aire Edo.
+15. この美術館は、来（らい）年（ねん）　こわされます。    
+Ce musée sera détruit l'année prochaine.
+16. 次（つぎ）の会（かい）議（ぎ）は、神（こう）戸（べ）で開（ひら）かれます。    
+La prochaine réunion se déroulera à Kōbe.
+17. 運（うん）動（どう）会（かい）は、今（こん）度（どう）の日曜日に　行（おこな）われます。     
+La rencontre sportive se déroulera dimanche prochain.
+18. この小（しょう）説（せつ）は、５００年（ねん）ぐらい前（まえ）に　書（か）かれました。    
+Ce roman a été écrit il y 500 ans.
+19. この車は、世（せ）界（かい）中（じゅう）へ　輸（ゆ）出（しゅつ）されます。    
+Cette voiture est exportée dans le monde entier.
+20. ビールは、麦（むぎ）から　つくられます。    
+La bière est fabriquée à partir de l'orge
+21. 昔（むかし）、日本の家（いえ）は、木（き）で　作（つく）られました。    
+Autrefois, les maisons japonaises était fabriquée en bois.
 
 **Thème は、 complément + forme passive + ています。**
 
-22. この車は、いろいろな国（くに）に　輸（ゆ）出（しゅつ）されています。
-> Cette voiture continue d'être exportée dans divers pays.
-23. 石（せ）油（きゆ）は、サウジアラビアなどから　輸（ゆ）入（にゅう）されています。
-> Le pétrôle continue à être importé depuis, entre autre, l'Arabie Saoudite.
-24. せんたくきは、この工（こう）場（じょう）で　組（く）み立（た）てられています。
-> Les machines à laver sont assemblées dans cette usine.
-25. 漢字は、中（ちゅう）国（ごく）や日（に）本（ほん）などで　使（つか）われています。
-> Les Kanji sont utilisés, entre autre, en Chine et au Japon.
-26. この魚（さかな）は、イタリアやスパインなどでも　食（た）べられています。
-> Ce poisson est consommé en Italie et en Espagne.
-27. この小（しょう）説（せつ）は、いろいろな国（くに）の言（こと）葉（ば）に　ほんやくされています。
-> Ce roman est traduit dans la langue de divers pays.
+22. この車は、いろいろな国（くに）に　輸（ゆ）出（しゅつ）されています。    
+Cette voiture continue d'être exportée dans divers pays.
+23. 石（せ）油（きゆ）は、サウジアラビアなどから　輸（ゆ）入（にゅう）されています。    
+Le pétrôle continue à être importé depuis, entre autre, l'Arabie Saoudite.
+24. せんたくきは、この工（こう）場（じょう）で　組（く）み立（た）てられています。    
+Les machines à laver sont assemblées dans cette usine.
+25. 漢字は、中（ちゅう）国（ごく）や日（に）本（ほん）などで　使（つか）われています。    
+Les Kanji sont utilisés, entre autre, en Chine et au Japon.
+26. この魚（さかな）は、イタリアやスパインなどでも　食（た）べられています。    
+Ce poisson est consommé en Italie et en Espagne.
+27. この小（しょう）説（せつ）は、いろいろな国（くに）の言（こと）葉（ば）に　ほんやくされています。    
+Ce roman est traduit dans la langue de divers pays.
 
 Verbes
 -----

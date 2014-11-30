@@ -69,14 +69,14 @@ Exercice 4p45
 Kanji
 ------
 
-漢字   | かな          | フランス語で
-------|--------------|----------
-悲    | かなーしい・ヒ    | triste
-美    | うつくーしい・ビ・ミ | beau
-幸    | しあわーせ・コウ   | heureux
-福    | フク           | bonheur (chance)
-有    | ユウ           | exister
-平    | たいーら・ヘイ     | plat
+|漢字   | かな          | フランス語で|
+|------|--------------|----------|
+|悲    | かなーしい・ヒ    | triste|
+|美    | うつくーしい・ビ・ミ | beau|
+|幸    | しあわーせ・コウ   | heureux|
+|福    | フク           | bonheur (chance)|
+|有    | ユウ           | exister|
+|平    | たいーら・ヘイ     | plat|
 
 * 悲しい出（で）来（き）ごと = un événement triste
 * 美しい花（はな） = une belle fleur

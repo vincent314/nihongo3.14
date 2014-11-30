@@ -48,14 +48,14 @@ Nom + によると、 forme neutre + そうだ
 Kanji
 -----------
 
-漢字                             | かな        | フランス語で 
---------------------------------|------------|------------
-<font size="+3">勝</font>       | かーつ・ショウ  | gagner
-<font size="+3">負</font>       |　まーける・フ   | perdre
-<font size="+3">始</font>       | はじーまる・シ  | commencer
-<font size="+3">終</font>       |　おーわる・ショウ   | finir
-<font size="+3">落</font>       | おーちる・ラク    | tomber
-<font size="+3">拾</font>       |　ひろーう・シュ   | ramasser
+|漢字                             | かな        | フランス語で |
+|--------------------------------|------------|------------|
+|<font size="+3">勝</font>       | かーつ・ショウ  | gagner|
+|<font size="+3">負</font>       |　まーける・フ   | perdre|
+|<font size="+3">始</font>       | はじーまる・シ  | commencer|
+|<font size="+3">終</font>       |　おーわる・ショウ   | finir|
+|<font size="+3">落</font>       | おーちる・ラク    | tomber|
+|<font size="+3">拾</font>       |　ひろーう・シュ   | ramasser|
 
 
 

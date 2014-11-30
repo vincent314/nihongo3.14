@@ -52,6 +52,10 @@ module.exports = function (grunt) {
         files: ['<%= config.app %>/styles/{,*/}*.css'],
         tasks: ['newer:copy:styles', 'autoprefixer']
       },
+      md:{
+        files: ['docs/src/**/*.md'],
+        tasks: ['showdown']
+      },
       livereload: {
         options: {
           livereload: '<%= connect.options.livereload %>'
@@ -323,6 +327,13 @@ module.exports = function (grunt) {
             expand: true,
             dot: true,
             cwd: 'bower_components/bootstrap/dist',
+            src: 'fonts/*',
+            dest: '<%= config.dist %>'
+          },
+          {
+            expand: true,
+            dot: true,
+            cwd: 'bower_components/font-awesome-bower',
             src: 'fonts/*',
             dest: '<%= config.dist %>'
           }

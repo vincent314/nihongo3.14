@@ -57,14 +57,14 @@ Vocabulaire
 Kanji
 ---
 
-漢字 | かな | フランス語で
-----|------|----------
-悪 | わるーい・アク | mauvais
-安 | やすーい・アン | moins cher
-深 | ふかーい・じん | profond
-速 | はやーい・ソク | rapide
-等 | ひとーしい・トウ | égal
-苦 | くるーしい・ク | douloureux
+|漢字 | かな | フランス語で|
+|----|------|----------|
+|悪 | わるーい・アク | mauvais|
+|安 | やすーい・アン | moins cher|
+|深 | ふかーい・じん | profond|
+|速 | はやーい・ソク | rapide|
+|等 | ひとーしい・トウ | égal|
+|苦 | くるーしい・ク | douloureux|
 
 Pour la prochaine fois
 ---------------
