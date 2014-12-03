@@ -401,6 +401,10 @@ angular.module('nihongo').constant('CONFIG', {
           file: 'cours_02.html'
         },
         {
+          title: 'Vocabulaire leçon 1',
+          file: 'vocabulaire_lecon_1.html'
+        },
+        {
           title: 'Cours 3',
           file: 'cours_03.html'
         },
@@ -419,6 +423,14 @@ angular.module('nihongo').constant('CONFIG', {
         {
           title: 'Cours 7',
           file: 'cours_07.html'
+        },
+        {
+          title: 'Cours 8',
+          file: 'cours_08.html'
+        },
+        {
+          title: 'Vocubulaire leçon 2',
+          file: 'vocabulaire_lecon_2.html'
         }
       ]
     }
