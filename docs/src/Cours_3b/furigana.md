@@ -6,7 +6,7 @@ Les navigateurs
 
 Ce site utilise abondamment les [furigana](http://en.wikipedia.org/wiki/Furigana), ces petits kana au dessus des kanji pour indiquer la prononciation. Je les trouve extrèmement pratiques pour l'apprentissage du Japonais, et plus particulièrement pour lire ou apprendre les Kanji.
 
-Cela est rendu possible par la nouvelle balise <ruby> introduite par HTML5, mais qui n'est pas forcément [supportée](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ruby) par tous les navigateurs.
+Cela est rendu possible par la nouvelle balise &lt;ruby&gt; introduite par HTML5, mais qui n'est pas forcément [supportée](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ruby) par tous les navigateurs.
 
 * Chrome : depuis la version 5
 * Internet Explorer : depuis la version 5
@@ -14,7 +14,7 @@ Cela est rendu possible par la nouvelle balise <ruby> introduite par HTML5, mais
 * Opera : depuis la version 15
 * Android : oui
 * Firefox mobile : non
-* IE mobile : oui
+* IE mobile : oui
 * Opera mobile : non
 * Safari mobile : oui
 
@@ -40,7 +40,7 @@ Markdown
 
 *C'est un peu long à écrire tout ça ?* me diriez-vous …
 
-Houlà, oui ! D'une manière générale, je ne saisi les articles ni en HTML, ni à travers un « éditeur riche ». J'utilise le [Markdown](http://daringfireball.net/projects/markdown/), qui une syntaxe extrêmement légère destinée à générer de l'HTML et dont les sources sont elles-même très lisibles.
+Houlà, oui ! D'une manière générale, je ne saisi les articles ni en HTML, ni à travers un « éditeur riche ». J'utilise le [Markdown](http://daringfireball.net/projects/markdown/), qui est une syntaxe extrêmement légère destinée à générer de l'HTML et dont les sources sont elles-même très lisibles.
 
 Quelques outils existent :
 
@@ -55,11 +55,16 @@ Cependant, de base ces outils ne supportent pas les furigana. Markdown ne possè
 Pour Linux en général et Retext en particulier, il existe l'excellente extension Markdown Python [furigana markdown](https://github.com/djfun/furigana_markdown) qui introduit les 2 syntaxes suivantes en markdown :
 
 1. `[字](-じ)` (ne pas oublier le tiret)
-2.  ma préférée : `字（じ）` (avec les parenthèses longues du clavier japonais)
+2.  ma préférée : 字&#65288;じ&#65289; (avec les parenthèses longues du clavier japonais)
 
 ### Pegdown
 
 [Pegdown](https://github.com/sirthias/pegdown) est une librairie JAVA qui transforme les sources Markdown en HTML, est open-source et complétement ouverte aux extensions. Elle est notamment utilisée par [Gaiden](https://github.com/kobo/gaiden).
 
-J'ai donc réalisé l'extensions [pegdown-furigana](https://github.com/vincent314/pegdown-furigana) afin que Pegdown puisse supporter les furigana. Très inspirée de l'extension Python de [Djfun](https://github.com/djfun/furigana_markdown/blob/master/furigana.py), cette extension supporte pour le moment uniquement la seconde syntaxe `字（じ）`.
+J'ai donc réalisé l'extensions [pegdown-furigana](https://github.com/vincent314/pegdown-furigana) afin que Pegdown puisse supporter les furigana. Très inspirée de l'extension Python de [Djfun](https://github.com/djfun/furigana_markdown/blob/master/furigana.py), cette extension supporte pour le moment uniquement la seconde syntaxe 字&#65288;じ&#65289;.
 
+### Showdown
+
+Tout comme Pegdown, [Showdown](https://github.com/showdownjs/showdown) est une librairie Javascript NodeJS de génération HTML à partir de sources Markdown. L'intérêt de cette bibliothèque en particulier, est son support d'extensions.
+
+Là encore, une nouvelle extension [showdown-furigana-extension](https://github.com/vincent314/showdown-furigana-extension) a été créée pour supporter les furigana.

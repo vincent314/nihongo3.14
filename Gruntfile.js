@@ -474,6 +474,8 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'clean:dist',
     'buildDocs',
+    'prepare',
+    'showdown:single',
     'epub',
     'wiredep',
     'useminPrepare',
@@ -500,7 +502,7 @@ module.exports = function (grunt) {
     'showdown:multi'
   ]);
 
-  grunt.registerTask('epub', ['prepare', 'showdown:single'], function () {
+  grunt.registerTask('epub', 'Generate epub file', function () {
     // calibre must be installed and ebook-convert must exist.
     var done = this.async();
     var convert = require('ebook-convert');
@@ -532,6 +534,7 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask('prepare', function() {
+    console.log('Mkdir .tmp/');
     grunt.file.mkdir('.tmp/');
   });
 };

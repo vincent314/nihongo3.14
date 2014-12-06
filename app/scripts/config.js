@@ -17,6 +17,10 @@ angular.module('nihongo').constant('CONFIG', {
         {
           title: 'LaTex',
           file: '/Cours_1annee/Latex.html'
+        },
+        {
+          title: 'Les Furigana',
+          file: '/Cours_3b/furigana.html'
         }
       ]
     },
@@ -392,10 +396,6 @@ angular.module('nihongo').constant('CONFIG', {
         {
           title: 'Cours 1',
           file: 'cours_01.html'
-        },
-        {
-          title: 'Les Furigana',
-          file: 'furigana.html'
         },
         {
           title: 'Cours 2',
