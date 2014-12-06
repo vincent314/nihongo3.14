@@ -151,7 +151,7 @@ angular.module('nihongo').constant('CONFIG', {
       title: '2ème année 2012-1013',
       dir: 'docs/html/Cours_2annee',
       pdf: 'docs/pdf/Cours_japonais_2annee.pdf',
-      epub: 'docs/epub/Cours de japonais 2eme annee - Vincent M_.epub',
+      epub: 'docs/epub/Cours de japonais niveau 2 2012-2013.epub',
       pages: [
         {
           title: 'Cours 1',
@@ -272,7 +272,7 @@ angular.module('nihongo').constant('CONFIG', {
     {
       title: '3ème année 2013-2014',
       dir: 'docs/html/Cours_3annee',
-      epub: 'docs/epub/Japonais niveau 3 - Vincent M_.epub',
+      epub: 'docs/epub/Cours de japonais niveau 3 2013-2014.epub',
       pages: [
         {
           title: 'Cours 1',
@@ -387,6 +387,7 @@ angular.module('nihongo').constant('CONFIG', {
     {
       title: '3ème année 2014-2015',
       dir: 'docs/html/Cours_3b',
+      epub: 'docs/epub/Cours de japonais niveau 3 2014-2015.epub',
       pages: [
         {
           title: 'Cours 1',

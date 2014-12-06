@@ -9,12 +9,12 @@
         <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{$index}}" aria-expanded="true"
            aria-controls="collapse{{$index}}">
           {{category.title}}</a>
-      <button type="button" class="btn btn-success btn-sm" ng-show="category.pdf">
+      <a class="btn btn-success btn-sm" ng-show="category.pdf" ng-href="{{category.pdf}}">
         PDF
-      </button>
-      <button type="button" class="btn btn-primary btn-sm" ng-show="category.epub">
+      </a>
+      <a class="btn btn-primary btn-sm" ng-show="category.epub" ng-href="{{category.epub}}">
         EPUB
-      </button>
+      </a>
     </div>
     <div id="collapse{{$index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading{{$index}}">
       <div class="panel-body">

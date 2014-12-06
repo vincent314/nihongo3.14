@@ -16,6 +16,8 @@ module.exports = function (grunt) {
   // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt);
 
+  grunt.loadNpmTasks('grunt-mkdir');
+
   // Configurable paths
   var config = {
     app: 'app',
@@ -52,9 +54,9 @@ module.exports = function (grunt) {
         files: ['<%= config.app %>/styles/{,*/}*.css'],
         tasks: ['newer:copy:styles', 'autoprefixer']
       },
-      md:{
+      md: {
         files: ['docs/src/**/*.md'],
-        tasks: ['showdown']
+        tasks: ['showdown:multi']
       },
       livereload: {
         options: {
@@ -388,16 +390,41 @@ module.exports = function (grunt) {
       }
     },
     showdown: {
-      default: {
+      options: {
+        extensions: ['table'],
+        customExtensions: ['showdown-furigana-extension']
+      },
+      multi: {
         files: [
           {
             cwd: 'docs/src',
             src: '**/*.md',
             dest: 'app/docs/html/'
-          }],
-        options: {
-          extensions: ['table'],
-          customExtensions: ['showdown-furigana-extension']
+          }]
+      },
+      single: {
+        files: [
+          {
+            cwd: 'docs/src/Cours_3b',
+            src: [
+              'cours_01.md',
+              'cours_02.md',
+              'cours_03.md',
+              'cours_04.md',
+              'cours_05.md',
+              'cours_06.md',
+              'cours_07.md',
+              'cours_08.md',
+              'vocabulaire_lecon_2.md'
+            ],
+            dest: '.tmp/single.html'
+          }]
+      },
+      mkdir: {
+        all: {
+          options: {
+            create: ['.tmp']
+          }
         }
       }
     }
@@ -447,6 +474,7 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'clean:dist',
     'buildDocs',
+    'epub',
     'wiredep',
     'useminPrepare',
     'concurrent:dist',
@@ -469,6 +497,41 @@ module.exports = function (grunt) {
 
   grunt.registerTask('buildDocs', [
     'copy:docs',
-    'showdown'
+    'showdown:multi'
   ]);
+
+  grunt.registerTask('epub', ['prepare', 'showdown:single'], function () {
+    // calibre must be installed and ebook-convert must exist.
+    var done = this.async();
+    var convert = require('ebook-convert');
+    var epub = convert({
+      source: '.tmp/single.html',
+      target: './app/docs/epub/Cours de japonais niveau 3 2014-2015.epub',
+      arguments: [
+        '--page-breaks-before', '//h:h1',
+        '--authors', 'Vincent M.',
+        '--title', 'Cours de japonais niveau 3 2014/2015'
+      ]
+    });
+
+    epub.on('end', function () {
+      console.log('Epub generated !');
+      done();
+    });
+    epub.on('error', function (res) {
+      console.log('Error : ' + res);
+      done();
+    });
+    epub.on('exit', function (res) {
+      if (res !== 0) {
+        done();
+        throw new Error('Epub creation Error (Error ' + res + ')');
+      }
+      done();
+    });
+  });
+
+  grunt.registerTask('prepare', function() {
+    grunt.file.mkdir('.tmp/');
+  });
 };
