@@ -21,7 +21,7 @@ module.exports = function (grunt) {
   // Configurable paths
   var config = {
     app: 'app',
-    dist: '../nihongo3.14_gh-pages'
+    dist: 'output/nihongo3.14_gh-pages'
   };
 
   // Define the configuration for all the tasks
