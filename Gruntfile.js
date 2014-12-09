@@ -415,7 +415,8 @@ module.exports = function (grunt) {
               'cours_06.md',
               'cours_07.md',
               'cours_08.md',
-              'vocabulaire_lecon_2.md'
+              'vocabulaire_lecon_2.md',
+              'cours_09.md'
             ],
             dest: '.tmp/single.html'
           }]
@@ -512,7 +513,8 @@ module.exports = function (grunt) {
       arguments: [
         '--page-breaks-before', '//h:h1',
         '--authors', 'Vincent M.',
-        '--title', 'Cours de japonais niveau 3 2014/2015'
+        '--title', 'Cours de japonais niveau 3 2014/2015',
+        '--level1-toc','//h:h1'
       ]
     });
 
