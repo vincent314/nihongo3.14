@@ -4,6 +4,8 @@ describe('Test page controller', function () {
 
   var $scope, CONFIG, $location, $rootScope;
 
+  var URL = 'page/url';
+
   beforeEach(function () {
     module('templates');
     module('nihongo', function ($provide, CONFIG) {
@@ -12,7 +14,7 @@ describe('Test page controller', function () {
   });
 
 
-  beforeEach(inject(function (_$location_, _$rootScope_, _$controller_, _CONFIG_) {
+  beforeEach(inject(function (_$location_, _$rootScope_, _CONFIG_) {
     $rootScope = _$rootScope_;
     $location = _$location_;
     CONFIG = _CONFIG_;
@@ -25,12 +27,16 @@ describe('Test page controller', function () {
 
     $controller('PageController', {
       $scope: $scope,
-      CONFIG: CONFIG
+      CONFIG: CONFIG,
+      params:{
+          url:URL
+      }
     });
     $scope.$digest();
     expect($scope.previous).toBeDefined();
     expect($scope.previous.path).toBe('#/category1/page-1');
     expect($scope.next).toBeDefined();
+    expect($scope.url).toBe(URL);
   }));
 
   it('Should previous link unavailable', inject(function ($controller) {
@@ -39,10 +45,14 @@ describe('Test page controller', function () {
     $scope = $rootScope.$new();
     $controller('PageController', {
       $scope: $scope,
-      CONFIG: CONFIG
+      CONFIG: CONFIG,
+      params:{
+          url:URL
+        }
     });
     $scope.$digest();
     expect($scope.previous).toBeUndefined();
     expect($scope.next.path).toBe('#/category1/page-2');
+    expect($scope.url).toBe(URL);
   }));
 });

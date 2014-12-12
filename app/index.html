@@ -75,7 +75,7 @@
           </ul>
         </li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Supports de
+          <a class="dropdown-toggle" data-toggle="dropdown">Supports de
             cours <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li class="dropdown-header">3ième année</li>
@@ -110,9 +110,7 @@
       </div>
     </rp>
   </ruby>
-  <div pagination previous="previous" next="next"></div>
-  <div class="markdown-body" ng-view=""></div>
-  <div pagination previous="previous" next="next"></div>
+  <div ng-view=""></div>
 </div>
 
 <footer>
@@ -130,7 +128,6 @@
 <!-- build:js(.) scripts/vendor.js -->
 <!-- bower:js -->
 <script src="bower_components/jquery/dist/jquery.js"></script>
-<script src="bower_components/angular-mocks/angular-mocks.js"></script>
 <script src="bower_components/lodash/dist/lodash.compat.js"></script>
 <!-- endbower -->
 <!-- endbuild -->

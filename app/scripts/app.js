@@ -7,9 +7,16 @@ angular.module('nihongo', ['ngRoute','infinite-scroll','ngSanitize'])
       _(category.pages).forEach(function (page) {
         var route = '/' + getSlug(category.title) + '/' + getSlug(page.title);
         $routeProvider.when(route, {
-          templateUrl: category.dir + '/' + page.file,
+          templateUrl: 'templates/page.html',
           controller: 'PageController',
-          title: page.title
+          title: page.title,
+          resolve: {
+            params:function() {
+              return {
+                url: category.dir + '/' + page.file
+              };
+            }
+          }
         });
       });
     });
