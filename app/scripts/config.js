@@ -430,7 +430,7 @@ angular.module('nihongo').constant('CONFIG', {
           file: 'cours_08.html'
         },
         {
-          title: 'Vocubulaire leçon 2',
+          title: 'Vocabulaire leçon 2',
           file: 'vocabulaire_lecon_2.html'
         },
         {
