@@ -52,7 +52,8 @@
         <li><a href="#"><i class="fa fa-home fa-fw"></i> {{'HOME' | translate}}</a></li>
         <li><a href="#/timeline"><i class="fa fa-graduation-cap fa-fw"></i> {{'LAST_LESSONS' | translate}}</a></li>
         <li class="dropdown">
-          <a data-toggle="dropdown" class="dropdown-toggle"><i class="fa fa-download fa-fw"></i> {{'DOWNLOADS' | translate}} <span class="caret"></span></a>
+          <a data-toggle="dropdown" class="dropdown-toggle"><i class="fa fa-download fa-fw"></i> {{'DOWNLOADS' |
+            translate}} <span class="caret"></span></a>
           <ul role="menu" class="dropdown-menu">
             <li class="dropdown-header">PDF</li>
             <li><a href="docs/pdf/Cours_japonais_1annee.pdf">{{'LESSONS_YEAR_1' | translate}}</a></li>
@@ -65,7 +66,8 @@
           </ul>
         </li>
         <li class="dropdown">
-          <a data-toggle="dropdown" class="dropdown-toggle"><i class="fa fa-external-link fa-fw"></i> {{'LINKS' | translate}} <span class="caret"></span></a>
+          <a data-toggle="dropdown" class="dropdown-toggle"><i class="fa fa-external-link fa-fw"></i> {{'LINKS' |
+            translate}} <span class="caret"></span></a>
           <ul role="menu" class="dropdown-menu">
             <li><a href="http://jisho.org">Denshi Jisho</a></li>
             <li><a href="http://beta.jisho.org">Denshi Jisho (bêta)</a></li>
@@ -75,10 +77,12 @@
           </ul>
         </li>
         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-book fa-fw"></i> {{'LESSONS_MANUAL' | translate}}<span class="caret"></span></a>
+          <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-book fa-fw"></i> {{'LESSONS_MANUAL' |
+            translate}}<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li class="dropdown-header">{{'YEAR_3' | translate}}</li>
-            <li><a href="http://www.jpf.org.uk/language/teaching_chikara_reading.php#subtopics">{{'ALL' | translate}}</a></li>
+            <li><a href="http://www.jpf.org.uk/language/teaching_chikara_reading.php#subtopics">{{'ALL' |
+              translate}}</a></li>
             <li><a href="http://www.jpf.org.uk/language/download/J1homestay.pdf">J1 Homestay</a></li>
             <li><a href="http://www.jpf.org.uk/language/download/chikara_reading/J2oiwai.pdf">J2 Celebrations</a></li>
             <li><a href="http://www.jpf.org.uk/language/download/chikara_reading/J3kimono.pdf">J3 Kimono</a></li>
@@ -88,8 +92,15 @@
             <li><a href="http://www.jpf.org.uk/language/download/chikara_reading/J7jishin.pdf">J7 Jishin</a></li>
           </ul>
         </li>
-
-
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-language fa-fw"></i> {{'LANG' | translate}}<span
+            class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a ng-click="switchLang('fr')">Français</a></li>
+            <li><a ng-click="switchLang('en')">English</a></li>
+            <li><a ng-click="switchLang('jp')">日本語</a></li>
+          </ul>
+        </li>
       </ul>
     </div>
     <!--/.nav-collapse -->
@@ -115,7 +126,7 @@
 <footer>
   <hr/>
   <div class="text-center">
-    <small>À propos
+    <small>{{'ABOUT' | translate}}
       <a href="https://github.com/vincent314"><i class="fa fa-github fa-lg"></i> vincent314</a>
       <a href="https://twitter.com/vincent31416"><i class="fa fa-twitter fa-lg"></i> @vincent31416</a>
     </small>
