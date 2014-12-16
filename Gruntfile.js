@@ -541,4 +541,26 @@ module.exports = function (grunt) {
     console.log('Mkdir .tmp/');
     grunt.file.mkdir('.tmp/');
   });
+
+  grunt.registerTask('elasticsearch', function () {
+    var done = this.async();
+    var http = require('http');
+    var content = grunt.file.read('app/docs/html/Cours_3b/cours_09.html');
+
+    var options = {
+      hostname:'localhost',
+      port:9200,
+      path:'/',
+      method:'GET'
+    };
+    console.log('Toc toc ElasticSearch');
+    var req = http.request(options, function (res) {
+      console.log('STATUS:' + res.statusCode);
+      res.on('data', function (chunk) {
+        console.log(chunk.toString());
+        done();
+      });
+    });
+    req.end();
+  });
 };
