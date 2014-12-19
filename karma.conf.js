@@ -7,6 +7,8 @@ module.exports = function (config) {
     // testing framework to use (jasmine/mocha/qunit/...)
     frameworks: ['jasmine'],
 
+    reporters: ['coverage'],
+
     // list of files / patterns to load in the browser
     files: [
       'bower_components/angular/angular.js',
@@ -56,15 +58,24 @@ module.exports = function (config) {
     singleRun: false,
 
     preprocessors: {
-      "app/templates/*.html":"ng-html2js",
-      "test/html/dir/*.html": "ng-html2js"
+      "app/templates/*.html": "ng-html2js",
+      "test/html/dir/*.html": "ng-html2js",
+      "app/scripts/**/*.js": "coverage"
     },
 
     ngHtml2JsPreprocessor: {
-      cacheIdFromPath: function(filepath) {
-        return filepath.replace(new RegExp('(^app/|^test/html/)'),'');
+      cacheIdFromPath: function (filepath) {
+        return filepath.replace(new RegExp('(^app/|^test/html/)'), '');
       },
       moduleName: 'templates'
+    },
+
+    coverageReporter: {
+      reporters: [{
+        type: 'html',
+        dir: 'coverage/'
+      },
+        {type: 'text'}]
     }
   });
 };
