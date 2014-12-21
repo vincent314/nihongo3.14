@@ -7,12 +7,12 @@ angular.module('nihongo').constant('CONFIG', {
       dir: 'docs/html',
       pages: [
         {
-          title: 'Anki',
-          file: '/Cours_1annee/anki.html'
-        },
-        {
           title: 'Taper au clavier en japonais',
           file: '/Cours_1annee/clavier_japonais.html'
+        },
+        {
+          title: 'Anki',
+          file: '/Cours_1annee/anki.html'
         },
         {
           title: 'LaTex',
@@ -436,6 +436,10 @@ angular.module('nihongo').constant('CONFIG', {
         {
           title: 'Cours 9',
           file: 'cours_09.html'
+        },
+        {
+          title: 'Cours 10',
+          file: 'cours_10.html'
         }
       ]
     }

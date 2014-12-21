@@ -1,9 +1,5 @@
 'use strict';
 
-angular.module('nihongo').controller('TimelineController',
-  ['$scope', 'CONFIG', 'NihongoService', '$http', '$sanitize', '$q',
-    TimelineController]);
-
 /**
  *
  *
@@ -34,6 +30,10 @@ function TimelineController($scope, CONFIG, NihongoService, $http, $sanitize, $q
     }
   };
 }
+
+angular.module('nihongo').controller('TimelineController',
+  ['$scope', 'CONFIG', 'NihongoService', '$http', '$sanitize', '$q',
+    TimelineController]);
 
 /**
  * Get HTML file content and add the content to the stream

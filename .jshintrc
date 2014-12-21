@@ -29,6 +29,10 @@
     "inject",
     "expect",
     "spyOn",
-    "xit"
+    "xit",
+    "runs",
+    "done",
+    "waitsFor",
+    "afterEach"
   ]
 }

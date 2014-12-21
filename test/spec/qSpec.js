@@ -20,7 +20,7 @@ describe('q tests', function () {
       promise.then(function (hello) {
         return  hello + ' World';
       }).then(function(sentence){
-        result = "Sentence : " + sentence;
+        result = 'Sentence : ' + sentence;
       });
       $rootScope.$apply();
     });
@@ -32,9 +32,5 @@ describe('q tests', function () {
     runs(function() {
       expect(result).toBe('Sentence : Hello World');
     });
-  });
-
-  it('Test async', function (done) {
-    expect(true).toBe(true);
   });
 });

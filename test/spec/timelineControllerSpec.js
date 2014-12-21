@@ -98,7 +98,7 @@ describe('Test TimelineController', function () {
   }));
 
   it('should test paging function', function () {
-    var controller, content;
+    var controller;
 
     runs(function () {
       controller = createController();
@@ -117,10 +117,10 @@ describe('Test TimelineController', function () {
   it('should get http request content with promises', function () {
     var content,error;
 
-    $http.get('dir/pageA.html').success(function (data, status) {
+    $http.get('dir/pageA.html').success(function (data) {
       console.log(data);
       content = data;
-    }).error(function (status) {
+    }).error(function () {
       console.log(error);
     });
 
@@ -132,7 +132,7 @@ describe('Test TimelineController', function () {
   });
 
   it('should test the end of the timeline', function () {
-    var controller = createController();
+    createController();
 
     // call more than 2 times
     $scope.pagingFunction();
@@ -144,6 +144,6 @@ describe('Test TimelineController', function () {
 
     runs(function(){
       expect($scope.pages).toEqual(['Page B content', 'Page A content']);
-    })
+    });
   });
 });
