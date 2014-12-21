@@ -130,4 +130,20 @@ describe('Test TimelineController', function () {
       expect(content).toBe('Page A content');
     });
   });
+
+  it('should test the end of the timeline', function () {
+    var controller = createController();
+
+    // call more than 2 times
+    $scope.pagingFunction();
+    $scope.pagingFunction();
+    $scope.pagingFunction();
+    $scope.pagingFunction();
+
+    $httpBackend.flush();
+
+    runs(function(){
+      expect($scope.pages).toEqual(['Page B content', 'Page A content']);
+    })
+  });
 });
