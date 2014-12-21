@@ -1,33 +1,55 @@
 'use strict';
 
 angular.module('nihongo').controller('TimelineController',
-  ['$scope', 'CONFIG', 'NihongoService', '$http', '$sanitize',
-    function ($scope, CONFIG, NihongoService, $http, $sanitize) {
-      var timeline = NihongoService.buildTimeline(CONFIG.categories);
-      var currentIndex = 0;
-      $scope.pages = [];
+  ['$scope', 'CONFIG', 'NihongoService', '$http', '$sanitize', '$q',
+    TimelineController]);
 
+/**
+ *
+ *
+ * @param $scope
+ * @param CONFIG
+ * @param NihongoService
+ * @param $http
+ * @param $sanitize
+ * @constructor
+ */
+function TimelineController($scope, CONFIG, NihongoService, $http, $sanitize, $q) {
+  var self = this;
+  self.$http = $http;
+  self.$sanitize = $sanitize;
+  self.$scope = $scope;
+  self.$q = $q;
+  self.currentIndex = 0;
 
-      function printPage(idx) {
-        var page = timeline[idx];
-        console.log(page.category.dir + '/' + page.file);
-        $http.get(page.category.dir + '/' + page.file)
-          .success(function (content) {
-            $scope.pages.push($sanitize(content));
-          })
-          .error(function (data, status) {
-            console.log(status);
-            console.log(data);
-          });
-      }
+  $scope.pages = [];
+  self.timeline = NihongoService.buildTimeline(CONFIG.categories);
 
-      printPage(currentIndex);
+  self.printPage(self.currentIndex);
 
-      $scope.pagingFunction = function () {
-        if (currentIndex < timeline.length - 1) {
-          currentIndex++;
-          printPage(currentIndex);
-        }
-      };
+  $scope.pagingFunction = function () {
+    if (self.currentIndex < self.timeline.length - 1) {
+      self.currentIndex++;
+      self.printPage(self.currentIndex);
+    }
+  };
+}
 
-    }]);
+/**
+ * Get HTML file content and add the content to the stream
+ *
+ * @param idx
+ */
+TimelineController.prototype.printPage = function (idx) {
+  var self = this;
+  var page = this.timeline[idx];
+  return this.$http.get(page.category.dir + '/' + page.file)
+    .then(
+    function (response) {
+      self.$scope.pages.push(self.$sanitize(response.data));
+      return response.data;
+    }).catch(function (response) {
+      var msg = response.status + ' : ' + response.data;
+      console.log(msg);
+    });
+};
