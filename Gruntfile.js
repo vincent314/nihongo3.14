@@ -430,6 +430,13 @@ module.exports = function (grunt) {
           }
         }
       }
+    },
+    jasmine_node:{
+      options:{
+        extensions:'js',
+        specNameMatcher:'spec'
+      },
+      all:['test/node/']
     }
   });
 
@@ -496,6 +503,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('default', [
     'newer:jshint',
+    'jasmine_node',
     'test',
     'build'
   ]);
@@ -516,7 +524,7 @@ module.exports = function (grunt) {
         '--page-breaks-before', '//h:h1',
         '--authors', 'Vincent M.',
         '--title', 'Cours de japonais niveau 3 2014/2015',
-        '--level1-toc','//h:h1'
+        '--level1-toc', '//h:h1'
       ]
     });
 
@@ -537,30 +545,22 @@ module.exports = function (grunt) {
     });
   });
 
-  grunt.registerTask('prepare', function() {
+  grunt.registerTask('prepare', function () {
     console.log('Mkdir .tmp/');
     grunt.file.mkdir('.tmp/');
   });
 
   grunt.registerTask('elasticsearch', function () {
-    var done = this.async();
-    var http = require('http');
-    var content = grunt.file.read('app/docs/html/Cours_3b/cours_09.html');
+    var ElasticSearch = require('./scripts/elasticsearch');
 
     var options = {
-      hostname:'localhost',
-      port:9200,
-      path:'/',
-      method:'GET'
+      hostname: 'localhost',
+      port: 9200
     };
-    console.log('Toc toc ElasticSearch');
-    var req = http.request(options, function (res) {
-      console.log('STATUS:' + res.statusCode);
-      res.on('data', function (chunk) {
-        console.log(chunk.toString());
-        done();
-      });
-    });
-    req.end();
+    var es = new ElasticSearch(this, grunt, options);
+
+    //es.toctoc();
+
+    es.indexFile('app/docs/html/Cours_3b/cours_09.html', 'cours_3b/cours_09', 1);
   });
 };

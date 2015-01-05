@@ -1,0 +1,94 @@
+DELETE nihongo
+
+PUT nihongo
+{
+    "settings": {
+    "number_of_shards": 1,
+    "number_of_replicas": 1,
+    "analysis": {
+      "analyzer": {
+        "my_french": {
+          "type": "french",
+          "filter": [
+            "standard",
+            "lowercase",
+            "stop"
+          ],
+          "char_filter": [
+            "html_strip"
+          ]
+        },
+        "my_japanese": {
+          "type": "kuromoji",
+          "filter": [
+            "standard",
+            "lowercase",
+            "stop"
+          ],
+          "char_filter": [
+            "html_strip"
+          ]
+        },
+        "romaji_analyzer":{
+          "tokenizer":"kuromoji_tokenizer",
+          "filter":["romaji_readingform"]
+        },
+        "html": {
+          "type": "custom",
+          "tokenizer": "standard",
+          "filter": [
+            "standard",
+            "lowercase",
+            "stop"
+          ],
+          "char_filter": [
+            "html_strip"
+          ]
+        }
+      },
+      "filter": {
+        "romaji_readingform":{
+          "type":"kuromoji_readingform",
+          "use_romaji":true
+        }
+      }
+    }
+  },
+  "mappings": {
+    "article":{
+      "properties":{
+        "title":{
+          "type": "string"
+        },
+        "uri":{
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "french":{
+          "type":"string",
+          "analyzer": "my_french",
+          "store":true
+        },
+        "japanese":{
+          "type": "string",
+          "analyzer": "romaji_analyzer",
+          "store":true
+        }
+      }
+    }
+  }
+}
+
+GET _search
+{
+  "query": {
+    "match": {
+      "japanese": "donna"
+    }
+  }
+}
+
+GET nihongo/_analyze?analyzer=romaji_analyzer
+{
+  "<li><ruby><rb>始</rb><rp>(</rp><rt>はじ</rt><rp>)</rp></ruby>めます"
+}
