@@ -94,13 +94,18 @@ describe('ElasticSearch Spec', function () {
     expect(result).toBe('#/categorie-title/page-title');
   });
 
-  it('Should index all files from configuration file',function(done) {
-    //nock('http://localhost:9200').put('/nihongo/article/0').reply(200,
-    //  {"_index":"nihongoXXX","_type":"articleXXX","_id":"XXXX","_version":1,"created":true});
+  it('Should index all files from configuration file',function() {
+    nock('http://localhost:9200').filteringPath(/\d+^/, 'XX').put('/nihongo/article/XX').reply(200,
+      {"_index":"nihongoXXX","_type":"articleXXX","_id":"XXXX","_version":1,"created":true});
+
+    spyOn(elasticSearch.configReader, 'read').andCallThrough();
+    spyOn(elasticSearch, 'indexFile').andCallThrough();
 
     //nock.recorder.rec();
     elasticSearch.indexFilesFromConfig('app/scripts/config.js');
 
-    done();
+    expect(elasticSearch.configReader.read).toHaveBeenCalledWith('app/scripts/config.js');
+    expect(elasticSearch.indexFile).toHaveBeenCalled();
+    expect(elasticSearch.indexFile.callCount).toBe(100);
   });
 });
