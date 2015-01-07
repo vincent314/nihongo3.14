@@ -36,7 +36,6 @@ describe('ElasticSearch Spec', function () {
     elasticSearch.toctoc().then(function (result) {
       expect(result).toBeDefined();
       expect(result.status).toBe(200);
-      expect(nock.isDone()).toBe(true);
       done();
     }).fail(function (e) {
       expect(e).toBeUndefined();
@@ -93,5 +92,15 @@ describe('ElasticSearch Spec', function () {
   it('Should build URL', function () {
     var result = elasticSearch.getUrl('catégorie title', 'page title');
     expect(result).toBe('#/categorie-title/page-title');
+  });
+
+  it('Should index all files from configuration file',function(done) {
+    //nock('http://localhost:9200').put('/nihongo/article/0').reply(200,
+    //  {"_index":"nihongoXXX","_type":"articleXXX","_id":"XXXX","_version":1,"created":true});
+
+    //nock.recorder.rec();
+    elasticSearch.indexFilesFromConfig('app/scripts/config.js');
+
+    done();
   });
 });

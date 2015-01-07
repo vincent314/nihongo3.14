@@ -31,7 +31,7 @@ PUT nihongo
         },
         "romaji_analyzer":{
           "tokenizer":"kuromoji_tokenizer",
-          "filter":["romaji_readingform"]
+          "filter":["romaji_readingform","kuromoji_stemmer"]
         },
         "html": {
           "type": "custom",
@@ -56,6 +56,9 @@ PUT nihongo
   },
   "mappings": {
     "article":{
+      "_source":{
+        "excludes":["french","japanese"]
+      },
       "properties":{
         "title":{
           "type": "string"
@@ -66,13 +69,11 @@ PUT nihongo
         },
         "french":{
           "type":"string",
-          "analyzer": "my_french",
-          "store":true
+          "analyzer": "my_french"
         },
         "japanese":{
           "type": "string",
-          "analyzer": "romaji_analyzer",
-          "store":true
+          "analyzer": "romaji_analyzer"
         }
       }
     }
