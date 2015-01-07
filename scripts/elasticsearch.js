@@ -10,6 +10,10 @@ function ElasticSearch(index,options) {
   this.index = index;
 }
 
+/**
+ *
+ * @returns {promise|*|Q.promise}
+ */
 ElasticSearch.prototype.toctoc = function () {
   var deferred = Q.defer();
 
@@ -83,11 +87,18 @@ ElasticSearch.prototype.indexFile = function (file, uri, id) {
 ElasticSearch.prototype.indexFilesFromConfig = function (configFile) {
   var config = configReader.read(configFile);
   var self = this;
+  var id=0;
+
 
   config.categories.forEach(function (category) {
     category.pages.forEach(function (page) {
-      //self.indexFile(category.dir + page.file,
-
+      var file = 'app/' + category.dir + '/' + page.file;
+      self.indexFile(file,self.getUrl(category.title,page.title),id).then(function(response){
+        console.log(file + ' indexed : ' + JSON.stringify(response));
+      }).fail(function(err){
+        console.log('ERROR : ' + JSON.stringify(err));
+      });
+      id++;
     });
   })
 };
