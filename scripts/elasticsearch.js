@@ -8,6 +8,7 @@ var getSlug = require('speakingurl');
 function ElasticSearch(index,options) {
   this.options = options;
   this.index = index;
+  this.configReader = configReader;
 }
 
 /**
