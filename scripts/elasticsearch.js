@@ -106,7 +106,6 @@ ElasticSearch.prototype.indexFilesFromConfig = function (configFile, grunt) {
   var self = this;
   var result = Q(0);
 
-
   config.categories.forEach(function (category) {
     category.pages.forEach(function (page) {
       var file = 'app/' + category.dir + '/' + page.file;

@@ -120,7 +120,6 @@ describe('ElasticSearch Spec', function () {
     expect(result).toBe('#/categorie-title/page-title');
   });
 
-
   it('Should filter single kanji ruby', function () {
     var result = elasticSearch.filter('<ruby class="kanji"><rb>小</rb><rp>(</rp><rt>しょう</rt><rp>)</rp></ruby>');
 

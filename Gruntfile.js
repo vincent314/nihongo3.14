@@ -573,6 +573,5 @@ module.exports = function (grunt) {
       grunt.log.error(JSON.stringify(err));
       done();
     });
-
   });
 };
