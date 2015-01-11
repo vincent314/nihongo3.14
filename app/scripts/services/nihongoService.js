@@ -1,5 +1,5 @@
 'use strict';
-angular.module('nihongo').service('NihongoService', function () {
+angular.module('nihongo').service('NihongoService', ['CONFIG','$resource',function (CONFIG,$resource) {
 
   var NihongoService = {};
 
@@ -28,5 +28,16 @@ angular.module('nihongo').service('NihongoService', function () {
       .value();
   };
 
+  /**
+   *
+   * @param searchString
+   * @returns {*}
+   */
+  NihongoService.search = function(searchString){
+    var resource = $resource('http://' + CONFIG.es.host + ':' + CONFIG.es.port + '/' + CONFIG.es.uri + '/_search');
+
+    return resource.get({q:('japanese:' + searchString + ' OR french:' + searchString)}).$promise;
+  };
+
   return NihongoService;
-});
+}]);

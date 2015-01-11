@@ -437,6 +437,11 @@ module.exports = function (grunt) {
         specNameMatcher:'spec'
       },
       all:['test/node/']
+    },
+    debug: {
+      options: {
+        open: false // do not open node-inspector in Chrome automatically
+      }
     }
   });
 
@@ -551,16 +556,23 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask('elasticsearch', function () {
+    var done = this.async();
+
     var ElasticSearch = require('./scripts/elasticsearch');
 
     var options = {
       hostname: 'localhost',
       port: 9200
     };
-    var es = new ElasticSearch(this, grunt, options);
+    var es = new ElasticSearch('nihongo', options,grunt);
 
-    //es.toctoc();
+    es.indexFilesFromConfig('app/scripts/config.js',grunt).then(function(){
+      grunt.log.ok();
+      done();
+    }).fail(function(err) {
+      grunt.log.error(JSON.stringify(err));
+      done();
+    });
 
-    es.indexFile('app/docs/html/Cours_3b/cours_09.html', 'cours_3b/cours_09', 1);
   });
 };

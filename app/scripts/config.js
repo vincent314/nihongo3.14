@@ -1,6 +1,11 @@
 'use strict';
 
 angular.module('nihongo').constant('CONFIG', {
+  es:{
+    host:'localhost',
+    port:'9200',
+    uri:'nihongo/article'
+  },
   categories: [
     {
       title: 'Articles annexes',

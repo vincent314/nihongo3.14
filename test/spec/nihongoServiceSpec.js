@@ -1,24 +1,54 @@
 'use strict';
 
 describe('Test Nihongo Service', function () {
+  var NihongoService, CONFIG, $httpBackend;
+
 
   beforeEach(module('nihongo'));
-
-  it('Should build route with hash', inject(function (NihongoService) {
-    var route = NihongoService.buildRoute('Category 1', 'Page 1');
-    expect(route).toBe('#/category-1/page-1');
+  beforeEach(inject(function (_NihongoService_, _CONFIG_, _$httpBackend_) {
+    NihongoService = _NihongoService_;
+    CONFIG = _CONFIG_;
+    $httpBackend = _$httpBackend_;
   }));
 
-  it('Should build timeline', inject(function (NihongoService, CONFIG) {
+  it('Should build route with hash', function () {
+    var route = NihongoService.buildRoute('Category 1', 'Page 1');
+    expect(route).toBe('#/category-1/page-1');
+  });
+
+  it('Should build timeline', function () {
     // WHEN
     var timeline = NihongoService.buildTimeline(CONFIG.categories);
 
     var expected = [
-      {title: 'Page B', file: 'pageB.html',category:{dir:'dir'}},
-      {title: 'Page A', file: 'pageA.html',category:{dir:'dir'}},
-      {title: 'Page 2', file: 'page2.html',category:{dir:'dir'}},
-      {title: 'Page 1', file: 'page1.html',category:{dir:'dir'}}];
+      {title: 'Page B', file: 'pageB.html', category: {dir: 'dir'}},
+      {title: 'Page A', file: 'pageA.html', category: {dir: 'dir'}},
+      {title: 'Page 2', file: 'page2.html', category: {dir: 'dir'}},
+      {title: 'Page 1', file: 'page1.html', category: {dir: 'dir'}}];
     expect(timeline).toEqual(expected);
-  }));
+  });
 
+  it('Should do a search', function () {
+    $httpBackend.when('GET', 'toc.html').respond('');
+    $httpBackend.when('GET', 'http://localhost:9200/nihongo/article/_search?query=%7B%22query%22:%7B%22match%22:%7B%22japanese%22:%22sample%22%7D%7D%7D').respond({toto: 'titi'});
+
+    var result;
+
+    runs(function () {
+      NihongoService.search('sample').then(function (r) {
+        result = r;
+      }).catch(function (err) {
+        result = err;
+      });
+      $httpBackend.flush();
+    });
+
+    waitsFor(function () {
+      return result;
+    });
+
+    runs(function () {
+      expect(result.toto).toBe('titi');
+    });
+  });
 });
