@@ -2,8 +2,8 @@
 
 angular.module('nihongo').constant('CONFIG', {
   es:{
-    host:'localhost',
-    port:'9200',
+    host:'elastic-vmn.rhcloud.com',
+    port:'80',
     uri:'nihongo/article'
   },
   categories: [

@@ -24,6 +24,14 @@ module.exports = function (grunt) {
     dist: 'output/nihongo3.14_gh-pages'
   };
 
+  var esOptions = {
+    hostname: 'elastic-vmn.rhcloud.com',
+    port: 80
+    //hostname:'localhost',
+    //port:9200
+  };
+  var auth = require('./es-auth.js');
+
   // Define the configuration for all the tasks
   grunt.initConfig({
 
@@ -560,13 +568,24 @@ module.exports = function (grunt) {
 
     var ElasticSearch = require('./scripts/elasticsearch');
 
-    var options = {
-      hostname: 'localhost',
-      port: 9200
-    };
-    var es = new ElasticSearch('nihongo', options,grunt);
+    var es = new ElasticSearch('nihongo', esOptions,grunt,auth);
 
     es.indexFilesFromConfig('app/scripts/config.js',grunt).then(function(){
+      grunt.log.ok();
+      done();
+    }).fail(function(err) {
+      grunt.log.error(JSON.stringify(err));
+      done();
+    });
+  });
+
+
+  grunt.registerTask('es-init', function () {
+    var done = this.async();
+
+    var ElasticSearch = require('./scripts/elasticsearch');
+    var es = new ElasticSearch('nihongo', esOptions,grunt,auth);
+    es.init().then(function () {
       grunt.log.ok();
       done();
     }).fail(function(err) {

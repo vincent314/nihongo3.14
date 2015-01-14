@@ -11,11 +11,12 @@ var getSlug = require('speakingurl');
  * @param options
  * @constructor
  */
-function ElasticSearch(index, options,grunt) {
+function ElasticSearch(index, options, grunt, auth) {
   this.options = options;
   this.index = index;
   this.configReader = configReader;
   this.grunt = grunt;
+  this.auth = auth;
 }
 
 /**
@@ -76,17 +77,29 @@ ElasticSearch.prototype.indexFile = function (file, category, page, id) {
   entry.category = category.title;
   entry.page = page.title;
 
-  var options = extend({path: '/' + this.index + '/article/' + id, method: 'PUT'}, this.options);
+  // Basic Authentification
+  var authHeader = {};
+  if (this.auth) {
+    var user = this.auth.user;
+    var password = this.auth.password;
+    authHeader = user + ':' + password;
+  }
+
+  var options = extend({
+    path: '/' + this.index + '/article/' + id,
+    method: 'PUT',
+    auth: authHeader
+  }, this.options);
+
 
   var req = http.request(options, function (res) {
     if (res.statusCode !== 200 && res.statusCode !== 201) {
       deferred.reject({statusCode: res.statusCode});
       self.logError('Error indexing : ' + file);
+      return;
     }
-
     res.on('data', function (chunk) {
       deferred.resolve(id);
-      self.logOK('Success indexing : ' + file);
     });
   });
 
@@ -109,7 +122,7 @@ ElasticSearch.prototype.indexFilesFromConfig = function (configFile, grunt) {
   config.categories.forEach(function (category) {
     category.pages.forEach(function (page) {
       var file = 'app/' + category.dir + '/' + page.file;
-      result = result.then(function(id){
+      result = result.then(function (id) {
         return self.indexFile(file, category, page, id + 1);
       });
     });
@@ -126,20 +139,141 @@ ElasticSearch.prototype.filter = function (content) {
   return content.replace(/<ruby( class="kanji")?><rb>([^<]+)<\/rb><rp>.<\/rp><rt>[^<]+<\/rt><rp>.<\/rp><\/ruby>/ig, '$2');
 };
 
-ElasticSearch.prototype.logOK = function(msg) {
-  if(this.grunt) {
+ElasticSearch.prototype.logOK = function (msg) {
+  if (this.grunt) {
     this.grunt.log.ok(msg);
   } else {
     console.log('OK:' + msg);
   }
 };
 
-ElasticSearch.prototype.logError = function(msg) {
-  if(this.grunt) {
+ElasticSearch.prototype.logError = function (msg) {
+  if (this.grunt) {
     this.grunt.log.error(msg);
   } else {
     console.log('ERROR:' + msg);
   }
+};
+
+ElasticSearch.prototype.init = function () {
+  var deferred = Q.defer();
+
+  var data = {
+    "settings": {
+      "number_of_shards": 1,
+      "number_of_replicas": 1,
+      "analysis": {
+        "analyzer": {
+          "my_french": {
+            "type": "french",
+            "filter": [
+              "standard",
+              "lowercase",
+              "stop"
+            ],
+            "char_filter": [
+              "html_strip"
+            ]
+          },
+          "my_japanese": {
+            "type": "kuromoji",
+            "filter": [
+              "standard",
+              "lowercase",
+              "stop"
+            ],
+            "char_filter": [
+              "html_strip"
+            ]
+          },
+          "romaji_analyzer": {
+            "tokenizer": "kuromoji_tokenizer",
+            "filter": ["romaji_readingform", "kuromoji_stemmer"]
+          },
+          "html": {
+            "type": "custom",
+            "tokenizer": "standard",
+            "filter": [
+              "standard",
+              "lowercase",
+              "stop"
+            ],
+            "char_filter": [
+              "html_strip"
+            ]
+          }
+        },
+        "filter": {
+          "romaji_readingform": {
+            "type": "kuromoji_readingform",
+            "use_romaji": true
+          }
+        }
+      }
+    },
+    "mappings": {
+      "article": {
+        "_source": {
+          "excludes": ["french", "japanese"]
+        },
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "uri": {
+            "type": "string",
+            "index": "not_analyzed"
+          },
+          "french": {
+            "type": "string",
+            "analyzer": "my_french"
+          },
+          "japanese": {
+            "type": "string",
+            "analyzer": "romaji_analyzer"
+          },
+          "category": {
+            "type": "string"
+            , "analyzer": "french"
+          },
+          "page": {
+            "type": "string",
+            "analyzer": "french"
+          }
+        }
+      }
+    }
+  };
+
+  // Basic Authentification
+  var authHeader = {};
+  if (this.auth) {
+    var user = this.auth.user;
+    var password = this.auth.password;
+    authHeader = user + ':' + password;
+  }
+
+  var options = extend({
+    path: this.index,
+    method: 'PUT',
+    auth: authHeader
+  }, this.options);
+
+  var req = http.request(options, function (res) {
+    //if (res.statusCode != 200 && res.statusCode != 201) {
+    //  deferred.reject(res.statusCode);
+    //  return;
+    //}
+
+    res.on('data', function (chunk) {
+      deferred.resolve(chunk.toString());
+    });
+  });
+
+  req.write(JSON.stringify(data));
+  req.end();
+
+  return deferred.promise;
 };
 
 module.exports = ElasticSearch;

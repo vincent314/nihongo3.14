@@ -67,7 +67,6 @@ describe('ElasticSearch Spec', function () {
       expect(elasticSearch.configReader.read).toHaveBeenCalledWith('test/data/config.js');
       expect(elasticSearch.indexFile).toHaveBeenCalled();
       expect(elasticSearch.indexFile.callCount).toBe(6);
-      expect(grunt.log.ok.callCount).toBe(6);
       done();
     }).fail(function (err) {
       console.log('All files loading failure ' + err);
