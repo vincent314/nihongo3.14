@@ -1,12 +1,30 @@
 'use strict';
 
-angular.module('nihongo').controller('SearchController', ['$scope','$routeParams','NihongoService',function ($scope,$routeParams,NihongoService){
-  var searchString = $routeParams.searchString;
+var SearchController = function ($routeParams, NihongoService) {
+    var self = this;
+    var searchString = $routeParams.searchString;
 
-  NihongoService.search(searchString).then(function(result) {
-    $scope.total = result.hits.total;
-    $scope.hits = result.hits.hits;
-  }).catch(function(err) {
-    $scope.error = err;
-  });
-}]);
+    if (!searchString) {
+      this.total = 0;
+      this.hits = [];
+    } else {
+      NihongoService.search(searchString).then(function (result) {
+        self.searchSuccess(result);
+      }).catch(function (err) {
+        self.searchFailure(err);
+      });
+    }
+  };
+
+SearchController.prototype.searchSuccess = function (result) {
+  this.total = result.hits.total;
+  this.hits = result.hits.hits;
+};
+
+SearchController.prototype.searchFailure = function (err) {
+  this.error = err;
+};
+
+SearchController.inject = ['$routeParams', 'NihongoService'];
+
+angular.module('nihongo').controller('SearchController', SearchController);

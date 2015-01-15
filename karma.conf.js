@@ -23,6 +23,7 @@ module.exports = function (config) {
       'app/scripts/app.js',
       'app/scripts/services/*.js',
       'app/scripts/controllers/*.js',
+      'app/scripts/filters/*.js',
       'test/spec/*.js',
       'test/spec/**/*.js',
       'node_modules/ng-midway-tester/src/ngMidwayTester.js',

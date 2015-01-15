@@ -28,6 +28,7 @@ angular.module('nihongo', ['ngRoute','infinite-scroll','ngSanitize','pascalprech
     $routeProvider.when('/search',{
       templateUrl:'templates/search.html',
       controller:'SearchController',
+      controllerAs:'searchController',
       title:'Rechercher'
     });
     $routeProvider
