@@ -1,1 +1,1 @@
-<h1>{{'SEARCH' | translate}}</h1> <p>TOTAL: {{total}}</p> <p>{{error}}</p> <ul> <li ng-repeat="hit in hits"><a href={{hit._source.uri}}>{{hit._source.category}} / {{hit._source.page}}</a></li> </ul>
+<h1>{{'RESULTS' | translate}}</h1> <p>TOTAL: {{searchController.total}}</p> <p ng-show=searchController.error>{{searchController.error}}</p> <ul> <li ng-repeat="hit in searchController.hits"><a href={{hit._source.uri}}>{{hit._source.category}} / {{hit._source.page}}</a> ({{hit._score | percentage:2}})</li> </ul>
