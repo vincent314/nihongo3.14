@@ -25,6 +25,6 @@ SearchController.prototype.searchFailure = function (err) {
   this.error = err;
 };
 
-SearchController.inject = ['$routeParams', 'NihongoService'];
+SearchController.$inject = ['$routeParams', 'NihongoService'];
 
 angular.module('nihongo').controller('SearchController', SearchController);
