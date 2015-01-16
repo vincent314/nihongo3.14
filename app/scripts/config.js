@@ -449,6 +449,10 @@ angular.module('nihongo').constant('CONFIG', {
         {
           title: 'Cours 11',
           file: 'cours_11.html'
+        },
+        {
+          title: 'Cours 12',
+          file: 'cours_12.html'
         }
       ]
     }

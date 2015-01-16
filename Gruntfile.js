@@ -426,7 +426,8 @@ module.exports = function (grunt) {
               'vocabulaire_lecon_2.md',
               'cours_09.md',
               'cours_10.md',
-              'cours_11.md'
+              'cours_11.md',
+              'cours_12.md'
             ],
             dest: '.tmp/single.html'
           }]
