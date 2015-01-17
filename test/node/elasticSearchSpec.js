@@ -6,7 +6,7 @@ var http = require('http');
 
 describe('ElasticSearch Spec', function () {
   var elasticSearch, grunt;
-  var index = 'nihongo_20140117';
+  var INDEX = 'nihongo_20140117';
 
   beforeEach(function () {
     grunt = jasmine.createSpy('grunt');
@@ -18,9 +18,10 @@ describe('ElasticSearch Spec', function () {
       console.log('ERROR:' + msg);
     });
 
-    elasticSearch = new ElasticSearch(index, {
+    elasticSearch = new ElasticSearch({
       hostname: 'localhost',
-      port: 9200
+      port: 9200,
+      index : INDEX
     }, grunt);
 
     nock.disableNetConnect();
@@ -56,7 +57,7 @@ describe('ElasticSearch Spec', function () {
   });
 
   it('Should index all files from configuration file', function (done) {
-    nock('http://localhost:9200').persist().filteringPath(/\/[\w\d-]+$/g, '/XX').put('/' + index + '/article/XX').reply(200,
+    nock('http://localhost:9200').persist().filteringPath(/\/[\w\d-]+$/g, '/XX').put('/' + INDEX + '/article/XX').reply(200,
       {"_index": "nihongoXXX", "_type": "articleXXX", "_id": "XXXX", "_version": 1, "created": true});
 
     spyOn(elasticSearch.configReader, 'read').andCallThrough();
@@ -76,7 +77,7 @@ describe('ElasticSearch Spec', function () {
   });
 
   it('Should index all files with nb from configuration file', function (done) {
-    nock('http://localhost:9200').persist().filteringPath(/\/[\w\d-]+$/g, '/XX').put('/' + index + '/article/XX').reply(200,
+    nock('http://localhost:9200').persist().filteringPath(/\/[\w\d-]+$/g, '/XX').put('/' + INDEX + '/article/XX').reply(200,
       {"_index": "nihongoXXX", "_type": "articleXXX", "_id": "XXXX", "_version": 1, "created": true});
 
     spyOn(elasticSearch.configReader, 'read').andCallThrough();
@@ -98,7 +99,7 @@ describe('ElasticSearch Spec', function () {
   it('Should index file', function (done) {
     nock('http://localhost:9200').filteringRequestBody(function (path) {
       return '*';
-    }).put('/' + index + '/article/category-page').reply(200, '');
+    }).put('/' + INDEX + '/article/category-page').reply(200, '');
     elasticSearch.indexFile('test/data/page01.html', {title:'category'}, {title:'page'}).then(function () {
       done();
     }).catch(function (e) {
@@ -108,7 +109,7 @@ describe('ElasticSearch Spec', function () {
   });
 
   it('Should fail on server error', function (done) {
-    nock('http://localhost:9200').put('/' + index + '/article/category-page').reply(500);
+    nock('http://localhost:9200').put('/' + INDEX + '/article/category-page').reply(500);
 
     elasticSearch.indexFile('test/data/page01.html', {title:'category'}, {title:'page'}).then(function () {
       expect(true).toBe(false);
@@ -150,6 +151,15 @@ describe('ElasticSearch Spec', function () {
     '<ruby><rb>学</rb><rp>(</rp><rt>がく</rt><rp>)</rp></ruby><ruby><rb>生</rb><rp>(</rp><rt>せい</rt><rp>)</rp></ruby>ですから、　ランドセルをもっています。 <br />');
 
     expect(result).toBe('<li>妹は小学生ですから、　ランドセルをもっています。 <br />');
+  });
+
+  it('Should init index', function (done) {
+    nock('http://localhost:9200').put('/' + INDEX).reply(200, JSON.stringify({acknowledge:true}));
+
+    elasticSearch.init().then(function (result) {
+      expect(result).toBe(JSON.stringify({acknowledge: true}));
+      done();
+    });
   });
 
   it('Should set alias', function (done) {

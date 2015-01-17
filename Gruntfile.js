@@ -24,16 +24,6 @@ module.exports = function (grunt) {
     dist: 'output/nihongo3.14_gh-pages'
   };
 
-  var INDEX = 'nihongo_20140117';
-
-  var esOptions = {
-    hostname: 'elastic-vmn.rhcloud.com',
-    port: 80
-    //hostname:'localhost',
-    //port:9200
-  };
-  var auth = require('./es-auth.js');
-
   // Define the configuration for all the tasks
   grunt.initConfig({
 
@@ -442,16 +432,46 @@ module.exports = function (grunt) {
         }
       }
     },
-    jasmine_node:{
-      options:{
-        extensions:'js',
-        specNameMatcher:'spec'
+    jasmine_node: {
+      options: {
+        extensions: 'js',
+        specNameMatcher: 'spec'
       },
-      all:['test/node/']
+      all: ['test/node/']
     },
     debug: {
       options: {
         open: false // do not open node-inspector in Chrome automatically
+      }
+    },
+    esLoad: {
+      local: {
+        //nb: 1,
+        index: 'nihongo_20140117',
+        hostname: 'localhost',
+        port: 9200,
+        auth: require('./es-auth.js')
+      },
+      remote: {
+        //nb:1,
+        index: 'nihongo_20140117',
+        hostname: 'elastic-vmn.rhcloud.com',
+        port: 80,
+        auth: require('./es-auth.js')
+      }
+    },
+    esInit: {
+      local: {
+        index: 'nihongo_20140117',
+        hostname: 'localhost',
+        port: 9200,
+        auth: require('./es-auth.js')
+      },
+      remote: {
+        index: 'nihongo_20140117',
+        hostname: 'elastic-vmn.rhcloud.com',
+        port: 80,
+        auth: require('./es-auth.js')
       }
     }
   });
@@ -566,37 +586,38 @@ module.exports = function (grunt) {
     grunt.file.mkdir('.tmp/');
   });
 
-  grunt.registerTask('elasticsearch', function () {
-    var nb = null;
+  grunt.registerMultiTask('esLoad', function () {
     var done = this.async();
 
     var ElasticSearch = require('./scripts/elasticsearch');
 
-    var es = new ElasticSearch(INDEX, esOptions,grunt,auth);
+    var es = new ElasticSearch(this.data, grunt);
 
-    es.indexFilesFromConfig('app/scripts/config.js',nb, grunt).then(function(){
+    es.indexFilesFromConfig('app/scripts/config.js', this.data.nb, grunt).then(function () {
       grunt.log.ok();
       done();
-    }).fail(function(err) {
+    }).fail(function (err) {
       grunt.log.error(JSON.stringify(err));
       done();
     });
   });
 
 
-  grunt.registerTask('es-init', function () {
+  grunt.registerMultiTask('esInit', function () {
     var done = this.async();
 
     var ElasticSearch = require('./scripts/elasticsearch');
-    var es = new ElasticSearch(INDEX,esOptions,grunt,auth);
-    es.init().then(function(){return es.setAlias()})
+    var es = new ElasticSearch(this.data, grunt);
+    es.init().then(function () {
+      return es.setAlias()
+    })
       .then(function (result) {
-      console.log(result);
-      grunt.log.ok();
-      done();
-    }).fail(function(err) {
-      grunt.log.error('Error:' + JSON.stringify(err));
-      done();
-    });
+        console.log(result);
+        grunt.log.ok();
+        done();
+      }).fail(function (err) {
+        grunt.log.error('Error:' + JSON.stringify(err));
+        done();
+      });
   });
 };

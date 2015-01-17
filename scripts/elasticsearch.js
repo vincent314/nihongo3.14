@@ -1,5 +1,4 @@
 var http = require('http');
-var extend = require('extend');
 var configReader = require('./configReader');
 var Q = require('q');
 var fs = require('fs');
@@ -11,12 +10,13 @@ var getSlug = require('speakingurl');
  * @param options
  * @constructor
  */
-function ElasticSearch(index, options, grunt, auth) {
-  this.options = options;
-  this.index = index;
+function ElasticSearch(options, grunt) {
+  this.index = options.index;
+  this.hostname = options.hostname;
+  this.port = options.port;
   this.configReader = configReader;
+  this.auth = options.auth;
   this.grunt = grunt;
-  this.auth = auth;
 }
 
 /**
@@ -26,10 +26,12 @@ function ElasticSearch(index, options, grunt, auth) {
 ElasticSearch.prototype.toctoc = function () {
   var deferred = Q.defer();
 
-  var options = extend({
+  var options = {
+    hostname:this.hostname,
+    port:this.port,
     path: '/',
     method: 'GET'
-  }, this.options);
+  };
   var req = http.request(options, function (res) {
     if (res.statusCode !== 200) {
       deferred.reject({statusCode: res.statusCode});
@@ -86,11 +88,13 @@ ElasticSearch.prototype.indexFile = function (file, category, page) {
     authHeader = user + ':' + password;
   }
 
-  var options = extend({
+  var options = {
+    hostname: this.hostname,
+    port : this.port,
     path: '/' + this.index + '/article/' + id,
     method: 'PUT',
     auth: authHeader
-  }, this.options);
+  };
 
 
   var req = http.request(options, function (res) {
@@ -174,95 +178,15 @@ ElasticSearch.prototype.logError = function (msg) {
   }
 };
 
+/**
+ * Init the elasticsearch index with mapping file
+ *
+ * @returns {promise|*|Q.promise}
+ */
 ElasticSearch.prototype.init = function () {
   var deferred = Q.defer();
 
-  var data = {
-    "settings": {
-      "number_of_shards": 1,
-      "number_of_replicas": 1,
-      "analysis": {
-        "analyzer": {
-          "my_french": {
-            "type": "french",
-            "filter": [
-              "standard",
-              "lowercase",
-              "stop"
-            ],
-            "char_filter": [
-              "html_strip"
-            ]
-          },
-          "my_japanese": {
-            "type": "kuromoji",
-            "filter": [
-              "standard",
-              "lowercase",
-              "stop"
-            ],
-            "char_filter": [
-              "html_strip"
-            ]
-          },
-          "romaji_analyzer": {
-            "tokenizer": "kuromoji_tokenizer",
-            "filter": ["romaji_readingform", "kuromoji_stemmer"]
-          },
-          "html": {
-            "type": "custom",
-            "tokenizer": "standard",
-            "filter": [
-              "standard",
-              "lowercase",
-              "stop"
-            ],
-            "char_filter": [
-              "html_strip"
-            ]
-          }
-        },
-        "filter": {
-          "romaji_readingform": {
-            "type": "kuromoji_readingform",
-            "use_romaji": true
-          }
-        }
-      }
-    },
-    "mappings": {
-      "article": {
-        "_source": {
-          "excludes": ["french", "japanese"]
-        },
-        "properties": {
-          "title": {
-            "type": "string"
-          },
-          "uri": {
-            "type": "string",
-            "index": "not_analyzed"
-          },
-          "french": {
-            "type": "string",
-            "analyzer": "my_french"
-          },
-          "japanese": {
-            "type": "string",
-            "analyzer": "romaji_analyzer"
-          },
-          "category": {
-            "type": "string"
-            , "analyzer": "french"
-          },
-          "page": {
-            "type": "string",
-            "analyzer": "french"
-          }
-        }
-      }
-    }
-  };
+  var data = require('./index_mapping');
 
   // Basic Authentification
   var authHeader = {};
@@ -272,11 +196,15 @@ ElasticSearch.prototype.init = function () {
     authHeader = user + ':' + password;
   }
 
-  var options = extend({
+  var options = {
+    hostname:this.hostname,
+    port:this.port,
     path: '/' + this.index,
     method: 'PUT',
     auth: authHeader
-  }, this.options);
+  };
+
+  console.log(this.hostname);
 
   var req = http.request(options, function (res) {
     res.on('data', function (chunk) {
@@ -294,6 +222,11 @@ ElasticSearch.prototype.init = function () {
   return deferred.promise;
 };
 
+/**
+ * Set an alias to the index
+ *
+ * @returns {promise|*|Q.promise}
+ */
 ElasticSearch.prototype.setAlias = function () {
 
   // Basic Authentification
@@ -304,11 +237,13 @@ ElasticSearch.prototype.setAlias = function () {
     authHeader = user + ':' + password;
   }
 
-  var options = extend({
+  var options = {
+    hostname:this.hostname,
+    port:this.port,
     path: '/_aliases',
     method:'POST',
     auth:authHeader
-  }, this.options);
+  };
 
   var data = {
     actions: [
