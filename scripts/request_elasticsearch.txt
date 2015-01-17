@@ -93,3 +93,10 @@ GET nihongo/_analyze?analyzer=romaji_analyzer
 {
   "<li><ruby><rb>始</rb><rp>(</rp><rt>はじ</rt><rp>)</rp></ruby>めます"
 }
+
+POST /_aliases
+{
+    "actions" : [
+        { "add" : { "index" : "nihongo_20140117", "alias" : "nihongo" } }
+    ]
+}

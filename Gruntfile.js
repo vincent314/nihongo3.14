@@ -24,6 +24,8 @@ module.exports = function (grunt) {
     dist: 'output/nihongo3.14_gh-pages'
   };
 
+  var INDEX = 'nihongo_20140117';
+
   var esOptions = {
     hostname: 'elastic-vmn.rhcloud.com',
     port: 80
@@ -565,13 +567,14 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask('elasticsearch', function () {
+    var nb = null;
     var done = this.async();
 
     var ElasticSearch = require('./scripts/elasticsearch');
 
-    var es = new ElasticSearch('nihongo', esOptions,grunt,auth);
+    var es = new ElasticSearch(INDEX, esOptions,grunt,auth);
 
-    es.indexFilesFromConfig('app/scripts/config.js',grunt).then(function(){
+    es.indexFilesFromConfig('app/scripts/config.js',nb, grunt).then(function(){
       grunt.log.ok();
       done();
     }).fail(function(err) {
@@ -585,12 +588,14 @@ module.exports = function (grunt) {
     var done = this.async();
 
     var ElasticSearch = require('./scripts/elasticsearch');
-    var es = new ElasticSearch('nihongo', esOptions,grunt,auth);
-    es.init().then(function () {
+    var es = new ElasticSearch(INDEX,esOptions,grunt,auth);
+    es.init().then(function(){return es.setAlias()})
+      .then(function (result) {
+      console.log(result);
       grunt.log.ok();
       done();
     }).fail(function(err) {
-      grunt.log.error(JSON.stringify(err));
+      grunt.log.error('Error:' + JSON.stringify(err));
       done();
     });
   });

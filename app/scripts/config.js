@@ -6,6 +6,11 @@ angular.module('nihongo').constant('CONFIG', {
     port:'80',
     uri:'nihongo/article'
   },
+  //es:{
+  //  host:'localhost',
+  //  port:'9200',
+  //  uri:'nihongo/article'
+  //},
   categories: [
     {
       title: 'Articles annexes',

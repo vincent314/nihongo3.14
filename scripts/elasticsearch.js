@@ -56,10 +56,11 @@ ElasticSearch.prototype.toctoc = function () {
  * @param id
  * @returns {promise|*|Q.promise}
  */
-ElasticSearch.prototype.indexFile = function (file, category, page, id) {
+ElasticSearch.prototype.indexFile = function (file, category, page) {
   var deferred = Q.defer();
   var content;
   var self = this;
+  var id = getSlug(category.title) + '-' + getSlug(page.title);
   try {
     content = fs.readFileSync(file, 'UTF-8');
   } catch (e) {
@@ -99,7 +100,7 @@ ElasticSearch.prototype.indexFile = function (file, category, page, id) {
       return;
     }
     res.on('data', function (chunk) {
-      deferred.resolve(id);
+      deferred.resolve();
     });
   });
 
@@ -114,17 +115,35 @@ ElasticSearch.prototype.indexFile = function (file, category, page, id) {
  *
  * @param configFile
  */
-ElasticSearch.prototype.indexFilesFromConfig = function (configFile, grunt) {
+
+/**
+ *
+ * @param configFile Configuration file path
+ * @param nb last nb elements to index (optional)
+ * @param grunt grunt instance (optional)
+ * @returns {*}
+ */
+ElasticSearch.prototype.indexFilesFromConfig = function (configFile, nb, grunt) {
   var config = configReader.read(configFile);
   var self = this;
-  var result = Q(0);
+  var result = Q(function () {
+  });
+  var entries = [];
 
   config.categories.forEach(function (category) {
     category.pages.forEach(function (page) {
-      var file = 'app/' + category.dir + '/' + page.file;
-      result = result.then(function (id) {
-        return self.indexFile(file, category, page, id + 1);
-      });
+      entries.push({category: category, page: page});
+    });
+  });
+
+  if (nb && nb <= entries.length) {
+    entries = entries.slice(entries.length - nb);
+  }
+
+  entries.forEach(function (entry) {
+    var file = 'app/' + entry.category.dir + '/' + entry.page.file;
+    result = result.then(function () {
+      return self.indexFile(file, entry.category, entry.page);
     });
   });
 
@@ -254,25 +273,61 @@ ElasticSearch.prototype.init = function () {
   }
 
   var options = extend({
-    path: this.index,
+    path: '/' + this.index,
     method: 'PUT',
     auth: authHeader
   }, this.options);
 
   var req = http.request(options, function (res) {
-    //if (res.statusCode != 200 && res.statusCode != 201) {
-    //  deferred.reject(res.statusCode);
-    //  return;
-    //}
-
     res.on('data', function (chunk) {
-      deferred.resolve(chunk.toString());
+      if (res.statusCode !== 200 && res.statusCode !== 201) {
+        deferred.reject(chunk.toString());
+      } else {
+        deferred.resolve(chunk.toString());
+      }
     });
   });
 
   req.write(JSON.stringify(data));
   req.end();
 
+  return deferred.promise;
+};
+
+ElasticSearch.prototype.setAlias = function () {
+
+  // Basic Authentification
+  var authHeader = {};
+  if (this.auth) {
+    var user = this.auth.user;
+    var password = this.auth.password;
+    authHeader = user + ':' + password;
+  }
+
+  var options = extend({
+    path: '/_aliases',
+    method:'POST',
+    auth:authHeader
+  }, this.options);
+
+  var data = {
+    actions: [
+      {add: {index: this.index, alias: 'nihongo'}}
+    ]
+  };
+
+  var deferred = Q.defer();
+  var req = http.request(options, function (res) {
+    res.on('data', function (chunk) {
+      if (res.statusCode !== 200 && res.statusCode !== 201) {
+        deferred.reject(chunk.toString());
+      } else {
+        deferred.resolve(chunk.toString());
+      }
+    })
+  });
+  req.write(JSON.stringify(data));
+  req.end();
   return deferred.promise;
 };
 
