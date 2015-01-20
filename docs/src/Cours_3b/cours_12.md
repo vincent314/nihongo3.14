@@ -64,8 +64,41 @@ Ceci est un magasine que lisent les femmes
 Ceci est un magasine que ne lisent pas les hommes
 
 
+Exercice 22.1 物・人・所
+--------------
+
+* 例１：(物)書く物（もの）です
+* 例２：(人)教（おし）える人（ひと）です
+* 例３：(所)勉（べん）強（きょう）する所（ところ）です。
+* (人)仕（し）事（ごと）する人です
+* (所)本を読（よ）むところです
+* (物)切（き）る物（もの）です (はさみ = ciseaux)
+* (人)料（りょう）理（り）をする人です
+* (所)てがみをおくるところです
+* (物)FAXをおくるところです
+
+Exercice 22.2
+---------------
+
+### I. 〜は〜が
+
+例：(買います) これ**は**わたし**が**買ったほんです。    
+Ceci est le livre que j'ai acheté
+
+1. (作（つく）ります)　これはきむらさんが作（つく）ったケーキです。     
+Ceci est le gâteau que Kimura a préparé
+2. (よく行きます)　ここはさとうさんがよく行くきっさてんです。    
+C'est le café où Sato va souvent.
 
 
+### II. 〜が〜は
 
+例：(生（う）まれました)　わたし**が**生（う）まれた所（ところ）**は**東（とう）京（きょう）です。    
+L'endroit où je suis né est Tōkyō
+
+1. (欲しいです) わたし**が**ほしい物**は**パソコンです。     
+L'objet que je veux, c'est un PC
+2. (会います)　あした木（き）村（むら）さんがあう人は佐（さ）藤（とう）さんです。    
+La personne qu'a rencontré Mme Kimura hier, c'est Mme Satō.
 
 

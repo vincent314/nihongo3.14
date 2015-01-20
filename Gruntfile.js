@@ -609,7 +609,7 @@ module.exports = function (grunt) {
     var ElasticSearch = require('./scripts/elasticsearch');
     var es = new ElasticSearch(this.data, grunt);
     es.init().then(function () {
-      return es.setAlias()
+      return es.setAlias();
     })
       .then(function (result) {
         console.log(result);

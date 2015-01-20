@@ -2,7 +2,7 @@
 
   <a href="#/timeline">{{'LAST_LESSONS' | translate}}</a>
 
-<div ng-show="categories" class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+<div ng-cloak ng-show="categories" class="panel-group ng-cloak" id="accordion" role="tablist" aria-multiselectable="true">
   <div ng-repeat="category in categories" class="panel panel-default">
     <div class="panel-heading" role="tab" id="heading{{$index}}">
 
