@@ -29,7 +29,6 @@ xdescribe('Test ElasticSearch with authentication', function () {
     var es = new ElasticSearch('nihongo',options,null,auth);
 
     es.indexFile('test/data/page01.html', 'test', 'page01', 1).then(function (idx) {
-      var requests = nock.recorder.play();
       expect(idx).toBe(1);
       done();
     }).fail(function (err) {
@@ -40,16 +39,14 @@ xdescribe('Test ElasticSearch with authentication', function () {
   });
 
   it('Test init OK', function (done) {
-    nock.recorder.rec();
-
-    //var options = {
-    //  host: 'localhost',
-    //  port:9200
-    //};
     var options = {
-      host: 'elastic-vmn.rhcloud.com',
-      port:80
+      host: 'localhost',
+      port:9200
     };
+    //var options = {
+    //  host: 'elastic-vmn.rhcloud.com',
+    //  port:80
+    //};
     var auth = {
       user:'superuser',
       password:'Adm1n'

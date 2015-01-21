@@ -30,7 +30,7 @@ describe('Test Nihongo Service', function () {
 
   it('Should do a search', function () {
     $httpBackend.when('GET', 'toc.html').respond('');
-    $httpBackend.when('GET', 'http://localhost:9200/nihongo/article/_search?query=%7B%22query%22:%7B%22match%22:%7B%22japanese%22:%22sample%22%7D%7D%7D').respond({toto: 'titi'});
+    $httpBackend.when('GET', 'http://localhost:9200/nihongo/article/_search?q=japanese:sample+OR+french:sample').respond({toto: 'titi'});
 
     var result;
 
