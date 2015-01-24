@@ -389,21 +389,7 @@ module.exports = function (grunt) {
         files: [
           {
             cwd: 'docs/src/Cours_3b',
-            src: [
-              'cours_01.md',
-              'cours_02.md',
-              'cours_03.md',
-              'cours_04.md',
-              'cours_05.md',
-              'cours_06.md',
-              'cours_07.md',
-              'cours_08.md',
-              'vocabulaire_lecon_2.md',
-              'cours_09.md',
-              'cours_10.md',
-              'cours_11.md',
-              'cours_12.md'
-            ],
+            src: require('./scripts/configReader').getFileList('app/scripts/config.js','docs/html/Cours_3b'),
             dest: '.tmp/single.html'
           }]
       },
@@ -436,7 +422,7 @@ module.exports = function (grunt) {
         auth: require('./es-auth.js')
       },
       remote: {
-        //nb:1,
+        nb:1,
         index: 'nihongo_20140117',
         hostname: 'elastic-vmn.rhcloud.com',
         port: 80,
@@ -601,5 +587,11 @@ module.exports = function (grunt) {
         grunt.log.error('Error:' + JSON.stringify(err));
         done();
       });
+  });
+
+  grunt.registerTask('testConfig', function () {
+    var config = require('./scripts/configReader').getFileList('app/scripts/config.js','docs/html/Cours_3b');
+
+    grunt.log.ok(JSON.stringify(config));
   });
 };

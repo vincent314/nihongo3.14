@@ -1,4 +1,5 @@
 var fs = require('fs');
+var _ = require('lodash-node');
 
 module.exports = {
   read: function (file) {
@@ -20,5 +21,17 @@ module.exports = {
     eval(content);
 
     return config;
+  },
+
+  getFileList:function(file,dir) {
+    var config = this.read(file);
+
+    var category = _(config.categories).find(function (it) {
+      return it.dir === dir;
+    });
+
+    return _(category.pages).pluck('file').map(function(it) {
+      return it.replace(/\.html$/, '.md');
+    }).value();
   }
 };
