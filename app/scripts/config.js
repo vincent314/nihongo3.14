@@ -280,6 +280,10 @@ angular.module('nihongo').constant('CONFIG', {
         {
           title: 'Cours 25',
           file: 'cours_25.html'
+        },
+        {
+          title: 'Auxiliaires numéraux',
+          file: 'auxiliaires_numeraux.html'
         }
       ]
     },
@@ -462,6 +466,10 @@ angular.module('nihongo').constant('CONFIG', {
         {
           title: 'Cours 13',
           file: 'cours_13.html'
+        },
+        {
+          title: 'Cours 14',
+          file: 'cours_14.html'
         }
       ]
     }
