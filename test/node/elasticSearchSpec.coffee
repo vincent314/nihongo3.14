@@ -15,11 +15,11 @@ describe 'ElasticSearch Spec', ->
     grunt.log.error.andCallFake (msg)->
       console.log 'ERROR:' + msg
 
-    elasticSearch = new ElasticSearch
-      hostname: 'localhost',
-      port: 9200,
-      index: INDEX
-    , grunt
+    elasticSearch = new ElasticSearch {
+        hostname: 'localhost',
+        port: 9200,
+        index: INDEX
+      }, grunt
 
     nock.disableNetConnect()
 
@@ -65,9 +65,9 @@ describe 'ElasticSearch Spec', ->
 
     elasticSearch.indexFilesFromConfig('test/data/config.js', 1).then ->
       console.log 'All files loading OK'
-      expect(elasticSearch.configReader.read).toHaveBeenCalledWith('test/data/config.js')
+      expect(elasticSearch.configReader.read).toHaveBeenCalledWith 'test/data/config.js'
       expect(elasticSearch.indexFile).toHaveBeenCalled()
-      expect(elasticSearch.indexFile.callCount).toBe(1)
+      expect(elasticSearch.indexFile.callCount).toBe 1
       done()
     .fail (err) ->
       console.log 'All files loading failure ' + err
