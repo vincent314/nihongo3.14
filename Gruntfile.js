@@ -425,7 +425,7 @@ module.exports = function (grunt) {
     },
     esLoad: {
       local: {
-        //nb: 1,
+        nb: 1,
         index: 'nihongo_20140117',
         hostname: 'localhost',
         port: 9200,
@@ -590,7 +590,6 @@ module.exports = function (grunt) {
       return es.setAlias();
     })
       .then(function (result) {
-        console.log(result);
         grunt.log.ok();
         done();
       }).fail(function (err) {

@@ -75,7 +75,7 @@ class ElasticSearch
 
     # Basic Authentification
     if @auth
-      config.auth = "#{@auth.user}:#{@auth.password}"
+      options.auth = "#{@auth.user}:#{@auth.password}"
 
     req = http.request options, (res) ->
       if res.statusCode isnt 200 && res.statusCode isnt 201
@@ -83,7 +83,8 @@ class ElasticSearch
         self.logError "Error indexing : #{file}"
 
       res.on 'data', (chunk)->
-        deferred.resolve()
+        console.log chunk.toString()
+        deferred.resolve(chunk.toString())
 
     req.write JSON.stringify(entry)
     req.end()
@@ -111,7 +112,6 @@ class ElasticSearch
       result = result.then ->
         self.indexFile file, entry.category, entry.page
 
-    console.log result
     return result
 
   ###
@@ -139,18 +139,15 @@ class ElasticSearch
     deferred = Q.defer()
     data = require('./index_mapping')
 
-    #Basic Authentification
-    if @auth
-      authHeader = "#{@auth.user}:#{@auth.password}"
-
     options =
       hostname: @hostname,
       port: @port,
       path: "/#{@index}"
       method: 'PUT'
-      auth: authHeader
 
-    console.log @hostname
+    #Basic Authentification
+    if @auth
+      options.auth = authHeader
 
     req = http.request options, (res) ->
       res.on 'data', (chunk) ->
