@@ -350,23 +350,6 @@ module.exports = function (grunt) {
       }
     },
 
-    // Generates a custom Modernizr build that includes only the tests you
-    // reference in your app
-    modernizr: {
-      dist: {
-        devFile: 'bower_components/modernizr/modernizr.js',
-        outputFile: '<%= config.dist %>/scripts/vendor/modernizr.js',
-        files: {
-          src: [
-            '<%= config.dist %>/scripts/{,*/}*.js',
-            '<%= config.dist %>/styles/{,*/}*.css',
-            '!<%= config.dist %>/scripts/vendor/*'
-          ]
-        },
-        uglify: true
-      }
-    },
-
     // Run some tasks in parallel to speed up build process
     concurrent: {
       server: [
@@ -406,19 +389,7 @@ module.exports = function (grunt) {
         files: [
           {
             cwd: 'docs/src/Cours_3b',
-            src: [
-              'cours_01.md',
-              'cours_02.md',
-              'cours_03.md',
-              'cours_04.md',
-              'cours_05.md',
-              'cours_06.md',
-              'cours_07.md',
-              'cours_08.md',
-              'vocabulaire_lecon_2.md',
-              'cours_09.md',
-              'cours_10.md'
-            ],
+            src: require('./scripts/configReader').getFileList('app/scripts/config.js','docs/html/Cours_3b'),
             dest: '.tmp/single.html'
           }]
       },
@@ -428,6 +399,48 @@ module.exports = function (grunt) {
             create: ['.tmp']
           }
         }
+      }
+    },
+    jasmine_node: {
+      options: {
+        extensions: 'js',
+        specNameMatcher: 'spec'
+      },
+      all: ['test/node/']
+    },
+    debug: {
+      options: {
+        open: false // do not open node-inspector in Chrome automatically
+      }
+    },
+    esLoad: {
+      local: {
+        //nb: 1,
+        index: 'nihongo_20140117',
+        hostname: 'localhost',
+        port: 9200,
+        auth: require('./es-auth.js')
+      },
+      remote: {
+        nb:1,
+        index: 'nihongo_20140117',
+        hostname: 'elastic-vmn.rhcloud.com',
+        port: 80,
+        auth: require('./es-auth.js')
+      }
+    },
+    esInit: {
+      local: {
+        index: 'nihongo_20140117',
+        hostname: 'localhost',
+        port: 9200,
+        auth: require('./es-auth.js')
+      },
+      remote: {
+        index: 'nihongo_20140117',
+        hostname: 'elastic-vmn.rhcloud.com',
+        port: 80,
+        auth: require('./es-auth.js')
       }
     }
   });
@@ -487,7 +500,6 @@ module.exports = function (grunt) {
     'cssmin',
     'uglify',
     'copy:dist',
-    'modernizr',
     'rev',
     'usemin',
     'htmlmin'
@@ -495,6 +507,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('default', [
     'newer:jshint',
+    'jasmine_node',
     'test',
     'build'
   ]);
@@ -515,7 +528,7 @@ module.exports = function (grunt) {
         '--page-breaks-before', '//h:h1',
         '--authors', 'Vincent M.',
         '--title', 'Cours de japonais niveau 3 2014/2015',
-        '--level1-toc','//h:h1'
+        '--level1-toc', '//h:h1'
       ]
     });
 
@@ -536,8 +549,49 @@ module.exports = function (grunt) {
     });
   });
 
-  grunt.registerTask('prepare', function() {
+  grunt.registerTask('prepare', function () {
     console.log('Mkdir .tmp/');
     grunt.file.mkdir('.tmp/');
+  });
+
+  grunt.registerMultiTask('esLoad', function () {
+    var done = this.async();
+
+    var ElasticSearch = require('./scripts/elasticsearch');
+
+    var es = new ElasticSearch(this.data, grunt);
+
+    es.indexFilesFromConfig('app/scripts/config.js', this.data.nb, grunt).then(function () {
+      grunt.log.ok();
+      done();
+    }).fail(function (err) {
+      grunt.log.error(JSON.stringify(err));
+      done();
+    });
+  });
+
+
+  grunt.registerMultiTask('esInit', function () {
+    var done = this.async();
+
+    var ElasticSearch = require('./scripts/elasticsearch');
+    var es = new ElasticSearch(this.data, grunt);
+    es.init().then(function () {
+      return es.setAlias();
+    })
+      .then(function (result) {
+        console.log(result);
+        grunt.log.ok();
+        done();
+      }).fail(function (err) {
+        grunt.log.error('Error:' + JSON.stringify(err));
+        done();
+      });
+  });
+
+  grunt.registerTask('testConfig', function () {
+    var config = require('./scripts/configReader').getFileList('app/scripts/config.js','docs/html/Cours_3b');
+
+    grunt.log.ok(JSON.stringify(config));
   });
 };

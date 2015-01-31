@@ -17,9 +17,6 @@
   <!-- build:css(.tmp) styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
-  <!-- build:js scripts/vendor/modernizr.js -->
-  <script src="bower_components/modernizr/modernizr.js"></script>
-  <!-- endbuild -->
 </head>
 
 <body role="document">
@@ -29,13 +26,8 @@
 <![endif]-->
 
 
-<nav role="navigation" class="navbar navbar-inverse navbar-fixed-top" ng-controller="HeaderController" ng-cloak>
+<nav role="navigation" class="navbar navbar-inverse ng-cloak" ng-controller="HeaderController" ng-cloak>
   <div class="container">
-    <a href="https://github.com/vincent314/nihongo3.14">
-      <img style="position: absolute; top: 0; right: 0; border: 0;"
-           src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67"
-           alt="Fork me on GitHub"
-           data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
 
     <div class="navbar-header">
       <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse"
@@ -45,7 +37,6 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="#" class="navbar-brand">japonais.ovh</a>
     </div>
     <div class="navbar-collapse collapse" id="navbar">
       <ul class="nav navbar-nav">
@@ -93,13 +84,25 @@
           </ul>
         </li>
         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-language fa-fw"></i> {{'LANG' | translate}}<span
-            class="caret"></span></a>
+          <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-language fa-fw"></i> {{'LANG' |
+            translate}}<span
+              class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a ng-click="switchLang('fr')">Français</a></li>
             <li><a ng-click="switchLang('en')">English</a></li>
             <li><a ng-click="switchLang('jp')">日本語</a></li>
           </ul>
+        </li>
+        <li>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="{{'SEARCH' | translate}}" ng-model="searchString"
+                   ng-change="search()">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button" ng-click="search()"><span class="glyphicon glyphicon-search"
+                                                                                      aria-hidden="true"></span>
+              </button>
+            </span>
+          </div>
         </li>
       </ul>
     </div>
@@ -125,7 +128,7 @@
 
 <footer>
   <hr/>
-  <div class="text-center">
+  <div class="text-center ng-cloak" ng-cloak>
     <small>{{'ABOUT' | translate}}
       <a href="https://github.com/vincent314"><i class="fa fa-github fa-lg"></i> vincent314</a>
       <a href="https://twitter.com/vincent31416"><i class="fa fa-twitter fa-lg"></i> @vincent31416</a>
@@ -137,6 +140,7 @@
 
 <!-- build:js(.) scripts/vendor.js -->
 <!-- bower:js -->
+<script src="bower_components/modernizr/modernizr.js"></script>
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/lodash/dist/lodash.compat.js"></script>
 <!-- endbower -->
@@ -162,6 +166,7 @@
 <script src="bower_components/lodash/dist/lodash.js"></script>
 <script src="bower_components/ngInfiniteScroll/build/ng-infinite-scroll.js"></script>
 <script src="bower_components/angular-translate/angular-translate.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
 <!-- endbuild -->
 
 <!-- build:js({app,.tmp}) scripts/main.js -->
@@ -173,7 +178,9 @@
 <script src="scripts/controllers/pageController.js"></script>
 <script src="scripts/controllers/timelineController.js"></script>
 <script src="scripts/controllers/headerController.js"></script>
+<script src="scripts/controllers/searchController.js"></script>
 <script src="scripts/directives/paginationDirective.js"></script>
+<script src="scripts/filters/percentageFilter.js"></script>
 <!-- endbuild -->
 </body>
 </html>

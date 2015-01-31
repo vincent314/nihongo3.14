@@ -16,6 +16,13 @@ Download sources from
     git clone https://github.com/vincent314/nihongo3.14
     cd nihongo3.14
     
+Create file es-auth.js (used for ElasticSearch indexing) on root folder (replace XXXXXX with a correct value):
+
+    module.exports = {
+      user: 'XXXXX',
+      password: 'XXXXXX'
+    };
+    
 Downloads dependencies
 
     npm install

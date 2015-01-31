@@ -1,6 +1,16 @@
 'use strict';
 
 angular.module('nihongo').constant('CONFIG', {
+  es:{
+    host:'elastic-vmn.rhcloud.com',
+    port:'80',
+    uri:'nihongo/article'
+  },
+  //es:{
+  //  host:'localhost',
+  //  port:'9200',
+  //  uri:'nihongo/article'
+  //},
   categories: [
     {
       title: 'Articles annexes',
@@ -270,6 +280,10 @@ angular.module('nihongo').constant('CONFIG', {
         {
           title: 'Cours 25',
           file: 'cours_25.html'
+        },
+        {
+          title: 'Auxiliaires numéraux',
+          file: 'auxiliaires_numeraux.html'
         }
       ]
     },
@@ -440,6 +454,22 @@ angular.module('nihongo').constant('CONFIG', {
         {
           title: 'Cours 10',
           file: 'cours_10.html'
+        },
+        {
+          title: 'Cours 11',
+          file: 'cours_11.html'
+        },
+        {
+          title: 'Cours 12',
+          file: 'cours_12.html'
+        },
+        {
+          title: 'Cours 13',
+          file: 'cours_13.html'
+        },
+        {
+          title: 'Cours 14',
+          file: 'cours_14.html'
         }
       ]
     }

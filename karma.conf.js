@@ -13,6 +13,7 @@ module.exports = function (config) {
     files: [
       'bower_components/angular/angular.js',
       'bower_components/angular-mocks/angular-mocks.js',
+      'bower_components/angular-resource/angular-resource.js',
       'bower_components/angular-route/angular-route.js',
       'bower_components/angular-translate/angular-translate.js',
       'bower_components/angular-sanitize/angular-sanitize.js',
@@ -22,6 +23,7 @@ module.exports = function (config) {
       'app/scripts/app.js',
       'app/scripts/services/*.js',
       'app/scripts/controllers/*.js',
+      'app/scripts/filters/*.js',
       'test/spec/*.js',
       'test/spec/**/*.js',
       'node_modules/ng-midway-tester/src/ngMidwayTester.js',

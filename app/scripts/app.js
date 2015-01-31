@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('nihongo', ['ngRoute','infinite-scroll','ngSanitize','pascalprecht.translate'])
+angular.module('nihongo', ['ngRoute','infinite-scroll','ngSanitize','pascalprecht.translate','ngResource'])
   .config(['$routeProvider', 'CONFIG', function ($routeProvider, CONFIG) {
 
     _(CONFIG.categories).forEach(function (category) {
@@ -24,6 +24,12 @@ angular.module('nihongo', ['ngRoute','infinite-scroll','ngSanitize','pascalprech
       templateUrl:'templates/timeline.html',
       controller:'TimelineController',
       title: 'Timeline'
+    });
+    $routeProvider.when('/search',{
+      templateUrl:'templates/search.html',
+      controller:'SearchController',
+      controllerAs:'searchController',
+      title:'Rechercher'
     });
     $routeProvider
       .otherwise({

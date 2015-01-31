@@ -14,7 +14,7 @@ Cours 14
 
 びょうきでした = avoir été malade (grave)
 
-体（たい）調（ちょう）がれるかったです= avoir été malade (moins grave)
+体（たい）調（ちょう）がわるかったです= avoir été malade (moins grave)
 
 かぜでした = avoir eu un rhume
 

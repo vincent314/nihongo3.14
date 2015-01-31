@@ -15,7 +15,9 @@ angular.module('nihongo').config(['$translateProvider',function($translateProvid
     'ALL':'Tous',
     'LANG':'Langue',
     'TOC' : 'Table des matières',
-    'ABOUT' : 'À propos'
+    'ABOUT' : 'À propos',
+    'SEARCH' : 'Rechercher…',
+    'RESULTS' : 'Résultats'
   });
   $translateProvider.translations('en',{
     'HOME':'Home',
@@ -31,7 +33,9 @@ angular.module('nihongo').config(['$translateProvider',function($translateProvid
     'ALL':'All',
     'LANG':'Lang',
     'TOC' : 'Table of content',
-    'ABOUT' : 'About'
+    'ABOUT' : 'About',
+    'SEARCH' : 'Search…',
+    'RESULTS' : 'Results'
   });
   $translateProvider.translations('jp',{
     'HOME':'ホーム',
@@ -47,7 +51,9 @@ angular.module('nihongo').config(['$translateProvider',function($translateProvid
     'ALL':'',
     'LANG':'言語',
     'TOC' : '目次',
-    'ABOUT' : 'About'
+    'ABOUT' : 'About',
+    'SEARCH': '検索',
+    'RESULTS': 'ヒット'
   });
   $translateProvider.preferredLanguage('fr');
 }]);
