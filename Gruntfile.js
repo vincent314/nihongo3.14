@@ -590,7 +590,7 @@ module.exports = function (grunt) {
       return es.setAlias();
     })
       .then(function (result) {
-        grunt.log.ok();
+        grunt.log.ok(result);
         done();
       }).fail(function (err) {
         grunt.log.error('Error:' + JSON.stringify(err));
