@@ -147,7 +147,7 @@ class ElasticSearch
 
     #Basic Authentification
     if @auth
-      options.auth = authHeader
+      options.auth =  "#{@auth.user}:#{@auth.password}"
 
     req = http.request options, (res) ->
       res.on 'data', (chunk) ->
@@ -161,6 +161,9 @@ class ElasticSearch
 
     return deferred.promise
 
+  #
+  # Set
+  #
   setAlias: () ->
     options =
       hostname: this.hostname
