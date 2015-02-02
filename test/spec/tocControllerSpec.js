@@ -36,4 +36,8 @@ describe('Test TOC controller', function () {
     expect(scope.buildRoute('Category 1', 'Page 1')).toBe('#/category-1/page-1');
   });
 
+  it('Should test topic', function () {
+    expect(scope.categories[0].pages[0].topics).toEqual(['一番','二番']);
+  });
+
 });
