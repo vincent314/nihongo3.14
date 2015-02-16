@@ -488,6 +488,11 @@ angular.module('nihongo').constant('CONFIG', {
           title: 'Cours 15',
           file: 'cours_15.html',
           topics: ['kanji 語社理科']
+        },
+        {
+          title: 'Cours 17',
+          file: 'cours_17.html',
+          topics: ['facile / difficile / caractéristique / tendance']
         }
       ]
     }
