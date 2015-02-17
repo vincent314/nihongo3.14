@@ -490,6 +490,10 @@ angular.module('nihongo').constant('CONFIG', {
           topics: ['kanji 語社理科']
         },
         {
+          title: 'Vocabulaire leçon 3',
+          file: 'vocabulaire_lecon_3.html'
+        },
+        {
           title: 'Cours 17',
           file: 'cours_17.html',
           topics: ['facile / difficile / caractéristique / tendance']
