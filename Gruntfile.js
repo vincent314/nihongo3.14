@@ -409,12 +409,12 @@ module.exports = function (grunt) {
         projectRoot: 'scripts',
         specFolders: ['test/node'],
         //coverage: {},
-        jUnit: {
-          report: true,
-          savePath: './output/jasmine/',
-          useDotNotation: true,
-          consolidate: true
-        }
+        //jUnit: {
+        //  report: true,
+        //  savePath: './output/jasmine/',
+        //  useDotNotation: true,
+        //  consolidate: true
+        //}
       },
       all: ['test/node/']
     },

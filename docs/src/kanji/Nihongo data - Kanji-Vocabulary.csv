@@ -1,0 +1,322 @@
+Level,Kana,French,Kanji,Topic,Romaji,English,KanjiLink,Code
+-1,でぐち,sortie,出口,,deguchi,exit,出,41
+-1,しゅっぱつ,départ,出発,,shuppatsu,departure,出,41
+-1,おもいで,memoire; reminiscence,思い出,,omo(i)de,memory; reminiscence,出,41
+-1,ゆしゅつ,export,輸出,,yushutsu,export,出,41
+-1,じょうず,compétent,上手,,jouzu,skillfull,上,12
+-1,かわかみ,en amont,川上,,kawakami,upstream,上,12
+-1,めうえ,supérieur de qq'un,目上,,meue,one's superior,上,12
+-1,いじょう,ce qui précède; depuis; plus que,以上,,ijou,what precedes; since; more than,上,12
+-1,へた,incompétent; lâche,下手,,heta,unskillful; awkward,下,13
+-1,したぎ,sous-vêtements,下着,,shitagi,underwear,下,13
+-1,いか,moins que; en dessous,以下,,ika,less than; below,下,13
+-1,ねさげ,réduction de prix,値下げ,,nesage,price reduction,下,13
+-1,みぎて,main droite,右手,,migite,right hand,右,38
+-1,さゆう,gauche et droite,左右,,sayuu,left et right,右,38
+-1,うせつ,virage à droite,右折,,usetsu,right turn,右,38
+-1,うよく,la droite politique,右翼,,uyoku,(political) right wing,右,38
+-1,ひだりきき,gauche,左利き,,hidarikiki,left-handed,左,39
+-1,さは,la gauche politique,左派,,saha,(political) left wing,左,39
+-1,ひだりがわ,côté gauche,左側,,hidarigawa,left side,左,39
+-1,こうり,vente au détails,小売り,,kouri,retailing,小,15
+-1,しょうせつ,roman,小説,,shousetsu,novel,小,15
+-1,しょうがっこう,école élémentaire,小学校,,shougakkou,elementary school,小,15
+-1,だいちゅうしょう,grand; moyen et petit,大中小,,daichuushou,large; medium; and small,小,15
+-1,もくざい,bois de chauffage,木材,,mokuzai,lumber; timber,木,36
+-1,もくぞう,fait de bois,木造,,mokuzou,made of wood,木,36
+-1,もめん,coton (tissu),木綿,,momen,cotton (fabric),木,36
+-1,まるき,bûche,丸木,,maruki,log,木,36
+-1,かわかみ,en amont,川上,,kawakami,upstream,川,21
+-1,かわら,lit de rivière assèché,川原,,kawara,dry river bed,川,21
+-1,かわさき,Kawasaki (lieu),川崎,,kawasaki,Kawasaki (place),川,21
+-1,かせん,rivières,河川,,kasen,rivers,川,21
+-1,りんぎょう,industrie forestière,林業,,ringyou,forestry (industry),林,75
+-1,まつばやし,forêt de pins,松林,,matsubayashi,pine forest,林,75
+-1,ぞうりん,reforestation,造林,,zourin,(re)forestation,林,75
+-1,のうりん,agriculture et forêt,農林,,nourin,agriculture and forestry,林,75
+-1,どだい,fondation; base,土台,,dodai,foundation; base,土,22
+-1,とち,terrain; immobilier,土地,,tochi,land; estate,土,22
+-1,みやげ,souvenir; cadeau,土産,,miyage,souvenir; present,土,22
+-1,どひょう,ring de sumo,土俵,,dohyou,sumo ring,土,22
+-1,はなみ,,花見,,hanami,cherry-blossom viewing,花,69
+-1,いけばな,arrangement de fleurs,生花,,ikebana,flower arrangement,花,69
+-1,かいか,floraison,開花,,kaika,bloom; blossom,花,69
+-1,かふんしょう,rhume des foins,花粉症,,kafunshou,hay fever,花,69
+-1,くさわけ,pionier,草分け,,kusawake,pioneer,草,77
+-1,そうげん、くさはら,herbeux; plaine; prairie,草原,,sougen; kusahara,grassy; plain; meadow,草,77
+-1,そうあん,ébauche (loie / document),草案,,souan,draft (of a law / document),草,77
+-1,かいそう,algues; plantes marines,海草,,kaisou,seaweeds; sea plants,草,77
+-1,あしくぶ,cheville,足首,,ashikubi,ankle,足,67
+-1,ふそく,insuffisence; manque,不足,,fusoku,insufficiency; lack,足,67
+-1,ほっそく、はっそく,départ; inauguration,発足,,hossoku; hassoku,start; inauguration,足,67
+-1,まんぞく,satisfaction,満足,,manzoku,satisfaction,足,67
+-1,いりぐち,entrée,入口,,iriguchi,entrance,入,8
+-1,にゅうしゃ,être embauché,入社,,nyuusha,enter a company,入,8
+-1,でいり,entrer et sortir,出入り,,deiri,go in and out,入,8
+-1,ゆんゆう,importation,輸入,,yunyuu,import,入,8
+-1,きゅうし,pause; en suspend,休止,,kyuushi,pause; suspension,休,56
+-1,きゅうじつ,vacances; congés,休日,,kyuujitsu,holiday; day off,休,56
+-1,なつやすみ,été; vacances,夏休み,,natsuyasumi,summer; vacation,休,56
+-1,ていきゅうび,vacances scolaires; jour férié,定休日,,teikyuubi,regular holiday; closed,休,56
+-1,せんせい,professeur; docteur,先生,,sensei,teacher; doctor,先,54
+-1,せんじつ,l'autre jour,先日,,senjitsu,the other day,先,54
+-1,せんぱい,senior; superieur,先輩,,senpai,senior; superior,先,54
+-1,たびさき,destination de voyage,旅先,,tabisaki,travel destination,先,54
+-1,ちょうみん,habitants d'un village,町民,,choumin,townspeople,町,63
+-1,ちょうちょう,maire d'un village,町長,,chouchou,town mayor,町,63
+-1,したまち,centre-ville,下町,,shitamachi,downtown,町,63
+-1,みなとまち,,港町,,minatomachi,port town / city,町,63
+-1,しんりん,bois; forêt,森林,,shinrin,woods; forest,森,80
+-1,もりた,(nom de famille japonais commun),森田,,Morita,(common Japanese surname),森,80
+-1,あおもり,(lieu),青森,,Aomori,(place),森,80
+-1,しんりんたい,zone forestière,森林帯,,shinrintai,forest zone,森,80
+-1,かじ,feu,火事,,kaji,fire,火,27
+-1,はなび,feu d'artifice,花火,,hanabi,fireworks,火,27
+-1,ぼうか,prévention incendie,防火,,bouka,fire prevention,火,27
+-1,かさい　ほけん,assurance incendie,火災保険,,kasai hoken,fire insurance,火,27
+-1,たまご,œuf,玉子,,tamago,egg,玉,40
+-1,めだま,globe occulaire,目玉,,medama,eyeball,玉,40
+-1,ほうぎょく,gem; joyau,歩玉,,hougyoku,gem; jewel,玉,40
+-1,きんたま,bijoux de famille; testicules,金玉,,kintama,gold ball; testicules,玉,40
+-1,きんぞく,métal,金属,,kinzoku,metal,金,72
+-1,きんがく,montant,金額,,kingaku,amount of money,金,72
+-1,げんきん,cash,現金,,genkin,cash,金,72
+-1,しきん,fonds; capital,資金,,shikin,funds; capital,金,72
+-1,うろよう,pluviométrie,雨量,,uryou,(amount of) rainfall,雨,76
+-1,おおあめ、たいう,averse,大雨,,ooame; taiu,heavy rainfall; downpour,雨,76
+-1,つゆ、ばいう,pluie de saison,梅雨,,tsuyu; baiu,rainy season,雨,76
+-1,ぼうふうう,vent intense et pluie,暴風雨,,boufuuu,intense wind and rain,雨,76
+-1,いとぐち,bout de fil; début; indice,糸口,,itoguchi,thread end; beginning; clue,糸,58
+-1,いとへん,la clé d'un Kanji,糸遍,,itohen,the thread radical in a kanji,糸,58
+-1,けいと,laine,毛糸,,keito,wool,糸,58
+-1,きいと,soie,生糸,,kiito,raw silk,糸,58
+-1,こうちょう,principal; proviseur,校長,,kouchou,principal; headmaster,校,79
+-1,ぼこう,L'université de quelqu'un,母校,,bokou,one's alma mater,校,79
+-1,こうこう,lycée,高校,,koukou,high school,校,79
+-1,ちゅうがっこう,collège,中学校,,chuugakkou,junior high school,校,79
+-1,たけうま,pilotis,竹馬,,takeuma,stilts,竹,59
+-1,あおだけ,bamboo vert,青竹,,aodake,green bamboo,竹,59
+-1,ばくちく,pétard,爆竹,,bakuchiku,firecracker,竹,59
+-1,しょうちくばい,pin-bambou-prunier (symbol de trois choses de rang égal),松竹梅,,shouchikubai,pine-bamboo-plum (symbol of three things of equal rank),竹,59
+-1,せっかい,chaux (oxyde de calcium),石灰,,sekkai,lime (calcium oxide),石,44
+-1,せきたん,charbon,石炭,,sekitan,coal,石,44
+-1,せきゆ,essence; kérozène,石油,,sekiyu,petroleum; kerosene,石,44
+-1,ほうせき,pierre précieuse; joyau,宝石,,houseki,precious stone; jewel,石,44
+-1,てんか、あまくだ（り）,le monde entier; ,天下,,tenka; amakuda(ri),the whole wold; appointment through influence,天,34
+-1,てんじょう,plafond,天井,,tenjou,ceiling,天,34
+-1,てんき,météo,天気,,tenki,weather,天,34
+-1,てんねん,naturel,天然,,tennen,natural,天,34
+-1,むしば,dent carriée,虫歯,,mushiba,decayed tooth; cavity,虫,60
+-1,こんちゅう,insecte,昆虫,,konchuu,insect,虫,60
+-1,なきむし,pleur de bébé,泣き虫,,nakimushi,crybaby,虫,60
+-1,がいちゅう,insecte nuisible,害虫,,gaichuu,harmful insect,虫,60
+-1,おんがく,musique,音楽,,ongaku,music,音,78
+-1,ほんね,intention réelle; motivation sous-jacente,本音,,honne,real intention; underlying motive,音,78
+-1,はつおん,prononciation,発音,,hatsuon,pronunciation,音,78
+-1,ろくおん,enregistrer,録音,,rokuon,recording,音,78
+-1,りっぱ,splendide; beau,立派,,rippa,splendid; fine,立,49
+-1,やくだつ、やくにたつ,utile,役立つ,,yakudatsu;yakunitatsu,useful; serve the purpose,立,49
+-1,こくりつ,nationale (park; théatre; ...),国立,,kokuritsu,national (park; theater; etc.),立,49
+-1,どくりつ,indépendance,独立,,dokuritsu,independence,立,49
+-1,もじ、もんじ,caractère; lettre,文字,,moji; monji,character; letter,字,57
+-1,あかじ,être dans le rouge; déficite,赤字,,akaji,be in the red; deficit,字,57
+-1,かんじ,Caractère chinois,漢字,,kanji,Chinese character,字,57
+-1,すうじ,chiffre; nombre,数字,,suuji,digit; number; figure,字,57
+-1,せいねん,jeune personne; jeune,青年,,seinen,young man/people; youth,青,74
+-1,あおぞら,ciel bleu,青空,,aozora,blue sky,青,74
+-1,まっさお,bleu profond,真っ青,,massao,deep blue,青,74
+-1,あおしんごう,feu vert,青信号,,aoshingou,green (traffic) light,青,74
+-1,はやめ,un peu en avance,早目,,hayame,a little early; ahead of time,早,55
+-1,さっそく,immédiatement; mise au point,早速,,sassoku,at once; getting to the point,早,55
+-1,そうちょう,petit matin,早朝,,souchou,early morning,早,55
+-1,はやね,se coucher tôt,早寝,,hayane,going to bed early,早,55
+-1,しょうがつ,Nouvel an; Janvier,正月,,Shougatsu,New Year's; January,正,42
+-1,しょうじき,honnêteté,正直,,shoujiki,honesty,正,42
+-1,せいかく,honnêteté; exacte,正確,,seikaku,honesty; exact,正,42
+-1,かいせい,révision; avenant,改正,,kaisei,revision; amendment,正,42
+-1,そんちょう,chef du village,村長,,sonchou,village chief,村,65
+-1,むらまつり,fête du village,村祭り,,muramatsuri,village festival,村,65
+-1,ちょうそん,villages,町村,,chouson,towns and villages,村,65
+-1,のうそん,village de fermiers,農村,,nouson,farming village,村,65
+-1,りきし,ring de sumo,力士,,rikishi,sumo wrestler,力,9
+-1,きょうりょく,cooperation,協力,,kyouryoku,cooperation,力,9
+-1,みりょく,charme; attirance,魅力,,miryoku,appeal; charm; attraction,力,9
+-1,ぼうりょく,violence; force,暴力,,bouryoku,violence; force,力,9
+-1,くうき,air; atmosphere,空気,,kuuki,air; atmosphere,空,73
+-1,くうこう,aéroport,空港,,kuukou,airport,空,73
+-1,くうかん、あきま,espace; pièce vide,空間,,kuukan; akima,space; empty room,空,73
+-1,こうくう,aviation,航空,,koukuu,aviation,空,73
+-1,しゃこ,garage,車庫,,shako,garage,車,64
+-1,げしゃ,descendre d'un train,下車,,gesha,getting off a train,車,64
+-1,れっしゃ,train,列車,,ressha,train,車,64
+-1,ちゅうしゃ,parking,駐車,,chuusha,parking,車,64
+-1,きぶん,humeur,気分,,kibun,feeling; mood,気,52
+-1,きおん,temperature de l'air,気温,,kion,(air) temperature,気,52
+-1,ほんき,sérieux; sincérement,本気,,honki,serious; in earnest,気,52
+-1,ふけいき,récession économique; lugubre,不景気,,fukeiki,economic recession; gloomy,気,52
+-1,めいじん,maître; expert,名人,,meijin,master; expert,名,53
+-1,なまえ,nom,名前,,namae,name,名,53
+-1,めいし,carte de visite,名刺,,meishi,business / name card,名,53
+-1,ゆうめい,fameux,有名,,yuumei,famous,名,53
+-1,ごがつ,Mai,五月,,gogatsu,May,五,23
+-1,いつか,cinq jour; cinquième jour,五日,,itsuka,five days; fifth day,五,23
+-1,ごふん,cinq minutes,五分,,gofun,five minutes,五,23
+-1,ごじゅうおん,le syllabaire japonais,五十音,,gojuuon,the Japanese syllabary,五,23
+-1,よんじゅう、しじゅう,quarante,四十,,yonjuu; shijuu,forty,四,37
+-1,よっか,quatre jours; quatrième jour,四日,,yokka,four days; fourth day,四,37
+-1,しがつ,Avril,四月,,Shigatsu,April,四,37
+-1,しき,4 saisons,四季,,shiki,four seasons,四,37
+-1,もくてき,but; objet,目的,,mokuteki,purpose; objet,目,48
+-1,めぐすり,médicament / gouttes pour les yeux,目薬,,megusuri,eye medicine / drops,目,48
+-1,ちゅうもく,attention; remarque,注目,,chuumoku,attention; notice,目,48
+-1,いちにちめ,le premier jour,一日目,,ichinichime,the first day,目,48
+-1,げっきゅう,salaire mensuel,月給,,gekkyuu,monthly salary,月,28
+-1,まんげつ,pleine lune,満月,,mangetsu,full moon,月,28
+-1,いっかげつ,un mois,一ヶ月,,ikkagetsu,one month,月,28
+-1,みかずき,croissant le lune,三日月,,mikazuki,crescent moon,月,28
+-1,はつみみ,quelque chose entendue pour la 1ère fois,初耳,,hatsumimi,something heard for the first time,耳,61
+-1,そらみみ,mal entendre,空耳,,soramimi,mishearing,耳,61
+-1,はやみみ,oreille fine,早耳,,hayamimi,quick-eared; in the know,耳,61
+-1,じびか,docteur ORL,耳鼻科,,jibika,ear and nose doctor,耳,61
+-1,とおか,dix jours; 10ème jour,十日,,tooka,ten days; tenth day,十,6
+-1,じゅうぶん,suffisant; parfait; 10 minutes,十分,,juubun,enough; perfect; ten minutes,十,6
+-1,ごじゅう,cinquante,五十,,gojuu,fifty,十,6
+-1,にじゅっせいき,20ème siècle,二十世紀,,nijusseiki,twentieth century,十,6
+-1,せきはん,riz cuisiné avec les haricots rouges,赤飯,,sekihan,rice cooked with red beans,赤,68
+-1,せきめん,rougir,赤面,,sekimen,blush,赤,68
+-1,まっか,rouge profond; cramoisi,真っ赤,,makka,deep red; crimson,赤,68
+-1,あかんぼう,bébé,赤ん坊,,akanbou,baby,赤,68
+-1,はくじん,Caucasien,白人,,hakujin,Caucasian,白,46
+-1,はくしょ,un papier blanc,白書,,hakusho,a white paper,白,46
+-1,しろくろ,noir et blanc; bien et mal,白黒,,shirokuro,black and white; good and bad,白,46
+-1,こくはく,confession,告白,,kokuhaku,cofession,白,46
+-1,こども,enfant,子供,,kodomo,child,子,18
+-1,じし,femme; des femmes,女子,,joshi,woman; women's,子,18
+-1,むすこ,fils,息子,,musuko,son,子,18
+-1,げんし,atome; atomique,原子,,genshi,atom(ic),子,18
+-1,だいがく,université,大学,,daigaku,university,大,14
+-1,だいじ,important; sérieux,大事,,daiji,important serious,大,14
+-1,たいへん,très; extrêmement; terrible,大変,,taihen,very ; extremely ; terrible,大,14
+-1,だいじょうぶ,bien ; sécurisé,大丈夫,,daijoubu,alright ; safe ; secure,大,14
+-1,さんじゅう,trente,三十,,sanjuu,thirty,三,10
+-1,さんにん,trois personnes,三人,,sannin,three people,三,10
+-1,みっか,trois jours ; troisième jour,三日,,mikka,three days ; third day,三,10
+-1,さんがつ,mars,三月,,sangatsu,March,三,10
+-1,がくせい,étudiant,学生,,gakusei,student,学,71
+-1,がっこう,école,学校,,gakkou,shool,学,71
+-1,にゅうがく,admission à une école,入学,,nyuugaku,admission into a school,学,71
+-1,けんがく,regarder ; visite ; apprendre par observation,見学,,kengaku,watch ; tour ; study by observation,学,71
+-1,むいか,six jours ; sixième jour,六日,,muika,six days ; sixth day,六,24
+-1,ろくがつ,juin,六月,,rokugatsu,June,六,24
+-1,ろっぷん,six minutes,六分,,roppun,six minutes,六,24
+-1,ろくじ,six heures,六時,,rokuji,six o'clock ; six hours,六,24
+-1,てあらい,se laver les mains; toilettes,手荒い,,tearai,wash hands ; toilet,手,30
+-1,てずくり,fait à la main,手作り,,tezukuri,handmade,手,30
+-1,あいて,partenaire; compagnon,相手,,aite,partner ; companion,手,30
+-1,せんしゅ,jour ; athlète,選手,,senshu,player ; athlete,手,30
+-1,なのか,sept jours; septième jour,七日,,nanoka,seven days ; seventh day,七,3
+-1,しちがつ,juillet,七月,,shichigatsu,juillet,七,3
+-1,ななひゃく,sept cents,七百,,nanahyaku,seven hundred,七,3
+-1,じゅうなな,dix-sept,十七,,juunana,seventeen,七,3
+-1,ようか,huit jours ; huitième jour,八日,,youka,eight days ; eighth day,八,4
+-1,はっぽう,tous les côtés/directions,八方,,happou,all sides/direction,八,4
+-1,はちがつ,Août,八月,,hachigatsu,August,八,4
+-1,むらはちぶ,ostracisme,村八分,,murahachibu,ostracism,八,4
+-1,ふたり,deux personnes,二人,,futari,two people,二,2
+-1,ふつか,deux jours; second jour,二日,,futsuka,two days; second day,二,2
+-1,はたち,de vingt ans,二十歳,,hatachi,twenty years old,二,2
+-1,はつか,vingtième jour,二十日,,hatsuka,twentieth day,二,2
+-1,ここのか,neuf jours; neuvième jour,九日,,kokonoka,nine days; neuvième jour,九,5
+-1,くがつ,septembre,九月,,kugatsu,september,九,5
+-1,きゅうじゅう,quatre-vingt-dix,九十,,kyuujuu,ninety,九,5
+-1,くじ,neuf heure ; neuf heures,九時,,kuji,nine o'clock ; nine hours,九,5
+-1,ひとり,une personne,一人,,hitori,one person,一,1
+-1,いちばん,numéro un ; le meilleur,一番,,ichiban,number one ; the best,一,1
+-1,いちにち,un jour ; premier jour,一日,,ichinichi,one day; first day,一,1
+-1,いっぱんてき,génerallement,一般的,,ippanteki,generally,一,1
+-1,たなか,(nom japonais commun),田中,,tanaka,(common Japanese surname),田,45
+-1,たはた,champs et rizières,田畑,,tahata,fields and rice paddies,田,45
+-1,いなか,zone rurale; campagne,田舎,,inaka,rural district ; the contryside,田,45
+-1,ゆでん,champs de pétrole,油田,,yuden,oil field,田,45
+-1,やぎ,chèvre,山羊,,yagi,goat,山,17
+-1,かざん,volcan,火山,,kazan,volcano,山,17
+-1,とざん,escalader une montagne,登山,,tozan,mountain climbing,山,17
+-1,やまかじ,feu de forêt,山火事,,yamakaji,forest fire,山,17
+-1,おうさま,roi,王様,,ousama,king,王,26
+-1,おうちょう,dynastie,王朝,,ouchou,dynasty,王,26
+-1,おうこく,royaume,王国,,oukoku,kingdom,王,26
+-1,ほうおう,le Pape,法王,,houou,the Popo,王,26
+-1,にんげん,espèce humaine,人間,,ningen,human being,人,7
+-1,にんき,populaire,人気,,ninki,popular,人,7
+-1,おとな,adult,大人,,otona,adult,人,7
+-1,にほんじん,personne japonaise,日本人,,nihonjin,Japanese person,人,7
+-1,じょせい,femme; femelle,女性,,josei,woman; femal,女,19
+-1,にょうぼう,la femme de quelqu'un,女房,,nyoubou,one's wife,女,19
+-1,かのじょ,elle,彼女,,kanojo,she,女,19
+-1,ちょうじょ,la fille ainée,長女,,choujo,eldest daughter,女,19
+-1,だんし,homme ; mâle ; garçon,男子,,danshi,man; male; boy,男,66
+-1,おとこ（の）こ,homme ; mâle ; garçon,男子,,danshi,man; male; boy,男,66
+-1,だんじょ,homme et femme,男女,,nannyo,men and women,男,66
+-1,なんにょ,homme et femme,男女,,nannyo,men and women,男,66
+-1,だんせい,homme ; mâle ; masculinité,男性,,dansei,man ; male ; masculinity,男,66
+-1,ちょうなん,fils ainé,長男,,chounan,eldest son,男,66
+-1,ちゅうねん,d'âge moyen,中年,,chuunen,middle age,中,32
+-1,せなか,dos ; colonne vertébrale,背中,,senaka,back ; spine,中,32
+-1,ねっちゅう,fan ; fou de,熱中,,netchuu,enthusiastic ; crazy about,中,32
+-1,でんわちゅう,en plein appel téléphonique,電話中,,denwachuu,in the middle of a phone call,中,32
+-1,せいと,étudiant ; élève,生徒,,seito,student ; pupil,生,43
+-1,せいさん,production,生産,,seisan,production,生,43
+-1,たんじょう,naissance ; présenter,誕生,,tanjou,birth ; introduce,生,43
+-1,せいめいほけん,assurance vie,生命保険,,seimei hoken,life insurance,生,43
+-1,えんしん,centre d'un cercle,円心,,enshin,centre of a circle,円,25
+-1,えんだか,yen (valeur montante),円高,,endaka,yen rising in value,円,25
+-1,えんかつ,douceur ; harmonie,円滑,,enkatsu,smoothness ; harmony,円,25
+-1,いちまんえん,10 000 yens,一万円,,ichimanen,10;000 yen,円,25
+-1,じんこう,population,人口,,jinkou,population,口,16
+-1,からくち,spicy,辛口,,karakuchi,relevé ; épicé,口,16
+-1,はやくち,qui parle rapidement,早口,,hayakuchi,fast talking,口,16
+-1,わるくち,médire ; grossièretés,悪口,,warukuchi,speak ill of ; bad language,口,16
+-1,こいぬ,chiot,子犬,,koinu,puppy,犬,29
+-1,いぬじ（に）,mourir en vain ; mourir comme un chien,犬死　（に）,,inuji (ni),die in vain ; die a dog's death,犬,29
+-1,あいけん,chien (animal de compagnie),愛犬,,aiken,pet dog,犬,29
+-1,いぬごや,niche,犬小屋,,inugoya,dog house,犬,29
+-1,すいぶん,humidité ; hygrométrie,水分,,suibun,moisture ; water content,水,31
+-1,すいさん,produits de la mer,水産,,suisan,marine products,水,31
+-1,みずぎ,maillot de bain,水着,,mizugi,swimsuit,水,31
+-1,すいじゅん,niveau (de l'eau) ; référence,水準,,suijun,(water) level ; standard,水,31
+-1,としうえ,aîné ; plus âgé,年上,,toshiue,older ; senior,年,51
+-1,ねんきゅう,salaire annuel,年給,,nenkyuu,annual salary,年,51
+-1,はんとし,semestre,半年,,hantoshi,half year,年,51
+-1,きょねん,l'année dernière,去年,,kyonen,last year,年,51
+-1,みあ（う）；みあ（い）,se regarder l'un l'autre ; entretien en vue d'un mariage arrangé,見合,,mia(u) ; mia(i),look at each other ; arranged-marriage interview,見,62
+-1,みごと,beau ; splendide,見事,,migoto,beautiful ; splendid,見,62
+-1,はっけん,découverte,発見,,hakken,discovery,見,62
+-1,いけん,opinion,意見,,iken,opinion,見,62
+-1,ぶんか,culture,文化,,bunka,culture,文,35
+-1,もじ；もんじ,lettre ; caractère,文字,,moji ; monji,letter ; character,文,35
+-1,ぶんがく,littérature,文学,,bungaku,literature,文,35
+-1,ちゅうもん,commande,注文,,chuumon,order ; commission,文,35
+-1,にっかん,quotidien,日刊,,nikkan,daily newspaper,日,33
+-1,にちじょう,tous les jours ; routine,日常,,nichijou,everyday ; routine,日,33
+-1,ひや（け）,coup de soleil ; bronzage,日焼け,,hiya(ke),sunburn ; suntan,日,33
+-1,ふつかよい,gueule de bois,二日酔,,futsukayoi,hangover,日,33
+-1,ゆうがた,soir,夕方,,yuugata,evening,夕,20
+-1,ゆうかん,journal du soir,夕刊,,yuukan,evening newspaper,夕,20
+-1,ゆうしょく,dîner,夕食,,yuushoku,supper,夕,20
+-1,いっちょういっせき,en un jour; en un temps très court,一朝一夕,,icchouisseki,in a day; in a short time,夕,20
+-1,ひゃくまん,million,百万,,hyakuman,million,百,50
+-1,ひゃっかてん,grand magasin,百貨店,,hyakkaten,department store,百,50
+-1,やおや,primeurs (magasin),八百屋,,yaoya,vegetable shop,百,50
+-1,ひゃっかじてん,encyclopédie,百科事典,,hyakkajiten,encyclopedia,百,50
+-1,かいがら,coquillage,貝殻,,kaigara,shell,貝,70
+-1,あかがい,arche ovale (mollusque),赤貝,,akaigai,ark shell ; blood clam,貝,70
+-1,しんじゅがい,huitre perlière,真珠貝,,shinjugai,pearl oyster,貝,70
+-1,ほた(て)がい,coquille Saint Jacques,帆立貝,,hota(te)gai,scallop,貝,70
+-1,さんぜん,3000,三千,,sanzen,3000,千,11
+-1,せんねん,millénaire,千年,,sennen,millenium,千,11
+-1,ちば,Chiba (lieu),千葉,,chiba,Chiba (place),千,11
+-1,せんしゅうらく,dernier jour d'un tournoi de sumo ; programme de fin,千秋楽,,senshuuraku,last day of a sumou tournament ; concluding program,千,11
+-1,ほんとう,"vrai, réel",本当,,hontou,"true, real",本,47
+-1,にほん,Japon,日本,,nihon,Japan,本,47
+-1,ごほん,cinq objets cylindriques,五本,,gohon,five cylindrical objects,本,47
+-1,きほん,"basique, fondamental",基本,,kihon,"basic, fundamental",本,47
