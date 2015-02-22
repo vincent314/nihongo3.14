@@ -15,6 +15,8 @@ module.exports = function (grunt) {
 
   // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt);
+  require('./tasks/elasticsearchTask')(grunt);
+  require('./tasks/kanjiTask')(grunt);
 
   grunt.loadNpmTasks('grunt-mkdir');
 
@@ -389,7 +391,7 @@ module.exports = function (grunt) {
         files: [
           {
             cwd: 'docs/src/Cours_3b',
-            src: require('./scripts/configReader').getFileList('app/scripts/config.js','docs/html/Cours_3b'),
+            src: require('./tasks/lib/configReader').getFileList('app/scripts/config.js','docs/html/Cours_3b'),
             dest: '.tmp/single.html'
           }]
       },
@@ -407,14 +409,7 @@ module.exports = function (grunt) {
         extensions: 'coffee',
         specNameMatcher: 'Spec',
         projectRoot: 'scripts',
-        specFolders: ['test/node'],
-        //coverage: {},
-        //jUnit: {
-        //  report: true,
-        //  savePath: './output/jasmine/',
-        //  useDotNotation: true,
-        //  consolidate: true
-        //}
+        specFolders: ['test/node']
       },
       all: ['test/node/']
     },
@@ -441,7 +436,7 @@ module.exports = function (grunt) {
     },
     esInit: {
       local: {
-        index: 'nihongo_20140117',
+        index: 'nihongo_20150222',
         hostname: 'localhost',
         port: 9200,
         auth: require('./es-auth.js')
@@ -451,6 +446,11 @@ module.exports = function (grunt) {
         hostname: 'elastic-vmn.rhcloud.com',
         port: 80,
         auth: require('./es-auth.js')
+      }
+    },
+    csvToJson:{
+      default:{
+        src:'./docs/src/kanji/Nihongo data - Kanji.csv'
       }
     }
   });
@@ -502,6 +502,7 @@ module.exports = function (grunt) {
     'prepare',
     'showdown:single',
     'epub',
+    'csvToJson',
     'wiredep',
     'useminPrepare',
     'concurrent:dist',
@@ -562,39 +563,5 @@ module.exports = function (grunt) {
   grunt.registerTask('prepare', function () {
     console.log('Mkdir .tmp/');
     grunt.file.mkdir('.tmp/');
-  });
-
-  grunt.registerMultiTask('esLoad', function () {
-    var done = this.async();
-
-    var ElasticSearch = require('./scripts/elasticsearch');
-
-    var es = new ElasticSearch(this.data, grunt);
-
-    es.indexFilesFromConfig('app/scripts/config.js', this.data.nb, grunt).then(function () {
-      grunt.log.ok();
-      done();
-    }).fail(function (err) {
-      grunt.log.error(JSON.stringify(err));
-      done();
-    });
-  });
-
-
-  grunt.registerMultiTask('esInit', function () {
-    var done = this.async();
-
-    var ElasticSearch = require('./scripts/elasticsearch');
-    var es = new ElasticSearch(this.data, grunt);
-    es.init().then(function () {
-      return es.setAlias();
-    })
-      .then(function (result) {
-        grunt.log.ok(result);
-        done();
-      }).fail(function (err) {
-        grunt.log.error('Error:' + JSON.stringify(err));
-        done();
-      });
   });
 };

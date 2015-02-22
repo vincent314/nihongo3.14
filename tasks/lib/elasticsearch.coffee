@@ -137,7 +137,8 @@ class ElasticSearch
 
   init: () ->
     deferred = Q.defer()
-    data = require('./index_mapping')
+    # TODO convert index_mapping to json file
+    data = require('./../index_mapping')
 
     options =
       hostname: @hostname,

@@ -1,7 +1,7 @@
-KanjiReader = require '../../scripts/kanjiReader'
+KanjiReader = require '../../tasks/lib/kanjiReader'
 fs = require('fs')
 
-ddescribe 'Test de KanjiReader', () ->
+describe 'Test de KanjiReader', () ->
   kanjiReader = null
 
   beforeEach ()->

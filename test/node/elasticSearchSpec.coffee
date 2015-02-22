@@ -1,5 +1,5 @@
 describe 'ElasticSearch Spec', ->
-  ElasticSearch = require('../../scripts/elasticsearch')
+  ElasticSearch = require('../../tasks/lib/elasticsearch')
   nock = require('nock')
   http = require('http')
 
