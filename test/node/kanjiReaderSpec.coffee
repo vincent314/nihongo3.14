@@ -8,7 +8,8 @@ describe 'Test de KanjiReader', () ->
     kanjiReader = new KanjiReader()
 
   it 'read and parse csv file', (done)->
-    kanjiReader.csvToJSON './test/data/kanji.csv', (data)->
+    kanjiReader.csvToJSON './test/data/kanji.csv'
+    .then (data)->
       expect(data).toEqual [
         {
           id: 19,
@@ -29,4 +30,10 @@ describe 'Test de KanjiReader', () ->
           kun2: '',
           english2: ''
         }]
+      done()
+
+  it 'read file not found', (done)->
+    kanjiReader.csvToJSON 'invalidFile.csv'
+    .catch (err)->
+      expect(err).toBe('invalidFile.csv not found')
       done()
