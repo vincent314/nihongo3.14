@@ -1,10 +1,10 @@
 'use strict';
 
 angular.module('nihongo').constant('CONFIG', {
-  es:{
-    host:'elastic-vmn.rhcloud.com',
-    port:'80',
-    uri:'nihongo/article'
+  es: {
+    host: 'elastic-vmn.rhcloud.com',
+    port: '80',
+    uri: 'nihongo/article'
   },
   //es:{
   //  host:'localhost',
@@ -409,11 +409,13 @@ angular.module('nihongo').constant('CONFIG', {
       pages: [
         {
           title: 'Cours 1',
-          file: 'cours_01.html'
+          file: 'cours_01.html',
+          topics:['oral d\'entrée','kanji 鳴来会作知']
         },
         {
           title: 'Cours 2',
-          file: 'cours_02.html'
+          file: 'cours_02.html',
+          topics:['présentations','questions ouvertes et fermées','essayer pour voir','kanji 画用角絵形']
         },
         {
           title: 'Vocabulaire leçon 1',
@@ -421,23 +423,28 @@ angular.module('nihongo').constant('CONFIG', {
         },
         {
           title: 'Cours 3',
-          file: 'cours_03.html'
+          file: 'cours_03.html',
+          topics: ['essayer pour voir','permission / interdiction','« Le petit chaperon rouge »']
         },
         {
           title: 'Cours 4',
-          file: 'cours_04.html'
+          file: 'cours_04.html',
+          topics: ['donner un conseil', 'pronostic']
         },
         {
           title: 'Cours 5',
-          file: 'cours_05.html'
+          file: 'cours_05.html',
+          topics: ['probabilité', 'la manière de …', 'essayer de …', 'vous ne pouvez pas …', 'arriver chez quelqu\'un']
         },
         {
           title: 'Cours 6',
-          file: 'cours_06.html'
+          file: 'cours_06.html',
+          topics: ['quand, lorsque']
         },
         {
           title: 'Cours 7',
-          file: 'cours_07.html'
+          file: 'cours_07.html',
+          topics: ['le « si » systématique']
         },
         {
           title: 'Cours 8',
@@ -449,27 +456,47 @@ angular.module('nihongo').constant('CONFIG', {
         },
         {
           title: 'Cours 9',
-          file: 'cours_09.html'
+          file: 'cours_09.html',
+          topics: ['verbes composés', 'changer / corriger', 'donner', 'recevoir', 'jeux de mots']
         },
         {
           title: 'Cours 10',
-          file: 'cours_10.html'
+          file: 'cours_10.html',
+          topics: ['forme polie de donner / recevoir', 'parce que', 'alors que', 'nominalisation', 'être impatient de']
         },
         {
           title: 'Cours 11',
-          file: 'cours_11.html'
+          file: 'cours_11.html',
+          topics: ['résolutions de l\'année', 'alcools', 'nominalisation']
         },
         {
           title: 'Cours 12',
-          file: 'cours_12.html'
+          file: 'cours_12.html',
+          topics: ['proposition relative « que »', '〜は〜が']
         },
         {
           title: 'Cours 13',
-          file: 'cours_13.html'
+          file: 'cours_13.html',
+          topics: ['porter des vêtements', 'anatomie du visage']
         },
         {
           title: 'Cours 14',
-          file: 'cours_14.html'
+          file: 'cours_14.html',
+          topics: ['quantificateurs', 'statistiques', 'vouloir faire', 'forme polie des noms', 'emploi du temps']
+        },
+        {
+          title: 'Cours 15',
+          file: 'cours_15.html',
+          topics: ['kanji 語社理科']
+        },
+        {
+          title: 'Vocabulaire leçon 3',
+          file: 'vocabulaire_lecon_3.html'
+        },
+        {
+          title: 'Cours 17',
+          file: 'cours_17.html',
+          topics: ['facile / difficile / caractéristique / tendance']
         }
       ]
     }

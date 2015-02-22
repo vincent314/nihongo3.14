@@ -23,6 +23,7 @@ SearchController.prototype.searchSuccess = function (result) {
 
 SearchController.prototype.searchFailure = function (err) {
   this.error = err;
+  console.log('Error status : ' + err.status);
 };
 
 SearchController.$inject = ['$routeParams', 'NihongoService'];

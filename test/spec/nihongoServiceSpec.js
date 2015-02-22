@@ -24,7 +24,7 @@ describe('Test Nihongo Service', function () {
       {title: 'Page B', file: 'pageB.html', category: {dir: 'dir'}},
       {title: 'Page A', file: 'pageA.html', category: {dir: 'dir'}},
       {title: 'Page 2', file: 'page2.html', category: {dir: 'dir'}},
-      {title: 'Page 1', file: 'page1.html', category: {dir: 'dir'}}];
+      {title: 'Page 1', file: 'page1.html', category: {dir: 'dir'},topics : [ '一番', '二番' ]}];
     expect(timeline).toEqual(expected);
   });
 

@@ -403,8 +403,18 @@ module.exports = function (grunt) {
     },
     jasmine_node: {
       options: {
-        extensions: 'js',
-        specNameMatcher: 'spec'
+        coffee: true,
+        extensions: 'coffee',
+        specNameMatcher: 'Spec',
+        projectRoot: 'scripts',
+        specFolders: ['test/node'],
+        //coverage: {},
+        jUnit: {
+          report: true,
+          savePath: './output/jasmine/',
+          useDotNotation: true,
+          consolidate: true
+        }
       },
       all: ['test/node/']
     },
@@ -415,7 +425,7 @@ module.exports = function (grunt) {
     },
     esLoad: {
       local: {
-        //nb: 1,
+        nb: 1,
         index: 'nihongo_20140117',
         hostname: 'localhost',
         port: 9200,
@@ -580,18 +590,11 @@ module.exports = function (grunt) {
       return es.setAlias();
     })
       .then(function (result) {
-        console.log(result);
-        grunt.log.ok();
+        grunt.log.ok(result);
         done();
       }).fail(function (err) {
         grunt.log.error('Error:' + JSON.stringify(err));
         done();
       });
-  });
-
-  grunt.registerTask('testConfig', function () {
-    var config = require('./scripts/configReader').getFileList('app/scripts/config.js','docs/html/Cours_3b');
-
-    grunt.log.ok(JSON.stringify(config));
   });
 };

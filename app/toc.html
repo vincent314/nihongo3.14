@@ -22,6 +22,8 @@
         <ul>
           <li ng-repeat="page in category.pages"><a
             ng-href="{{buildRoute(category.title,page.title)}}">{{page.title}}</a>
+            <br/>
+            <small ng-repeat="topic in page.topics">{{topic}}<span ng-show="!$last"> &#8226; </span></small>
           </li>
         </ul>
 

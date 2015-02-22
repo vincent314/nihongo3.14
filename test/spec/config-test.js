@@ -11,7 +11,8 @@ angular.module('nihongo').constant('CONFIG', {
       pages: [
         {
           title: 'Page 1',
-          file: 'page1.html'
+          file: 'page1.html',
+          topics:['一番','二番']
         },
         {
           title: 'Page 2',
