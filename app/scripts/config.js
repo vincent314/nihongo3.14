@@ -503,5 +503,8 @@ angular.module('nihongo').constant('CONFIG', {
   ],
   toc: {
     templateUrl: 'toc.html'
+  },
+  kanji:{
+    file:'docs/kanji/kanji.json'
   }
 });
