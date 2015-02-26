@@ -1,14 +1,13 @@
-KanjiReader = require '../../tasks/lib/kanjiReader'
-fs = require('fs')
-
 describe 'Test de KanjiReader', () ->
+  KanjiReader = require '../../tasks/lib/kanjiReader'
+  fs = require('fs')
   kanjiReader = null
 
   beforeEach ()->
     kanjiReader = new KanjiReader()
 
   it 'read and parse csv file', (done)->
-    kanjiReader.csvToJSON './test/data/kanji.csv'
+    kanjiReader.csvToJSON('./test/data/kanji.csv')
     .then (data)->
       expect(data).toEqual [
         {
@@ -33,7 +32,7 @@ describe 'Test de KanjiReader', () ->
       done()
 
   it 'read file not found', (done)->
-    kanjiReader.csvToJSON 'invalidFile.csv'
+    kanjiReader.csvToJSON('invalidFile.csv')
     .catch (err)->
       expect(err).toBe('invalidFile.csv not found')
       done()

@@ -408,7 +408,7 @@ module.exports = function (grunt) {
         coffee: true,
         extensions: 'coffee',
         specNameMatcher: 'Spec',
-        projectRoot: 'scripts',
+        projectRoot: 'tasks',
         specFolders: ['test/node']
       },
       all: ['test/node/']
