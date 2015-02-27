@@ -391,7 +391,7 @@ module.exports = function (grunt) {
         files: [
           {
             cwd: 'docs/src/Cours_3b',
-            src: require('./tasks/lib/configReader').getFileList('app/scripts/config.js','docs/html/Cours_3b'),
+            src: require('./tasks/lib/configReader').getFileList('app/scripts/config.js', 'docs/html/Cours_3b'),
             dest: '.tmp/single.html'
           }]
       },
@@ -427,7 +427,7 @@ module.exports = function (grunt) {
         auth: require('./es-auth.js')
       },
       remote: {
-        nb:1,
+        nb: 1,
         index: 'nihongo_20140117',
         hostname: 'elastic-vmn.rhcloud.com',
         port: 80,
@@ -448,9 +448,36 @@ module.exports = function (grunt) {
         auth: require('./es-auth.js')
       }
     },
-    csvToJson:{
-      default:{
-        src:'./docs/src/kanji/Nihongo data - Kanji.csv'
+    csvToJson: {
+      default: {
+        src: './docs/src/kanji/Nihongo data - Kanji.csv'
+      }
+    },
+    xmlToJson: {
+      ichi: {
+        src: './docs/src/kanji/kanji.xml',
+        dest: 'app/docs/kanji/kanji_1.json',
+        jouyou: 1
+      },
+      ni: {
+        src: './docs/src/kanji/kanji.xml',
+        dest: 'app/docs/kanji/kanji_2.json',
+        jouyou: 2
+      },
+      san: {
+        src: './docs/src/kanji/kanji.xml',
+        dest: 'app/docs/kanji/kanji_3.json',
+        jouyou: 3
+      },
+      yon: {
+        src: './docs/src/kanji/kanji.xml',
+        dest: 'app/docs/kanji/kanji_4.json',
+        jouyou: 4
+      },
+      go: {
+        src: './docs/src/kanji/kanji.xml',
+        dest: 'app/docs/kanji/kanji_5.json',
+        jouyou: 5
       }
     }
   });

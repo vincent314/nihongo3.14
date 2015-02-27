@@ -47,7 +47,9 @@
     "q": "^1.1.2",
     "showdown-furigana-extension": "^1.0.2",
     "speakingurl": "^0.18.0",
-    "time-grunt": "^0.4.0"
+    "time-grunt": "^0.4.0",
+    "underscore": "^1.8.2",
+    "xml-stream": "^0.4.5"
   },
   "engines": {
     "node": ">=0.10.0"
