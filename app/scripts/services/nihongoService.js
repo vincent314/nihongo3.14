@@ -43,8 +43,8 @@ NihongoService.prototype.search = function (searchString) {
   return resource.get({q: ('japanese:' + searchString + ' OR french:' + searchString)}).$promise;
 };
 
-NihongoService.prototype.getKanjiList = function () {
-  return this.$http.get(this.CONFIG.kanji.file).then(function (res) {
+NihongoService.prototype.getKanjiList = function (file) {
+  return this.$http.get(this.CONFIG.kanji.base + '/' + file).then(function (res) {
     return res.data;
   }).catch(function(err) {
     console.log(err);

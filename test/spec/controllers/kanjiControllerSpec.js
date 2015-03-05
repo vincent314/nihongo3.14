@@ -1,6 +1,41 @@
 'use strict';
-describe('Test KanjiController', function () {
+ddescribe('Test KanjiController', function () {
   var $controller, $scope, $httpBackend, NihongoService;
+
+  var KANJI_MOCK = [{
+    'char': '一',
+    'readings': [{'text': 'イチ', 'romaji': 'ICHI', 'type': 'onyomi'}, {
+      'text': 'イツ',
+      'romaji': 'ITSU',
+      'type': 'onyomi'
+    }, {'text': 'ひと', 'romaji': 'hito', 'type': 'kunyomi'}, {
+      'text': 'ひと',
+      'romaji': 'hito',
+      'type': 'kunyomi'
+    }, {'text': 'かず', 'romaji': 'kazu', 'type': 'kunyomi'}, {
+      'text': 'い',
+      'romaji': 'i',
+      'type': 'kunyomi'
+    }, {'text': 'いっ', 'romaji': 'itsu', 'type': 'kunyomi'}, {
+      'text': 'いる',
+      'romaji': 'iru',
+      'type': 'kunyomi'
+    }, {'text': 'まこと', 'romaji': 'makoto', 'type': 'kunyomi'}],
+    'meanings': ['one']
+  }
+    , {
+      'char': '右',
+      'readings': [{'text': 'ウ', 'romaji': 'U', 'type': 'onyomi'}, {
+        'text': 'ユウ',
+        'romaji': 'YUU',
+        'type': 'onyomi'
+      }, {'text': 'みぎ', 'romaji': 'migi', 'type': 'kunyomi'}, {
+        'text': 'あき',
+        'romaji': 'aki',
+        'type': 'kunyomi'
+      }, {'text': 'すけ', 'romaji': 'suke', 'type': 'kunyomi'}],
+      'meanings': ['right']
+    }];
 
   beforeEach(function () {
     module('nihongo');
@@ -15,35 +50,25 @@ describe('Test KanjiController', function () {
   });
 
   it('Test listing kanji', function () {
-    var ctrl, response = [
-      {
-        id: 19,
-        strokes: 3,
-        kanji: '女',
-        on: 'ジョ、ニョ、ニョオ',
-        kun: 'おんな、め',
-        english: 'woman, girl, daughter',
-        kun2: '',
-        english2: ''
-      }];
-
+    var ctrl;
     $httpBackend.when('GET', 'toc.html').respond('');
-    $httpBackend.when('GET', '/kanji.json').respond(200, response);
+    $httpBackend.when('GET', 'docs/kanji/kanji_1.json').respond(200, KANJI_MOCK);
 
     runs(function () {
       ctrl = $controller('KanjiController', {
         $scope: $scope
       });
-
       $httpBackend.flush();
     });
 
+    //waits(0);
     waitsFor(function () {
-      return $scope.kanjiList;
+      return ctrl.kanjiMatrix;
     });
     runs(function () {
-      expect($scope.kanjiList).toEqual(response);
-      expect(NihongoService.getKanjiList).toHaveBeenCalled();
+      expect(ctrl.kanjiMatrix.length).toBe(1);
+      expect(ctrl.kanjiMatrix[0].length).toBe(2);
+      expect(NihongoService.getKanjiList).toHaveBeenCalledWith('kanji_1.json');
     });
   });
 });

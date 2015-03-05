@@ -32,8 +32,9 @@ angular.module('nihongo', ['ngRoute','infinite-scroll','ngSanitize','pascalprech
     title:'Rechercher'
   });
   $routeProvider.when('/kanji', {
-    templateUrl:'templates/kanjiList.html',
+    templateUrl:'templates/kanji.html',
     controller:'KanjiController',
+    controllerAs:'kanjiController',
     title:'Kanji'
   });
   $routeProvider
