@@ -497,6 +497,10 @@ angular.module('nihongo').constant('CONFIG', {
           title: 'Cours 17',
           file: 'cours_17.html',
           topics: ['facile / difficile / caractéristique / tendance']
+        },
+        {
+          title: 'Révisions',
+          file: 'revisions.html'
         }
       ]
     }

@@ -407,14 +407,7 @@ module.exports = function (grunt) {
         extensions: 'coffee',
         specNameMatcher: 'Spec',
         projectRoot: 'scripts',
-        specFolders: ['test/node'],
-        //coverage: {},
-        jUnit: {
-          report: true,
-          savePath: './output/jasmine/',
-          useDotNotation: true,
-          consolidate: true
-        }
+        specFolders: ['test/node']
       },
       all: ['test/node/']
     },
