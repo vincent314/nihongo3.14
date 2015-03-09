@@ -501,6 +501,11 @@ angular.module('nihongo').constant('CONFIG', {
         {
           title: 'Révisions',
           file: 'revisions.html'
+        },
+        {
+          title: 'Cours 18',
+          file: 'cours_18.html',
+          topics: ['changement volonté action','changement état','choisir']
         }
       ]
     }
