@@ -2,7 +2,8 @@
   "name": "nihongo3-14",
   "scripts": {
     "build": "grunt --force",
-    "start": "grunt serve"
+    "start": "grunt serve",
+    "test": "grunt test"
   },
   "devDependencies": {
     "apache-server-configs": "^2.7.1",
