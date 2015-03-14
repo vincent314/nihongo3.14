@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('nihongo', ['ngRoute','infinite-scroll','ngSanitize','pascalprecht.translate','ngResource'])
+angular.module('nihongo', ['ngRoute','infinite-scroll','ngSanitize','pascalprecht.translate','ngResource','mgcrea.ngStrap.popover'])
 .config(['$routeProvider', 'CONFIG', function ($routeProvider, CONFIG) {
 
   _(CONFIG.categories).forEach(function (category) {

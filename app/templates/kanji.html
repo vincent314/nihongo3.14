@@ -2,13 +2,13 @@
 
 <div class="container">
   <div class="row" ng-repeat="kanjiRow in kanjiController.kanjiMatrix">
-    <div class="col-xs-2" ng-repeat="kanji in kanjiRow">{{kanji.char}}</div>
-  </div>
-</div>
-
-<hr/>
-<div class="container">
-  <div class="row" >
-    <div class="col-xs-2" ng-repeat="kanji in kanjiController.kanjiList">{{kanji.char}}</div>
+    <button type="button" class="col-xs-2" ng-repeat="kanji in kanjiRow"
+            data-toggle="popover"
+            data-template="templates/kanji-popover-tpl.html"
+            data-animation="am-flip-x"
+            data-auto-close="1"
+            data-placement="bottom"
+            bs-popover
+      ><h1>{{kanji.char}}</h1></button>
   </div>
 </div>

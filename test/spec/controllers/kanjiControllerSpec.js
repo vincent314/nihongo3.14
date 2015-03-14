@@ -1,5 +1,5 @@
 'use strict';
-ddescribe('Test KanjiController', function () {
+describe('Test KanjiController', function () {
   var $controller, $scope, $httpBackend, NihongoService;
 
   var KANJI_MOCK = [{
@@ -22,8 +22,7 @@ ddescribe('Test KanjiController', function () {
       'type': 'kunyomi'
     }, {'text': 'まこと', 'romaji': 'makoto', 'type': 'kunyomi'}],
     'meanings': ['one']
-  }
-    , {
+  }, {
       'char': '右',
       'readings': [{'text': 'ウ', 'romaji': 'U', 'type': 'onyomi'}, {
         'text': 'ユウ',
