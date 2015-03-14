@@ -26,6 +26,15 @@ module.exports = function (grunt) {
     dist: 'output/nihongo3.14_gh-pages'
   };
 
+  var getEsAuth = function () {
+    try{
+      return require('./es-auth.js');
+    } catch(e){
+      grunt.log.warn('No es-auth.js found, continue');
+      return null;
+    }
+  };
+
   // Define the configuration for all the tasks
   grunt.initConfig({
 
@@ -424,14 +433,14 @@ module.exports = function (grunt) {
         index: 'nihongo_20140117',
         hostname: 'localhost',
         port: 9200,
-        auth: require('./es-auth.js')
+        auth: getEsAuth()
       },
       remote: {
         nb: 1,
         index: 'nihongo_20140117',
         hostname: 'elastic-vmn.rhcloud.com',
         port: 80,
-        auth: require('./es-auth.js')
+        auth: getEsAuth()
       }
     },
     esInit: {
@@ -439,13 +448,13 @@ module.exports = function (grunt) {
         index: 'nihongo_20150222',
         hostname: 'localhost',
         port: 9200,
-        auth: require('./es-auth.js')
+        auth: getEsAuth()
       },
       remote: {
         index: 'nihongo_20140117',
         hostname: 'elastic-vmn.rhcloud.com',
         port: 80,
-        auth: require('./es-auth.js')
+        auth: getEsAuth()
       }
     },
     csvToJson: {
