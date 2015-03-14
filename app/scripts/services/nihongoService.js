@@ -46,8 +46,6 @@ NihongoService.prototype.search = function (searchString) {
 NihongoService.prototype.getKanjiList = function (file) {
   return this.$http.get(this.CONFIG.kanji.base + '/' + file).then(function (res) {
     return res.data;
-  }).catch(function(err) {
-    console.log(err);
   });
 };
 
