@@ -41,7 +41,7 @@ On utilise le が d'état, ainsi que le verbe passé.
 例：かみが短（みじか）くなりました。    
 Mes cheveux ont été coupés
 
-例：部（へ）屋（や）がきれいになにました。   
+例：部（へ）屋（や）がきれいになりました。   
 La pièce est propre.
 
 例：しおが半（はん）分（ぶん）になりました。    
@@ -94,4 +94,54 @@ Si vous tournez ce bouton vers la droite, le son devient plus fort.
 Il fait un peu chaud, non ? Allumons la clime, et rafraichissons la pièce.
 5. 飲（の）み物（もの）はコーヒーにしましょう。    
 Choisissons le café.
+
+Exercice 44.7 ~にします
+--------------------
+
+例：A：料（りょう）理（り）は何（なん）にしますか。           
+Quelle cuisine allons nous manger ?     
+B：タイ料理にしましょう。       
+Faisons Thaï !
+
+１：A:日（ひ）にちはいつにしますか。      
+Quel jour le faisons nous ?    
+B：２５日にしましょう。    
+Faisons le le 25 !
+
+２：A:時（じ）間（かん）は何（なん）時（じ）にしますか。           
+À quelle heure le faisons nous ?   
+B:６時（じ）にしましょう。     
+Faisons le à 6h !
+
+３：A: 場（ば）所（しょ）はどこにしますか。     
+Dans quel lieu le ferons nous ?    
+B：友（とも）達（だち）の家（うち）にしましょう。    
+Faisons le chez des amis !
+
+４：A：プレセントは何（なん）にしますか。    
+Quel cadeau ferons nous ?    
+B：子（こ）供（ども）があそびものにしましょう。    
+Offrons des jouers pour les enfants !
+
+５：A：アトラクションは何にしますか。     
+Quelles animations ferons nous ?    
+B：カラオケにしましょう。    
+Faisons un Karaoke !
+
+Kanji
+---
+
+* <font size="+2">豆</font>・まめ・pois
+>豆はさやの中  Les pois sont à l'intérieur des cosses  
+* <font size="+2">酒</font>・さけ・シュ・alcool  
+clés : liquide + flacon
+>酒をのむ  Boire de l'alcool  
+* <font size="+2">油</font>・あぶら・ユ・huile  
+clés : liquide + extraire
+>油は水よりかるい  L'huile est plus légère que l'eau
+* <font size="+2">炭</font>・すみ・charbon de bois
+>炭で肉をやく  La viande cuit sure la braise
+* <font size="+2">畑</font>・はたけ・champs
+>畑で野さいを作る  les légumes poussent dans les champs
+
 
