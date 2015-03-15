@@ -27,7 +27,6 @@ module.exports = function (config) {
       'app/scripts/filters/*.js',
       'test/spec/*.js',
       'test/spec/**/*.js',
-      'node_modules/ng-midway-tester/src/ngMidwayTester.js',
       'test/html/**/*.html',
       'app/templates/*.html'
     ],

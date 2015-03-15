@@ -3,7 +3,7 @@
   "scripts": {
     "build": "grunt --force",
     "start": "grunt serve",
-    "test": "grunt test"
+    "test": "grunt test --verbose"
   },
   "devDependencies": {
     "apache-server-configs": "^2.7.1",
