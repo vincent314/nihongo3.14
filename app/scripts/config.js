@@ -505,7 +505,12 @@ angular.module('nihongo').constant('CONFIG', {
         {
           title: 'Cours 18',
           file: 'cours_18.html',
-          topics: ['changement volonté action','changement état','choisir']
+          topics: ['changement volonté action','changement état','choisir','kanji 豆酒油炭畑']
+        },
+        {
+          title: 'Cours 19',
+          file: 'cours_19.html',
+          topics: ['adverbes']
         }
       ]
     }
