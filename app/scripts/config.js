@@ -511,6 +511,11 @@ angular.module('nihongo').constant('CONFIG', {
           title: 'Cours 19',
           file: 'cours_19.html',
           topics: ['adverbes']
+        },
+        {
+          title: 'Cours 20',
+          file: 'cours_20.html',
+          topics: ['comparaison','superlatif']
         }
       ]
     }
