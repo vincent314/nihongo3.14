@@ -31,7 +31,7 @@ angular.module('nihongo', ['ngRoute','infinite-scroll','ngSanitize','pascalprech
     controllerAs:'searchController',
     title:'Rechercher'
   });
-  $routeProvider.when('/kanji', {
+  $routeProvider.when('/kanji/:level', {
     templateUrl:'templates/kanji.html',
     controller:'KanjiController',
     controllerAs:'kanjiController',
