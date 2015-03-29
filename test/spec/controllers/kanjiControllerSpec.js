@@ -3,22 +3,21 @@ describe('Test KanjiController', function () {
   var $controller, $scope, $httpBackend, NihongoService;
 
   var KANJI_MOCK = [{
-    "id": 1,
-    "char": "一",
-    "readings": {
-      "onyomi": ["イチ", "イツ"],
-      "kunyomi": ["ひと", "ひと", "かず", "い", "いっ", "いる", "かつ", "かづ", "てん", "はじめ", "ひ", "ひとつ", "まこと"]
+    id: 1,
+    char: '一',
+    readings: {
+      onyomi: ['イチ', 'イツ'],
+      kunyomi: ['ひと', 'ひと', 'かず', 'い', 'いっ', 'いる', 'かつ', 'かづ', 'てん', 'はじめ', 'ひ', 'ひとつ', 'まこと']
     },
-    "meanings": ["one"]
-  }
-    , {
-      "id": 38,
-      "char": "右",
-      "readings": {"onyomi": ["ウ", "ユウ"], "kunyomi": ["みぎ", "あき", "すけ"]},
-      "meanings": ["right"]
-    }];
+    meanings: ['one']
+  }, {
+    id: 38,
+    char: '右',
+    readings: {onyomi: ['ウ', 'ユウ'], kunyomi: ['みぎ', 'あき', 'すけ']},
+    meanings: ['right']
+  }];
 
-    beforeEach(function () {
+  beforeEach(function () {
     module('nihongo');
 
     inject(['$controller', '$rootScope', '$httpBackend', 'NihongoService', function (_$controller_, _$rootScope_, _$httpBackend_, _NihongoService_) {
@@ -37,7 +36,8 @@ describe('Test KanjiController', function () {
 
     runs(function () {
       ctrl = $controller('KanjiController', {
-        $scope: $scope
+        $scope: $scope,
+        $routeParams: {level: 1}
       });
       $httpBackend.flush();
     });
@@ -60,7 +60,8 @@ describe('Test KanjiController', function () {
 
     runs(function () {
       ctrl = $controller('KanjiController', {
-        $scope: $scope
+        $scope: $scope,
+        $routeParams: {level:1}
       });
       $httpBackend.flush();
     });
