@@ -516,6 +516,11 @@ angular.module('nihongo').constant('CONFIG', {
           title: 'Cours 20',
           file: 'cours_20.html',
           topics: ['comparaison','superlatif']
+        },
+        {
+          title: 'Cours 21',
+          file: 'cours_21.html',
+          topics: ['énumération qualité / défauts']
         }
       ]
     }
