@@ -2,11 +2,13 @@
   "name": "nihongo3-14",
   "scripts": {
     "build": "grunt --force",
-    "start": "grunt serve"
+    "start": "grunt serve",
+    "test": "grunt test --verbose"
   },
   "devDependencies": {
     "apache-server-configs": "^2.7.1",
     "chai": "^1.9.2",
+    "csvtojson": "^0.3.18",
     "ebook-convert": "^0.1.0",
     "extend": "^2.0.0",
     "grunt": "^0.4.5",
@@ -25,7 +27,6 @@
     "grunt-debug-task": "^0.1.5",
     "grunt-jasmine-node": "^0.2.1",
     "grunt-karma": "^0.9.0",
-    "grunt-mocha": "^0.4.10",
     "grunt-modernizr": "^0.5.2",
     "grunt-newer": "^0.7.0",
     "grunt-rev": "^0.1.0",
@@ -43,12 +44,13 @@
     "load-grunt-tasks": "^0.4.0",
     "lodash": "^2.4.1",
     "lodash-node": "^2.4.1",
-    "ng-midway-tester": "^2.0.5",
     "nock": "^0.52.4",
     "q": "^1.1.2",
     "showdown-furigana-extension": "^1.0.2",
     "speakingurl": "^0.18.0",
-    "time-grunt": "^0.4.0"
+    "time-grunt": "^0.4.0",
+    "underscore": "^1.8.2",
+    "xml-stream": "^0.4.5"
   },
   "engines": {
     "node": ">=0.10.0"

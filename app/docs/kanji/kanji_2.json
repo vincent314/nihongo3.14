@@ -1,0 +1,161 @@
+[{"id":87,"char":"引","readings":{"onyomi":["イン"],"kunyomi":["ひ","ひ","ひ","び","ひ","いな","ひき","ひけ","びき"]},"meanings":["pull","tug","jerk","admit","install","quote","refer to"]}
+,{"id":117,"char":"羽","readings":{"onyomi":["ウ"],"kunyomi":["は","わ","はね","しゅう","ば"]},"meanings":["feathers","counter for birds, rabbits"]}
+,{"id":213,"char":"雲","readings":{"onyomi":["ウン"],"kunyomi":["くも","ぐも","き","ずも","のめ"]},"meanings":["cloud"]}
+,{"id":223,"char":"園","readings":{"onyomi":["エン"],"kunyomi":["その","おん","ぞの"]},"meanings":["park","garden","yard","farm"]}
+,{"id":224,"char":"遠","readings":{"onyomi":["エン","オン"],"kunyomi":["とお","お","おに","ど","どお"]},"meanings":["distant","far"]}
+,{"id":203,"char":"黄","readings":{"onyomi":["コウ","オウ"],"kunyomi":["き","こ","うい","れい"]},"meanings":["yellow"]}
+,{"id":137,"char":"何","readings":{"onyomi":["カ"],"kunyomi":["なに","なん","なに","なん","あが"]},"meanings":["what"]}
+,{"id":188,"char":"夏","readings":{"onyomi":["カ","ガ","ゲ"],"kunyomi":["なつ"]},"meanings":["summer"]}
+,{"id":189,"char":"家","readings":{"onyomi":["カ","ケ"],"kunyomi":["いえ","や","うち","あり","え","く","つか","べ"]},"meanings":["house","home"]}
+,{"id":170,"char":"科","readings":{"onyomi":["カ"],"kunyomi":["しな"]},"meanings":["department","course","section"]}
+,{"id":230,"char":"歌","readings":{"onyomi":["カ"],"kunyomi":["うた","うた"]},"meanings":["song","sing"]}
+,{"id":155,"char":"画","readings":{"onyomi":["ガ","カク","エ","カイ"],"kunyomi":["えが","かく","かぎ","はかりごと","はか"]},"meanings":["brush-stroke","picture"]}
+,{"id":119,"char":"会","readings":{"onyomi":["カイ","エ"],"kunyomi":["あ","あ","あつ","あい","い"]},"meanings":["meeting","meet","party","association","interview","join"]}
+,{"id":118,"char":"回","readings":{"onyomi":["カイ","エ"],"kunyomi":["まわ","まわ","まわ","まわ","まわ","まわ","まわ","もとお","か"]},"meanings":["-times","round","game","revolve","counter for occurrences"]}
+,{"id":171,"char":"海","readings":{"onyomi":["カイ"],"kunyomi":["うみ","あ","あま","うな","うん","え","か","た","ひろ","ひろし","ぶ","まち","まま","み","め","わたる"]},"meanings":["sea","ocean"]}
+,{"id":214,"char":"絵","readings":{"onyomi":["カイ","エ"]},"meanings":["picture","drawing","painting","sketch"]}
+,{"id":105,"char":"外","readings":{"onyomi":["ガイ","ゲ"],"kunyomi":["そと","ほか","はず","はず","と","うい","け","ふか"]},"meanings":["outside"]}
+,{"id":138,"char":"角","readings":{"onyomi":["カク"],"kunyomi":["かど","つの","い","す","すみ","ずみ","ふさ"]},"meanings":["angle","corner","square"]}
+,{"id":225,"char":"楽","readings":{"onyomi":["ガク","ラク","ゴウ"],"kunyomi":["たの","たの","この","さ","た","やす","ら"]},"meanings":["music","comfort","ease"]}
+,{"id":172,"char":"活","readings":{"onyomi":["カツ"],"kunyomi":["い","い","い"]},"meanings":["lively","resuscitation","being helped","living"]}
+,{"id":215,"char":"間","readings":{"onyomi":["カン","ケン"],"kunyomi":["あいだ","ま","あい"]},"meanings":["interval","space"]}
+,{"id":82,"char":"丸","readings":{"onyomi":["ガン"],"kunyomi":["まる","まる","まる","ま","わ","わに"]},"meanings":["round","full","month","perfection","-ship","pills","make round","roll up","curl up","seduce","explain away"]}
+,{"id":156,"char":"岩","readings":{"onyomi":["ガン"],"kunyomi":["いわ"]},"meanings":["boulder","rock","cliff"]}
+,{"id":239,"char":"顔","readings":{"onyomi":["ガン"],"kunyomi":["かお"]},"meanings":["face","expression"]}
+,{"id":191,"char":"帰","readings":{"onyomi":["キ"],"kunyomi":["かえ","かえ","おく","とつ"]},"meanings":["homecoming","arrive at","lead to","result in"]}
+,{"id":139,"char":"汽","readings":{"onyomi":["キ"]},"meanings":["vapor","steam"]}
+,{"id":190,"char":"記","readings":{"onyomi":["キ"],"kunyomi":["しる","のり"]},"meanings":["scribe","account","narrative"]}
+,{"id":83,"char":"弓","readings":{"onyomi":["キュウ"],"kunyomi":["ゆみ","こ","ゆ"]},"meanings":["bow","bow (archery, violin)"]}
+,{"id":88,"char":"牛","readings":{"onyomi":["ギュウ"],"kunyomi":["うし","うじ","ご"]},"meanings":["cow"]}
+,{"id":200,"char":"魚","readings":{"onyomi":["ギョ"],"kunyomi":["うお","さかな","ざかな","い"]},"meanings":["fish"]}
+,{"id":157,"char":"京","readings":{"onyomi":["キョウ","ケイ","キン"],"kunyomi":["みやこ","たか"]},"meanings":["capital","10**16"]}
+,{"id":201,"char":"強","readings":{"onyomi":["キョウ","ゴウ"],"kunyomi":["つよ","つよ","つよ","し","こわ","すね"]},"meanings":["strong"]}
+,{"id":202,"char":"教","readings":{"onyomi":["キョウ"],"kunyomi":["おし","おそ","のり","ひさ"]},"meanings":["teach","faith","doctrine"]}
+,{"id":140,"char":"近","readings":{"onyomi":["キン","コン"],"kunyomi":["ちか","おう","おお","この"]},"meanings":["near","early","akin","tantamount"]}
+,{"id":106,"char":"兄","readings":{"onyomi":["ケイ","キョウ"],"kunyomi":["あに","え","せ","よし"]},"meanings":["elder brother","big brother"]}
+,{"id":141,"char":"形","readings":{"onyomi":["ケイ","ギョウ"],"kunyomi":["かた","がた","かたち","なり","ち"]},"meanings":["shape","form","style"]}
+,{"id":173,"char":"計","readings":{"onyomi":["ケイ"],"kunyomi":["はか","はか","え","かず","け"]},"meanings":["plot","plan","scheme","measure"]}
+,{"id":89,"char":"元","readings":{"onyomi":["ゲン","ガン"],"kunyomi":["もと","ちか","はじめ","はる","ゆき","よし"]},"meanings":["beginning","former time","origin"]}
+,{"id":192,"char":"原","readings":{"onyomi":["ゲン"],"kunyomi":["はら","た","ばる","ら","わた","わら"]},"meanings":["meadow","original","primitive","field","plain","prairie","tundra","wilderness"]}
+,{"id":142,"char":"言","readings":{"onyomi":["ゲン","ゴン"],"kunyomi":["い","こと","とき"]},"meanings":["say"]}
+,{"id":107,"char":"古","readings":{"onyomi":["コ"],"kunyomi":["ふる","ふる","ふる","ふゆ"]},"meanings":["old"]}
+,{"id":90,"char":"戸","readings":{"onyomi":["コ"],"kunyomi":["と","え","へ","とびらのと"]},"meanings":["door"]}
+,{"id":91,"char":"午","readings":{"onyomi":["ゴ"],"kunyomi":["うま"]},"meanings":["noon","seventh sign of Chinese zodiac","sign of the horse"]}
+,{"id":174,"char":"後","readings":{"onyomi":["ゴ","コウ"],"kunyomi":["のち","うし","うしろ","あと","おく","こし","し","しい","しり"]},"meanings":["behind","back","later"]}
+,{"id":231,"char":"語","readings":{"onyomi":["ゴ"],"kunyomi":["かた","かた"]},"meanings":["word","speech","language"]}
+,{"id":120,"char":"交","readings":{"onyomi":["コウ"],"kunyomi":["まじ","まじ","ま","まじ","ま","ま","か","か","かわ","こもごも","かた"]},"meanings":["mingle","mixing","association","coming & going"]}
+,{"id":121,"char":"光","readings":{"onyomi":["コウ"],"kunyomi":["ひか","ひかり","あき","あきら","こお","てる","ひこ","み","みつ"]},"meanings":["ray","light"]}
+,{"id":92,"char":"公","readings":{"onyomi":["コウ","ク"],"kunyomi":["おおやけ","あきら","き","きみ","きん","たか","ただし","とも","ひろ","まさ"]},"meanings":["public","prince","official","governmental"]}
+,{"id":84,"char":"工","readings":{"onyomi":["コウ","ク","グ"],"kunyomi":["もく","たくみ"]},"meanings":["craft","construction"]}
+,{"id":108,"char":"広","readings":{"onyomi":["コウ"],"kunyomi":["ひろ","ひろ","ひろ","ひろ","ひろ"]},"meanings":["wide","broad","spacious"]}
+,{"id":122,"char":"考","readings":{"onyomi":["コウ"],"kunyomi":["かんが","かんが","たか"]},"meanings":["consider","think over"]}
+,{"id":123,"char":"行","readings":{"onyomi":["コウ","ギョウ","アン"],"kunyomi":["い","ゆ","ゆ","ゆき","い","いき","おこな","おこ","いく","なみ","なめ","みち","ゆき","ゆく"]},"meanings":["going","journey"]}
+,{"id":193,"char":"高","readings":{"onyomi":["コウ"],"kunyomi":["たか","たか","だか","たか","たか","か","こ","じょい","た","はか"]},"meanings":["tall","high","expensive"]}
+,{"id":124,"char":"合","readings":{"onyomi":["ゴウ","ガッ","カッ"],"kunyomi":["あ","あ","あ","あい","あ","あい","あ","あ","あ","あう","あん","い","か","こう","ごお","に","ね","や","り","わい"]},"meanings":["fit","suit","join","0.1"]}
+,{"id":158,"char":"国","readings":{"onyomi":["コク"],"kunyomi":["くに","くな","こ"]},"meanings":["country"]}
+,{"id":204,"char":"黒","readings":{"onyomi":["コク"],"kunyomi":["くろ","くろ","くろ"]},"meanings":["black"]}
+,{"id":93,"char":"今","readings":{"onyomi":["コン","キン"],"kunyomi":["いま","な"]},"meanings":["now"]}
+,{"id":85,"char":"才","readings":{"onyomi":["サイ"]},"meanings":["genius","years old"]}
+,{"id":205,"char":"細","readings":{"onyomi":["サイ"],"kunyomi":["ほそ","ほそ","こま","こま"]},"meanings":["dainty","get thin","taper","slender","narrow"]}
+,{"id":144,"char":"作","readings":{"onyomi":["サク","サ"],"kunyomi":["つく","つく","づく","くり","さか","さっ","づくり","とも","なお","はぎ","まさか"]},"meanings":["make","production","prepare","build"]}
+,{"id":232,"char":"算","readings":{"onyomi":["サン"],"kunyomi":["そろ"]},"meanings":["calculate","divining","number","abacus","probability"]}
+,{"id":159,"char":"姉","readings":{"onyomi":["シ"],"kunyomi":["あね","はは"]},"meanings":["elder sister"]}
+,{"id":109,"char":"市","readings":{"onyomi":["シ"],"kunyomi":["いち","い","ち"]},"meanings":["market","city","town"]}
+,{"id":175,"char":"思","readings":{"onyomi":["シ"],"kunyomi":["おも","おもえら","おぼ"]},"meanings":["think"]}
+,{"id":94,"char":"止","readings":{"onyomi":["シ"],"kunyomi":["と","ど","と","と","ど","とど","とど","とど","や","や","や","よ","さ","さ","どめ"]},"meanings":["stop","halt"]}
+,{"id":194,"char":"紙","readings":{"onyomi":["シ"],"kunyomi":["かみ"]},"meanings":["paper"]}
+,{"id":125,"char":"寺","readings":{"onyomi":["ジ"],"kunyomi":["てら"]},"meanings":["Buddhist temple"]}
+,{"id":195,"char":"時","readings":{"onyomi":["ジ"],"kunyomi":["とき","どき","と","とぎ"]},"meanings":["time","hour"]}
+,{"id":126,"char":"自","readings":{"onyomi":["ジ","シ"],"kunyomi":["みずか","おの","おの","より"]},"meanings":["oneself"]}
+,{"id":176,"char":"室","readings":{"onyomi":["シツ"],"kunyomi":["むろ"]},"meanings":["room","apartment","chamber","greenhouse","cellar"]}
+,{"id":145,"char":"社","readings":{"onyomi":["シャ"],"kunyomi":["やしろ","こそ"]},"meanings":["company","firm","office","association","shrine"]}
+,{"id":196,"char":"弱","readings":{"onyomi":["ジャク"],"kunyomi":["よわ","よわ","よわ","よわ"]},"meanings":["weak","frail"]}
+,{"id":177,"char":"首","readings":{"onyomi":["シュ"],"kunyomi":["くび","おびと","こべ","す"]},"meanings":["neck"]}
+,{"id":178,"char":"秋","readings":{"onyomi":["シュウ"],"kunyomi":["あき","とき","あい"]},"meanings":["autumn"]}
+,{"id":206,"char":"週","readings":{"onyomi":["シュウ"]},"meanings":["week"]}
+,{"id":179,"char":"春","readings":{"onyomi":["シュン"],"kunyomi":["はる","あずま","かす","すの","ひ","わら"]},"meanings":["springtime","spring (season)"]}
+,{"id":197,"char":"書","readings":{"onyomi":["ショ"],"kunyomi":["か","が","がき","かき"]},"meanings":["write"]}
+,{"id":95,"char":"少","readings":{"onyomi":["ショウ"],"kunyomi":["すく","すこ"]},"meanings":["few","little"]}
+,{"id":216,"char":"場","readings":{"onyomi":["ジョウ","チョウ"],"kunyomi":["ば"]},"meanings":["location","place"]}
+,{"id":127,"char":"色","readings":{"onyomi":["ショク","シキ"],"kunyomi":["いろ","しか","しこ"]},"meanings":["color"]}
+,{"id":180,"char":"食","readings":{"onyomi":["ショク","ジキ"],"kunyomi":["く","く","た","は","ぐい"]},"meanings":["eat","food"]}
+,{"id":96,"char":"心","readings":{"onyomi":["シン"],"kunyomi":["こころ","ごころ","りっしんべん"]},"meanings":["heart","mind","spirit"]}
+,{"id":226,"char":"新","readings":{"onyomi":["シン"],"kunyomi":["あたら","あら","あら","にい","あせ","あたらし","し","に","にっ","につ","よし"]},"meanings":["new"]}
+,{"id":237,"char":"親","readings":{"onyomi":["シン"],"kunyomi":["おや","おや","した","した","ぎ","ちか","のり"]},"meanings":["parent","intimacy","relative","familiarity","dealer (cards)"]}
+,{"id":146,"char":"図","readings":{"onyomi":["ズ","ト"],"kunyomi":["え","はか","づ"]},"meanings":["map","drawing","plan","unexpected","accidentally"]}
+,{"id":227,"char":"数","readings":{"onyomi":["スウ","ス","サク","ソク","シュ"],"kunyomi":["かず","かぞ","しばしば","せ","わずらわ","じゅ"]},"meanings":["number","strength","fate","law","figures"]}
+,{"id":181,"char":"星","readings":{"onyomi":["セイ","ショウ"],"kunyomi":["ほし","ぼし"]},"meanings":["star","spot","dot","mark"]}
+,{"id":217,"char":"晴","readings":{"onyomi":["セイ"],"kunyomi":["は","は","は","ば","は","はる","はれ"]},"meanings":["clear up"]}
+,{"id":147,"char":"声","readings":{"onyomi":["セイ","ショウ"],"kunyomi":["こえ","こわ"]},"meanings":["voice"]}
+,{"id":128,"char":"西","readings":{"onyomi":["セイ","サイ","ス"],"kunyomi":["にし","いり","ひし","むら"]},"meanings":["west","Spain"]}
+,{"id":97,"char":"切","readings":{"onyomi":["セツ","サイ"],"kunyomi":["き","き","き","き","ぎ","き","き","き","き","ぎ","きつ","きり","ぎり"]},"meanings":["cut","cutoff","be sharp"]}
+,{"id":207,"char":"雪","readings":{"onyomi":["セツ"],"kunyomi":["ゆき","せっ","ぶき"]},"meanings":["snow"]}
+,{"id":236,"char":"線","readings":{"onyomi":["セン"],"kunyomi":["すじ"]},"meanings":["line","track"]}
+,{"id":208,"char":"船","readings":{"onyomi":["セン"],"kunyomi":["ふね","ふな","ふ"]},"meanings":["ship","boat"]}
+,{"id":182,"char":"前","readings":{"onyomi":["ゼン"],"kunyomi":["まえ","まえ","さき","さと","まい"]},"meanings":["in front","before"]}
+,{"id":209,"char":"組","readings":{"onyomi":["ソ"],"kunyomi":["く","くみ","ぐみ"]},"meanings":["association","braid","plait","construct","assemble","unite","cooperate","grapple"]}
+,{"id":148,"char":"走","readings":{"onyomi":["ソウ"],"kunyomi":["はし","はしり"]},"meanings":["run"]}
+,{"id":129,"char":"多","readings":{"onyomi":["タ"],"kunyomi":["おお","まさ","まさ"]},"meanings":["many","frequent","much"]}
+,{"id":98,"char":"太","readings":{"onyomi":["タイ","タ"],"kunyomi":["ふと","ふと","おお","たか","ひろ"]},"meanings":["plump","thick","big around"]}
+,{"id":149,"char":"体","readings":{"onyomi":["タイ","テイ"],"kunyomi":["からだ","かたち","なり"]},"meanings":["body","substance","object","reality","counter for images"]}
+,{"id":111,"char":"台","readings":{"onyomi":["ダイ","タイ"],"kunyomi":["うてな","われ","つかさ"]},"meanings":["pedestal","a stand","counter for machines and vehicles"]}
+,{"id":143,"char":"谷","readings":{"onyomi":["コク"],"kunyomi":["たに","きわ","がい","がえ","がや","せ","たり","たん","や"]},"meanings":["valley"]}
+,{"id":160,"char":"知","readings":{"onyomi":["チ"],"kunyomi":["し","し","さと","さとる","しり","しれ","とも","のり"]},"meanings":["know","wisdom"]}
+,{"id":130,"char":"地","readings":{"onyomi":["チ","ジ"],"kunyomi":["どま"]},"meanings":["ground","earth"]}
+,{"id":131,"char":"池","readings":{"onyomi":["チ"],"kunyomi":["いけ"]},"meanings":["pond","cistern","pool","reservoir"]}
+,{"id":183,"char":"茶","readings":{"onyomi":["チャ","サ"],"kunyomi":["ちや"]},"meanings":["tea"]}
+,{"id":184,"char":"昼","readings":{"onyomi":["チュウ"],"kunyomi":["ひる"]},"meanings":["daytime","noon"]}
+,{"id":218,"char":"朝","readings":{"onyomi":["チョウ"],"kunyomi":["あさ","あ","あそ","ささ","ちか","とも"]},"meanings":["morning","dynasty","regime","epoch","period","(North) Korea"]}
+,{"id":161,"char":"長","readings":{"onyomi":["チョウ"],"kunyomi":["なが","おさ","お","おしゃ","たかし","たけ","な","は","ひさ"]},"meanings":["long","leader"]}
+,{"id":210,"char":"鳥","readings":{"onyomi":["チョウ"],"kunyomi":["とり","か","と","とっ"]},"meanings":["bird","chicken"]}
+,{"id":162,"char":"直","readings":{"onyomi":["チョク","ジキ","ジカ"],"kunyomi":["ただ","なお","なお","なお","なお","す","すぐ","なお","のう","のお"]},"meanings":["straightaway","honesty","frankness","fix","repair"]}
+,{"id":198,"char":"通","readings":{"onyomi":["ツウ","ツ"],"kunyomi":["とお","とお","とお","どお","とお","とお","どお","かよ","とん","どうし","どおり","みち"]},"meanings":["traffic","pass through","avenue","commute","counter for letters"]}
+,{"id":150,"char":"弟","readings":{"onyomi":["テイ","ダイ","デ"],"kunyomi":["おとうと","て"]},"meanings":["younger brother","faitherful service to elders"]}
+,{"id":163,"char":"店","readings":{"onyomi":["テン"],"kunyomi":["みせ","たな"]},"meanings":["store","shop"]}
+,{"id":185,"char":"点","readings":{"onyomi":["テン"],"kunyomi":["つ","つ","た","さ","とぼ","とも","ぼち"]},"meanings":["spot","point","mark","speck","decimal point"]}
+,{"id":228,"char":"電","readings":{"onyomi":["デン"]},"meanings":["electricity"]}
+,{"id":112,"char":"冬","readings":{"onyomi":["トウ"],"kunyomi":["ふゆ"]},"meanings":["winter"]}
+,{"id":81,"char":"刀","readings":{"onyomi":["トウ"],"kunyomi":["かたな","そり","き","ち","と","わき"]},"meanings":["sword","saber","knife"]}
+,{"id":164,"char":"東","readings":{"onyomi":["トウ"],"kunyomi":["ひがし","あい","あがり","あずま","あづま","こ","さき","しの","とお","はる","ひが","もと"]},"meanings":["east"]}
+,{"id":132,"char":"当","readings":{"onyomi":["トウ"],"kunyomi":["あ","あ","あ","あ","まさ","まさ","たい"]},"meanings":["hit","right","appropriate","himself"]}
+,{"id":219,"char":"答","readings":{"onyomi":["トウ"],"kunyomi":["こた","こた","どう"]},"meanings":["solution","answer"]}
+,{"id":238,"char":"頭","readings":{"onyomi":["トウ","ズ","ト"],"kunyomi":["あたま","かしら","がしら","かぶり","かみ","がみ","ちゃん","つむり","づ"]},"meanings":["head","counter for large animals"]}
+,{"id":133,"char":"同","readings":{"onyomi":["ドウ"],"kunyomi":["おな"]},"meanings":["same","agree","equal"]}
+,{"id":220,"char":"道","readings":{"onyomi":["ドウ","トウ"],"kunyomi":["みち","さ","じ","ど","みつ"]},"meanings":["road-way","street","district","journey","course","moral","teachings"]}
+,{"id":233,"char":"読","readings":{"onyomi":["ドク","トク","トウ"],"kunyomi":["よ","よ","よみ"]},"meanings":["read"]}
+,{"id":99,"char":"内","readings":{"onyomi":["ナイ","ダイ"],"kunyomi":["うち","いと","ただ","ち","のち"]},"meanings":["inside","within","between","among","house","home"]}
+,{"id":186,"char":"南","readings":{"onyomi":["ナン","ナ"],"kunyomi":["みなみ","なみ","は","みな","みまみ"]},"meanings":["south"]}
+,{"id":134,"char":"肉","readings":{"onyomi":["ニク"]},"meanings":["meat"]}
+,{"id":199,"char":"馬","readings":{"onyomi":["バ"],"kunyomi":["うま","うま","ま","た","ばん","め","も"]},"meanings":["horse"]}
+,{"id":221,"char":"買","readings":{"onyomi":["バイ"],"kunyomi":["か"]},"meanings":["buy"]}
+,{"id":151,"char":"売","readings":{"onyomi":["バイ"],"kunyomi":["う","う","うり","うる","め"]},"meanings":["sell"]}
+,{"id":152,"char":"麦","readings":{"onyomi":["バク"],"kunyomi":["むぎ"]},"meanings":["barley","wheat"]}
+,{"id":113,"char":"半","readings":{"onyomi":["ハン"],"kunyomi":["なか","は"]},"meanings":["half","middle","odd number","semi-","part-"]}
+,{"id":222,"char":"番","readings":{"onyomi":["バン"],"kunyomi":["つが","は","ま"]},"meanings":["turn","number in a series"]}
+,{"id":100,"char":"父","readings":{"onyomi":["フ"],"kunyomi":["ちち"]},"meanings":["father"]}
+,{"id":187,"char":"風","readings":{"onyomi":["フウ","フ"],"kunyomi":["かぜ","かざ","かぜ","い","え"]},"meanings":["wind","air","style","manner"]}
+,{"id":101,"char":"分","readings":{"onyomi":["ブン","フン","ブ"],"kunyomi":["わ","わ","わ","わ","わ","いた","わけ"]},"meanings":["part","minute of time","segment","share","degree","one's lot","duty","understand","know","rate","1%","chances","shaku/10"]}
+,{"id":234,"char":"聞","readings":{"onyomi":["ブン","モン"],"kunyomi":["き","き"]},"meanings":["hear","ask","listen"]}
+,{"id":135,"char":"米","readings":{"onyomi":["ベイ","マイ","メエトル"],"kunyomi":["こめ","よね","は","べ","まべ","め","よ","よな","よの","よま"]},"meanings":["rice","USA","metre"]}
+,{"id":165,"char":"歩","readings":{"onyomi":["ホ","ブ","フ"],"kunyomi":["ある","あゆ","あ","ゆき","ゆみ"]},"meanings":["walk","counter for steps"]}
+,{"id":114,"char":"母","readings":{"onyomi":["ボ"],"kunyomi":["はは","も"]},"meanings":["mama","mother"]}
+,{"id":102,"char":"方","readings":{"onyomi":["ホウ"],"kunyomi":["かた","かた","がた","から","な","なた","ふさ","まさ","みち","も","わ"]},"meanings":["direction","person","alternative"]}
+,{"id":115,"char":"北","readings":{"onyomi":["ホク"],"kunyomi":["きた","きら","ほう","ほっ","ほつ"]},"meanings":["north"]}
+,{"id":166,"char":"妹","readings":{"onyomi":["マイ"],"kunyomi":["いもうと","す","せ","も"]},"meanings":["younger sister"]}
+,{"id":136,"char":"毎","readings":{"onyomi":["マイ"],"kunyomi":["ごと","ごと","つね"]},"meanings":["every"]}
+,{"id":86,"char":"万","readings":{"onyomi":["マン","バン"],"kunyomi":["よろず","かず","ま","ゆる"]},"meanings":["ten thousand"]}
+,{"id":167,"char":"明","readings":{"onyomi":["メイ","ミョウ","ミン"],"kunyomi":["あ","あか","あか","あか","あき","あ","あ","あ","あ","あ","あきら","あけ","あす","きら","け","さや","さやか","とし","はる","み","め"]},"meanings":["bright","light"]}
+,{"id":235,"char":"鳴","readings":{"onyomi":["メイ"],"kunyomi":["な","な","な","なり","なる"]},"meanings":["chirp","cry","bark","sound","ring","echo","honk"]}
+,{"id":103,"char":"毛","readings":{"onyomi":["モウ"],"kunyomi":["け","めん","も"]},"meanings":["fur","hair","feather","down"]}
+,{"id":168,"char":"門","readings":{"onyomi":["モン"],"kunyomi":["かど","と","じょう","も"]},"meanings":["gates"]}
+,{"id":169,"char":"夜","readings":{"onyomi":["ヤ"],"kunyomi":["よ","よる"]},"meanings":["night","evening"]}
+,{"id":211,"char":"野","readings":{"onyomi":["ヤ","ショ"],"kunyomi":["の","の","ずけ","つけ","ぬ"]},"meanings":["plains","field","rustic","civilian life"]}
+,{"id":110,"char":"矢","readings":{"onyomi":["シ"],"kunyomi":["や"]},"meanings":["dart","arrow"]}
+,{"id":104,"char":"友","readings":{"onyomi":["ユウ"],"kunyomi":["とも","う","ど","ゆ"]},"meanings":["friend"]}
+,{"id":240,"char":"曜","readings":{"onyomi":["ヨウ"],"kunyomi":["てる"]},"meanings":["weekday"]}
+,{"id":116,"char":"用","readings":{"onyomi":["ヨウ"],"kunyomi":["もち","たから"]},"meanings":["utilize","business","service","use","employ"]}
+,{"id":153,"char":"来","readings":{"onyomi":["ライ","タイ"],"kunyomi":["く","きた","きた","き","き","き","こ","くり","くる","ごろ","さ"]},"meanings":["come","due","next","cause","become"]}
+,{"id":212,"char":"理","readings":{"onyomi":["リ"],"kunyomi":["ことわり","あや","おさむ","さと","さとる","ただ","ただし","とおる","に","のり","ひ","まこと","まさ","まさし","まろ","みち","よし"]},"meanings":["logic","arrangement","reason","justice","truth"]}
+,{"id":154,"char":"里","readings":{"onyomi":["リ"],"kunyomi":["さと","さ"]},"meanings":["ri","village","parent's home","league"]}
+,{"id":229,"char":"話","readings":{"onyomi":["ワ"],"kunyomi":["はな","はなし"]},"meanings":["tale","talk"]}
+]

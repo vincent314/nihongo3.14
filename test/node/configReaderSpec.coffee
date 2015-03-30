@@ -1,4 +1,4 @@
-configReader = require('../../scripts/configReader')
+configReader = require('../../tasks/lib/configReader')
 
 describe 'ConfigReader Specs', ->
 

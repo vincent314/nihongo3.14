@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<kanjidic>
+  <kanji char="&#31354;">
+    <unicode dec="31354" hex="7a7a"/>
+    <jis208 dec="13941" hex="3675"/>
+    <sjis dec="35827" hex="8bf3"/>
+    <bushu>116</bushu>
+    <radical>116</radical>
+    <frequency>224</frequency>
+    <jouyou>1</jouyou>
+    <halpern>2227</halpern>
+    <nelson>3317</nelson>
+    <haig>4192</haig>
+    <deroo>772</deroo>
+    <halpern2>1418</halpern2>
+    <oneill>184</oneill>
+    <skip>2-3-5</skip>
+    <stroke>8</stroke>
+    <spahn>m5.12</spahn>
+    <spahn2>140</spahn2>
+    <corner>3010.1</corner>
+    <morohashi index="25415" volume="8" page="643"/>
+    <tohsaku book="1" chapter="4" index="25"/>
+    <henshall>15</henshall>
+    <gakken>233</gakken>
+    <heisig>1317</heisig>
+    <kask>73</kask>
+    <oneill2>723</oneill2>
+    <korean>gong</korean>
+    <pinyin>kong1</pinyin>
+    <pinyin>kong4</pinyin>
+    <reading romaji="KUU" type="onyomi">&#12463;&#12454;</reading>
+    <reading romaji="sora" type="kunyomi">&#12381;&#12425;</reading>
+    <reading romaji="a" okurigana="&#12367;" type="kunyomi">&#12354;</reading>
+    <reading romaji="a" okurigana="&#12365;" type="kunyomi">&#12354;</reading>
+    <reading romaji="a" okurigana="&#12369;&#12427;" type="kunyomi">&#12354;</reading>
+    <reading romaji="kara" type="kunyomi">&#12363;&#12425;</reading>
+    <reading romaji="su" okurigana="&#12367;" type="kunyomi">&#12377;</reading>
+    <reading romaji="su" okurigana="&#12363;&#12377;" type="kunyomi">&#12377;</reading>
+    <reading romaji="muna" okurigana="&#12375;&#12356;" type="kunyomi">&#12416;&#12394;</reading>
+    <reading romaji="utsu" nanori="true" type="kunyomi">&#12358;&#12388;</reading>
+    <reading romaji="ki" type="kunyomi">&#12365;</reading>
+    <reading romaji="ku" type="kunyomi">&#12367;</reading>
+    <meaning lang="en">empty</meaning>
+    <meaning lang="en">sky</meaning>
+    <meaning lang="en">void</meaning>
+    <meaning lang="en">vacant</meaning>
+    <meaning lang="en">vacuum</meaning>
+  </kanji>
+  <kanji char="&#26376;">
+    <unicode dec="26376" hex="6708"/>
+    <jis208 dec="14190" hex="376e"/>
+    <sjis dec="35982" hex="8c8e"/>
+    <bushu>74</bushu>
+    <radical>74</radical>
+    <frequency>25</frequency>
+    <jouyou>1</jouyou>
+    <halpern>2956</halpern>
+    <nelson>2169</nelson>
+    <haig>2530</haig>
+    <deroo>3946</deroo>
+    <halpern2>1876</halpern2>
+    <oneill>13</oneill>
+    <skip>3-2-2</skip>
+    <stroke>4</stroke>
+    <spahn>b0.1</spahn>
+    <spahn2>17</spahn2>
+    <corner>7722.0</corner>
+    <morohashi index="14330" volume="5" page="1010"/>
+    <tohsaku book="1" chapter="1" index="8"/>
+    <henshall>16</henshall>
+    <gakken>26</gakken>
+    <heisig>13</heisig>
+    <kask>28</kask>
+    <oneill2>80</oneill2>
+    <korean>weol</korean>
+    <pinyin>yue4</pinyin>
+    <reading romaji="GETSU" type="onyomi">&#12466;&#12484;</reading>
+    <reading romaji="GATSU" type="onyomi">&#12460;&#12484;</reading>
+    <reading romaji="tsuki" type="kunyomi">&#12388;&#12365;</reading>
+    <reading romaji="oto" nanori="true" type="kunyomi">&#12362;&#12392;</reading>
+    <reading romaji="gatsu" type="kunyomi">&#12364;&#12387;</reading>
+    <reading romaji="su" type="kunyomi">&#12377;</reading>
+    <reading romaji="zuki" type="kunyomi">&#12378;&#12365;</reading>
+    <reading romaji="mori" type="kunyomi">&#12418;&#12426;</reading>
+    <meaning lang="en">month</meaning>
+    <meaning lang="en">moon</meaning>
+  </kanji>
+</kanjidic>
