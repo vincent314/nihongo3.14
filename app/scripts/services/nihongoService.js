@@ -49,5 +49,5 @@ NihongoService.prototype.getKanjiList = function (file) {
   });
 };
 
-
+NihongoService.$inject = ['CONFIG', '$resource','$http','$q'];
 angular.module('nihongo').service('NihongoService', NihongoService);
