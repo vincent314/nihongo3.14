@@ -521,6 +521,14 @@ angular.module('nihongo').constant('CONFIG', {
           title: 'Cours 21',
           file: 'cours_21.html',
           topics: ['énumération qualité / défauts']
+        },
+        {
+          title: 'Cours 22',
+          file: 'cours_22.html'
+        },
+        {
+          title: 'Text 3 - Kimono',
+          file: 'text3_kimono.html'
         }
       ]
     }
