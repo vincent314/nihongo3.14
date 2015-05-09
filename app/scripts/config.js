@@ -529,6 +529,10 @@ angular.module('nihongo').constant('CONFIG', {
         {
           title: 'Text 3 - Kimono',
           file: 'text3_kimono.html'
+        },
+        {
+          title: 'Cours 23',
+          file: 'cours_23.html'
         }
       ]
     }
