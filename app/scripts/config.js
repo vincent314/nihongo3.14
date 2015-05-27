@@ -565,6 +565,18 @@ angular.module('nihongo').constant('CONFIG', {
                     title: 'Cours 24',
                     file: 'cours_24.html',
                     topics: ['verbes potentiels', 'しか : Seulement, que']
+                },
+                {
+                    title: 'Vocabulaire leçon 4',
+                    file: 'vocabulaire_lecon_4.html'
+                },
+                {
+                    title: 'Text 4 : きせつとはいく',
+                    file: 'text4_kisetsutohaiku.html'
+                },
+                {
+                    title: 'Cours 25',
+                    file: 'cours_25.html'
                 }
             ]
         }
