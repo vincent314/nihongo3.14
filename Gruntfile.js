@@ -436,7 +436,7 @@ module.exports = function (grunt) {
         auth: getEsAuth()
       },
       remote: {
-        nb: 3,
+        nb: 1,
         index: 'nihongo_20140117',
         hostname: 'elastic-vmn.rhcloud.com',
         port: 80,

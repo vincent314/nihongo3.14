@@ -109,6 +109,7 @@ class ElasticSearch
 
     for entry in entries
       file = "app/#{entry.category.dir}/#{entry.page.file}";
+      console.log file
       result = result.then ->
         self.indexFile file, entry.category, entry.page
 
