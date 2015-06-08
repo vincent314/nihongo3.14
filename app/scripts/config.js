@@ -586,6 +586,11 @@ angular.module('nihongo').constant('CONFIG', {
         {
           title: 'Vocabulaire leçon 5',
           file: 'vocabulaire_lecon_5.html'
+        },
+        {
+          title: 'Cours 27',
+          file: 'cours_27.html',
+          topics: ['Conjecture, situration, climat 〜でしょう']
         }
       ]
     }
