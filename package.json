@@ -28,6 +28,7 @@
     "grunt-jasmine-node": "^0.2.1",
     "grunt-karma": "^0.9.0",
     "grunt-modernizr": "^0.5.2",
+    "grunt-mustache-mustache": "^0.1.0",
     "grunt-newer": "^0.7.0",
     "grunt-rev": "^0.1.0",
     "grunt-showdown": "^1.0.2",

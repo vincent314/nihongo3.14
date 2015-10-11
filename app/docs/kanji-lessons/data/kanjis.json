@@ -1,0 +1,282 @@
+[
+  {
+    "kanji": "木",
+    "readings": [
+      "ボク",
+      "モク",
+      "き",
+      "こ"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "大木",
+        "reading": "たいぼく",
+        "meaning": "grand arbre"
+      },
+      {
+        "japanese": "木曜日",
+        "reading": "もくようび",
+        "meaning": "jeudi"
+      },
+      {
+        "japanese": "木馬",
+        "reading": "もくば",
+        "meaning": "cariole"
+      },
+      {
+        "japanese": "木立",
+        "reading": "こだち",
+        "meaning": "alignement des arbres"
+      }
+    ]
+  },
+  {
+    "kanji": "日",
+    "readings": [
+      "ヒ",
+      "ジツ",
+      "か",
+      "にち",
+      "に"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "終日",
+        "reading": "しゅうじつ",
+        "meaning": "toute la journée"
+      },
+      {
+        "japanese": "祝日",
+        "reading": "しゅくじつ",
+        "meaning": "jour férié"
+      },
+      {
+        "japanese": "二日",
+        "reading": "ふつか",
+        "meaning": "jour 2"
+      },
+      {
+        "japanese": "三日",
+        "reading": "みっか",
+        "meaning": "3ème jour"
+      },
+      {
+        "japanese": "四日",
+        "reading": "よっか",
+        "meaning": "4ème jour"
+      },
+      {
+        "japanese": "日本",
+        "reading": "にほん",
+        "meaning": "japon"
+      }
+    ]
+  },
+  {
+    "kanji": "川",
+    "readings": [
+      "セン",
+      "かわ"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "河川",
+        "reading": "かせん",
+        "meaning": "fleuve"
+      },
+      {
+        "japanese": "大川",
+        "reading": "おおかわ",
+        "meaning": ""
+      },
+      {
+        "japanese": "小川",
+        "reading": "おがわ",
+        "meaning": ""
+      },
+      {
+        "japanese": "川上",
+        "reading": "かわかみ",
+        "meaning": "amont"
+      },
+      {
+        "japanese": "川下",
+        "reading": "かわしも",
+        "meaning": "aval"
+      }
+    ]
+  },
+  {
+    "kanji": "月",
+    "readings": [
+      "カツ",
+      "ゲツ",
+      "づき"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "一月",
+        "reading": "いちがつ",
+        "meaning": "janvier"
+      },
+      {
+        "japanese": "二月",
+        "reading": "にがつ",
+        "meaning": "février"
+      },
+      {
+        "japanese": "正月",
+        "reading": "しょうがつ",
+        "meaning": "nouvel an"
+      },
+      {
+        "japanese": "今月",
+        "reading": "こんげつ",
+        "meaning": "ce mois-ci"
+      },
+      {
+        "japanese": "来月",
+        "reading": "らいげつ",
+        "meaning": "le mois prochain"
+      },
+      {
+        "japanese": "三日月",
+        "reading": "みかづき",
+        "meaning": "croissant de lune"
+      }
+    ]
+  },
+  {
+    "kanji": "目",
+    "readings": [
+      "モク",
+      "ボク",
+      "め",
+      "ま"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "目的",
+        "reading": "もくてき",
+        "meaning": "but, objetif"
+      },
+      {
+        "japanese": "目標",
+        "reading": "もくひょう",
+        "meaning": "objectif à atteindre"
+      },
+      {
+        "japanese": "面目",
+        "reading": "めんぼく",
+        "meaning": "la face (sauver la face)"
+      },
+      {
+        "japanese": "人目",
+        "reading": "ひとめ",
+        "meaning": "le regard des autres"
+      },
+      {
+        "japanese": "一目",
+        "reading": "ひとめ",
+        "meaning": "un regard (〜ぼれ=coup de foudre)"
+      },
+      {
+        "japanese": "ま",
+        "reading": "目のあたりにする",
+        "meaning": "constater qq chose de négatif"
+      }
+    ]
+  },
+  {
+    "kanji": "山",
+    "readings": [
+      "サン",
+      "やま"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "富士山",
+        "reading": "ふじさん",
+        "meaning": "Mt Fuji"
+      },
+      {
+        "japanese": "火山",
+        "reading": "かざん",
+        "meaning": "volcan"
+      },
+      {
+        "japanese": "仕事の山",
+        "reading": "しごとのやま",
+        "meaning": "une montagne de travail"
+      },
+      {
+        "japanese": "山をかける",
+        "reading": "やまをかける",
+        "meaning": "faire l'impasse sur"
+      },
+      {
+        "japanese": "山があたりました",
+        "reading": "やまがあたりました",
+        "meaning": "réussir un examen"
+      }
+    ]
+  },
+  {
+    "kanji": "雨",
+    "readings": [
+      "あま",
+      "ウ"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "雨もり",
+        "reading": "あまもり",
+        "meaning": "fuite à cause de la pluie"
+      },
+      {
+        "japanese": "雨音",
+        "reading": "あまおと",
+        "meaning": "bruit de la pluie"
+      },
+      {
+        "japanese": "雨雲",
+        "reading": "あまぐも",
+        "meaning": "nuage de pluie"
+      },
+      {
+        "japanese": "雨天",
+        "reading": "うてん",
+        "meaning": "temps pluvieux"
+      },
+      {
+        "japanese": "風雨",
+        "reading": "ふうう",
+        "meaning": "pluvieux et venteux"
+      }
+    ]
+  },
+  {
+    "kanji": "魚",
+    "readings": [
+      "ギョ",
+      "うお"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "人魚",
+        "reading": "にんぎょ",
+        "meaning": "sirène"
+      },
+      {
+        "japanese": "金魚",
+        "reading": "ぎんぎょ",
+        "meaning": "poisson rouge"
+      },
+      {
+        "japanese": "魚市場",
+        "reading": "うおいちば",
+        "meaning": "marché aux poissons"
+      }
+    ]
+  }
+]

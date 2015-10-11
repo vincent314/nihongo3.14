@@ -19,6 +19,7 @@ module.exports = function (grunt) {
   require('./tasks/kanjiTask')(grunt);
 
   grunt.loadNpmTasks('grunt-mkdir');
+  grunt.loadNpmTasks('grunt-mustache-mustache');
 
   // Configurable paths
   var config = {
@@ -488,6 +489,18 @@ module.exports = function (grunt) {
         dest: 'app/docs/kanji/kanji_5.json',
         jouyou: 5
       }
+    },
+    mustache_mustache:{
+      options:{
+        partials:'app/docs/kanji-lessons/partials/partials/',
+        data:'app/docs/kanji-lessons/data/'
+      },
+      globbing:{
+        expand:true,
+        cwd:'app/docs/kanji-lessons/partials',
+        src: ['*.html'],
+        dest:'.tmp/kanji-lessons/'
+      }
     }
   });
 
@@ -549,7 +562,8 @@ module.exports = function (grunt) {
     'copy:dist',
     'rev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+    'kanji-lessons'
   ]);
 
   grunt.registerTask('default', [
@@ -562,6 +576,11 @@ module.exports = function (grunt) {
   grunt.registerTask('buildDocs', [
     'copy:docs',
     'showdown:multi'
+  ]);
+
+  grunt.registerTask('kanji-lessons', [
+    'mustache_mustache',
+    'epub-kanji'
   ]);
 
   grunt.registerTask('epub', 'Generate epub file', function () {
@@ -596,8 +615,41 @@ module.exports = function (grunt) {
     });
   });
 
+  grunt.registerTask('epub-kanji', 'Generate KANJI epub file', function () {
+    // calibre must be installed and ebook-convert must exist.
+    var done = this.async();
+    var convert = require('ebook-convert');
+    var epub = convert({
+      source: '.tmp/kanji-lessons/kanji-lessons.html',
+      target: './app/docs/kanji-lessons/epub/kanji-lessons.epub',
+      arguments: [
+        '--page-breaks-before', '//h:h2',
+        '--authors', 'Vincent M.',
+        '--title', 'Apprentissage des Kanji',
+        '--level1-toc', '//h:h2'
+      ]
+    });
+
+    epub.on('end', function () {
+      console.log('Epub generated !');
+      done();
+    });
+    epub.on('error', function (res) {
+      console.log('Error : ' + res);
+      done();
+    });
+    epub.on('exit', function (res) {
+      if (res !== 0) {
+        done();
+        throw new Error('Epub creation Error (Error ' + res + ')');
+      }
+      done();
+    });
+  });
+
   grunt.registerTask('prepare', function () {
     console.log('Mkdir .tmp/');
     grunt.file.mkdir('.tmp/');
   });
+
 };
