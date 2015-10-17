@@ -27,61 +27,38 @@ describe('Test Search Controller', function () {
   });
 
 
-  it('Do search success', function () {
+  it('Do search success', function (done) {
     $httpBackend.when('GET', 'toc.html').respond('');
     $httpBackend.when('GET', 'http://localhost:9200/nihongo/article/_search?q=japanese:kuruma+OR+french:kuruma')
       .respond(mock);
 
-    var ctrl;
-    runs(function () {
-      ctrl = $controller('SearchController', {$routeParams: {searchString: 'kuruma'}});
-      spyOn(ctrl, 'searchSuccess').andCallThrough();
-      $httpBackend.flush();
-    });
+    var ctrl = $controller('SearchController', {$routeParams: {searchString: 'kuruma'}});
+    spyOn(ctrl, 'searchSuccess').and.callThrough();
+    $httpBackend.flush();
 
-    waitsFor(function(){
-      return ctrl.total;
-    });
-    runs(function () {
-      expect(ctrl.searchSuccess).toHaveBeenCalled();
-      expect(ctrl.total).toBe(42);
-      expect(ctrl.hits).toEqual(mock.hits.hits);
-    });
+    expect(ctrl.searchSuccess).toHaveBeenCalled();
+    expect(ctrl.total).toBe(42);
+    expect(ctrl.hits).toEqual(mock.hits.hits);
+
+    done();
   });
 
-  it('Do search failure', function () {
+  it('Do search failure', function (done) {
     $httpBackend.when('GET', 'toc.html').respond('');
     $httpBackend.when('GET', 'http://localhost:9200/nihongo/article/_search?q=japanese:kuruma+OR+french:kuruma')
       .respond(500);
 
-    var ctrl;
-    runs(function () {
-      ctrl = $controller('SearchController', {$routeParams: {searchString: 'kuruma'}});
-      $httpBackend.flush();
-    });
-
-    waitsFor(function(){
-      return ctrl.error;
-    });
-    runs(function () {
-      expect(ctrl.error.status).toBe(500);
-      expect(ctrl.total).not.toBeDefined();
-      expect(ctrl.hits).not.toBeDefined();
-    });
+    var ctrl = $controller('SearchController', {$routeParams: {searchString: 'kuruma'}});
+    $httpBackend.flush();
+    expect(ctrl.error.status).toBe(500);
+    expect(ctrl.total).not.toBeDefined();
+    expect(ctrl.hits).not.toBeDefined();
+    done();
   });
 
   it('No search string provided', function () {
-    var ctrl;
-    runs(function () {
-      ctrl = $controller('SearchController', {$routeParams: {searchString: ''}});
-    });
-
-    waitsFor(function(){
-      return ctrl.total !== undefined;
-    });
-    runs(function () {
-      expect(ctrl.total).toBe(0);
-      expect(ctrl.hits).toEqual([]);
-    });
+    var ctrl = $controller('SearchController', {$routeParams: {searchString: ''}});
+    expect(ctrl.total).toBe(0);
+    expect(ctrl.hits).toEqual([]);
   });
 });

@@ -28,27 +28,16 @@ describe('Test Nihongo Service', function () {
     expect(timeline).toEqual(expected);
   });
 
-  it('Should do a search', function () {
+  it('Should do a search', function (done) {
     $httpBackend.when('GET', 'toc.html').respond('');
     $httpBackend.when('GET', 'http://localhost:9200/nihongo/article/_search?q=japanese:sample+OR+french:sample').respond({toto: 'titi'});
 
-    var result;
-
-    runs(function () {
       NihongoService.search('sample').then(function (r) {
-        result = r;
+        expect(r.toto).toBe('titi');
+        done();
       }).catch(function (err) {
-        result = err;
+        done(err);
       });
       $httpBackend.flush();
-    });
-
-    waitsFor(function () {
-      return result;
-    });
-
-    runs(function () {
-      expect(result.toto).toBe('titi');
-    });
   });
 });

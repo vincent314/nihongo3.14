@@ -1,4 +1,4 @@
-Converter = require('csvtojson').core.Converter
+Converter = require('csvtojson').Converter
 fs = require('fs')
 _ = require('lodash')
 Q = require('q')
@@ -56,11 +56,11 @@ class KanjiReader
       if kanji.jouyou isnt jouyou.toString()
         return
       output.write delimiter + JSON.stringify({
-        id:Number(kanji.kask)
-        char:kanji.$.char
-        readings:self.extractReadings(kanji.reading)
-        meanings:self.extractMeanings(kanji.meaning)
-      }) + '\n', ENCODING
+          id: Number(kanji.kask)
+          char: kanji.$.char
+          readings: self.extractReadings(kanji.reading)
+          meanings: self.extractMeanings(kanji.meaning)
+        }) + '\n', ENCODING
       delimiter = ','
       nbKanji++
 
@@ -76,14 +76,13 @@ class KanjiReader
       text: reading.$text
       type: reading.$.type
       }
-    .groupBy 'type'
+    .groupBy('type')
     .mapValues (list) ->
-        _(list).pluck('text').value()
+      _(list).pluck('text').value()
     .value()
 
   extractMeanings: (meanings)->
     _(meanings).pluck('$text').value()
-
 
 
 module.exports = KanjiReader

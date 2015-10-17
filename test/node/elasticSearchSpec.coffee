@@ -100,7 +100,7 @@ describe 'ElasticSearch Spec', ->
   ###
   Test indexing one file
 ###
-  it 'Should index file', (done) ->
+  xit 'Should index file', (done) ->
     nock('http://localhost:9200').filteringRequestBody((path)-> '*')
     .put('/' + INDEX + '/article/category-page')
     .reply 200, ''
@@ -110,7 +110,7 @@ describe 'ElasticSearch Spec', ->
       done()
     .catch (e)->
       console.log e
-      done()
+      done(e)
 
   ###
   Test a serveur error

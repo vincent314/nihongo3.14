@@ -87,35 +87,25 @@ describe('Test TimelineController', function () {
     pageGet.respond(404, 'Not found');
 
     spyOn(console, 'log');
-    runs(function() {
-      createController();
-    });
-
-    runs(function() {
-      expect($scope.pages.length).toBe(0);
-      expect(console.log).toHaveBeenCalledWith('404 : Not found');
-    });
+    createController();
+    expect($scope.pages.length).toBe(0);
+    expect(console.log).toHaveBeenCalledWith('404 : Not found');
   }));
 
-  it('should test paging function', function () {
-    var controller;
+  it('should test paging function', function (done) {
+    var controller = createController();
+    spyOn(controller, 'printPage').and.callThrough();
+    $scope.pagingFunction();
+    $httpBackend.flush();
 
-    runs(function () {
-      controller = createController();
-      spyOn(controller, 'printPage').andCallThrough();
-      $scope.pagingFunction();
-      $httpBackend.flush();
-    });
-
-    runs(function () {
-      expect($scope.pages).toEqual(['Page B content', 'Page A content']);
-      expect(controller.printPage.callCount).toBe(1);
-      expect(controller.printPage).toHaveBeenCalledWith(1);
-    });
+    done();
+    expect($scope.pages).toEqual(['Page B content', 'Page A content']);
+    expect(controller.printPage.callCount).toBe(1);
+    expect(controller.printPage).toHaveBeenCalledWith(1);
   });
 
-  it('should get http request content with promises', function () {
-    var content,error;
+  it('should get http request content with promises', function (done) {
+    var content, error;
 
     $http.get('dir/pageA.html').success(function (data) {
       console.log(data);
@@ -126,12 +116,12 @@ describe('Test TimelineController', function () {
 
     $httpBackend.flush();
 
-    runs(function () {
-      expect(content).toBe('Page A content');
-    });
+    done();
+
+    expect(content).toBe('Page A content');
   });
 
-  it('should test the end of the timeline', function () {
+  it('should test the end of the timeline', function (done) {
     createController();
 
     // call more than 2 times
@@ -141,9 +131,8 @@ describe('Test TimelineController', function () {
     $scope.pagingFunction();
 
     $httpBackend.flush();
+    done();
 
-    runs(function(){
-      expect($scope.pages).toEqual(['Page B content', 'Page A content']);
-    });
+    expect($scope.pages).toEqual(['Page B content', 'Page A content']);
   });
 });

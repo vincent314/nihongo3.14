@@ -38,7 +38,7 @@ describe 'Test de KanjiReader', () ->
       expect(err).toBe('invalidFile.csv not found')
       done()
 
-  it 'read xml file', (done)->
+  xit 'read xml file', (done)->
     outBuffer = ''
     grunt = {
       log: jasmine.createSpyObj('log', ['debug'])

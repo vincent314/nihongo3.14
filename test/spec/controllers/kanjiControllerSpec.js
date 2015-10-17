@@ -26,52 +26,38 @@ describe('Test KanjiController', function () {
       $httpBackend = _$httpBackend_;
       NihongoService = _NihongoService_;
     }]);
-    spyOn(NihongoService, 'getKanjiList').andCallThrough();
+    spyOn(NihongoService, 'getKanjiList').and.callThrough();
   });
 
-  it('Test listing kanji success', function () {
+  it('Test listing kanji success', function (done) {
     var ctrl;
     $httpBackend.when('GET', 'toc.html').respond('');
     $httpBackend.when('GET', 'docs/kanji/kanji_1.json').respond(200, KANJI_MOCK);
 
-    runs(function () {
-      ctrl = $controller('KanjiController', {
-        $scope: $scope,
-        $routeParams: {level: 1}
-      });
-      $httpBackend.flush();
+    ctrl = $controller('KanjiController', {
+      $scope: $scope,
+      $routeParams: {level: 1}
     });
+    $httpBackend.flush();
 
-    //waits(0);
-    waitsFor(function () {
-      return ctrl.kanjiMatrix;
-    });
-    runs(function () {
-      expect(ctrl.kanjiMatrix.length).toBe(1);
-      expect(ctrl.kanjiMatrix[0].length).toBe(2);
-      expect(NihongoService.getKanjiList).toHaveBeenCalledWith('kanji_1.json');
-    });
+    expect(ctrl.kanjiMatrix.length).toBe(1);
+    expect(ctrl.kanjiMatrix[0].length).toBe(2);
+    expect(NihongoService.getKanjiList).toHaveBeenCalledWith('kanji_1.json');
+    done();
   });
 
-  it('Test listing kanji error', function () {
-    var ctrl;
+  it('Test listing kanji error', function (done) {
     $httpBackend.when('GET', 'toc.html').respond('');
     $httpBackend.when('GET', 'docs/kanji/kanji_1.json').respond(500);
 
-    runs(function () {
-      ctrl = $controller('KanjiController', {
-        $scope: $scope,
-        $routeParams: {level:1}
-      });
-      $httpBackend.flush();
+    var ctrl = $controller('KanjiController', {
+      $scope: $scope,
+      $routeParams: {level: 1}
     });
+    $httpBackend.flush();
 
-    waitsFor(function () {
-      return ctrl.kanjiMatrix;
-    });
-    runs(function () {
-      expect(ctrl.kanjiMatrix).toEqual([]);
-      expect(NihongoService.getKanjiList).toHaveBeenCalledWith('kanji_1.json');
-    });
+    expect(ctrl.kanjiMatrix).toEqual([]);
+    expect(NihongoService.getKanjiList).toHaveBeenCalledWith('kanji_1.json');
+    done();
   });
 });
