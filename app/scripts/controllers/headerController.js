@@ -1,6 +1,9 @@
 'use strict';
 
-angular.module('nihongo').controller('HeaderController',['$scope','$translate','$location',function($scope,$translate,$location) {
+require('../translate');
+
+module.exports = 'nihongo.ctrl.header';
+angular.module('nihongo.ctrl.header',[]).controller('HeaderController',['$scope','$translate','$location',function($scope,$translate,$location) {
   $scope.switchLang= function(lang) {
     $translate.use(lang);
   };

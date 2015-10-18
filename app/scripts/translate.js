@@ -1,6 +1,7 @@
 'use strict';
 
-angular.module('nihongo').config(['$translateProvider', function ($translateProvider) {
+module.exports = 'nihongo.utils.translate';
+angular.module('nihongo.utils.translate',[]).config(['$translateProvider', function ($translateProvider) {
   $translateProvider.translations('fr', {
     'HOME': 'Accueil',
     'LAST_LESSONS': 'Derniers cours',

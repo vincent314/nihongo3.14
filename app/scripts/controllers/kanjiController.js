@@ -20,4 +20,4 @@ KanjiController.prototype.chunk = function (array, size) {
 };
 
 KanjiController.$inject = ['NihongoService','$routeParams'];
-angular.module('nihongo').controller('KanjiController', KanjiController);
+module.exports = angular.module('nihongo').controller('KanjiController', KanjiController);

@@ -1,51 +1,63 @@
 'use strict';
 
-angular.module('nihongo', ['ngRoute','infinite-scroll','ngSanitize','pascalprecht.translate','ngResource','mgcrea.ngStrap.popover'])
-.config(['$routeProvider', 'CONFIG', function ($routeProvider, CONFIG) {
+require('./vendor')();
 
-  _(CONFIG.categories).forEach(function (category) {
-    _(category.pages).forEach(function (page) {
-      var route = '/' + getSlug(category.title) + '/' + getSlug(page.title);
-      $routeProvider.when(route, {
-        templateUrl: 'templates/page.html',
-        controller: 'PageController',
-        title: page.title,
-        resolve: {
-          params:function() {
-            return {
-              url: category.dir + '/' + page.file
-            };
+module.exports = angular.module('nihongo', [
+  'infinite-scroll',
+  'pascalprecht.translate',
+  'mgcrea.ngStrap.popover',
+  require('angular-route'),
+  require('angular-sanitize'),
+  require('angular-resource'),
+  require('./config.js'),
+  require('./controllers/headerController'),
+  require('./translate.js')
+])
+  .config(['$routeProvider', 'CONFIG', function ($routeProvider, CONFIG) {
+
+    _(CONFIG.categories).forEach(function (category) {
+      _(category.pages).forEach(function (page) {
+        var route = '/' + getSlug(category.title) + '/' + getSlug(page.title);
+        $routeProvider.when(route, {
+          templateUrl: 'templates/page.html',
+          controller: 'PageController',
+          title: page.title,
+          resolve: {
+            params: function () {
+              return {
+                url: category.dir + '/' + page.file
+              };
+            }
           }
-        }
+        });
       });
     });
-  });
-  $routeProvider.when('/timeline',{
-    templateUrl:'templates/timeline.html',
-    controller:'TimelineController',
-    title: 'Timeline'
-  });
-  $routeProvider.when('/search',{
-    templateUrl:'templates/search.html',
-    controller:'SearchController',
-    controllerAs:'searchController',
-    title:'Rechercher'
-  });
-  $routeProvider.when('/kanji/:level', {
-    templateUrl:'templates/kanji.html',
-    controller:'KanjiController',
-    controllerAs:'kanjiController',
-    title:'Kanji'
-  });
-  $routeProvider
-  .otherwise({
+    $routeProvider.when('/timeline', {
+      templateUrl: 'templates/timeline.html',
+      controller: 'TimelineController',
+      title: 'Timeline'
+    });
+    $routeProvider.when('/search', {
+      templateUrl: 'templates/search.html',
+      controller: 'SearchController',
+      controllerAs: 'searchController',
+      title: 'Rechercher'
+    });
+    $routeProvider.when('/kanji/:level', {
+      templateUrl: 'templates/kanji.html',
+      controller: 'KanjiController',
+      controllerAs: 'kanjiController',
+      title: 'Kanji'
+    });
+    $routeProvider
+      .otherwise({
         templateUrl: CONFIG.toc.templateUrl,
         controller: 'TocController',
         title: 'Table des matières'
-    });
+      });
   }])
-  .run(['$rootScope','$route',function($rootScope,$route){
-    $rootScope.$on('$routeChangeSuccess', function(){
+  .run(['$rootScope', '$route', function ($rootScope, $route) {
+    $rootScope.$on('$routeChangeSuccess', function () {
       //Change page title, based on Route information
       $rootScope.title = $route.current.title;
     });

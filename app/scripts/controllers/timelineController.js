@@ -1,5 +1,8 @@
 'use strict';
 
+require('../config');
+require('../services/nihongoService');
+
 /**
  *
  *
@@ -31,10 +34,6 @@ function TimelineController($scope, CONFIG, NihongoService, $http, $sanitize, $q
   };
 }
 
-angular.module('nihongo').controller('TimelineController',
-  ['$scope', 'CONFIG', 'NihongoService', '$http', '$sanitize', '$q',
-    TimelineController]);
-
 /**
  * Get HTML file content and add the content to the stream
  *
@@ -53,3 +52,7 @@ TimelineController.prototype.printPage = function (idx) {
       console.log(msg);
     });
 };
+
+module.exports = angular.module('nihongo').controller('TimelineController',
+  ['$scope', 'CONFIG', 'NihongoService', '$http', '$sanitize', '$q',
+    TimelineController]);

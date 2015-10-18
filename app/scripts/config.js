@@ -1,6 +1,7 @@
 'use strict';
 
-angular.module('nihongo').constant('CONFIG', {
+module.exports = 'nihongo.config';
+angular.module('nihongo.config',[]).constant('CONFIG', {
   es: {
     host: 'elastic-vmn.rhcloud.com',
     port: '80',

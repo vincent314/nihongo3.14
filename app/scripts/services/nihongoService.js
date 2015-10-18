@@ -1,5 +1,7 @@
 'use strict';
 
+require('../config');
+
 var NihongoService = function (CONFIG, $resource,$http,$q) {
   this.CONFIG = CONFIG;
   this.$resource = $resource;
@@ -50,4 +52,4 @@ NihongoService.prototype.getKanjiList = function (file) {
 };
 
 NihongoService.$inject = ['CONFIG', '$resource','$http','$q'];
-angular.module('nihongo').service('NihongoService', NihongoService);
+module.exports = angular.module('nihongo').service('NihongoService', NihongoService);
