@@ -1,11 +1,13 @@
+module.exports = 'nihongo.ctrl.kanji';
+
 'use strict';
-var KanjiController = function (NihongoService,$routeParams) {
+var KanjiController = function (NihongoService, $routeParams) {
   var self = this;
   var level = $routeParams.level;
 
   NihongoService.getKanjiList('kanji_' + level + '.json').then(function (kanjiList) {
-    self.kanjiMatrix = self.chunk(_.sortBy(kanjiList,'id'), 6);
-  }).catch(function(err){
+    self.kanjiMatrix = self.chunk(_.sortBy(kanjiList, 'id'), 6);
+  }).catch(function (err) {
     self.kanjiMatrix = [];
     console.log(JSON.stringify(err));
   });
@@ -13,11 +15,13 @@ var KanjiController = function (NihongoService,$routeParams) {
 
 KanjiController.prototype.chunk = function (array, size) {
   var result = [];
-  while(array.length) {
+  while (array.length) {
     result.push(array.splice(0, size));
   }
   return result;
 };
 
-KanjiController.$inject = ['NihongoService','$routeParams'];
-module.exports = angular.module('nihongo').controller('KanjiController', KanjiController);
+KanjiController.$inject = ['NihongoService', '$routeParams'];
+angular.module(module.exports, [
+  require('../services/nihongoService')
+]).controller('KanjiController', KanjiController);

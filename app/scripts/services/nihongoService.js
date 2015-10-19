@@ -2,12 +2,21 @@
 
 require('../config');
 
-var NihongoService = function (CONFIG, $resource,$http,$q) {
+var getSlug = require('speakingurl');
+
+module.exports ='nihongo.service.nihongo';
+
+NihongoService.$inject = ['CONFIG', '$resource','$http','$q'];
+angular.module(module.exports,[
+  require('../config')
+]).service('NihongoService', NihongoService);
+
+function NihongoService(CONFIG, $resource,$http,$q) {
   this.CONFIG = CONFIG;
   this.$resource = $resource;
   this.$http = $http;
   this.$q = $q;
-};
+}
 
 /**
  *
@@ -22,7 +31,7 @@ NihongoService.prototype.buildTimeline = function (categories) {
   return _.chain(categories)
     .map(function (category) {
       var pages = category.pages;
-      _(pages).each(function (page) {
+      _.forEach(pages,function (page) {
         page.category = {
           dir: category.dir
         };
@@ -50,6 +59,3 @@ NihongoService.prototype.getKanjiList = function (file) {
     return res.data;
   });
 };
-
-NihongoService.$inject = ['CONFIG', '$resource','$http','$q'];
-module.exports = angular.module('nihongo').service('NihongoService', NihongoService);

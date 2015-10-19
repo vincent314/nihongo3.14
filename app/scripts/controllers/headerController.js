@@ -3,7 +3,7 @@
 require('../translate');
 
 module.exports = 'nihongo.ctrl.header';
-angular.module('nihongo.ctrl.header',[]).controller('HeaderController',['$scope','$translate','$location',function($scope,$translate,$location) {
+angular.module(module.exports,[]).controller('HeaderController',['$scope','$translate','$location',function($scope,$translate,$location) {
   $scope.switchLang= function(lang) {
     $translate.use(lang);
   };

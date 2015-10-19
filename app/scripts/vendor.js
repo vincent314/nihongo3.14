@@ -1,10 +1,10 @@
 module.exports = function() {
   require('jquery');
   require('angular');
-  require('bootstrap');
+  //require('bootstrap');
   //require('angular-route');
   //require('angular-sanitize');
-  require('speakingurl');
+  //require('speakingurl');
   require('lodash');
   //require('font-awesome');
   require('ng-infinite-scroll');
@@ -12,5 +12,6 @@ module.exports = function() {
   //require('angular-resource');
   require('angular-strap');
   //require('angular-motion');
-  require('bootstrap-sass-loader');
+  require('bootstrap-webpack');
+  require("font-awesome-webpack");
 };

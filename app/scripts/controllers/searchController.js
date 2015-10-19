@@ -1,4 +1,6 @@
 'use strict';
+module.exports = 'nihongo.ctrl.search';
+
 var SearchController = function ($routeParams, NihongoService) {
     var self = this;
     var searchString = $routeParams.searchString;
@@ -27,4 +29,6 @@ SearchController.prototype.searchFailure = function (err) {
 
 SearchController.$inject = ['$routeParams', 'NihongoService'];
 
-module.exports = angular.module('nihongo').controller('SearchController', SearchController);
+angular.module(module.exports,[
+  require('../services/nihongoService')
+]).controller('SearchController', SearchController);

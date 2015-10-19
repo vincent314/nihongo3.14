@@ -1,9 +1,10 @@
 'use strict';
 
-require('../config');
-require('../services/nihongoService');
-
-module.exports = angular.module('nihongo').controller('PageController', ['$scope', '$location', 'CONFIG', 'NihongoService', 'params', function ($scope, $location, CONFIG, NihongoService, params) {
+module.exports = 'nihongo.ctrl.page';
+angular.module(module.exports,[
+  require('../config'),
+  require('../services/nihongoService')
+]).controller('PageController', ['$scope', '$location', 'CONFIG', 'NihongoService', 'params', function ($scope, $location, CONFIG, NihongoService, params) {
   var currentPath = '#' + $location.path();
   var pagesFlatten = [];
   _(CONFIG.categories).forEach(function (category) {

@@ -1,6 +1,9 @@
 'use strict';
 
 require('./vendor')();
+require('../styles/main.css');
+
+var getSlug = require('speakingurl');
 
 module.exports = angular.module('nihongo', [
   'infinite-scroll',
@@ -9,14 +12,19 @@ module.exports = angular.module('nihongo', [
   require('angular-route'),
   require('angular-sanitize'),
   require('angular-resource'),
-  require('./config.js'),
+  require('./config'),
   require('./controllers/headerController'),
-  require('./translate.js')
+  require('./controllers/kanjiController'),
+  require('./controllers/pageController'),
+  require('./controllers/searchController'),
+  require('./controllers/timelineController'),
+  require('./controllers/tocController'),
+  require('./translate')
 ])
   .config(['$routeProvider', 'CONFIG', function ($routeProvider, CONFIG) {
 
-    _(CONFIG.categories).forEach(function (category) {
-      _(category.pages).forEach(function (page) {
+    _.forEach(CONFIG.categories,function (category) {
+      _.forEach(category.pages,function (page) {
         var route = '/' + getSlug(category.title) + '/' + getSlug(page.title);
         $routeProvider.when(route, {
           templateUrl: 'templates/page.html',

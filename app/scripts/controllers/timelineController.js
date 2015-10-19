@@ -1,7 +1,13 @@
 'use strict';
 
-require('../config');
-require('../services/nihongoService');
+module.exports = 'nihongo.ctrl.timeline';
+
+angular.module(module.exports, [
+  require('../config'),
+  require('../services/nihongoService')
+])
+  .controller('TimelineController', ['$scope', 'CONFIG', 'NihongoService', '$http', '$sanitize', '$q',
+    TimelineController]);
 
 /**
  *
@@ -52,7 +58,3 @@ TimelineController.prototype.printPage = function (idx) {
       console.log(msg);
     });
 };
-
-module.exports = angular.module('nihongo').controller('TimelineController',
-  ['$scope', 'CONFIG', 'NihongoService', '$http', '$sanitize', '$q',
-    TimelineController]);
