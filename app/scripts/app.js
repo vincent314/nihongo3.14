@@ -1,5 +1,6 @@
 'use strict';
 
+var angular = require('angular');
 require('./vendor')();
 require('../styles/main.css');
 
@@ -19,54 +20,64 @@ module.exports = angular.module('nihongo', [
   require('./controllers/searchController'),
   require('./controllers/timelineController'),
   require('./controllers/tocController'),
+  require('./filters/percentageFilter'),
   require('./translate')
 ])
-  .config(['$routeProvider', 'CONFIG', function ($routeProvider, CONFIG) {
+  .config(['$routeProvider', 'CONFIG', configureAngular])
+  .run(['$rootScope', '$route', setTitle]);
 
-    _.forEach(CONFIG.categories,function (category) {
-      _.forEach(category.pages,function (page) {
-        var route = '/' + getSlug(category.title) + '/' + getSlug(page.title);
-        $routeProvider.when(route, {
-          templateUrl: 'templates/page.html',
-          controller: 'PageController',
-          title: page.title,
-          resolve: {
-            params: function () {
-              return {
-                url: category.dir + '/' + page.file
-              };
-            }
+/**
+ * Build angular routes
+ *
+ * @param $routeProvider
+ * @param CONFIG
+ */
+function configureAngular($routeProvider, CONFIG) {
+  _.forEach(CONFIG.categories,function (category) {
+    _.forEach(category.pages,function (page) {
+      var route = '/' + getSlug(category.title) + '/' + getSlug(page.title);
+      $routeProvider.when(route, {
+        templateUrl: 'templates/page.html',
+        controller: 'PageController',
+        title: page.title,
+        resolve: {
+          params: function () {
+            return {
+              url: category.dir + '/' + page.file
+            };
           }
-        });
+        }
       });
     });
-    $routeProvider.when('/timeline', {
-      templateUrl: 'templates/timeline.html',
-      controller: 'TimelineController',
-      title: 'Timeline'
+  });
+  $routeProvider.when('/timeline', {
+    templateUrl: 'templates/timeline.html',
+    controller: 'TimelineController',
+    title: 'Timeline'
+  });
+  $routeProvider.when('/search', {
+    templateUrl: 'templates/search.html',
+    controller: 'SearchController',
+    controllerAs: 'searchController',
+    title: 'Rechercher'
+  });
+  $routeProvider.when('/kanji/:level', {
+    templateUrl: 'templates/kanji.html',
+    controller: 'KanjiController',
+    controllerAs: 'kanjiController',
+    title: 'Kanji'
+  });
+  $routeProvider
+    .otherwise({
+      templateUrl: CONFIG.toc.templateUrl,
+      controller: 'TocController',
+      title: 'Table des matières'
     });
-    $routeProvider.when('/search', {
-      templateUrl: 'templates/search.html',
-      controller: 'SearchController',
-      controllerAs: 'searchController',
-      title: 'Rechercher'
-    });
-    $routeProvider.when('/kanji/:level', {
-      templateUrl: 'templates/kanji.html',
-      controller: 'KanjiController',
-      controllerAs: 'kanjiController',
-      title: 'Kanji'
-    });
-    $routeProvider
-      .otherwise({
-        templateUrl: CONFIG.toc.templateUrl,
-        controller: 'TocController',
-        title: 'Table des matières'
-      });
-  }])
-  .run(['$rootScope', '$route', function ($rootScope, $route) {
-    $rootScope.$on('$routeChangeSuccess', function () {
-      //Change page title, based on Route information
-      $rootScope.title = $route.current.title;
-    });
-  }]);
+}
+
+function setTitle($rootScope, $route) {
+  $rootScope.$on('$routeChangeSuccess', function () {
+    //Change page title, based on Route information
+    $rootScope.title = $route.current.title;
+  });
+}

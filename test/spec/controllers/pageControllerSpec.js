@@ -7,7 +7,6 @@ describe('Test page controller', function () {
   var URL = 'page/url';
 
   beforeEach(function () {
-    module('templates');
     module('nihongo', function ($provide, CONFIG) {
       $provide.constant('CONFIG', CONFIG);
     });

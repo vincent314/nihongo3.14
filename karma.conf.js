@@ -1,4 +1,8 @@
 // Karma configuration
+var _ = require('lodash');
+var path = require('path');
+var webpack = require('webpack');
+
 module.exports = function (config) {
   config.set({
     // base path, that will be used to resolve files and exclude
@@ -11,24 +15,12 @@ module.exports = function (config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'bower_components/angular/angular.js',
-      'bower_components/angular-mocks/angular-mocks.js',
-      'bower_components/angular-resource/angular-resource.js',
-      'bower_components/angular-route/angular-route.js',
-      'bower_components/angular-translate/angular-translate.js',
-      'bower_components/angular-sanitize/angular-sanitize.js',
-      'bower_components/angular-strap/dist/angular-strap.js',
-      'bower_components/ngInfiniteScroll/build/ng-infinite-scroll.js',
-      'bower_components/lodash/dist/lodash.js',
-      'bower_components/speakingurl/speakingurl.min.js',
-      'app/scripts/app.js',
-      'app/scripts/services/*.js',
-      'app/scripts/controllers/*.js',
-      'app/scripts/filters/*.js',
-      'test/spec/*.js',
-      'test/spec/**/*.js',
-      'test/html/**/*.html',
-      'app/templates/*.html'
+      './node_modules/phantomjs-polyfill/bind-polyfill.js',
+      './app/scripts/app.js',
+      './node_modules/angular-mocks/angular-mocks.js',
+      './test/spec/config-test.js', // overwrite normal configuration
+      './test/spec/*Spec.js',
+      './test/spec/**/*Spec.js'
     ],
 
     // list of files / patterns to exclude
@@ -60,9 +52,7 @@ module.exports = function (config) {
     singleRun: false,
 
     preprocessors: {
-      "app/templates/*.html": "ng-html2js",
-      "test/html/dir/*.html": "ng-html2js",
-      "app/scripts/**/*.js": "coverage"
+      './app/scripts/app.js': ['webpack']
     },
 
     ngHtml2JsPreprocessor: {
@@ -79,6 +69,16 @@ module.exports = function (config) {
       },
         {type: 'text'},
         {type: 'text-summary'}]
-    }
+    },
+
+    webpack: require('./webpack.config.spec'),
+
+    plugins: [
+      require('karma-webpack'),
+      require('karma-coverage'),
+      require('karma-jasmine'),
+      require('karma-phantomjs-launcher'),
+      require('karma-sourcemap-loader')
+    ]
   });
 };

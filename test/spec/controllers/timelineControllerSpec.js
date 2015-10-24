@@ -5,7 +5,6 @@ describe('Test TimelineController', function () {
   var $scope, CONFIG, $location, $rootScope, NihongoService, $httpBackend, $controller, pageGet, $http;
 
   beforeEach(function () {
-    module('templates');
     module('nihongo', function ($provide) {
       $provide.constant('CONFIG', {
         categories: [

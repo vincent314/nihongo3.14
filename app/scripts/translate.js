@@ -1,7 +1,10 @@
 'use strict';
 
 module.exports = 'nihongo.utils.translate';
-angular.module('nihongo.utils.translate',[]).config(['$translateProvider', function ($translateProvider) {
+angular.module('nihongo.utils.translate',[])
+  .config(['$translateProvider', buildTranslations]);
+
+function buildTranslations($translateProvider) {
   $translateProvider.translations('fr', {
     'HOME': 'Accueil',
     'LAST_LESSONS': 'Derniers cours',
@@ -61,4 +64,4 @@ angular.module('nihongo.utils.translate',[]).config(['$translateProvider', funct
     'CONNECTION_ERROR': 'Connection error, the search engine may be sleeping, please try again in few seconds'
   });
   $translateProvider.preferredLanguage('fr');
-}]);
+}

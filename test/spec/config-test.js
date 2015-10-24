@@ -1,3 +1,6 @@
+'use strict';
+
+module.exports = 'nihongo.config';
 angular.module('nihongo').constant('CONFIG', {
   es: {
     host: 'localhost',
