@@ -52,7 +52,7 @@ module.exports = function (config) {
     singleRun: false,
 
     preprocessors: {
-      './app/scripts/app.js': ['webpack']
+      './app/scripts/app.js': ['webpack','sourcemap']
     },
 
     ngHtml2JsPreprocessor: {

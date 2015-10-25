@@ -288,7 +288,7 @@ module.exports = function (grunt) {
     }
   });
 
-  grunt.registerTask('default', ['webpack-dev-server:start']);
+  grunt.registerTask('serve', ['webpack-dev-server:start']);
 
   grunt.registerTask('dev', ['webpack:build', 'webpack-dev-server:start']);
 

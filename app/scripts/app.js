@@ -3,6 +3,7 @@
 var angular = require('angular');
 require('./vendor')();
 require('../styles/main.css');
+var pageUrl = require('page.html');
 
 var getSlug = require('speakingurl');
 
@@ -37,7 +38,7 @@ function configureAngular($routeProvider, CONFIG) {
     _.forEach(category.pages,function (page) {
       var route = '/' + getSlug(category.title) + '/' + getSlug(page.title);
       $routeProvider.when(route, {
-        templateUrl: 'templates/page.html',
+        templateUrl: pageUrl,
         controller: 'PageController',
         title: page.title,
         resolve: {
