@@ -15,13 +15,25 @@ module.exports = function (grunt) {
 
   // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt);
+  require('./tasks/elasticsearchTask')(grunt);
+  require('./tasks/kanjiTask')(grunt);
 
   grunt.loadNpmTasks('grunt-mkdir');
+  grunt.loadNpmTasks('grunt-mustache-mustache');
 
   // Configurable paths
   var config = {
     app: 'app',
     dist: 'output/nihongo3.14_gh-pages'
+  };
+
+  var getEsAuth = function () {
+    try{
+      return require('./es-auth.js');
+    } catch(e){
+      grunt.log.warn('No es-auth.js found, continue');
+      return null;
+    }
   };
 
   // Define the configuration for all the tasks
@@ -82,10 +94,11 @@ module.exports = function (grunt) {
       livereload: {
         options: {
           middleware: function (connect) {
+            var serveStatic = require('serve-static');
             return [
-              connect.static('.tmp'),
-              connect().use('/bower_components', connect.static('./bower_components')),
-              connect.static(config.app)
+              serveStatic('.tmp'),
+              connect().use('/bower_components', serveStatic('./bower_components')),
+              serveStatic(config.app)
             ];
           }
         }
@@ -95,11 +108,12 @@ module.exports = function (grunt) {
           open: false,
           port: 9001,
           middleware: function (connect) {
+            var serveStatic = require('serve-static');
             return [
-              connect.static('.tmp'),
-              connect.static('test'),
-              connect().use('/bower_components', connect.static('./bower_components')),
-              connect.static(config.app)
+              serveStatic('.tmp'),
+              serveStatic('test'),
+              connect().use('/bower_components', serveStatic('./bower_components')),
+              serveStatic(config.app)
             ];
           }
         }
@@ -389,7 +403,7 @@ module.exports = function (grunt) {
         files: [
           {
             cwd: 'docs/src/Cours_3b',
-            src: require('./scripts/configReader').getFileList('app/scripts/config.js','docs/html/Cours_3b'),
+            src: require('./tasks/lib/configReader').getFileList('app/scripts/config.js', 'docs/html/Cours_3b'),
             dest: '.tmp/single.html'
           }]
       },
@@ -402,14 +416,11 @@ module.exports = function (grunt) {
       }
     },
     jasmine_node: {
-      options: {
-        coffee: true,
+        forceExit:true,
         extensions: 'coffee',
         specNameMatcher: 'Spec',
-        projectRoot: 'scripts',
+        projectRoot: 'tasks/',
         specFolders: ['test/node']
-      },
-      all: ['test/node/']
     },
     debug: {
       options: {
@@ -422,28 +433,72 @@ module.exports = function (grunt) {
         index: 'nihongo_20140117',
         hostname: 'localhost',
         port: 9200,
-        auth: require('./es-auth.js')
+        auth: getEsAuth()
       },
       remote: {
-        nb:1,
+        nb: 1,
         index: 'nihongo_20140117',
         hostname: 'elastic-vmn.rhcloud.com',
         port: 80,
-        auth: require('./es-auth.js')
+        auth: getEsAuth()
       }
     },
     esInit: {
       local: {
-        index: 'nihongo_20140117',
+        index: 'nihongo_20150222',
         hostname: 'localhost',
         port: 9200,
-        auth: require('./es-auth.js')
+        auth: getEsAuth()
       },
       remote: {
         index: 'nihongo_20140117',
         hostname: 'elastic-vmn.rhcloud.com',
         port: 80,
-        auth: require('./es-auth.js')
+        auth: getEsAuth()
+      }
+    },
+    csvToJson: {
+      default: {
+        src: './docs/src/kanji/Nihongo data - Kanji.csv'
+      }
+    },
+    xmlToJson: {
+      ichi: {
+        src: './docs/src/kanji/kanji.xml',
+        dest: 'app/docs/kanji/kanji_1.json',
+        jouyou: 1
+      },
+      ni: {
+        src: './docs/src/kanji/kanji.xml',
+        dest: 'app/docs/kanji/kanji_2.json',
+        jouyou: 2
+      },
+      san: {
+        src: './docs/src/kanji/kanji.xml',
+        dest: 'app/docs/kanji/kanji_3.json',
+        jouyou: 3
+      },
+      yon: {
+        src: './docs/src/kanji/kanji.xml',
+        dest: 'app/docs/kanji/kanji_4.json',
+        jouyou: 4
+      },
+      go: {
+        src: './docs/src/kanji/kanji.xml',
+        dest: 'app/docs/kanji/kanji_5.json',
+        jouyou: 5
+      }
+    },
+    mustache_mustache:{
+      options:{
+        partials:'app/docs/kanji-lessons/partials/partials/',
+        data:'app/docs/kanji-lessons/data/'
+      },
+      globbing:{
+        expand:true,
+        cwd:'app/docs/kanji-lessons/partials',
+        src: ['*.html'],
+        dest:'.tmp/kanji-lessons/'
       }
     }
   });
@@ -460,7 +515,7 @@ module.exports = function (grunt) {
     grunt.task.run([
       'clean:server',
       'wiredep',
-      'buildDocs',
+      //'buildDocs',
       'concurrent:server',
       'autoprefixer',
       'connect:livereload',
@@ -495,6 +550,7 @@ module.exports = function (grunt) {
     'prepare',
     'showdown:single',
     'epub',
+    'csvToJson',
     'wiredep',
     'useminPrepare',
     'concurrent:dist',
@@ -505,7 +561,8 @@ module.exports = function (grunt) {
     'copy:dist',
     'rev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+    'kanji-lessons'
   ]);
 
   grunt.registerTask('default', [
@@ -518,6 +575,11 @@ module.exports = function (grunt) {
   grunt.registerTask('buildDocs', [
     'copy:docs',
     'showdown:multi'
+  ]);
+
+  grunt.registerTask('kanji-lessons', [
+    'mustache_mustache',
+    'epub-kanji'
   ]);
 
   grunt.registerTask('epub', 'Generate epub file', function () {
@@ -552,42 +614,41 @@ module.exports = function (grunt) {
     });
   });
 
+  grunt.registerTask('epub-kanji', 'Generate KANJI epub file', function () {
+    // calibre must be installed and ebook-convert must exist.
+    var done = this.async();
+    var convert = require('ebook-convert');
+    var epub = convert({
+      source: '.tmp/kanji-lessons/kanji-lessons.html',
+      target: './app/docs/kanji-lessons/epub/kanji-lessons.epub',
+      arguments: [
+        '--page-breaks-before', '//h:h2',
+        '--authors', 'Vincent M.',
+        '--title', 'Apprentissage des Kanji',
+        '--level1-toc', '//h:h2'
+      ]
+    });
+
+    epub.on('end', function () {
+      console.log('Epub generated !');
+      done();
+    });
+    epub.on('error', function (res) {
+      console.log('Error : ' + res);
+      done();
+    });
+    epub.on('exit', function (res) {
+      if (res !== 0) {
+        done();
+        throw new Error('Epub creation Error (Error ' + res + ')');
+      }
+      done();
+    });
+  });
+
   grunt.registerTask('prepare', function () {
     console.log('Mkdir .tmp/');
     grunt.file.mkdir('.tmp/');
   });
 
-  grunt.registerMultiTask('esLoad', function () {
-    var done = this.async();
-
-    var ElasticSearch = require('./scripts/elasticsearch');
-
-    var es = new ElasticSearch(this.data, grunt);
-
-    es.indexFilesFromConfig('app/scripts/config.js', this.data.nb, grunt).then(function () {
-      grunt.log.ok();
-      done();
-    }).fail(function (err) {
-      grunt.log.error(JSON.stringify(err));
-      done();
-    });
-  });
-
-
-  grunt.registerMultiTask('esInit', function () {
-    var done = this.async();
-
-    var ElasticSearch = require('./scripts/elasticsearch');
-    var es = new ElasticSearch(this.data, grunt);
-    es.init().then(function () {
-      return es.setAlias();
-    })
-      .then(function (result) {
-        grunt.log.ok(result);
-        done();
-      }).fail(function (err) {
-        grunt.log.error('Error:' + JSON.stringify(err));
-        done();
-      });
-  });
 };

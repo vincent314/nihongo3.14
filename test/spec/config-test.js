@@ -37,5 +37,8 @@ angular.module('nihongo').constant('CONFIG', {
   ],
   toc: {
     templateUrl: 'toc.html'
+  },
+  kanji:{
+    base:'docs/kanji'
   }
 });

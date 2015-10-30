@@ -17,6 +17,7 @@ module.exports = function (config) {
       'bower_components/angular-route/angular-route.js',
       'bower_components/angular-translate/angular-translate.js',
       'bower_components/angular-sanitize/angular-sanitize.js',
+      'bower_components/angular-strap/dist/angular-strap.js',
       'bower_components/ngInfiniteScroll/build/ng-infinite-scroll.js',
       'bower_components/lodash/dist/lodash.js',
       'bower_components/speakingurl/speakingurl.min.js',
@@ -26,7 +27,6 @@ module.exports = function (config) {
       'app/scripts/filters/*.js',
       'test/spec/*.js',
       'test/spec/**/*.js',
-      'node_modules/ng-midway-tester/src/ngMidwayTester.js',
       'test/html/**/*.html',
       'app/templates/*.html'
     ],
