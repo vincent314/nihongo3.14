@@ -7,6 +7,7 @@
   "devDependencies": {
     "apache-server-configs": "^2.7.1",
     "chai": "^1.9.2",
+    "del": "^2.0.2",
     "ebook-convert": "^0.1.0",
     "extend": "^2.0.0",
     "grunt": "^0.4.5",
@@ -33,6 +34,9 @@
     "grunt-svgmin": "^0.4.0",
     "grunt-usemin": "^2.3.0",
     "grunt-wiredep": "^1.7.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-jshint": "^1.12.0",
     "jshint-stylish": "^0.4.0",
     "karma": "^0.12.24",
     "karma-chrome-launcher": "^0.1.5",
