@@ -18,11 +18,18 @@ var onError = function (err) {
   console.log(err);
 };
 
-gulp.task('clean', function (cb) {
-  return del([config.tmp, config.dist], cb);
+gulp.task('clean', function (done) {
+  del([
+    config.tmp + '/**',
+    config.dist + '/**',
+    '!' + config.dist + '/**',
+    '!' + config.dist + '/.git*'
+  ]).then(function (paths) {
+    done();
+  });
 });
 
-gulp.task('style', function () {
+gulp.task('style', ['clean'], function () {
   return gulp.src('app/styles/**/*.css')
     .pipe($.autoprefixer('> 1%', 'last 2 versions', 'Firefox ESR', 'Opera 12.1'))
     .pipe(gulp.dest('.tmp/styles/'))
@@ -33,12 +40,18 @@ gulp.task('scripts', function () {
     config.app + '/scripts/**/*.js',
     config.app + '/scripts/vendor/*',
     'test/spec/**/*.js'])
+    .pipe($.plumber({
+      errorHandler: onError
+    }))
     .pipe($.jshint('.jshintrc'))
     .pipe($.jshint.reporter(stylish));
 });
 
 gulp.task('wiredep', function () {
   return gulp.src(config.app + '/index.html')
+    .pipe($.plumber({
+      errorHandler: onError
+    }))
     .pipe($.wiredep({
       ignorePath: /^\/|\.\.\//,
       exclude: ['bower_components/bootstrap/dist/js/bootstrap.js']
@@ -58,31 +71,36 @@ gulp.task('karma', function (done) {
 
 gulp.task('jasmine-node', function () {
   return gulp.src(['test/node/**/*Spec.coffee'])
+    .pipe($.plumber({
+      errorHandler: onError
+    }))
     .pipe($.jasmineNode({
       timeout: 10000,
       verbose: true
     }))
 });
 
-gulp.task('copy', function () {
+gulp.task('copy', ['clean'],function () {
   return gulp.src([
       '*.{ico,png,txt}',
       'CNAME',
-      'images/{,*/}*.webp',
-      '{,*/}*.html',
-      'styles/fonts/{,*/}*.*',
-      'docs/**/*.*'
+      'images/**/*.webp',
+      '**/*.html',
+      'styles/fonts',
+      'docs/**'
     ], {cwd: config.app}
   )
+    .pipe($.debug())
     .pipe(gulp.dest(config.dist));
 });
 
-gulp.task('default', ['clean','style','script','wiredep','karma','jasmine-node','docs:multiple'], function () {
-  return gulp.start('style', 'scripts');
-});
+gulp.task('default', ['clean', 'style', 'scripts', 'wiredep', 'karma', /*'jasmine-node',*/ 'docs:multiple']);
 
 gulp.task('docs:multiple', function () {
   return gulp.src('docs/src/**/*.md')
+    .pipe($.plumber({
+      errorHandler: onError
+    }))
     .pipe($.showdown({
       extensions: [require('showdown-furigana-extension'), 'table']
     }))
@@ -92,12 +110,11 @@ gulp.task('docs:multiple', function () {
     });
 });
 
-gulp.task('docs:single', function () {
+gulp.task('docs:single', ['clean'], function () {
   return gulp.src(
     require('./tasks/lib/configReader').getFileList('app/scripts/config.js', 'docs/html/Cours_3b'),
     {cwd: 'docs/src/Cours_3b'}
   )
-    .pipe($.debug())
     .pipe($.plumber({
       errorHandler: onError
     }))
@@ -108,8 +125,11 @@ gulp.task('docs:single', function () {
     .pipe(gulp.dest('.tmp/'));
 });
 
-gulp.task('build', ['clean', 'style', 'scripts', 'copy', 'docs:multiple', 'epub', 'epub-kanji'], function () {
+gulp.task('build', ['default', 'epub', 'epub-kanji', 'copy'], function () {
   return gulp.src(config.app + '/index.html')
+    .pipe($.plumber({
+      errorHandler: onError
+    }))
     .pipe($.usemin({
       cssvendor: [$.rev()],
       cssmain: [$.rev()],
@@ -134,7 +154,7 @@ gulp.task('build', ['clean', 'style', 'scripts', 'copy', 'docs:multiple', 'epub'
 gulp.task('watch', function () {
   gulp.watch('bower.json', ['wiredep']);
   gulp.watch(config.app + '/scripts/**/*.js', ['scripts']);
-  gulp.watch('docs/src/**/*.md',['docs:multiple']);
+  gulp.watch('docs/src/**/*.md', ['docs:multiple']);
 
   $.livereload.listen();
 
@@ -150,9 +170,18 @@ gulp.task('webserver', function () {
   });
 });
 
+gulp.task('webserver:production', function () {
+  $.connect.server({
+    livereload: true,
+    root: [config.dist],
+    port: 9000,
+    host: 'localhost'
+  });
+});
+
 gulp.task('serve', ['webserver', 'watch']);
 
-gulp.task('kanji-lessons', function () {
+gulp.task('kanji-lessons', ['clean'], function () {
   return gulp.src(config.app + '/docs/kanji-lessons/partials/kanji-lessons.html')
     .pipe($.debug())
     .pipe($.mustache({
