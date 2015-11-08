@@ -3,7 +3,8 @@ var gulp = require('gulp'),
   del = require('del'),
   stylish = require('jshint-stylish'),
   fs = require('fs'),
-  Server = require('karma').Server;
+  Server = require('karma').Server,
+  ts = require('gulp-typescript');
 
 require('coffee-script/register');
 
@@ -87,14 +88,14 @@ gulp.task('copy:docs', ['clean'], function () {
 
 gulp.task('copy:fonts', ['clean'], function () {
   gulp.src([
-    'bower_components/bootstrap/dist/fonts/*',
-    'bower_components/font-awesome-bower/fonts/*'
+      'bower_components/bootstrap/dist/fonts/*',
+      'bower_components/font-awesome-bower/fonts/*'
     ])
     .pipe(gulp.dest(config.dist + '/fonts'));
 });
 
 gulp.task('copy:others', ['clean'], function () {
-  gulp.src(['*.{ico,png,txt}', 'CNAME', 'images/**/*.webp','**/*.html'], {cwd: config.app})
+  gulp.src(['*.{ico,png,txt}', 'CNAME', 'images/**/*.webp', '**/*.html'], {cwd: config.app})
     .pipe(gulp.dest(config.dist));
 });
 
@@ -259,4 +260,12 @@ gulp.task('epub-kanji', ['kanji-lessons'], function (done) {
     }
     done();
   });
+});
+
+gulp.task('compile', function () {
+  return gulp.src(config.app + '/ts/**/*.ts')
+    .pipe(ts({
+      out: 'main.js'
+    }))
+    .pipe(gulp.dest(config.tmp + '/ts'));
 });

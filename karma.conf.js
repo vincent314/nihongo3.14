@@ -21,12 +21,13 @@ module.exports = function (config) {
       'bower_components/ngInfiniteScroll/build/ng-infinite-scroll.js',
       'bower_components/lodash/dist/lodash.js',
       'bower_components/speakingurl/speakingurl.min.js',
-      'app/scripts/app.js',
-      'app/scripts/services/*.js',
-      'app/scripts/controllers/*.js',
-      'app/scripts/filters/*.js',
-      'test/spec/*.js',
-      'test/spec/**/*.js',
+      //'app/scripts/app.js',
+      //'app/scripts/services/*.js',
+      //'app/scripts/controllers/*.js',
+      //'app/scripts/filters/*.js',
+      //'test/spec/*.js',
+      //'test/spec/**/*.js',
+      'test/spec/**/*.ts',
       'test/html/**/*.html',
       'app/templates/*.html'
     ],
@@ -62,7 +63,28 @@ module.exports = function (config) {
     preprocessors: {
       "app/templates/*.html": "ng-html2js",
       "test/html/dir/*.html": "ng-html2js",
-      "app/scripts/**/*.js": "coverage"
+      "**/*.ts": ['typescript']
+      //"app/scripts/**/*.js": "coverage"
+    },
+
+    typescriptPreprocessor: {
+      // options passed to the typescript compiler
+      options: {
+        sourceMap: true, // (optional) Generates corresponding .map file.
+        target: 'ES5', // (optional) Specify ECMAScript target version: 'ES3' (default), or 'ES5'
+        module: 'amd', // (optional) Specify module code generation: 'commonjs' or 'amd'
+        noImplicitAny: true, // (optional) Warn on expressions and declarations with an implied 'any' type.
+        noResolve: true, // (optional) Skip resolution and preprocessing.
+        removeComments: true, // (optional) Do not emit comments to output.
+        concatenateOutput: false // (optional) Concatenate and emit output to single file. By default true if module option is omited, otherwise false.
+      },
+      typings: [
+        'typings/tsd.d.ts'
+      ],
+      // transforming the filenames
+      transformPath: function(path) {
+        return path.replace(/\.ts$/, '.js');
+      }
     },
 
     ngHtml2JsPreprocessor: {
