@@ -278,5 +278,393 @@
         "meaning": "marché aux poissons"
       }
     ]
+  },
+  {
+    "kanji": "羊",
+    "readings": [
+      "ヨウ",
+      "ひつじ"
+    ],
+    "meaning":"mouton — animal beau, bon",
+    "vocabulary": [
+      {
+        "japanese": "羊毛",
+        "reading": "ようもう",
+        "meaning": "laine"
+      },
+      {
+        "japanese": "羊かい",
+        "reading": "ひつじかい",
+        "meaning": "berger"
+      },
+      {
+        "japanese": "子羊",
+        "reading": "こひつじ",
+        "meaning": "agneau"
+      }
+    ]
+  },
+  {
+    "kanji": "刀",
+    "meaning":"sabre, épée — couper (切る「きる」)",
+    "readings": [
+      "トウ","かたな"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "木刀でちゃんばらをする",
+        "reading": "ぼくとうちゃんばらをする",
+        "meaning": "faire la bagarre (木刀 sabre en bois)"
+      },
+      {
+        "japanese": "刀は、さむらいのたましいだ",
+        "reading": "かたなは、さむらいのたましいだ",
+        "meaning": "Le katana est l'âme du samuraï"
+      }
+    ]
+  },
+  {
+    "kanji": "車",
+    "meaning":"roue — voiture, tourner sur l'axe",
+    "readings": [
+      "しゃ","くるま"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "自転車",
+        "reading": "じてんしゃ",
+        "meaning": "vélo"
+      },
+      {
+        "japanese": "自動車",
+        "reading": "じどうしゃ",
+        "meaning": "automobile"
+      },
+      {
+        "japanese": "馬車",
+        "reading": "ばしゃ",
+        "meaning": "charette"
+      },
+      {
+        "japanese": "中古車",
+        "reading": "ちゅうこしゃ",
+        "meaning": "voiture d'occasion"
+      },
+      {
+        "japanese": "車道",
+        "reading": "しゃどう",
+        "meaning": "chaussée"
+      },
+      {
+        "japanese": "オランダの風車",
+        "reading": "オランダのふうしゃ",
+        "meaning": "moulin"
+      },
+      {
+        "japanese": "車にのります",
+        "reading": "くるまにのります",
+        "meaning": "monter en voiture"
+      },
+      {
+        "japanese": "風車であそぶ",
+        "reading": "かざぐるまであそぶ",
+        "meaning": "jouet à vent"
+      }
+    ]
+  },
+  {
+    "kanji": "門",
+    "meaning": "portail, porte — entrée et sortie — catégorie",
+    "readings": [
+      "モン","かど"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "家の門",
+        "reading": "いえのもん",
+        "meaning": "porte de maison"
+      },
+      {
+        "japanese": "正門",
+        "reading": "せいもん",
+        "meaning": "entrée principale"
+      },
+      {
+        "japanese": "校門",
+        "reading": "こうもん",
+        "meaning": "porte d'école"
+      },
+      {
+        "japanese": "部門",
+        "reading": "ぶもん",
+        "meaning": "catégorie"
+      },
+      {
+        "japanese": "専門",
+        "reading": "せんもん",
+        "meaning": "spécialité"
+      },
+      {
+        "japanese": "門戸をひらく",
+        "reading": "もんこをひらく",
+        "meaning": "ouvrir la porte à quelqu'un"
+      },
+      {
+        "japanese": "門出をいわう",
+        "reading": "かどでをいわう",
+        "meaning": "fête de départ"
+      },
+      {
+        "japanese": "門松をたてる",
+        "reading": "かどまつをたてる",
+        "meaning": "décoration de nouvel an au portail"
+      }
+    ]
+  },
+  {
+    "kanji": "口",
+    "meaning": "bouche — parler — entrée et sortie ",
+    "readings": [
+      "コウ","ク","くち","ぐち"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "人口がおおい",
+        "reading": "じんこうがおおい",
+        "meaning": "population"
+      },
+      {
+        "japanese": "口外しないでください",
+        "reading": "こうがいしないでください",
+        "meaning": "Il ne faut que ça sorte d'ici"
+      },
+      {
+        "japanese": "口論する",
+        "reading": "こうろんする",
+        "meaning": "se disputer (entre adultes"
+      },
+      {
+        "japanese": "口調",
+        "reading": "くちょう",
+        "meaning": "la manière de parler"
+      },
+      {
+        "japanese": "口ごたえをする",
+        "reading": "くちごたえをする",
+        "meaning": "répliquer"
+      },
+      {
+        "japanese": "口数がすくない",
+        "reading": "くちがすくない",
+        "meaning": "ne pas être volubile"
+      },
+      {
+        "japanese": "入口",
+        "reading": "いりぐち",
+        "meaning": "entrée"
+      },
+      {
+        "japanese": "出口",
+        "reading": "でぐち",
+        "meaning": "sortie"
+      },
+      {
+        "japanese": "悪口",
+        "reading": "わるぐち",
+        "meaning": "médire"
+      },
+      {
+        "japanese": "窓口",
+        "reading": "まどぐち",
+        "meaning": "guichet"
+      }
+    ]
+  },
+  {
+    "kanji": "弓",
+    "meaning": "arc (a sa forme)",
+    "readings": [
+      "キュウ","ゆみ"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "弓道をならっている",
+        "reading": "きゅうどうをならっている",
+        "meaning": "apprendre le tir à l'arc"
+      },
+      {
+        "japanese": "弓を引く",
+        "reading": "ゆみをひく",
+        "meaning": "bander l'arc"
+      },
+      {
+        "japanese": "日本は弓形です",
+        "reading": "にほんはゆみがたです",
+        "meaning": "le Japon est en forme d'arc"
+      },
+      {
+        "japanese": "弓矢",
+        "reading": "ゆみや",
+        "meaning": "la flèche"
+      }
+    ]
+  },
+  {
+    "kanji": "女",
+    "meaning": "femme",
+    "readings": [
+      "ジョ","にょ","ニョウ","おんな","め"
+
+    ],
+    "vocabulary": [
+      {
+        "japanese": "少女",
+        "reading": "しょうじょ",
+        "meaning": "fillette"
+      },
+      {
+        "japanese": "美女",
+        "reading": "びじょ",
+        "meaning": "belle femme"
+      },
+      {
+        "japanese": "長女",
+        "reading": "ちょうじょ",
+        "meaning": "aînée"
+      },
+      {
+        "japanese": "次女",
+        "reading": "じじょ",
+        "meaning": "fille suivante"
+      },
+      {
+        "japanese": "女王",
+        "reading": "じょおう",
+        "meaning": "reine"
+      },
+      {
+        "japanese": "女性",
+        "reading": "じょせい",
+        "meaning": "femme"
+      },
+      {
+        "japanese": "てんにょ",
+        "reading": "てんにょ",
+        "meaning": "nymphe céleste"
+      },
+      {
+        "japanese": "女房",
+        "reading": "にょうぼう",
+        "meaning": "servante à la cours Heian — «ma femme» (femme mariée)"
+      },
+      {
+        "japanese": "女の子",
+        "reading": "おんなのこ",
+        "meaning": "fille"
+      },
+      {
+        "japanese": "女の人",
+        "reading": "おんなのひと",
+        "meaning": "femmes"
+      },
+      {
+        "japanese": "女神",
+        "reading": "めがみ",
+        "meaning": "déesse"
+      },
+      {
+        "japanese": "乙女",
+        "reading": "おとめ",
+        "meaning": "jeune fille (poétique)"
+      }
+    ]
+  },
+  {
+    "kanji": "矢",
+    "meaning": "flèche — rapide",
+    "readings": [
+      "シ","や"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "一矢をむくいる",
+        "reading": "いっしをむくいる",
+        "meaning": "se battre jusqu'au bout"
+      },
+      {
+        "japanese": "矢をはなつ",
+        "reading": "やをはなつ",
+        "meaning": "lâcher la flèche"
+      },
+      {
+        "japanese": "月日は矢のようにすぎる",
+        "reading": "つきひはやのようにすぎる",
+        "meaning": "le temps passe comme une flèche"
+      },
+      {
+        "japanese": "矢印の方にすすむ",
+        "reading": "やじるしのほうにすすむ",
+        "meaning": "suivez la flèche (方 direction, すすむ avancer)"
+      },
+      {
+        "japanese": "弓矢",
+        "reading": "ゆみや",
+        "meaning": "arc et flèches"
+      }
+    ]
+  },
+  {
+    "kanji": "母",
+    "meaning": "mère — origine (de la naissance)",
+    "readings": [
+      "ボ","はは","かあ*"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "母子",
+        "reading": "ぼし",
+        "meaning": "femme et enfant"
+      },
+      {
+        "japanese": "父母",
+        "reading": "ふぼ",
+        "meaning": "père et mère"
+      },
+      {
+        "japanese": "祖母",
+        "reading": "そぼ",
+        "meaning": "grand mère (祖 ancêtre)"
+      },
+      {
+        "japanese": "母国",
+        "reading": "ぼこく",
+        "meaning": "pays natal"
+      },
+      {
+        "japanese": "母語",
+        "reading": "ぼご",
+        "meaning": "langue maternelle"
+      },
+      {
+        "japanese": "母校",
+        "reading": "ぼこう",
+        "meaning": "parcours scolaire"
+      },
+      {
+        "japanese": "母親",
+        "reading": "ははおや",
+        "meaning": "parent mère, la mère"
+      },
+      {
+        "japanese": "母がべんとうをつくります",
+        "reading": "ははがべんとうをつくります",
+        "meaning": "La maman prépare un bento"
+      },
+      {
+        "japanese": "お母さん",
+        "reading": "おかあさん",
+        "meaning": "mère (politesse)"
+      }
+    ]
   }
 ]
