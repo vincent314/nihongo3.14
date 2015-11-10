@@ -1,0 +1,60 @@
+<h1>{{'TOC' | translate}}</h1>
+
+<a id="timelineLink" href="#/timeline">{{'LAST_LESSONS' | translate}}</a>
+
+<div ng-cloak ng-show="categories" class="panel-group ng-cloak" id="accordion" role="tablist"
+     aria-multiselectable="true">
+  <div ng-repeat="category in categories" class="panel panel-default">
+    <div class="panel-heading" role="tab" id="heading{{$index}}">
+
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{$index}}" aria-expanded="true"
+         aria-controls="collapse{{$index}}">
+        {{category.title}}</a>
+      <a class="btn btn-success btn-sm" ng-show="category.pdf" ng-href="{{category.pdf}}">
+        PDF
+      </a>
+      <a class="btn btn-primary btn-sm" ng-show="category.epub" ng-href="{{category.epub}}">
+        EPUB
+      </a>
+    </div>
+    <div id="collapse{{$index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading{{$index}}">
+      <div class="panel-body">
+        <p ng-hide="category.pages">Aucune page pour cette année.</p>
+        <ul>
+          <li ng-repeat="page in category.pages"><a
+            ng-href="{{buildRoute(category.title,page.title)}}">{{page.title}}</a>
+            <br/>
+            <small ng-repeat="topic in page.topics">{{topic}}<span ng-show="!$last"> &#8226; </span></small>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingKanji">
+
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapseKanji1" aria-expanded="true"
+         aria-controls="collapseKanji1"> Kanji</a>
+    </div>
+    <div id="collapseKanji1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingKanji">
+      <div class="panel-body">
+        <ul>
+          <li><a ng-href="#kanji/1">Kanji 1-80</a></li>
+        </ul>
+        <ul>
+          <li><a ng-href="#kanji/2">Kanji 81-240</a></li>
+        </ul>
+        <ul>
+          <li><a ng-href="#kanji/3">Kanji 241-440</a></li>
+        </ul>
+        <ul>
+          <li><a ng-href="#kanji/4">Kanji 441-640</a></li>
+        </ul>
+        <ul>
+          <li><a ng-href="#kanji/5">Kanji 641-825</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
