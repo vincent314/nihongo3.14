@@ -49,6 +49,7 @@
     "serve-static": "^1.10.0",
     "showdown-furigana-extension": "^1.0.3",
     "speakingurl": "^6.0.0",
+    "through2": "^2.0.0",
     "time-grunt": "^1.2.1",
     "underscore": "^1.8.3",
     "wiredep": "^2.2.2",
