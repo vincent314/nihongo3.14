@@ -666,5 +666,717 @@
         "meaning": "mère (politesse)"
       }
     ]
+  },
+  {
+    "kanji": "足",
+    "meaning": "pieds et jambes — ajouter — suffir",
+    "readings": [
+      "ソク","あし","た(りる・りない)"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "遠足にいく",
+        "reading": "えんそくにいく",
+        "meaning": "aller à l'excursion scolaire"
+      },
+      {
+        "japanese": "まん足する",
+        "reading": "まんぞくする",
+        "meaning": "être satisfait"
+      },
+      {
+        "japanese": "土足で入らないでください",
+        "reading": "どそくではいらないでください",
+        "meaning": "ne pas entrer avec nos chaussures"
+      },
+      {
+        "japanese": "足下に気をつけてください",
+        "reading": "あしもとにきをつけてください",
+        "meaning": "attention aux marches"
+      },
+      {
+        "japanese": "足音がきこえる",
+        "reading": "あしおとがきこえる",
+        "meaning": "entendre les pas"
+      },
+      {
+        "japanese": "早足であるく",
+        "reading": "はやあしであるく",
+        "meaning": "marcher rapidement (avec les pieds rapides)"
+      },
+      {
+        "japanese": "お金人ずうが足りない",
+        "reading": "おかねひとずうがたりない",
+        "meaning": "il manuqe de l'argent à de nombreuse personnes"
+      }
+    ]
+  },
+  {
+    "kanji": "毛",
+    "meaning": "poils et cheveux — fin, petit",
+    "readings": [
+      "モウ","け"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "羊毛",
+        "reading": "ようもう",
+        "meaning": "la laine"
+      },
+      {
+        "japanese": "毛ふ",
+        "reading": "もうふ",
+        "meaning": "couverture / couette"
+      },
+      {
+        "japanese": "毛ひつ",
+        "reading": "もうひつ",
+        "meaning": "écriture à pinceau"
+      },
+      {
+        "japanese": "羽毛",
+        "reading": "うもう",
+        "meaning": "plume"
+      },
+      {
+        "japanese": "毛髪",
+        "reading": "もうはつ",
+        "meaning": "cheveux"
+      },
+      {
+        "japanese": "髪の毛",
+        "reading": "かみのけ",
+        "meaning": "cheveux"
+      },
+      {
+        "japanese": "毛糸",
+        "reading": "けいと",
+        "meaning": "laine à tricoter"
+      },
+      {
+        "japanese": "毛虫",
+        "reading": "けむし",
+        "meaning": "chenille"
+      },
+      {
+        "japanese": "毛皮",
+        "reading": "けがわ",
+        "meaning": "fourrure, peau des animaux"
+      },
+      {
+        "japanese": "毛なみのよい馬",
+        "reading": "けなみのよいうま",
+        "meaning": "cheval d'un beau pelage"
+      }
+    ]
+  },
+  {
+    "kanji": "虫",
+    "meaning": "insecte, faible, mépris, sentiments provoqués par les insectes",
+    "comment":"中くらいのがいっぴきいるよ”てん”とう中",
+    "readings": [
+      "チュウ","むし"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "こん虫の足は六本ある",
+        "reading": "こんちゅうのあしはろっぽんある。",
+        "meaning": "L'insecte a 6 pattes."
+      },
+      {
+        "japanese": "よう虫からせい虫になる。",
+        "reading": "ようちゅうからせいちゅうになる",
+        "meaning": "La larve devient l'insecte adulte."
+      },
+      {
+        "japanese": "てんとう虫",
+        "reading": "てんとうむし",
+        "meaning": "coccinelle"
+      },
+      {
+        "japanese": "なき虫",
+        "reading": "なきむし",
+        "meaning": "pleurnichard"
+      },
+      {
+        "japanese": "弱虫",
+        "reading": "よわむし",
+        "meaning": "poule mouillée"
+      },
+      {
+        "japanese": "虫歯",
+        "reading": "むしば",
+        "meaning": "carie"
+      },
+      {
+        "japanese": "虫けら",
+        "reading": "むしけら",
+        "meaning": "vers, bon à rien"
+      },
+      {
+        "japanese": "虫がしらせる",
+        "reading": "むしがしらせる",
+        "meaning": "avoir une prémonition"
+      },
+      {
+        "japanese": "虫のいどころがわるい",
+        "reading": "むしのいどころがわるい",
+        "meaning": "être de mauvaise humeur"
+      }
+    ]
+  },
+  {
+    "kanji": "羽",
+    "meaning": "ailes et plumes et ses formes",
+    "comment":"ワンわりワンわり羽がとぶ",
+    "readings": [
+      "ウ","はね","は"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "羽毛のふとん",
+        "reading": "うもうのふとん",
+        "meaning": "couette en plumes"
+      },
+      {
+        "japanese": "鳥の羽",
+        "reading": "とりのはね",
+        "meaning": "ailes des oiseaux"
+      },
+      {
+        "japanese": "羽をのばす",
+        "reading": "はねをのばす",
+        "meaning": "se sentri libre et faire ce qu'on veut"
+      },
+      {
+        "japanese": "風車の羽",
+        "reading": "ふうしゃのはね",
+        "meaning": "pales de moulin"
+      },
+      {
+        "japanese": "せんぷうきの羽",
+        "reading": "せんぷうきのはね",
+        "meaning": "pales de ventilateur"
+      },
+      {
+        "japanese": "羽音",
+        "reading": "はおと",
+        "meaning": "bruit de battement d'ailes"
+      },
+      {
+        "japanese": "羽ばたく",
+        "reading": "はばたく",
+        "meaning": "battre des ailes, voler"
+      }
+    ]
+  },
+  {
+    "kanji": "大",
+    "meaning": "grand, beaucoup, excellent, en gras, haute position",
+    "readings": [
+      "タイ",
+      "ダイ",
+      "おお（きい）"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "大金",
+        "reading": "たいきん",
+        "meaning": "grande somme d'argent"
+      },
+      {
+        "japanese": "大作",
+        "reading": "たいさく",
+        "meaning": "grande œuvre"
+      },
+      {
+        "japanese": "大半",
+        "reading": "たいはん",
+        "meaning": "la plupart"
+      },
+      {
+        "japanese": "大量の",
+        "reading": "たいりょうの",
+        "meaning": "grand nombre de"
+      },
+      {
+        "japanese": "花火大会",
+        "reading": "はなびたいかい",
+        "meaning": "fête de feux d'artifice"
+      },
+      {
+        "japanese": "大小",
+        "reading": "だいしょう",
+        "meaning": "grand et petit"
+      },
+      {
+        "japanese": "大学生",
+        "reading": "だいがくせい",
+        "meaning": "étudiant"
+      },
+      {
+        "japanese": "大地",
+        "reading": "だいち",
+        "meaning": "Terre"
+      },
+      {
+        "japanese": "大臣",
+        "reading": "だいじん",
+        "meaning": "ministre"
+      },
+      {
+        "japanese": "大統領",
+        "reading": "だいとうりょう",
+        "meaning": "président d'état"
+      },
+      {
+        "japanese": "大事",
+        "reading": "だいじ",
+        "meaning": "précieux"
+      },
+      {
+        "japanese": "大きい馬",
+        "reading": "おおきいうま",
+        "meaning": "grand cheval"
+      },
+      {
+        "japanese": "大雨",
+        "reading": "おおあめ",
+        "meaning": "grande pluie"
+      }
+    ]
+  },
+  {
+    "kanji": "犬",
+    "meaning": "chien, mot de mépris ou de faiblesse",
+    "readings": [
+      "ケン",
+      "いぬ"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "ばん犬",
+        "reading": "ばんけん",
+        "meaning": "chien de garde"
+      },
+      {
+        "japanese": "名犬",
+        "reading": "めいけん",
+        "meaning": "chien intelligent"
+      },
+      {
+        "japanese": "愛犬",
+        "reading": "あいけん",
+        "meaning": "chien bien aimé"
+      },
+      {
+        "japanese": "もう犬",
+        "reading": "もうけん",
+        "meaning": "chien féroce"
+      },
+      {
+        "japanese": "犬猿のなか",
+        "reading": "けんえんのなか",
+        "meaning": "être comme chien et chat (singe)"
+      },
+      {
+        "japanese": "小犬",
+        "reading": "こいぬ",
+        "meaning": "petit chien"
+      },
+      {
+        "japanese": "のら犬",
+        "reading": "のらいぬ",
+        "meaning": "chien errant"
+      },
+      {
+        "japanese": "まけ犬",
+        "reading": "まけいぬ",
+        "meaning": "perdant"
+      },
+      {
+        "japanese": "犬じに",
+        "reading": "いぬじに",
+        "meaning": "mort inutile"
+      },
+      {
+        "japanese": "子犬",
+        "reading": "こいぬ",
+        "meaning": "chiot"
+      }
+    ]
+  },
+  {
+    "kanji": "石",
+    "meaning": "pierre, quelque chose de dur",
+    "readings": [
+      "セキ",
+      "シャク",
+      "いし"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "石油",
+        "reading": "せきゆ",
+        "meaning": "pétrole",
+        "comment":"油=huile"
+      },
+      {
+        "japanese": "化石",
+        "reading": "かせき",
+        "meaning": "fossil",
+        "comment":"化=transformer"
+      },
+      {
+        "japanese": "古代の石器",
+        "reading": "こだいのせっき",
+        "meaning": "outil en pierre d'antiquité",
+        "comment":"古代 = antiquité"
+      },
+      {
+        "japanese": "一石二鳥",
+        "reading": "いっせきにちょう",
+        "meaning": "une pierre deux coups"
+      },
+      {
+        "japanese": "磁石",
+        "reading": "じしゃく",
+        "meaning": "aimant"
+      },
+      {
+        "japanese": "石の上にも三年",
+        "reading": "いしのうえにもさんねん",
+        "meaning": "3 ans sur une pierre"
+      },
+      {
+        "japanese": "石頭",
+        "reading": "いしあたま",
+        "meaning": "tête de pierre, tête dure"
+      },
+      {
+        "japanese": "石橋をたたいてわたる",
+        "reading": "いしばしをたたいてわたる",
+        "meaning": "prendre ses précautions (traverser le pont en pierre en le tappant)"
+      }
+    ]
+  },
+  {
+    "kanji": "王",
+    "meaning": "Roi, le plus fort dans un domaine",
+    "readings": [
+      "オウ"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "国王",
+        "reading": "こくおう",
+        "meaning": "le roi"
+      },
+      {
+        "japanese": "女王",
+        "reading": "じょおう",
+        "meaning": "la reine"
+      },
+      {
+        "japanese": "王子",
+        "reading": "おうじ",
+        "meaning": "prince"
+      },
+      {
+        "japanese": "王さま",
+        "reading": "おうさま",
+        "meaning": "le roi"
+      },
+      {
+        "japanese": "ホームラン王",
+        "reading": "ホームランおう",
+        "meaning": "le roi du home-run"
+      },
+      {
+        "japanese": "百じゅうの王",
+        "reading": "ひゃくじゅうのおう",
+        "meaning": "le roi des 100 bêtes (le roi des animaux)"
+      }
+    ]
+  },
+  {
+    "kanji": "力",
+    "meaning": "force, capacité, pouvoir",
+    "readings": [
+      "リキ",
+      "リョク"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "人力車",
+        "reading": "じんりきしゃ",
+        "meaning": "pousse-pousse"
+      },
+      {
+        "japanese": "力作",
+        "reading": "りきさく",
+        "meaning": "œuvre laborieuse, fabriquer"
+      },
+      {
+        "japanese": "自力で生活する",
+        "reading": "じりきでせいかつする",
+        "meaning": "vivre par ses propres moyens",
+        "comment":"自=moi même"
+      },
+      {
+        "japanese": "力走する",
+        "reading": "りきそうする",
+        "meaning": "courrir de toutes ses forces"
+      },
+      {
+        "japanese": "全力で走る",
+        "reading": "ぜんりょくではしる",
+        "meaning": "courrir de toutes ses forces",
+        "comment":"全=tout"
+      },
+      {
+        "japanese": "体力",
+        "reading": "たいりょく",
+        "meaning": "force physique",
+        "comment":"体=corps"
+      },
+      {
+        "japanese": "気力",
+        "reading": "きりょく",
+        "meaning": "énergie morale"
+      },
+      {
+        "japanese": "ど力する",
+        "reading": "どりょくする",
+        "meaning": "faire des efforts"
+      },
+      {
+        "japanese": "引力",
+        "reading": "いんりょく",
+        "meaning": "force d'attraction, gravitation"
+      },
+      {
+        "japanese": "おすもうさんは力もちだ",
+        "reading": "おすもうさんはちからもちだ",
+        "meaning": "les sumos ont la force"
+      },
+      {
+        "japanese": "力一ぱい引っぱる",
+        "reading": "ちからいっぱいひっぱる",
+        "meaning": "tirer de toutes ses forces"
+      }
+    ]
+  },
+  {
+    "kanji": "一",
+    "meaning": "un",
+    "readings": [
+      "イチ",
+      "ひつ"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "一月",
+        "reading": "いちがつ",
+        "meaning": "janvier"
+      },
+      {
+        "japanese": "一日",
+        "reading": "いちにち・ついたち",
+        "meaning": "1er du mois"
+      },
+      {
+        "japanese": "一石二鳥",
+        "reading": "いっせきにちょう",
+        "meaning": "une pierre, deux coups"
+      },
+      {
+        "japanese": "一朝一夕にはできない",
+        "reading": "いっちょういっせきにはできない",
+        "meaning": "ne pas pouvoir faire en un soir"
+      }
+    ]
+  },
+  {
+    "kanji": "二",
+    "meaning": "deux",
+    "readings": [
+      "ニ",
+      "ふつ",
+      "ふた"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "二月",
+        "reading": "にがつ",
+        "meaning": "février"
+      },
+      {
+        "japanese": "二日",
+        "reading": "ふつか",
+        "meaning": "2 jours, 2 du mois"
+      },
+      {
+        "japanese": "二人",
+        "reading": "ふたり",
+        "meaning": "2 personnes"
+      },
+      {
+        "japanese": "うり二つ",
+        "reading": "うりふたつ",
+        "meaning": "se ressembler comme deux gouttes d'eau",
+        "comment": "うり=sorte de pastèque"
+      }
+    ]
+  },
+  {
+    "kanji": "三",
+    "meaning": "trois",
+    "readings": [
+      "サン",
+      "みっ"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "三月",
+        "reading": "さんがつ",
+        "meaning": "mars"
+      },
+      {
+        "japanese": "三日",
+        "reading": "みっか",
+        "meaning": "3ème jour du mois"
+      },
+      {
+        "japanese": "三人",
+        "reading": "さんにん",
+        "meaning": "3 personnes"
+      },
+      {
+        "japanese": "三日ぼうず",
+        "reading": "みっかぼうず",
+        "meaning": "manque de persévérance (bonze de 3 jours)"
+      },
+      {
+        "japanese": "石の上にも三年",
+        "reading": "いしのうえにもさんねん",
+        "meaning": "3 ans sur une pierre"
+      },
+      {
+        "japanese": "三人よれば文じゅのちえ",
+        "reading": "さんにんよればもんじゅのちえ",
+        "meaning": "avec trois personnes, on aura une idée de génie",
+        "comment":"文じゅ=dieu qui donne des idées"
+      }
+    ]
+  },
+  {
+    "kanji": "足",
+    "meaning": "pieds et jambes, marcher, marcher en plus, ajouter, suffir",
+    "readings": [
+      "ソク",
+      "あし",
+      "た（りる）",
+      "た（りない）"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "遠足にいく",
+        "reading": "えんそくにいく",
+        "meaning": "aller à l'excursion scolaire",
+        "comment":"遠=loin"
+      },
+      {
+        "japanese": "まん足する",
+        "reading": "まんぞくする",
+        "meaning": "être satisfait"
+      },
+      {
+        "japanese": "土足で入らないでください",
+        "reading": "どそくではいらないでください",
+        "meaning": "ne pas entrer avec nos chaussures"
+      },
+      {
+        "japanese": "足下に気をつけてください",
+        "reading": "あしもとにきをつけてください",
+        "meaning": "attention aux marches"
+      },
+      {
+        "japanese": "足音がきこえる",
+        "reading": "あしおとがきこえる",
+        "meaning": "entendre des pas"
+      },
+      {
+        "japanese": "早足で歩く",
+        "reading": "はやあしであるく",
+        "meaning": "marcher rapidement"
+      },
+      {
+        "japanese": "お金・人ずうがたりない",
+        "reading": "おかね・ひとずうがたりない",
+        "meaning": "il manque de l'argent/de personnes"
+      }
+    ]
+  },
+  {
+    "kanji": "毛",
+    "meaning": "poils et cheveux, fin, petit",
+    "readings": [
+      "モウ",
+      "け"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "羊毛",
+        "reading": "ようもう",
+        "meaning": "la laine"
+      },
+      {
+        "japanese": "毛ふ",
+        "reading": "もうふ",
+        "meaning": "couverture, couette"
+      },
+      {
+        "japanese": "毛ひつ",
+        "reading": "もうひつ",
+        "meaning": "écriture au pinceau"
+      },
+      {
+        "japanese": "羽毛",
+        "reading": "うもう",
+        "meaning": "plume"
+      },
+      {
+        "japanese": "毛髪",
+        "reading": "もうはつ",
+        "meaning": "cheveux"
+      },
+      {
+        "japanese": "髪の毛",
+        "reading": "かみのけ",
+        "meaning": "cheveux"
+      },
+      {
+        "japanese": "毛糸",
+        "reading": "けいと",
+        "meaning": "laine à tricoter"
+      },
+      {
+        "japanese": "毛虫",
+        "reading": "けむし",
+        "meaning": "chenille"
+      },
+      {
+        "japanese": "毛皮",
+        "reading": "けがわ",
+        "meaning": "fourrure",
+        "comment": "皮=peau des animaux"
+      },
+      {
+        "japanese": "毛なみのよう馬",
+        "reading": "けなみのよううま",
+        "meaning": "cheval d'un beau pelage"
+      }
+    ]
   }
 ]
