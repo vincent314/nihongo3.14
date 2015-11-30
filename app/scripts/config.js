@@ -609,6 +609,10 @@ angular.module('nihongo').constant('CONFIG', {
         {
           title:'Calligraphie 3',
           file:'cours_03.html'
+        },
+        {
+          title:'Calligraphie 4',
+          file:'cours_04.html'
         }
       ]
     }
