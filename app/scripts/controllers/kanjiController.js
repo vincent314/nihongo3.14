@@ -1,9 +1,6 @@
 (function() {
   'use strict';
 
-  angular.module('nihongo').controller('KanjiController', KanjiController);
-
-  KanjiController.$inject = ['$routeParams','NihongoService'];
   function KanjiController($routeParams,NihongoService) {
     var self = this;
     var vm = this;
@@ -28,7 +25,10 @@
         return false;
       }
       var firstCode = reading.charCodeAt(0);
-      return firstCode >= 0x30A0 && firstCode <= 0x30FF
+      return firstCode >= 0x30A0 && firstCode <= 0x30FF;
     }
   }
+
+  KanjiController.$inject = ['$routeParams','NihongoService'];
+  angular.module('nihongo').controller('KanjiController', KanjiController);
 })();

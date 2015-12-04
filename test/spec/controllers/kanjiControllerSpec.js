@@ -4,35 +4,35 @@ describe('Test KanjiController', function () {
 
   var KANJI_MOCK = [
     {
-      "kanji": "木",
-      "meaning": "arbre, bois",
-      "writing": "一｜ノ丶",
-      "readings": [
-        "ボク",
-        "モク",
-        "き",
-        "こ"
+      'kanji': '木',
+      'meaning': 'arbre, bois',
+      'writing': '一｜ノ丶',
+      'readings': [
+        'ボク',
+        'モク',
+        'き',
+        'こ'
       ],
-      "vocabulary": [
+      'vocabulary': [
         {
-          "japanese": "大木",
-          "reading": "たいぼく",
-          "meaning": "grand arbre"
+          'japanese': '大木',
+          'reading': 'たいぼく',
+          'meaning': 'grand arbre'
         },
         {
-          "japanese": "木曜日",
-          "reading": "もくようび",
-          "meaning": "jeudi"
+          'japanese': '木曜日',
+          'reading': 'もくようび',
+          'meaning': 'jeudi'
         },
         {
-          "japanese": "木馬",
-          "reading": "もくば",
-          "meaning": "cariole"
+          'japanese': '木馬',
+          'reading': 'もくば',
+          'meaning': 'cariole'
         },
         {
-          "japanese": "木立",
-          "reading": "こだち",
-          "meaning": "alignement des arbres"
+          'japanese': '木立',
+          'reading': 'こだち',
+          'meaning': 'alignement des arbres'
         }
       ]
     }];
