@@ -1273,7 +1273,7 @@
   {
     "kanji": "夕",
     "meaning": "soir, crépuscule",
-    "writing":"ノフ一",
+    "writing":"ク丶",
     "comment":"la lune qui apparait",
     "readings": [
       "セキ","ゆう"
@@ -1384,7 +1384,7 @@
   {
     "kanji": "上",
     "meaning": "haut, au-dessus, excellent, monter, début",
-    "writing": "|一一",
+    "writing": "ト一",
     "readings": [
       "ジョウ","うえ","かみ","あ（げる）","のぼ（る）"
     ],
@@ -1666,6 +1666,527 @@
         "japanese": "人里はなれた村",
         "reading": "ひとざとはなれたむら",
         "meaning": "village loin de la population"
+      }
+    ]
+  },
+  {
+    "kanji": "四",
+    "meaning": "quatre",
+    "writing": "|フル一",
+    "comment":"Il y a un 4 caché dans 四",
+    "readings": [
+      "シ",
+      "よ（っ）"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "四角形",
+        "reading": "しかくけい",
+        "meaning": "carré"
+      },
+      {
+        "japanese": "四国",
+        "reading": "しこく",
+        "meaning": "Shikoku"
+      },
+      {
+        "japanese": "四季",
+        "reading": "しき",
+        "meaning": "4 saisons"
+      },
+      {
+        "japanese": "四苦八苦",
+        "reading": "しくはっく",
+        "meaning": "faire beaucoup d'effort avec la peine (galérer)"
+        "comment":"苦=souffrir"
+      },
+      {
+        "japanese": "四面そか",
+        "reading": "しめんそか",
+        "meaning": "être entouré des ennemies",
+        "comment":"面=face"
+      },
+      {
+        "japanese": "四月",
+        "reading": "しがつ",
+        "meaning": "avril"
+      },
+      {
+        "japanese": "四日",
+        "reading": "よっか",
+        "meaning": "le 4 du mois"
+      },
+      {
+        "japanese": "四人",
+        "reading": "よにん",
+        "meaning": "4 personnes"
+      }
+    ]
+  },
+  {
+    "kanji": "五",
+    "meaning": "cinq",
+    "writing": "一|フ一",
+    "readings": [
+      "五",
+      "いつ"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "五月",
+        "reading": "ごがつ",
+        "meaning": "mai"
+      },
+      {
+        "japanese": "五日",
+        "reading": "いつか",
+        "meaning": "le 5 du mois"
+      },
+      {
+        "japanese": "五人",
+        "reading": "ごにん",
+        "meaning": "5 personnes"
+      },
+      {
+        "japanese": "四捨五入する",
+        "reading": "ししゃごにゅうする",
+        "meaning": "arroundir un nombre (à 4 on jette, à 5 on prend)"
+        "commentaire":"捨=jeter"
+      },
+      {
+        "japanese": "五体満足",
+        "reading": "ごだいまんぞく",
+        "meaning": "en excellente santé",
+        "commentaire":"満足=satisfait"
+      },
+      {
+        "japanese": "五十歩百歩",
+        "reading": "c'est kif-kif",
+        "meaning": "reculer de 50 pas, c'est reculer de 100 pas"
+      }
+    ]
+  },
+  {
+    "kanji": "空",
+    "meaning": "ciel, vide, imaginaire, avion",
+    "writing": "ウル工",
+    "readings": [
+      "クウ","そら","あ（く）","から"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "空気",
+        "reading": "くうき",
+        "meaning": "de l'air"
+      },
+      {
+        "japanese": "空中",
+        "reading": "くうちゅう",
+        "meaning": "dans le vide"
+      },
+      {
+        "japanese": "空港",
+        "reading": "くうこう",
+        "meaning": "aéroport"
+      },
+      {
+        "japanese": "ひこうきは日本の上空をとんでいる",
+        "reading": "ひこうきはにほんのじょうくうをとんでいる",
+        "meaning": "l'avion vole au dessus du Japon"
+      },
+      {
+        "japanese": "青い空",
+        "reading": "あおいそら",
+        "meaning": "ciel bleu"
+      },
+      {
+        "japanese": "青空",
+        "reading": "あおぞら",
+        "meaning": "ciel bleu"
+      },
+      {
+        "japanese": "大空",
+        "reading": "おおぞら",
+        "meaning": "grand ciel"
+      },
+      {
+        "japanese": "空耳をつかう",
+        "reading": "そらみみをつかう",
+        "meaning": "être semblant de ne pas entendre"
+      },
+      {
+        "japanese": "ここ、空いてますか",
+        "reading": "ここ、あいてますか",
+        "meaning": "Est-ce libre ici ?"
+      },
+      {
+        "japanese": "空っぽの",
+        "reading": "からっぽの",
+        "meaning": "vide"
+      }
+    ]
+  },
+  {
+    "kanji": "家",
+    "meaning": "maison, foyer, famille, celui qui nourrit sa famille avec le travail spécialisé",
+    "commentaire":"",
+    "readings": [
+      "カ","ケ","いえ","や"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "一家そろって出かける",
+        "reading": "いっかそろってでかける",
+        "meaning": "sortir en famille"
+      },
+      {
+        "japanese": "家族",
+        "reading": "かぞく",
+        "meaning": "famille"
+      },
+      {
+        "japanese": "家庭",
+        "reading": "かてい",
+        "meaning": "foyer"
+      },
+      {
+        "japanese": "作家",
+        "reading": "さっか",
+        "meaning": "écrivain"
+      },
+      {
+        "japanese": "音楽家",
+        "reading": "おんがくか",
+        "meaning": "musicien"
+      },
+      {
+        "japanese": "画家",
+        "reading": "がか",
+        "meaning": "peintre"
+      },
+      {
+        "japanese": "音楽家",
+        "reading": "おんがくか",
+        "meaning": "spécialiste"
+      },
+      {
+        "japanese": "家来",
+        "reading": "けらい",
+        "meaning": "vassal"
+      },
+      {
+        "japanese": "家にかえる",
+        "reading": "いえにかえる",
+        "meaning": "rentrer chez soi"
+      },
+      {
+        "japanese": "家じをいそぐ",
+        "reading": "いえじをいそぐ",
+        "meaning": "se dépécher de rentrer chez soi"
+      },
+      {
+        "japanese": "わが家",
+        "reading": "わがや",
+        "meaning": "chez moi"
+      },
+      {
+        "japanese": "家ちん",
+        "reading": "やちん",
+        "meaning": "loyer"
+      }
+    ]
+  },
+  {
+    "kanji": "先",
+    "meaning": "avant, précédent, celui qui précède, personne excellente",
+    "writing": "ノ十一ル",
+    "readings": [
+      "セン",
+      "さき"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "先生",
+        "reading": "せんせい",
+        "meaning": "professeur"
+      },
+      {
+        "japanese": "先日",
+        "reading": "せんじつ",
+        "meaning": "l'autre jour (passé)"
+      },
+      {
+        "japanese": "先月",
+        "reading": "せんげつ",
+        "meaning": "mois dernier"
+      },
+      {
+        "japanese": "先しゅう",
+        "reading": "せんしゅう",
+        "meaning": "semaine dernière"
+      },
+      {
+        "japanese": "先進国",
+        "reading": "せんしんこく",
+        "meaning": "pays développé"
+      },
+      {
+        "japanese": "えんぴつの先",
+        "reading": "えんぴつのさき",
+        "meaning": "la pointe d'un crayon"
+      },
+      {
+        "japanese": "店先に花をかざる",
+        "reading": "みせさきにはなをかざる",
+        "meaning": "Décorer la deventure du magasin avec des fleurs"
+      },
+      {
+        "japanese": "手先がきようだ",
+        "reading": "てさきがきようだ",
+        "meaning": "être adroit de ses mains"
+      },
+      {
+        "japanese": "一寸先は、やま",
+        "reading": "いっすんさきは、やま",
+        "meaning": "Nul ne sait ce qui arrivera demain (à 1 mettre devant, il fait tout noir)"
+      }
+    ]
+  },
+  {
+    "kanji": "花",
+    "meaning": "fleur, qch de beau, moment fleuri, les meilleurs moments",
+    "writing": "一いイ匕",
+    "readings": [
+      "カ","はな","ばな"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "花だん",
+        "reading": "かだん",
+        "meaning": "parterre"
+      },
+      {
+        "japanese": "花ふん",
+        "reading": "かふん",
+        "meaning": "pollen"
+      },
+      {
+        "japanese": "ぞう花",
+        "reading": "ぞうか",
+        "meaning": "fleur artificielle"
+      },
+      {
+        "japanese": "花見をする",
+        "reading": "はなみをする",
+        "meaning": "aller voir les cerisier en fleurs"
+      },
+      {
+        "japanese": "花びら",
+        "reading": "はなびら",
+        "meaning": "pétale"
+      },
+      {
+        "japanese": "花むこと",
+        "reading": "はなむこと",
+        "meaning": "nouveau marié"
+      },
+      {
+        "japanese": "花よめ",
+        "reading": "はなよめ",
+        "meaning": "nouvelle mariée"
+      },
+      {
+        "japanese": "花火大会",
+        "reading": "はなびたいかい",
+        "meaning": "fête des feux d'artifice"
+      },
+      {
+        "japanese": "火花がちる",
+        "reading": "ひばながちる",
+        "meaning": "les étincelles jaillissent"
+      },
+      {
+        "japanese": "草花",
+        "reading": "くさばな",
+        "meaning": "plantes et fleurs"
+      }
+    ]
+  },
+  {
+    "kanji": "見",
+    "meaning": "voir,regarder, idée, avis",
+    "writing": "目ル",
+    "readings": [
+      "ケン","み（る）"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "美術館を見学する",
+        "reading": "びじゅつかんをけんがくする",
+        "meaning": "visiter le musée"
+      },
+      {
+        "japanese": "工場を見学する",
+        "reading": "こうじょうをけんがくする",
+        "meaning": "visiter l'usine"
+      },
+      {
+        "japanese": "おまつりを見物する",
+        "reading": "おまつりをけんぶつする",
+        "meaning": "assister à la fête"
+      },
+      {
+        "japanese": "発見する",
+        "reading": "はっけんする",
+        "meaning": "découvrir"
+      },
+      {
+        "japanese": "意見",
+        "reading": "いけん",
+        "meaning": "avis"
+      },
+      {
+        "japanese": "お手紙をはい見しました",
+        "reading": "おてがみをはいけんしました",
+        "meaning": "J'ai lu votre lettre"
+      },
+      {
+        "japanese": "外見を気にする",
+        "reading": "がいけんをきにする",
+        "meaning": "se préoccuper de son apparence"
+      },
+      {
+        "japanese": "見本",
+        "reading": "みほん",
+        "meaning": "modèle"
+      },
+      {
+        "japanese": "えいがを見る",
+        "reading": "えいがをみる",
+        "meaning": "regarder un film"
+      }
+    ]
+  },
+  {
+    "kanji": "元",
+    "meaning": "Début, origine, chef",
+    "writing": "ニル",
+    "readings": [
+      "ゲン",
+      "ガン",
+      "もと"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "兄さんが元気にはしる",
+        "reading": "にいさんがげんきにはしる",
+        "meaning": ""
+      },
+      {
+        "japanese": "国家元首",
+        "reading": "こうかげんしゅ",
+        "meaning": "chef d'état"
+      },
+      {
+        "japanese": "元日",
+        "reading": "がんじつ",
+        "meaning": "le 1er janvier"
+      },
+      {
+        "japanese": "元旦",
+        "reading": "がんたん",
+        "meaning": "le 1er janvier"
+      },
+      {
+        "japanese": "元どおりにがたづける",
+        "reading": "もとどおりにかたづける",
+        "meaning": "ranger comme avant"
+      },
+      {
+        "japanese": "地元のやさいをたべる",
+        "reading": "じもとのやさいをたべる",
+        "meaning": "manger les légumes locaux"
+      },
+      {
+        "japanese": "身元をしかめる",
+        "reading": "みもとをたしかめる",
+        "meaning": "vérifier son identité"
+      }
+    ]
+  },
+  {
+    "kanji": "光",
+    "meaning": "illuminer, lumière, vue, honneur, temps",
+    "writing": "｜丶ノ一ル",
+    "readings": [
+      "コウ","ひか（る）","ひかり"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "日光",
+        "reading": "にっこう",
+        "meaning": "lumière du soleil"
+      },
+      {
+        "japanese": "月光",
+        "reading": "げっこう",
+        "meaning": "lumière de la lune"
+      },
+      {
+        "japanese": "光景",
+        "reading": "こうけい",
+        "meaning": "spectacle, scène"
+      },
+      {
+        "japanese": "観光する",
+        "reading": "かんこうする",
+        "meaning": "visiter (touriste)"
+      },
+      {
+        "japanese": "ぴかぴか光っている",
+        "reading": "ぴかぴかひかっている",
+        "meaning": "ça brille"
+      },
+      {
+        "japanese": "月の光",
+        "reading": "つきのひかり",
+        "meaning": "lumière de la lune"
+      }
+    ]
+  },
+  {
+    "kanji": "糸",
+    "meaning": "fil, objet fin",
+    "writing": "くム小",
+    "readings": [
+      "シ",
+      "いと"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "金糸",
+        "reading": "きんし",
+        "meaning": "fil d'or (pour la broderie)"
+      },
+      {
+        "japanese": "たこ糸",
+        "reading": "たこいと",
+        "meaning": "fil du cerf-volant"
+      },
+      {
+        "japanese": "ふうせんの糸",
+        "reading": "ふうせんのいと",
+        "meaning": "fil du ballon"
+      },
+      {
+        "japanese": "毛糸",
+        "reading": "けいと",
+        "meaning": "laine pour tricot"
+      },
+      {
+        "japanese": "かいけつの糸口を見つける",
+        "reading": "かいけつのいとぐちをみつける",
+        "meaning": "trouver l'indice pour la résolution"
       }
     ]
   }
