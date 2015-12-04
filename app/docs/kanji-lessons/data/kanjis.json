@@ -1,6 +1,8 @@
 [
   {
     "kanji": "木",
+    "meaning":"arbre, bois",
+    "writing":"一｜ノ丶",
     "readings": [
       "ボク",
       "モク",
@@ -32,6 +34,7 @@
   },
   {
     "kanji": "日",
+    "meaning":"jour, soleil",
     "readings": [
       "ヒ",
       "ジツ",
@@ -74,6 +77,7 @@
   },
   {
     "kanji": "川",
+    "meaning":"rivière",
     "readings": [
       "セン",
       "かわ"
@@ -108,6 +112,8 @@
   },
   {
     "kanji": "月",
+    "meaning":"lune, mois",
+    "writing":"丿フニ",
     "readings": [
       "カツ",
       "ゲツ",
@@ -148,6 +154,8 @@
   },
   {
     "kanji": "目",
+    "writing":"｜フ三",
+    "meaning":"oeil",
     "readings": [
       "モク",
       "ボク",
@@ -189,6 +197,8 @@
   },
   {
     "kanji": "山",
+    "writing":"|く｜",
+    "meaning":"montage",
     "readings": [
       "サン",
       "やま"
@@ -223,6 +233,8 @@
   },
   {
     "kanji": "雨",
+    "meaning":"pluie",
+    "writing":"一｜冂丶丶丶丶",
     "readings": [
       "あま",
       "ウ"
@@ -257,6 +269,8 @@
   },
   {
     "kanji": "魚",
+    "meaning":"poisson",
+    "writing":"ク冂土ノ丶丶丶",
     "readings": [
       "ギョ",
       "うお"
@@ -375,6 +389,7 @@
   {
     "kanji": "門",
     "meaning": "portail, porte — entrée et sortie — catégorie",
+    "writing":"｜フニ｜フニ",
     "readings": [
       "モン","かど"
     ],
@@ -513,7 +528,7 @@
     "kanji": "女",
     "meaning": "femme",
     "readings": [
-      "ジョ","にょ","ニョウ","おんな","め"
+      "ジョ","ニョ","ニョウ","おんな","め"
 
     ],
     "vocabulary": [
@@ -1697,7 +1712,7 @@
       {
         "japanese": "四苦八苦",
         "reading": "しくはっく",
-        "meaning": "faire beaucoup d'effort avec la peine (galérer)"
+        "meaning": "faire beaucoup d'effort avec la peine (galérer)",
         "comment":"苦=souffrir"
       },
       {
@@ -1728,7 +1743,7 @@
     "meaning": "cinq",
     "writing": "一|フ一",
     "readings": [
-      "五",
+      "ゴ",
       "いつ"
     ],
     "vocabulary": [
@@ -1750,7 +1765,7 @@
       {
         "japanese": "四捨五入する",
         "reading": "ししゃごにゅうする",
-        "meaning": "arroundir un nombre (à 4 on jette, à 5 on prend)"
+        "meaning": "arroundir un nombre (à 4 on jette, à 5 on prend)",
         "commentaire":"捨=jeter"
       },
       {

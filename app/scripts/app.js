@@ -34,7 +34,7 @@ angular.module('nihongo', ['ngRoute','infinite-scroll','ngSanitize','pascalprech
   $routeProvider.when('/kanji/:level', {
     templateUrl:'templates/kanji.html',
     controller:'KanjiController',
-    controllerAs:'kanjiController',
+    controllerAs:'vm',
     title:'Kanji'
   });
   $routeProvider

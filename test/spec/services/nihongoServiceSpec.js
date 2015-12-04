@@ -40,8 +40,4 @@ describe('Test Nihongo Service', function () {
       });
       $httpBackend.flush();
   });
-
-  it('SHould be fals', function () {
-    expect(true).toBe(false);
-  });
 });

@@ -36,23 +36,16 @@
 
       <a data-toggle="collapse" data-parent="#accordion" href="#collapseKanji1" aria-expanded="true"
          aria-controls="collapseKanji1"> Kanji</a>
+
+      <a class="btn btn-primary btn-sm" ng-show="kanji.epub" ng-href="{{kanji.epub}}">
+        EPUB
+      </a>
     </div>
     <div id="collapseKanji1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingKanji">
       <div class="panel-body">
         <ul>
-          <li><a ng-href="#kanji/1">Kanji 1-80</a></li>
-        </ul>
-        <ul>
-          <li><a ng-href="#kanji/2">Kanji 81-240</a></li>
-        </ul>
-        <ul>
-          <li><a ng-href="#kanji/3">Kanji 241-440</a></li>
-        </ul>
-        <ul>
-          <li><a ng-href="#kanji/4">Kanji 441-640</a></li>
-        </ul>
-        <ul>
-          <li><a ng-href="#kanji/5">Kanji 641-825</a></li>
+          <li><a ng-href="#kanji/1">Kanji Première année</a>
+          </li>
         </ul>
       </div>
     </div>

@@ -621,6 +621,7 @@ angular.module('nihongo').constant('CONFIG', {
     templateUrl: 'toc.html'
   },
   kanji: {
-    base: 'docs/kanji'
+    base: 'docs/kanji-lessons/data',
+    epub: 'docs/kanji-lessons/epub/kanji-lessons.epub'
   }
 });
