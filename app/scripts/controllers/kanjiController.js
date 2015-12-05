@@ -1,23 +1,34 @@
-'use strict';
-var KanjiController = function (NihongoService,$routeParams) {
-  var self = this;
-  var level = $routeParams.level;
+(function() {
+  'use strict';
 
-  NihongoService.getKanjiList('kanji_' + level + '.json').then(function (kanjiList) {
-    self.kanjiMatrix = self.chunk(_.sortBy(kanjiList,'id'), 6);
-  }).catch(function(err){
-    self.kanjiMatrix = [];
-    console.log(JSON.stringify(err));
-  });
-};
+  function KanjiController($routeParams,NihongoService) {
+    var self = this;
+    var vm = this;
+    vm.showKanji = showKanji;
+    vm.isKatakana = isKatakana;
+    vm.level = $routeParams.level;
 
-KanjiController.prototype.chunk = function (array, size) {
-  var result = [];
-  while(array.length) {
-    result.push(array.splice(0, size));
+
+    NihongoService.getKanjiList('kanjis.json').then(function (kanjiList) {
+      vm.charList = _.pluck(kanjiList, 'kanji');
+      self.kanjiIndex = _.indexBy(kanjiList, 'kanji');
+    }).catch(function (err) {
+      console.log(JSON.stringify(err));
+    });
+
+    function showKanji(char){
+      vm.kanji = self.kanjiIndex[char];
+    }
+
+    function isKatakana(reading){
+      if(!reading){
+        return false;
+      }
+      var firstCode = reading.charCodeAt(0);
+      return firstCode >= 0x30A0 && firstCode <= 0x30FF;
+    }
   }
-  return result;
-};
 
-KanjiController.$inject = ['NihongoService','$routeParams'];
-angular.module('nihongo').controller('KanjiController', KanjiController);
+  KanjiController.$inject = ['$routeParams','NihongoService'];
+  angular.module('nihongo').controller('KanjiController', KanjiController);
+})();

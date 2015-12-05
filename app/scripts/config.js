@@ -593,12 +593,35 @@ angular.module('nihongo').constant('CONFIG', {
           topics: ['Conjecture, situration, climat 〜でしょう']
         }
       ]
+    },
+    {
+      title:'Calligraphie',
+      dir:'docs/html/Calligraphie',
+      pages:[
+        {
+          title:'Calligraphie 1',
+          file:'cours_01.html'
+        },
+        {
+          title:'Calligraphie 2',
+          file:'cours_02.html'
+        },
+        {
+          title:'Calligraphie 3',
+          file:'cours_03.html'
+        },
+        {
+          title:'Calligraphie 4',
+          file:'cours_04.html'
+        }
+      ]
     }
   ],
   toc: {
     templateUrl: 'toc.html'
   },
   kanji: {
-    base: 'docs/kanji'
+    base: 'docs/kanji-lessons/data',
+    epub: 'docs/kanji-lessons/epub/kanji-lessons.epub'
   }
 });
