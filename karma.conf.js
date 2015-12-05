@@ -21,7 +21,7 @@ module.exports = function (config) {
       'bower_components/ngInfiniteScroll/build/ng-infinite-scroll.js',
       'bower_components/lodash/dist/lodash.js',
       'bower_components/speakingurl/speakingurl.min.js',
-      //'app/scripts/app.js',
+      //'app/scripts/app.ts',
       //'app/scripts/services/*.js',
       //'app/scripts/controllers/*.js',
       //'app/scripts/filters/*.js',

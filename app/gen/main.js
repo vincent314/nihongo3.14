@@ -1,4 +1,54 @@
 'use strict';
+angular.module('nihongo', ['ngRoute', 'infinite-scroll', 'ngSanitize', 'pascalprecht.translate', 'ngResource', 'mgcrea.ngStrap.popover'])
+    .config(['$routeProvider', 'CONFIG', function ($routeProvider, CONFIG) {
+        _(CONFIG.categories).forEach(function (category) {
+            _(category.pages).forEach(function (page) {
+                var route = '/' + window.getSlug(category.title) + '/' + window.getSlug(page.title);
+                $routeProvider.when(route, {
+                    templateUrl: 'templates/page.html',
+                    controller: 'PageController',
+                    title: page.title,
+                    resolve: {
+                        params: function () {
+                            return {
+                                url: category.dir + '/' + page.file
+                            };
+                        }
+                    }
+                });
+            });
+        });
+        $routeProvider.when('/timeline', {
+            templateUrl: 'templates/timeline.html',
+            controller: 'TimelineController',
+            title: 'Timeline'
+        });
+        $routeProvider.when('/search', {
+            templateUrl: 'templates/search.html',
+            controller: 'SearchController',
+            controllerAs: 'searchController',
+            title: 'Rechercher'
+        });
+        $routeProvider.when('/kanji/:level', {
+            templateUrl: 'templates/kanji.html',
+            controller: 'KanjiController',
+            controllerAs: 'vm',
+            title: 'Kanji'
+        });
+        $routeProvider
+            .otherwise({
+            templateUrl: CONFIG.toc.templateUrl,
+            controller: 'TocController',
+            title: 'Table des matières'
+        });
+    }])
+    .run(['$rootScope', '$route', function ($rootScope, $route) {
+        $rootScope.$on('$routeChangeSuccess', function () {
+            //Change page title, based on Route information
+            $rootScope.title = $route.current.title;
+        });
+    }]);
+'use strict';
 angular.module('nihongo').constant('CONFIG', {
     es: {
         host: 'elastic-vmn.rhcloud.com',
@@ -622,4 +672,269 @@ angular.module('nihongo').constant('CONFIG', {
         epub: 'docs/kanji-lessons/epub/kanji-lessons.epub'
     }
 });
-//# sourceMappingURL=config.js.map
+'use strict';
+angular.module('nihongo').config(['$translateProvider', function ($translateProvider) {
+        $translateProvider.translations('fr', {
+            'HOME': 'Accueil',
+            'LAST_LESSONS': 'Derniers cours',
+            'DOWNLOADS': 'Téléchargements',
+            'LESSONS_YEAR_1': 'Cours 1ère année 2011/2012',
+            'LESSONS_YEAR_2': 'Cours 2ème année 2012/2013',
+            'LESSONS_YEAR_3A': 'Cours 3ème année 2013/2014',
+            'LESSONS_YEAR_3B': 'Cours 3ème année 2014/2015',
+            'LINKS': 'Liens',
+            'LESSONS_MANUAL': 'Supports de cours',
+            'YEAR_3': '3ième année',
+            'ALL': 'Tous',
+            'LANG': 'Langue',
+            'TOC': 'Table des matières',
+            'ABOUT': 'À propos',
+            'SEARCH': 'Rechercher…',
+            'RESULTS': 'Résultats',
+            'CONNECTION_ERROR': 'Il y a eu un problème de connection avec le moteur de recherche. Il se repose probablement, tout le monde a le droit à un peu de repos après tout. ' +
+                'Réessayez d\'ici quelques secondes et je suis sûr qu\'il sera ravis de vous répondre.'
+        });
+        $translateProvider.translations('en', {
+            'HOME': 'Home',
+            'LAST_LESSONS': 'Latest lessons',
+            'DOWNLOADS': 'Downloads',
+            'LESSONS_YEAR_1': '1st year lessons 2011/2012',
+            'LESSONS_YEAR_2': '2nd year lessons 2012/2013',
+            'LESSONS_YEAR_3A': '3rd year lessons 2013/2014',
+            'LESSONS_YEAR_3B': '3rd year lessons 2014/2015',
+            'LINKS': 'Links',
+            'LESSONS_MANUAL': 'Manuals',
+            'YEAR_3': '3rd year',
+            'ALL': 'All',
+            'LANG': 'Lang',
+            'TOC': 'Table of content',
+            'ABOUT': 'About',
+            'SEARCH': 'Search…',
+            'RESULTS': 'Results',
+            'CONNECTION_ERROR': 'Connection error, the search engine may be sleeping, please try again in few seconds'
+        });
+        $translateProvider.translations('jp', {
+            'HOME': 'ホーム',
+            'LAST_LESSONS': '最近授業',
+            'DOWNLOADS': 'ダウンロード',
+            'LESSONS_YEAR_1': '一年授業 2011/2012',
+            'LESSONS_YEAR_2': '二年授業 2012/2013',
+            'LESSONS_YEAR_3A': '三年授業 2013/2014',
+            'LESSONS_YEAR_3B': '三年授業 2014/2015',
+            'LINKS': 'リンク',
+            'LESSONS_MANUAL': '教則本',
+            'YEAR_3': '三年',
+            'ALL': '',
+            'LANG': '言語',
+            'TOC': '目次',
+            'ABOUT': 'About',
+            'SEARCH': '検索',
+            'RESULTS': 'ヒット',
+            'CONNECTION_ERROR': 'Connection error, the search engine may be sleeping, please try again in few seconds'
+        });
+        $translateProvider.preferredLanguage('fr');
+    }]);
+'use strict';
+angular.module('nihongo').controller('HeaderController', ['$scope', '$translate', '$location', function ($scope, $translate, $location) {
+        $scope.switchLang = function (lang) {
+            $translate.use(lang);
+        };
+        $scope.search = function () {
+            $location.path('/search').search('searchString', $scope.searchString);
+        };
+    }]);
+(function () {
+    'use strict';
+    function KanjiController($routeParams, NihongoService) {
+        var self = this;
+        var vm = this;
+        vm.showKanji = showKanji;
+        vm.isKatakana = isKatakana;
+        vm.level = $routeParams.level;
+        NihongoService.getKanjiList('kanjis.json').then(function (kanjiList) {
+            vm.charList = _.pluck(kanjiList, 'kanji');
+            self.kanjiIndex = _.indexBy(kanjiList, 'kanji');
+        }).catch(function (err) {
+            console.log(JSON.stringify(err));
+        });
+        function showKanji(char) {
+            vm.kanji = self.kanjiIndex[char];
+        }
+        function isKatakana(reading) {
+            if (!reading) {
+                return false;
+            }
+            var firstCode = reading.charCodeAt(0);
+            return firstCode >= 0x30A0 && firstCode <= 0x30FF;
+        }
+    }
+    KanjiController.$inject = ['$routeParams', 'NihongoService'];
+    angular.module('nihongo').controller('KanjiController', KanjiController);
+})();
+'use strict';
+angular.module('nihongo').controller('PageController', ['$scope', '$location', 'CONFIG', 'NihongoService', 'params', function ($scope, $location, CONFIG, NihongoService, params) {
+        var currentPath = '#' + $location.path();
+        var pagesFlatten = [];
+        _(CONFIG.categories).forEach(function (category) {
+            _(category.pages).forEach(function (page) {
+                var path = NihongoService.buildRoute(category.title, page.title, true);
+                pagesFlatten.push({
+                    path: path,
+                    page: page,
+                    category: category
+                });
+            });
+        });
+        var i = _(pagesFlatten).findIndex(function (item) {
+            return currentPath === item.path;
+        });
+        if (i > 0) {
+            $scope.previous = pagesFlatten[i - 1];
+        }
+        if (i < pagesFlatten.length - 1) {
+            $scope.next = pagesFlatten[i + 1];
+        }
+        $scope.url = params.url;
+    }]);
+'use strict';
+var SearchController = function ($routeParams, NihongoService) {
+    var self = this;
+    var searchString = $routeParams.searchString;
+    if (!searchString) {
+        this.total = 0;
+        this.hits = [];
+    }
+    else {
+        NihongoService.search(searchString).then(function (result) {
+            self.searchSuccess(result);
+        }).catch(function (err) {
+            self.searchFailure(err);
+        });
+    }
+};
+SearchController.prototype.searchSuccess = function (result) {
+    this.total = result.hits.total;
+    this.hits = result.hits.hits;
+};
+SearchController.prototype.searchFailure = function (err) {
+    this.error = err;
+    console.log('Error status : ' + err.status);
+};
+SearchController.$inject = ['$routeParams', 'NihongoService'];
+angular.module('nihongo').controller('SearchController', SearchController);
+'use strict';
+/**
+ *
+ *
+ * @param $scope
+ * @param CONFIG
+ * @param NihongoService
+ * @param $http
+ * @param $sanitize
+ * @constructor
+ */
+function TimelineController($scope, CONFIG, NihongoService, $http, $sanitize, $q) {
+    var self = this;
+    self.$http = $http;
+    self.$sanitize = $sanitize;
+    self.$scope = $scope;
+    self.$q = $q;
+    self.currentIndex = 0;
+    $scope.pages = [];
+    self.timeline = NihongoService.buildTimeline(CONFIG.categories);
+    self.printPage(self.currentIndex);
+    $scope.pagingFunction = function () {
+        if (self.currentIndex < self.timeline.length - 1) {
+            self.currentIndex++;
+            self.printPage(self.currentIndex);
+        }
+    };
+}
+angular.module('nihongo').controller('TimelineController', ['$scope', 'CONFIG', 'NihongoService', '$http', '$sanitize', '$q',
+    TimelineController]);
+/**
+ * Get HTML file content and add the content to the stream
+ *
+ * @param idx
+ */
+TimelineController.prototype.printPage = function (idx) {
+    var self = this;
+    var page = this.timeline[idx];
+    return this.$http.get(page.category.dir + '/' + page.file)
+        .then(function (response) {
+        self.$scope.pages.push(self.$sanitize(response.data));
+        return response.data;
+    }).catch(function (response) {
+        var msg = response.status + ' : ' + response.data;
+        console.log(msg);
+    });
+};
+'use strict';
+angular.module('nihongo').controller('TocController', ['$scope', 'CONFIG', function ($scope, CONFIG) {
+        $scope.categories = CONFIG.categories;
+        $scope.kanji = CONFIG.kanji;
+        $scope.buildRoute = function (categoryTitle, pageTitle) {
+            return '#/' + window.getSlug(categoryTitle) + '/' + window.getSlug(pageTitle);
+        };
+    }]);
+'use strict';
+angular.module('nihongo').directive('pagination', function () {
+    return {
+        templateUrl: 'templates/pagination.html',
+        scope: {
+            previous: '=previous',
+            next: '=next'
+        }
+    };
+});
+'use strict';
+angular.module('nihongo').filter('percentage', ['$filter', function ($filter) {
+        return function (input, decimals) {
+            return $filter('number')(input * 100, decimals) + '%';
+        };
+    }]);
+///<reference path="../lib.d.ts"/>
+var NihongoService = function (CONFIG, $resource, $http, $q) {
+    this.CONFIG = CONFIG;
+    this.$resource = $resource;
+    this.$http = $http;
+    this.$q = $q;
+};
+/**
+ *
+ */
+NihongoService.prototype.buildRoute = function (categoryTitle, pageTitle) {
+    return '#/' + window.getSlug(categoryTitle) + '/' + window.getSlug(pageTitle);
+};
+/**
+ */
+NihongoService.prototype.buildTimeline = function (categories) {
+    return _(categories).map(function (category) {
+        var pages = category['pages'];
+        _(pages).each(function (page) {
+            page.category = {
+                dir: category['dir']
+            };
+        });
+        return pages;
+    })
+        .flatten()
+        .reverse()
+        .value();
+};
+/**
+ *
+ * @param searchString
+ * @returns {*}
+ */
+NihongoService.prototype.search = function (searchString) {
+    var resource = this.$resource('http://' + this.CONFIG.es.host + ':' + this.CONFIG.es.port + '/' + this.CONFIG.es.uri + '/_search');
+    return resource.get({ q: ('japanese:' + searchString + ' OR french:' + searchString) }).$promise;
+};
+NihongoService.prototype.getKanjiList = function (file) {
+    return this.$http.get(this.CONFIG.kanji.base + '/' + file).then(function (res) {
+        return res.data;
+    });
+};
+NihongoService.$inject = ['CONFIG', '$resource', '$http', '$q'];
+angular.module('nihongo').service('NihongoService', NihongoService);

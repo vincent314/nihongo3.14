@@ -24,7 +24,7 @@ gulp.task('webserver:production', function () {
 
 gulp.task('watch', function () {
   gulp.watch('bower.json', ['wiredep']);
-  gulp.watch(config.app + '/scripts/**/*.js', ['scripts']);
+  gulp.watch(config.app + '/ts/**/*.js', ['compile']);
   gulp.watch('docs/src/**/*.md', ['docs:multiple']);
 
   $.livereload.listen();

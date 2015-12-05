@@ -6,3 +6,5 @@ bower_components
 npm-debug.log
 output
 es-auth.js
+/app/ts/**/*.js
+/app/ts/**/*.js.map
