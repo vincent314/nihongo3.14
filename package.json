@@ -29,7 +29,7 @@
     "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.0.1",
     "gulp-rev": "^6.0.1",
-    "gulp-showdown": "0.0.2",
+    "gulp-showdown": "^0.0.3",
     "gulp-uglify": "^1.4.2",
     "gulp-usemin": "^0.3.14",
     "gulp-util": "^3.0.7",
