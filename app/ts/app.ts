@@ -1,5 +1,4 @@
-'use strict';
-
+///<reference path="./lib.d.ts"/>
 angular.module('nihongo', ['ngRoute','infinite-scroll','ngSanitize','pascalprecht.translate','ngResource','mgcrea.ngStrap.popover'])
 .config(['$routeProvider', 'CONFIG', function ($routeProvider, CONFIG) {
 

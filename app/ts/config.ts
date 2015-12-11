@@ -1,5 +1,4 @@
-'use strict';
-
+///<reference path="./lib.d.ts"/>
 angular.module('nihongo').constant('CONFIG', {
   es: {
     host: 'elastic-vmn.rhcloud.com',

@@ -1,5 +1,4 @@
-'use strict';
-
+///<reference path="./lib.d.ts"/>
 angular.module('nihongo').config(['$translateProvider', function ($translateProvider) {
   $translateProvider.translations('fr', {
     'HOME': 'Accueil',

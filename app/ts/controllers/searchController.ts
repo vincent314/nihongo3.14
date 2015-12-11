@@ -1,5 +1,4 @@
-'use strict';
-
+///<reference path="../lib.d.ts"/>
 var SearchController = function ($routeParams, NihongoService) {
     var self = this;
     var searchString = $routeParams.searchString;

@@ -1,5 +1,4 @@
-'use strict';
-
+///<reference path="../lib.d.ts"/>
 /**
  *
  *
