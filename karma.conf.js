@@ -21,16 +21,14 @@ module.exports = function (config) {
       'bower_components/ngInfiniteScroll/build/ng-infinite-scroll.js',
       'bower_components/lodash/dist/lodash.js',
       'bower_components/speakingurl/speakingurl.min.js',
-      'node_modules/definitely-typed-angular/**/*.ts',
-      //'app/ts/app.ts',
-      //'app/ts/lib.d.ts',
-      //'app/ts/services/*.ts',
-      //'app/ts/controllers/*.ts',
-      //'app/ts/filters/*.ts',
+      'app/ts/app.ts',
+      'app/ts/services/*.ts',
+      'app/ts/controllers/*.ts',
+      'app/ts/filters/*.ts',
       //'test/spec/*.js',
       //'test/spec/**/*.js',
-      //'test/spec/**/*.ts',
-      'test/spec/tsSpec.ts',
+      'test/spec/**/*.ts',
+      //'test/spec/tsSpec.ts',
       'test/html/**/*.html',
       'app/templates/*.html'
     ],
@@ -82,7 +80,9 @@ module.exports = function (config) {
         concatenateOutput: false // (optional) Concatenate and emit output to single file. By default true if module option is omited, otherwise false.
       },
       typings: [
-        'typings/tsd.d.ts'
+        'test/definitions/jasmine.d.ts',
+        'node_modules/definitely-typed-jquery/jquery.d.ts',
+        'app/ts/lib.d.ts'
       ],
       // transforming the filenames
       transformPath: function(path) {

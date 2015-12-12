@@ -1,4 +1,4 @@
-/// <reference path="jasmine.d.ts"/>
+/// <reference path="../definitions/jasmine.d.ts"/>
 
 describe('Test Typescript', function (){
 

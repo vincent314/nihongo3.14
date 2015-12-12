@@ -8,3 +8,5 @@ output
 es-auth.js
 /app/ts/**/*.js
 /app/ts/**/*.js.map
+/test/spec/**/*.js
+/test/spec/**/*.js.map
