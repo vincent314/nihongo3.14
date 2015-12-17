@@ -21,14 +21,15 @@ module.exports = function (config) {
       'bower_components/ngInfiniteScroll/build/ng-infinite-scroll.js',
       'bower_components/lodash/dist/lodash.js',
       'bower_components/speakingurl/speakingurl.min.js',
-      'app/ts/app.ts',
-      'app/ts/services/*.ts',
-      'app/ts/controllers/*.ts',
-      'app/ts/filters/*.ts',
+      //'app/ts/app.ts',
+      //'app/ts/services/*.ts',
+      //'app/ts/controllers/*.ts',
+      //'app/ts/filters/*.ts',
       //'test/spec/*.js',
       //'test/spec/**/*.js',
-      'test/spec/**/*.ts',
+      //'test/spec/**/*.ts',
       //'test/spec/tsSpec.ts',
+      'test/spec/testappSpec.ts',
       'test/html/**/*.html',
       'app/templates/*.html'
     ],
@@ -69,25 +70,20 @@ module.exports = function (config) {
     },
 
     typescriptPreprocessor: {
-      // options passed to the typescript compiler
-      options: {
-        sourceMap: true, // (optional) Generates corresponding .map file.
-        target: 'ES5', // (optional) Specify ECMAScript target version: 'ES3' (default), or 'ES5'
-        module: 'commonjs', // (optional) Specify module code generation: 'commonjs' or 'amd'
-        noImplicitAny: true, // (optional) Warn on expressions and declarations with an implied 'any' type.
-        noResolve: true, // (optional) Skip resolution and preprocessing.
-        removeComments: true, // (optional) Do not emit comments to output.
-        concatenateOutput: false // (optional) Concatenate and emit output to single file. By default true if module option is omited, otherwise false.
+      tsconfigPath: './test/spec/tsconfig.json',
+      compilerOptions: { // *optional
+        removeComments: false
       },
-      typings: [
-        'test/definitions/jasmine.d.ts',
-        'node_modules/definitely-typed-jquery/jquery.d.ts',
-        'app/ts/lib.d.ts'
-      ],
+      ignorePath: function(path){ // ignore all files that ends with .d.ts (this files will not be served)
+        return /\.d\.ts$/.test(path);
+      },
       // transforming the filenames
-      transformPath: function(path) {
+      // you can pass more than one, they will be execute in order
+      transformPath: [function(path) { // *optional
         return path.replace(/\.ts$/, '.js');
-      }
+      }, function(path) {
+        return path.replace(/[\/\\]test[\/\\]/i, '/'); // remove directory test and change to /
+      }]
     },
 
     ngHtml2JsPreprocessor: {

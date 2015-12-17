@@ -1,4 +1,3 @@
-/// <reference path="./lib.spec.d.ts"/>
 describe('Test routes over configuration', function () {
 
     var $location, $route, $rootScope;
