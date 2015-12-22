@@ -1,3 +1,4 @@
+///<reference path="../../app/" />
 describe('Test routes over configuration', function () {
 
     var $location, $route, $rootScope;

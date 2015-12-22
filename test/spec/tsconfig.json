@@ -6,12 +6,5 @@
     "preserveConstEnums": true,
     "outDir": ".tmp/tsout/spec",
     "sourceMap": true
-  },
-  "files":[
-    "../definitions/jasmine.d.ts",
-    "../../node_modules/definitely-typed-angular/angular.d.ts",
-    "../../node_modules/definitely-typed-angular/angular-mocks.d.ts",
-    "../../app/test-ts/app.test.ts",
-    "testappSpec.ts"
-  ]
+  }
 }

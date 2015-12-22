@@ -4,17 +4,8 @@
     "noImplicitAny": false,
     "removeComments": true,
     "preserveConstEnums": true,
-    "outDir": ".tmp/tsc.js",
+    "outDir": "../../.tmp/tsc.js",
     "sourceMap": true
 
-  },
-  "files": [
-    "../../node_modules/definitely-typed-angular/angular.d.ts",
-    "node_modules/definitely-typed-angular/angular-route.d.ts",
-    "app/ts/app.ts",
-    "app/ts/lib.d.ts",
-    "app/ts/types/lodash.d.ts",
-    "app/ts/config.ts",
-    "app/ts/config.d.ts"
-  ]
+  }
 }

@@ -1,5 +1,6 @@
-///<reference path="../lib.d.ts"/>
-var SearchController = function ($routeParams, NihongoService) {
+///<reference path="../_App.ts"/>
+module controllers {
+  var SearchController = function ($routeParams, NihongoService) {
     var self = this;
     var searchString = $routeParams.searchString;
 
@@ -15,16 +16,17 @@ var SearchController = function ($routeParams, NihongoService) {
     }
   };
 
-SearchController.prototype.searchSuccess = function (result) {
-  this.total = result.hits.total;
-  this.hits = result.hits.hits;
-};
+  SearchController.prototype.searchSuccess = function (result) {
+    this.total = result.hits.total;
+    this.hits = result.hits.hits;
+  };
 
-SearchController.prototype.searchFailure = function (err) {
-  this.error = err;
-  console.log('Error status : ' + err.status);
-};
+  SearchController.prototype.searchFailure = function (err) {
+    this.error = err;
+    console.log('Error status : ' + err.status);
+  };
 
-SearchController.$inject = ['$routeParams', 'NihongoService'];
+  SearchController.$inject = ['$routeParams', 'NihongoService'];
 
-angular.module('nihongo').controller('SearchController', SearchController);
+  angular.module('nihongo').controller('SearchController', SearchController);
+}

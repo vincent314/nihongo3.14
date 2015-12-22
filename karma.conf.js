@@ -30,8 +30,8 @@ module.exports = function (config) {
       //'test/spec/**/*.ts',
       //'test/spec/tsSpec.ts',
       'test/spec/testappSpec.ts',
-      'test/html/**/*.html',
-      'app/templates/*.html'
+      //'test/html/**/*.html',
+      //'app/templates/*.html'
     ],
 
     // list of files / patterns to exclude
@@ -70,20 +70,20 @@ module.exports = function (config) {
     },
 
     typescriptPreprocessor: {
-      tsconfigPath: './test/spec/tsconfig.json',
+      tsconfigPath: 'test/spec/tsconfig.json',
       compilerOptions: { // *optional
         removeComments: false
       },
-      ignorePath: function(path){ // ignore all files that ends with .d.ts (this files will not be served)
-        return /\.d\.ts$/.test(path);
-      },
+      //ignorePath: function(path){ // ignore all files that ends with .d.ts (this files will not be served)
+      //  return /\.d\.ts$/.test(path);
+      //},
       // transforming the filenames
       // you can pass more than one, they will be execute in order
-      transformPath: [function(path) { // *optional
-        return path.replace(/\.ts$/, '.js');
-      }, function(path) {
-        return path.replace(/[\/\\]test[\/\\]/i, '/'); // remove directory test and change to /
-      }]
+      //transformPath: [function(path) { // *optional
+      //  return path.replace(/\.ts$/, '.js');
+      //}, function(path) {
+      //  return path.replace(/[\/\\]test[\/\\]/i, '/'); // remove directory test and change to /
+      //}]
     },
 
     ngHtml2JsPreprocessor: {

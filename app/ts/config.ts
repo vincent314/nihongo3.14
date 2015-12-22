@@ -1,4 +1,6 @@
-module Nihongo {
+///<reference path="config.d.ts" />
+
+module app {
 
   export var config:Config = {
     es: {

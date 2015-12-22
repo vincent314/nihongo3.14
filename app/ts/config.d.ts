@@ -1,4 +1,4 @@
-declare module Nihongo {
+declare module app {
   export interface Config {
     es:{
       host:string;
