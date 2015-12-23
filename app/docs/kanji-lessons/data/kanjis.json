@@ -2774,6 +2774,347 @@
         "japanese": "十円",
         "reading": "じゅうえん",
         "meaning": "dix yen"
+      },
+      {
+        "japanese": "円グラフ",
+        "reading": "えんグラフ",
+        "meaning": "graphe 'camembert'"
+      },
+      {
+        "japanese": "円満な人がらだ",
+        "reading": "えんまんなひとがらだ",
+        "meaning": "Il a un caractère 'rond' (doux, harmonieux)"
+      },
+      {
+        "japanese": "円い人がらだ",
+        "reading": "まるいひとがらだ",
+        "meaning": ""
+      },
+      {
+        "japanese": "円いテーブル",
+        "reading": "まるいテーブル",
+        "meaning": "table ronde"
+      }
+    ]
+  },
+  {
+    "kanji": "年",
+    "meaning": "année, une année, âge",
+    "readings": [
+      "ネン","とし"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "一年",
+        "reading": "いちねん",
+        "meaning": "une année"
+      },
+      {
+        "japanese": "去年",
+        "reading": "きょねん",
+        "meaning": "l'année dernière"
+      },
+      {
+        "japanese": "来年",
+        "reading": "らいねん",
+        "meaning": "l'année prochaine"
+      },
+      {
+        "japanese": "お年より",
+        "reading": "おとしより",
+        "meaning": "personnes âgées"
+      },
+      {
+        "japanese": "年上",
+        "reading": "としうえ",
+        "meaning": "plus âgé"
+      },
+      {
+        "japanese": "年下",
+        "reading": "としした",
+        "meaning": "moins âgé"
+      },
+      {
+        "japanese": "毎年",
+        "reading": "まいとし",
+        "meaning": "tous les ans"
+      },
+      {
+        "japanese": "今年",
+        "reading": "ことし",
+        "meaning": "cette année"
+      }
+    ]
+  },
+  {
+    "kanji": "父",
+    "meaning": "père, personne comme père, pionnier",
+    "readings": [
+      "フ","ちち","とう*"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "父兄",
+        "reading": "ふけい",
+        "meaning": "tuteur, parents"
+      },
+      {
+        "japanese": "父母",
+        "reading": "ふぼ",
+        "meaning": "parents"
+      },
+      {
+        "japanese": "祖父",
+        "reading": "そふ",
+        "meaning": "grand père"
+      },
+      {
+        "japanese": "神父",
+        "reading": "しんぷ",
+        "meaning": "père, curé"
+      },
+      {
+        "japanese": "父おや",
+        "reading": "ちちおや",
+        "meaning": "père"
+      },
+      {
+        "japanese": "アンディ・ウォーホールは、ポップアートの父だ",
+        "reading": "アンディ・ウォーホールは、ポップアートのちちだ",
+        "meaning": "Andy Warhol est le pionnier du pop-art"
+      },
+      {
+        "japanese": "お父さん",
+        "reading": "おとうさん",
+        "meaning": "papa"
+      }
+    ]
+  },
+  {
+    "kanji": "男",
+    "meaning": "homme, fils",
+    "readings": [
+      "ダン","ナン","おとこ"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "男子",
+        "reading": "だんし",
+        "meaning": "garçon"
+      },
+      {
+        "japanese": "男性",
+        "reading": "だんせい",
+        "meaning": "homme adulte"
+      },
+      {
+        "japanese": "男女",
+        "reading": "だんじょ",
+        "meaning": "homme et femme"
+      },
+      {
+        "japanese": "長男",
+        "reading": "ちょうなん",
+        "meaning": "fils aîné"
+      },
+      {
+        "japanese": "次男",
+        "reading": "じなん",
+        "meaning": "deuxième fils"
+      },
+      {
+        "japanese": "男の子",
+        "reading": "おとこのこ",
+        "meaning": "garçon"
+      },
+      {
+        "japanese": "大男",
+        "reading": "おおおとこ",
+        "meaning": "grand homme",
+        "comment":"moins officiel, moins formel"
+      },
+      {
+        "japanese": "男",
+        "reading": "おとこ",
+        "meaning": "homme (péjoratif)"
+      },
+      {
+        "japanese": "男前",
+        "reading": "おとこまえ",
+        "meaning": "bel homme",
+        "comment":"前=la face"
+      }
+    ]
+  },
+  {
+    "kanji": "心",
+    "meaning": "cœur (organe), sentiment , moral, cœur (centre)",
+    "readings": [
+      "ジン","こころ"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "心臓",
+        "reading": "しんぞう",
+        "meaning": "cœur (organe)"
+      },
+      {
+        "japanese": "中心",
+        "reading": "ちゅうしん",
+        "meaning": "centre"
+      },
+      {
+        "japanese": "安心する",
+        "reading": "あんしんする",
+        "meaning": "se rassurer"
+      },
+      {
+        "japanese": "心配する",
+        "reading": "しんぱいする",
+        "meaning": "s'inquiéter"
+      },
+      {
+        "japanese": "本心",
+        "reading": "ほんしん",
+        "meaning": "vrai sentiment / pensée"
+      },
+      {
+        "japanese": "心がひろい人",
+        "reading": "こころがひろいひと",
+        "meaning": "Quelqu'un au grand cœur, généreux"
+      }
+    ]
+  },
+  {
+    "kanji": "体",
+    "meaning": "corps, allure, style, origine, acquérir, totalité",
+    "readings": [
+      "タイ","からだ"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "人体",
+        "reading": "じんたい",
+        "meaning": "corps humain"
+      },
+      {
+        "japanese": "天体",
+        "reading": "てんたい",
+        "meaning": "corps céleste"
+      },
+      {
+        "japanese": "体力",
+        "reading": "たいりょく",
+        "meaning": "force physique"
+      },
+      {
+        "japanese": "全体",
+        "reading": "ぜんたい",
+        "meaning": "totalité"
+      },
+      {
+        "japanese": "パソコンの本体",
+        "reading": "パソコンのほんたい",
+        "meaning": "unité centrale de PC"
+      },
+      {
+        "japanese": "体にいいたべもの",
+        "reading": "からだにいいたべもの",
+        "meaning": "Nourriture bonne pour la santé"
+      },
+      {
+        "japanese": "体を大切にしよう",
+        "reading": "からだをたいせつにしよう",
+        "meaning": "Prenons soin de notre corps"
+      }
+    ]
+  },
+  {
+    "kanji": "間",
+    "meaning": "entre quelque chose et quelque chose, temps limité, relation humaine, pièce ou chambre",
+    "readings": [
+      "カン","ケン","あいだ","ま"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "時間がない",
+        "reading": "じかんがない",
+        "meaning": "je n'ai pas le temps"
+      },
+      {
+        "japanese": "年間のプランをたてる",
+        "reading": "ねんかんのプランをたてる",
+        "meaning": "établir le planning de l'année"
+      },
+      {
+        "japanese": "世間",
+        "reading": "せけん",
+        "meaning": "le monde"
+      },
+      {
+        "japanese": "人間",
+        "reading": "にんげん",
+        "meaning": "être humain"
+      },
+      {
+        "japanese": "雲の間にお日さまが見える",
+        "reading": "くものあいだにおひさまがみえる",
+        "meaning": "on voit le soleil entre les nuages"
+      },
+      {
+        "japanese": "仲間",
+        "reading": "なかま",
+        "meaning": "compagnie, amis"
+      },
+      {
+        "japanese": "広間",
+        "reading": "ひろま",
+        "meaning": "grande pièce"
+      }
+    ]
+  },
+  {
+    "kanji": "首",
+    "meaning": "cou, tête, chef du groupe, centre, n°1",
+    "readings": [
+      "シュ","くび"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "東京は日本の首都た",
+        "reading": "とうきょうはにほんのしゅとた",
+        "meaning": "Tōkyō est la capitale du Japon"
+      },
+      {
+        "japanese": "元首",
+        "reading": "げんしゅ",
+        "meaning": "chef d'état"
+      },
+      {
+        "japanese": "首位",
+        "reading": "しゅい",
+        "meaning": "n°1 dans la course"
+      },
+      {
+        "japanese": "百人一首",
+        "reading": "ひゃくにんいっしゅ",
+        "meaning": "cartes de 100 poèmes"
+      },
+      {
+        "japanese": "首かざり",
+        "reading": "くびかざり",
+        "meaning": "collier",
+        "comment":"かざり＝décorer"
+      },
+      {
+        "japanese": "手首",
+        "reading": "てくび",
+        "meaning": "poignet"
+      },
+      {
+        "japanese": "足首",
+        "reading": "あしくび",
+        "meaning": "cheville"
       }
     ]
   }
