@@ -2254,7 +2254,9 @@
     "kanji": "角",
     "meaning": "corne d'animal, quelque chose en forme de corne, coin, angle",
     "readings": [
-      "カク","つの","かど"
+      "カク",
+      "つの",
+      "かど"
     ],
     "vocabulary": [
       {
@@ -2356,7 +2358,8 @@
     "kanji": "十",
     "meaning": "dix, forme de dix, tout, totalité",
     "readings": [
-      "ジュウ","とお","ジュウ"
+      "ジュウ",
+      "とお"
     ],
     "vocabulary": [
       {
@@ -2390,7 +2393,8 @@
     "kanji": "気",
     "meaning": "amosphère, vapeur, souffle, respiration, situation, tendance, sentiment",
     "readings": [
-      "キ","ケ"
+      "キ",
+      "ケ"
     ],
     "vocabulary": [
       {
@@ -2429,7 +2433,9 @@
     "kanji": "風",
     "meaning": "vent, situations vue, coutume",
     "readings": [
-      "フウ","フ","かぜ"
+      "フウ",
+      "フ",
+      "かぜ"
     ],
     "vocabulary": [
       {
@@ -2488,7 +2494,10 @@
     "kanji": "小",
     "meaning": "petit",
     "readings": [
-      "ショウ","ちい（さい）","こ","お"
+      "ショウ",
+      "ちい（さい）",
+      "こ",
+      "お"
     ],
     "vocabulary": [
       {
@@ -2537,7 +2546,8 @@
     "kanji": "村",
     "meaning": "village, campagne",
     "readings": [
-      "ソン","むら"
+      "ソン",
+      "むら"
     ],
     "vocabulary": [
       {
@@ -2571,7 +2581,10 @@
     "kanji": "金",
     "meaning": "or, métal, de l'argent, de valeur",
     "readings": [
-      "キン","コン","かね","かな"
+      "キン",
+      "コン",
+      "かね",
+      "かな"
     ],
     "vocabulary": [
       {
@@ -2673,7 +2686,8 @@
     "kanji": "古",
     "meaning": "vieux, ancien, d'occasion",
     "readings": [
-      "コ","ふる（い）"
+      "コ",
+      "ふる（い）"
     ],
     "vocabulary": [
       {
@@ -2707,7 +2721,8 @@
     "kanji": "国",
     "meaning": "pays",
     "readings": [
-      "コク","くに"
+      "コク",
+      "くに"
     ],
     "vocabulary": [
       {
@@ -2767,7 +2782,8 @@
     "meaning": "rond, circulaire, objet rond, non-pointu, harmonieux",
     "comment": "des yen sur le guichet du banquier",
     "readings": [
-      "エン","まる（い）"
+      "エン",
+      "まる（い）"
     ],
     "vocabulary": [
       {
@@ -2801,7 +2817,8 @@
     "kanji": "年",
     "meaning": "année, une année, âge",
     "readings": [
-      "ネン","とし"
+      "ネン",
+      "とし"
     ],
     "vocabulary": [
       {
@@ -2850,7 +2867,9 @@
     "kanji": "父",
     "meaning": "père, personne comme père, pionnier",
     "readings": [
-      "フ","ちち","とう*"
+      "フ",
+      "ちち",
+      "とう*"
     ],
     "vocabulary": [
       {
@@ -2894,7 +2913,9 @@
     "kanji": "男",
     "meaning": "homme, fils",
     "readings": [
-      "ダン","ナン","おとこ"
+      "ダン",
+      "ナン",
+      "おとこ"
     ],
     "vocabulary": [
       {
@@ -2931,7 +2952,7 @@
         "japanese": "大男",
         "reading": "おおおとこ",
         "meaning": "grand homme",
-        "comment":"moins officiel, moins formel"
+        "comment": "moins officiel, moins formel"
       },
       {
         "japanese": "男",
@@ -2942,7 +2963,7 @@
         "japanese": "男前",
         "reading": "おとこまえ",
         "meaning": "bel homme",
-        "comment":"前=la face"
+        "comment": "前=la face"
       }
     ]
   },
@@ -2950,7 +2971,8 @@
     "kanji": "心",
     "meaning": "cœur (organe), sentiment , moral, cœur (centre)",
     "readings": [
-      "ジン","こころ"
+      "ジン",
+      "こころ"
     ],
     "vocabulary": [
       {
@@ -2989,7 +3011,8 @@
     "kanji": "体",
     "meaning": "corps, allure, style, origine, acquérir, totalité",
     "readings": [
-      "タイ","からだ"
+      "タイ",
+      "からだ"
     ],
     "vocabulary": [
       {
@@ -3033,7 +3056,10 @@
     "kanji": "間",
     "meaning": "entre quelque chose et quelque chose, temps limité, relation humaine, pièce ou chambre",
     "readings": [
-      "カン","ケン","あいだ","ま"
+      "カン",
+      "ケン",
+      "あいだ",
+      "ま"
     ],
     "vocabulary": [
       {
@@ -3077,7 +3103,8 @@
     "kanji": "首",
     "meaning": "cou, tête, chef du groupe, centre, n°1",
     "readings": [
-      "シュ","くび"
+      "シュ",
+      "くび"
     ],
     "vocabulary": [
       {
@@ -3104,7 +3131,7 @@
         "japanese": "首かざり",
         "reading": "くびかざり",
         "meaning": "collier",
-        "comment":"かざり＝décorer"
+        "comment": "かざり＝décorer"
       },
       {
         "japanese": "手首",
@@ -3115,6 +3142,78 @@
         "japanese": "足首",
         "reading": "あしくび",
         "meaning": "cheville"
+      }
+    ]
+  },
+  {
+    "kanji": "耳",
+    "meaning": "oreille",
+    "readings": [
+      "ジ",
+      "みみ"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "中耳炎",
+        "reading": "ちゅうじえん",
+        "meaning": "otite",
+        "comment": "炎=inflamation"
+      },
+      {
+        "japanese": "その話は初耳だ",
+        "reading": "そのはなしははつみみだ",
+        "meaning": "C'est la première fois que j'entends cette histoire"
+      },
+      {
+        "japanese": "空耳ほつかう",
+        "reading": "そらみみをつかう",
+        "meaning": "faire semblant de ne pas entendre"
+      },
+      {
+        "japanese": "かべに耳あり",
+        "reading": "かべにみみあり",
+        "meaning": "les murs ont des oreilles"
+      },
+      {
+        "japanese": "しょうじに目あり",
+        "reading": "しょうじにめあり",
+        "meaning": "les cloisons ont des yeux"
+      }
+    ]
+  },
+  {
+    "kanji": "聞",
+    "meaning": "écouter, entendre, réputation, rumeur, demander un renseignement",
+    "readings": [
+      "ブン",
+      "き（く）",
+      "き（いえる）"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "新聞",
+        "reading": "しんぶん",
+        "meaning": "journal en papier"
+      },
+      {
+        "japanese": "ラジオを聞く",
+        "reading": "ラジオをきく",
+        "meaning": "écouter la radio"
+      },
+      {
+        "japanese": "道を聞く",
+        "reading": "みちをきく",
+        "meaning": "demander le chemin"
+      },
+      {
+        "japanese": "鳥のこえが聞こえる",
+        "reading": "とりのこえがきこえる",
+        "meaning": "entendre le cri des oiseaux"
+      },
+      {
+        "japanese": "波の音がきこえる",
+        "reading": "なみのおとがきこえる",
+        "meaning": "entrendre le buit des vagues"
       }
     ]
   }
