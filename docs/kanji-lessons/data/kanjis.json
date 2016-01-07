@@ -1,0 +1,2208 @@
+[
+  {
+    "kanji": "木",
+    "meaning":"arbre, bois",
+    "writing":"一｜ノ丶",
+    "readings": [
+      "ボク",
+      "モク",
+      "き",
+      "こ"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "大木",
+        "reading": "たいぼく",
+        "meaning": "grand arbre"
+      },
+      {
+        "japanese": "木曜日",
+        "reading": "もくようび",
+        "meaning": "jeudi"
+      },
+      {
+        "japanese": "木馬",
+        "reading": "もくば",
+        "meaning": "cariole"
+      },
+      {
+        "japanese": "木立",
+        "reading": "こだち",
+        "meaning": "alignement des arbres"
+      }
+    ]
+  },
+  {
+    "kanji": "日",
+    "meaning":"jour, soleil",
+    "readings": [
+      "ヒ",
+      "ジツ",
+      "か",
+      "にち",
+      "に"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "終日",
+        "reading": "しゅうじつ",
+        "meaning": "toute la journée"
+      },
+      {
+        "japanese": "祝日",
+        "reading": "しゅくじつ",
+        "meaning": "jour férié"
+      },
+      {
+        "japanese": "二日",
+        "reading": "ふつか",
+        "meaning": "jour 2"
+      },
+      {
+        "japanese": "三日",
+        "reading": "みっか",
+        "meaning": "3ème jour"
+      },
+      {
+        "japanese": "四日",
+        "reading": "よっか",
+        "meaning": "4ème jour"
+      },
+      {
+        "japanese": "日本",
+        "reading": "にほん",
+        "meaning": "japon"
+      }
+    ]
+  },
+  {
+    "kanji": "川",
+    "meaning":"rivière",
+    "readings": [
+      "セン",
+      "かわ"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "河川",
+        "reading": "かせん",
+        "meaning": "fleuve"
+      },
+      {
+        "japanese": "大川",
+        "reading": "おおかわ",
+        "meaning": ""
+      },
+      {
+        "japanese": "小川",
+        "reading": "おがわ",
+        "meaning": ""
+      },
+      {
+        "japanese": "川上",
+        "reading": "かわかみ",
+        "meaning": "amont"
+      },
+      {
+        "japanese": "川下",
+        "reading": "かわしも",
+        "meaning": "aval"
+      }
+    ]
+  },
+  {
+    "kanji": "月",
+    "meaning":"lune, mois",
+    "writing":"丿フニ",
+    "readings": [
+      "カツ",
+      "ゲツ",
+      "づき"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "一月",
+        "reading": "いちがつ",
+        "meaning": "janvier"
+      },
+      {
+        "japanese": "二月",
+        "reading": "にがつ",
+        "meaning": "février"
+      },
+      {
+        "japanese": "正月",
+        "reading": "しょうがつ",
+        "meaning": "nouvel an"
+      },
+      {
+        "japanese": "今月",
+        "reading": "こんげつ",
+        "meaning": "ce mois-ci"
+      },
+      {
+        "japanese": "来月",
+        "reading": "らいげつ",
+        "meaning": "le mois prochain"
+      },
+      {
+        "japanese": "三日月",
+        "reading": "みかづき",
+        "meaning": "croissant de lune"
+      }
+    ]
+  },
+  {
+    "kanji": "目",
+    "writing":"｜フ三",
+    "meaning":"oeil",
+    "readings": [
+      "モク",
+      "ボク",
+      "め",
+      "ま"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "目的",
+        "reading": "もくてき",
+        "meaning": "but, objetif"
+      },
+      {
+        "japanese": "目標",
+        "reading": "もくひょう",
+        "meaning": "objectif à atteindre"
+      },
+      {
+        "japanese": "面目",
+        "reading": "めんぼく",
+        "meaning": "la face (sauver la face)"
+      },
+      {
+        "japanese": "人目",
+        "reading": "ひとめ",
+        "meaning": "le regard des autres"
+      },
+      {
+        "japanese": "一目",
+        "reading": "ひとめ",
+        "meaning": "un regard (〜ぼれ=coup de foudre)"
+      },
+      {
+        "japanese": "ま",
+        "reading": "目のあたりにする",
+        "meaning": "constater qq chose de négatif"
+      }
+    ]
+  },
+  {
+    "kanji": "山",
+    "writing":"|く｜",
+    "meaning":"montage",
+    "readings": [
+      "サン",
+      "やま"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "富士山",
+        "reading": "ふじさん",
+        "meaning": "Mt Fuji"
+      },
+      {
+        "japanese": "火山",
+        "reading": "かざん",
+        "meaning": "volcan"
+      },
+      {
+        "japanese": "仕事の山",
+        "reading": "しごとのやま",
+        "meaning": "une montagne de travail"
+      },
+      {
+        "japanese": "山をかける",
+        "reading": "やまをかける",
+        "meaning": "faire l'impasse sur"
+      },
+      {
+        "japanese": "山があたりました",
+        "reading": "やまがあたりました",
+        "meaning": "réussir un examen"
+      }
+    ]
+  },
+  {
+    "kanji": "雨",
+    "meaning":"pluie",
+    "writing":"一｜冂丶丶丶丶",
+    "readings": [
+      "あま",
+      "ウ"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "雨もり",
+        "reading": "あまもり",
+        "meaning": "fuite à cause de la pluie"
+      },
+      {
+        "japanese": "雨音",
+        "reading": "あまおと",
+        "meaning": "bruit de la pluie"
+      },
+      {
+        "japanese": "雨雲",
+        "reading": "あまぐも",
+        "meaning": "nuage de pluie"
+      },
+      {
+        "japanese": "雨天",
+        "reading": "うてん",
+        "meaning": "temps pluvieux"
+      },
+      {
+        "japanese": "風雨",
+        "reading": "ふうう",
+        "meaning": "pluvieux et venteux"
+      }
+    ]
+  },
+  {
+    "kanji": "魚",
+    "meaning":"poisson",
+    "writing":"ク冂土ノ丶丶丶",
+    "readings": [
+      "ギョ",
+      "うお"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "人魚",
+        "reading": "にんぎょ",
+        "meaning": "sirène"
+      },
+      {
+        "japanese": "金魚",
+        "reading": "ぎんぎょ",
+        "meaning": "poisson rouge"
+      },
+      {
+        "japanese": "魚市場",
+        "reading": "うおいちば",
+        "meaning": "marché aux poissons"
+      }
+    ]
+  },
+  {
+    "kanji": "羊",
+    "readings": [
+      "ヨウ",
+      "ひつじ"
+    ],
+    "meaning":"mouton — animal beau, bon",
+    "vocabulary": [
+      {
+        "japanese": "羊毛",
+        "reading": "ようもう",
+        "meaning": "laine"
+      },
+      {
+        "japanese": "羊かい",
+        "reading": "ひつじかい",
+        "meaning": "berger"
+      },
+      {
+        "japanese": "子羊",
+        "reading": "こひつじ",
+        "meaning": "agneau"
+      }
+    ]
+  },
+  {
+    "kanji": "刀",
+    "meaning":"sabre, épée — couper (切る「きる」)",
+    "readings": [
+      "トウ","かたな"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "木刀でちゃんばらをする",
+        "reading": "ぼくとうちゃんばらをする",
+        "meaning": "faire la bagarre (木刀 sabre en bois)"
+      },
+      {
+        "japanese": "刀は、さむらいのたましいだ",
+        "reading": "かたなは、さむらいのたましいだ",
+        "meaning": "Le katana est l'âme du samuraï"
+      }
+    ]
+  },
+  {
+    "kanji": "車",
+    "meaning":"roue — voiture, tourner sur l'axe",
+    "readings": [
+      "しゃ","くるま"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "自転車",
+        "reading": "じてんしゃ",
+        "meaning": "vélo"
+      },
+      {
+        "japanese": "自動車",
+        "reading": "じどうしゃ",
+        "meaning": "automobile"
+      },
+      {
+        "japanese": "馬車",
+        "reading": "ばしゃ",
+        "meaning": "charette"
+      },
+      {
+        "japanese": "中古車",
+        "reading": "ちゅうこしゃ",
+        "meaning": "voiture d'occasion"
+      },
+      {
+        "japanese": "車道",
+        "reading": "しゃどう",
+        "meaning": "chaussée"
+      },
+      {
+        "japanese": "オランダの風車",
+        "reading": "オランダのふうしゃ",
+        "meaning": "moulin"
+      },
+      {
+        "japanese": "車にのります",
+        "reading": "くるまにのります",
+        "meaning": "monter en voiture"
+      },
+      {
+        "japanese": "風車であそぶ",
+        "reading": "かざぐるまであそぶ",
+        "meaning": "jouet à vent"
+      }
+    ]
+  },
+  {
+    "kanji": "門",
+    "meaning": "portail, porte — entrée et sortie — catégorie",
+    "writing":"｜フニ｜フニ",
+    "readings": [
+      "モン","かど"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "家の門",
+        "reading": "いえのもん",
+        "meaning": "porte de maison"
+      },
+      {
+        "japanese": "正門",
+        "reading": "せいもん",
+        "meaning": "entrée principale"
+      },
+      {
+        "japanese": "校門",
+        "reading": "こうもん",
+        "meaning": "porte d'école"
+      },
+      {
+        "japanese": "部門",
+        "reading": "ぶもん",
+        "meaning": "catégorie"
+      },
+      {
+        "japanese": "専門",
+        "reading": "せんもん",
+        "meaning": "spécialité"
+      },
+      {
+        "japanese": "門戸をひらく",
+        "reading": "もんこをひらく",
+        "meaning": "ouvrir la porte à quelqu'un"
+      },
+      {
+        "japanese": "門出をいわう",
+        "reading": "かどでをいわう",
+        "meaning": "fête de départ"
+      },
+      {
+        "japanese": "門松をたてる",
+        "reading": "かどまつをたてる",
+        "meaning": "décoration de nouvel an au portail"
+      }
+    ]
+  },
+  {
+    "kanji": "口",
+    "meaning": "bouche — parler — entrée et sortie ",
+    "readings": [
+      "コウ","ク","くち","ぐち"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "人口がおおい",
+        "reading": "じんこうがおおい",
+        "meaning": "population"
+      },
+      {
+        "japanese": "口外しないでください",
+        "reading": "こうがいしないでください",
+        "meaning": "Il ne faut que ça sorte d'ici"
+      },
+      {
+        "japanese": "口論する",
+        "reading": "こうろんする",
+        "meaning": "se disputer (entre adultes"
+      },
+      {
+        "japanese": "口調",
+        "reading": "くちょう",
+        "meaning": "la manière de parler"
+      },
+      {
+        "japanese": "口ごたえをする",
+        "reading": "くちごたえをする",
+        "meaning": "répliquer"
+      },
+      {
+        "japanese": "口数がすくない",
+        "reading": "くちがすくない",
+        "meaning": "ne pas être volubile"
+      },
+      {
+        "japanese": "入口",
+        "reading": "いりぐち",
+        "meaning": "entrée"
+      },
+      {
+        "japanese": "出口",
+        "reading": "でぐち",
+        "meaning": "sortie"
+      },
+      {
+        "japanese": "悪口",
+        "reading": "わるぐち",
+        "meaning": "médire"
+      },
+      {
+        "japanese": "窓口",
+        "reading": "まどぐち",
+        "meaning": "guichet"
+      }
+    ]
+  },
+  {
+    "kanji": "弓",
+    "meaning": "arc (a sa forme)",
+    "readings": [
+      "キュウ","ゆみ"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "弓道をならっている",
+        "reading": "きゅうどうをならっている",
+        "meaning": "apprendre le tir à l'arc"
+      },
+      {
+        "japanese": "弓を引く",
+        "reading": "ゆみをひく",
+        "meaning": "bander l'arc"
+      },
+      {
+        "japanese": "日本は弓形です",
+        "reading": "にほんはゆみがたです",
+        "meaning": "le Japon est en forme d'arc"
+      },
+      {
+        "japanese": "弓矢",
+        "reading": "ゆみや",
+        "meaning": "la flèche"
+      }
+    ]
+  },
+  {
+    "kanji": "女",
+    "meaning": "femme",
+    "readings": [
+      "ジョ","ニョ","ニョウ","おんな","め"
+
+    ],
+    "vocabulary": [
+      {
+        "japanese": "少女",
+        "reading": "しょうじょ",
+        "meaning": "fillette"
+      },
+      {
+        "japanese": "美女",
+        "reading": "びじょ",
+        "meaning": "belle femme"
+      },
+      {
+        "japanese": "長女",
+        "reading": "ちょうじょ",
+        "meaning": "aînée"
+      },
+      {
+        "japanese": "次女",
+        "reading": "じじょ",
+        "meaning": "fille suivante"
+      },
+      {
+        "japanese": "女王",
+        "reading": "じょおう",
+        "meaning": "reine"
+      },
+      {
+        "japanese": "女性",
+        "reading": "じょせい",
+        "meaning": "femme"
+      },
+      {
+        "japanese": "てんにょ",
+        "reading": "てんにょ",
+        "meaning": "nymphe céleste"
+      },
+      {
+        "japanese": "女房",
+        "reading": "にょうぼう",
+        "meaning": "servante à la cours Heian — «ma femme» (femme mariée)"
+      },
+      {
+        "japanese": "女の子",
+        "reading": "おんなのこ",
+        "meaning": "fille"
+      },
+      {
+        "japanese": "女の人",
+        "reading": "おんなのひと",
+        "meaning": "femmes"
+      },
+      {
+        "japanese": "女神",
+        "reading": "めがみ",
+        "meaning": "déesse"
+      },
+      {
+        "japanese": "乙女",
+        "reading": "おとめ",
+        "meaning": "jeune fille (poétique)"
+      }
+    ]
+  },
+  {
+    "kanji": "矢",
+    "meaning": "flèche — rapide",
+    "readings": [
+      "シ","や"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "一矢をむくいる",
+        "reading": "いっしをむくいる",
+        "meaning": "se battre jusqu'au bout"
+      },
+      {
+        "japanese": "矢をはなつ",
+        "reading": "やをはなつ",
+        "meaning": "lâcher la flèche"
+      },
+      {
+        "japanese": "月日は矢のようにすぎる",
+        "reading": "つきひはやのようにすぎる",
+        "meaning": "le temps passe comme une flèche"
+      },
+      {
+        "japanese": "矢印の方にすすむ",
+        "reading": "やじるしのほうにすすむ",
+        "meaning": "suivez la flèche (方 direction, すすむ avancer)"
+      },
+      {
+        "japanese": "弓矢",
+        "reading": "ゆみや",
+        "meaning": "arc et flèches"
+      }
+    ]
+  },
+  {
+    "kanji": "母",
+    "meaning": "mère — origine (de la naissance)",
+    "readings": [
+      "ボ","はは","かあ*"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "母子",
+        "reading": "ぼし",
+        "meaning": "femme et enfant"
+      },
+      {
+        "japanese": "父母",
+        "reading": "ふぼ",
+        "meaning": "père et mère"
+      },
+      {
+        "japanese": "祖母",
+        "reading": "そぼ",
+        "meaning": "grand mère (祖 ancêtre)"
+      },
+      {
+        "japanese": "母国",
+        "reading": "ぼこく",
+        "meaning": "pays natal"
+      },
+      {
+        "japanese": "母語",
+        "reading": "ぼご",
+        "meaning": "langue maternelle"
+      },
+      {
+        "japanese": "母校",
+        "reading": "ぼこう",
+        "meaning": "parcours scolaire"
+      },
+      {
+        "japanese": "母親",
+        "reading": "ははおや",
+        "meaning": "parent mère, la mère"
+      },
+      {
+        "japanese": "母がべんとうをつくります",
+        "reading": "ははがべんとうをつくります",
+        "meaning": "La maman prépare un bento"
+      },
+      {
+        "japanese": "お母さん",
+        "reading": "おかあさん",
+        "meaning": "mère (politesse)"
+      }
+    ]
+  },
+  {
+    "kanji": "足",
+    "meaning": "pieds et jambes — ajouter — suffir",
+    "readings": [
+      "ソク","あし","た(りる・りない)"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "遠足にいく",
+        "reading": "えんそくにいく",
+        "meaning": "aller à l'excursion scolaire"
+      },
+      {
+        "japanese": "まん足する",
+        "reading": "まんぞくする",
+        "meaning": "être satisfait"
+      },
+      {
+        "japanese": "土足で入らないでください",
+        "reading": "どそくではいらないでください",
+        "meaning": "ne pas entrer avec nos chaussures"
+      },
+      {
+        "japanese": "足下に気をつけてください",
+        "reading": "あしもとにきをつけてください",
+        "meaning": "attention aux marches"
+      },
+      {
+        "japanese": "足音がきこえる",
+        "reading": "あしおとがきこえる",
+        "meaning": "entendre les pas"
+      },
+      {
+        "japanese": "早足であるく",
+        "reading": "はやあしであるく",
+        "meaning": "marcher rapidement (avec les pieds rapides)"
+      },
+      {
+        "japanese": "お金人ずうが足りない",
+        "reading": "おかねひとずうがたりない",
+        "meaning": "il manuqe de l'argent à de nombreuse personnes"
+      }
+    ]
+  },
+  {
+    "kanji": "毛",
+    "meaning": "poils et cheveux — fin, petit",
+    "readings": [
+      "モウ","け"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "羊毛",
+        "reading": "ようもう",
+        "meaning": "la laine"
+      },
+      {
+        "japanese": "毛ふ",
+        "reading": "もうふ",
+        "meaning": "couverture / couette"
+      },
+      {
+        "japanese": "毛ひつ",
+        "reading": "もうひつ",
+        "meaning": "écriture à pinceau"
+      },
+      {
+        "japanese": "羽毛",
+        "reading": "うもう",
+        "meaning": "plume"
+      },
+      {
+        "japanese": "毛髪",
+        "reading": "もうはつ",
+        "meaning": "cheveux"
+      },
+      {
+        "japanese": "髪の毛",
+        "reading": "かみのけ",
+        "meaning": "cheveux"
+      },
+      {
+        "japanese": "毛糸",
+        "reading": "けいと",
+        "meaning": "laine à tricoter"
+      },
+      {
+        "japanese": "毛虫",
+        "reading": "けむし",
+        "meaning": "chenille"
+      },
+      {
+        "japanese": "毛皮",
+        "reading": "けがわ",
+        "meaning": "fourrure, peau des animaux"
+      },
+      {
+        "japanese": "毛なみのよい馬",
+        "reading": "けなみのよいうま",
+        "meaning": "cheval d'un beau pelage"
+      }
+    ]
+  },
+  {
+    "kanji": "虫",
+    "meaning": "insecte, faible, mépris, sentiments provoqués par les insectes",
+    "comment":"中くらいのがいっぴきいるよ”てん”とう中",
+    "readings": [
+      "チュウ","むし"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "こん虫の足は六本ある",
+        "reading": "こんちゅうのあしはろっぽんある。",
+        "meaning": "L'insecte a 6 pattes."
+      },
+      {
+        "japanese": "よう虫からせい虫になる。",
+        "reading": "ようちゅうからせいちゅうになる",
+        "meaning": "La larve devient l'insecte adulte."
+      },
+      {
+        "japanese": "てんとう虫",
+        "reading": "てんとうむし",
+        "meaning": "coccinelle"
+      },
+      {
+        "japanese": "なき虫",
+        "reading": "なきむし",
+        "meaning": "pleurnichard"
+      },
+      {
+        "japanese": "弱虫",
+        "reading": "よわむし",
+        "meaning": "poule mouillée"
+      },
+      {
+        "japanese": "虫歯",
+        "reading": "むしば",
+        "meaning": "carie"
+      },
+      {
+        "japanese": "虫けら",
+        "reading": "むしけら",
+        "meaning": "vers, bon à rien"
+      },
+      {
+        "japanese": "虫がしらせる",
+        "reading": "むしがしらせる",
+        "meaning": "avoir une prémonition"
+      },
+      {
+        "japanese": "虫のいどころがわるい",
+        "reading": "むしのいどころがわるい",
+        "meaning": "être de mauvaise humeur"
+      }
+    ]
+  },
+  {
+    "kanji": "羽",
+    "meaning": "ailes et plumes et ses formes",
+    "comment":"ワンわりワンわり羽がとぶ",
+    "readings": [
+      "ウ","はね","は"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "羽毛のふとん",
+        "reading": "うもうのふとん",
+        "meaning": "couette en plumes"
+      },
+      {
+        "japanese": "鳥の羽",
+        "reading": "とりのはね",
+        "meaning": "ailes des oiseaux"
+      },
+      {
+        "japanese": "羽をのばす",
+        "reading": "はねをのばす",
+        "meaning": "se sentri libre et faire ce qu'on veut"
+      },
+      {
+        "japanese": "風車の羽",
+        "reading": "ふうしゃのはね",
+        "meaning": "pales de moulin"
+      },
+      {
+        "japanese": "せんぷうきの羽",
+        "reading": "せんぷうきのはね",
+        "meaning": "pales de ventilateur"
+      },
+      {
+        "japanese": "羽音",
+        "reading": "はおと",
+        "meaning": "bruit de battement d'ailes"
+      },
+      {
+        "japanese": "羽ばたく",
+        "reading": "はばたく",
+        "meaning": "battre des ailes, voler"
+      }
+    ]
+  },
+  {
+    "kanji": "大",
+    "meaning": "grand, beaucoup, excellent, en gras, haute position",
+    "readings": [
+      "タイ",
+      "ダイ",
+      "おお（きい）"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "大金",
+        "reading": "たいきん",
+        "meaning": "grande somme d'argent"
+      },
+      {
+        "japanese": "大作",
+        "reading": "たいさく",
+        "meaning": "grande œuvre"
+      },
+      {
+        "japanese": "大半",
+        "reading": "たいはん",
+        "meaning": "la plupart"
+      },
+      {
+        "japanese": "大量の",
+        "reading": "たいりょうの",
+        "meaning": "grand nombre de"
+      },
+      {
+        "japanese": "花火大会",
+        "reading": "はなびたいかい",
+        "meaning": "fête de feux d'artifice"
+      },
+      {
+        "japanese": "大小",
+        "reading": "だいしょう",
+        "meaning": "grand et petit"
+      },
+      {
+        "japanese": "大学生",
+        "reading": "だいがくせい",
+        "meaning": "étudiant"
+      },
+      {
+        "japanese": "大地",
+        "reading": "だいち",
+        "meaning": "Terre"
+      },
+      {
+        "japanese": "大臣",
+        "reading": "だいじん",
+        "meaning": "ministre"
+      },
+      {
+        "japanese": "大統領",
+        "reading": "だいとうりょう",
+        "meaning": "président d'état"
+      },
+      {
+        "japanese": "大事",
+        "reading": "だいじ",
+        "meaning": "précieux"
+      },
+      {
+        "japanese": "大きい馬",
+        "reading": "おおきいうま",
+        "meaning": "grand cheval"
+      },
+      {
+        "japanese": "大雨",
+        "reading": "おおあめ",
+        "meaning": "grande pluie"
+      }
+    ]
+  },
+  {
+    "kanji": "犬",
+    "meaning": "chien, mot de mépris ou de faiblesse",
+    "readings": [
+      "ケン",
+      "いぬ"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "ばん犬",
+        "reading": "ばんけん",
+        "meaning": "chien de garde"
+      },
+      {
+        "japanese": "名犬",
+        "reading": "めいけん",
+        "meaning": "chien intelligent"
+      },
+      {
+        "japanese": "愛犬",
+        "reading": "あいけん",
+        "meaning": "chien bien aimé"
+      },
+      {
+        "japanese": "もう犬",
+        "reading": "もうけん",
+        "meaning": "chien féroce"
+      },
+      {
+        "japanese": "犬猿のなか",
+        "reading": "けんえんのなか",
+        "meaning": "être comme chien et chat (singe)"
+      },
+      {
+        "japanese": "小犬",
+        "reading": "こいぬ",
+        "meaning": "petit chien"
+      },
+      {
+        "japanese": "のら犬",
+        "reading": "のらいぬ",
+        "meaning": "chien errant"
+      },
+      {
+        "japanese": "まけ犬",
+        "reading": "まけいぬ",
+        "meaning": "perdant"
+      },
+      {
+        "japanese": "犬じに",
+        "reading": "いぬじに",
+        "meaning": "mort inutile"
+      },
+      {
+        "japanese": "子犬",
+        "reading": "こいぬ",
+        "meaning": "chiot"
+      }
+    ]
+  },
+  {
+    "kanji": "石",
+    "meaning": "pierre, quelque chose de dur",
+    "readings": [
+      "セキ",
+      "シャク",
+      "いし"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "石油",
+        "reading": "せきゆ",
+        "meaning": "pétrole",
+        "comment":"油=huile"
+      },
+      {
+        "japanese": "化石",
+        "reading": "かせき",
+        "meaning": "fossil",
+        "comment":"化=transformer"
+      },
+      {
+        "japanese": "古代の石器",
+        "reading": "こだいのせっき",
+        "meaning": "outil en pierre d'antiquité",
+        "comment":"古代 = antiquité"
+      },
+      {
+        "japanese": "一石二鳥",
+        "reading": "いっせきにちょう",
+        "meaning": "une pierre deux coups"
+      },
+      {
+        "japanese": "磁石",
+        "reading": "じしゃく",
+        "meaning": "aimant"
+      },
+      {
+        "japanese": "石の上にも三年",
+        "reading": "いしのうえにもさんねん",
+        "meaning": "3 ans sur une pierre"
+      },
+      {
+        "japanese": "石頭",
+        "reading": "いしあたま",
+        "meaning": "tête de pierre, tête dure"
+      },
+      {
+        "japanese": "石橋をたたいてわたる",
+        "reading": "いしばしをたたいてわたる",
+        "meaning": "prendre ses précautions (traverser le pont en pierre en le tappant)"
+      }
+    ]
+  },
+  {
+    "kanji": "王",
+    "meaning": "Roi, le plus fort dans un domaine",
+    "readings": [
+      "オウ"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "国王",
+        "reading": "こくおう",
+        "meaning": "le roi"
+      },
+      {
+        "japanese": "女王",
+        "reading": "じょおう",
+        "meaning": "la reine"
+      },
+      {
+        "japanese": "王子",
+        "reading": "おうじ",
+        "meaning": "prince"
+      },
+      {
+        "japanese": "王さま",
+        "reading": "おうさま",
+        "meaning": "le roi"
+      },
+      {
+        "japanese": "ホームラン王",
+        "reading": "ホームランおう",
+        "meaning": "le roi du home-run"
+      },
+      {
+        "japanese": "百じゅうの王",
+        "reading": "ひゃくじゅうのおう",
+        "meaning": "le roi des 100 bêtes (le roi des animaux)"
+      }
+    ]
+  },
+  {
+    "kanji": "力",
+    "meaning": "force, capacité, pouvoir",
+    "readings": [
+      "リキ",
+      "リョク"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "人力車",
+        "reading": "じんりきしゃ",
+        "meaning": "pousse-pousse"
+      },
+      {
+        "japanese": "力作",
+        "reading": "りきさく",
+        "meaning": "œuvre laborieuse, fabriquer"
+      },
+      {
+        "japanese": "自力で生活する",
+        "reading": "じりきでせいかつする",
+        "meaning": "vivre par ses propres moyens",
+        "comment":"自=moi même"
+      },
+      {
+        "japanese": "力走する",
+        "reading": "りきそうする",
+        "meaning": "courrir de toutes ses forces"
+      },
+      {
+        "japanese": "全力で走る",
+        "reading": "ぜんりょくではしる",
+        "meaning": "courrir de toutes ses forces",
+        "comment":"全=tout"
+      },
+      {
+        "japanese": "体力",
+        "reading": "たいりょく",
+        "meaning": "force physique",
+        "comment":"体=corps"
+      },
+      {
+        "japanese": "気力",
+        "reading": "きりょく",
+        "meaning": "énergie morale"
+      },
+      {
+        "japanese": "ど力する",
+        "reading": "どりょくする",
+        "meaning": "faire des efforts"
+      },
+      {
+        "japanese": "引力",
+        "reading": "いんりょく",
+        "meaning": "force d'attraction, gravitation"
+      },
+      {
+        "japanese": "おすもうさんは力もちだ",
+        "reading": "おすもうさんはちからもちだ",
+        "meaning": "les sumos ont la force"
+      },
+      {
+        "japanese": "力一ぱい引っぱる",
+        "reading": "ちからいっぱいひっぱる",
+        "meaning": "tirer de toutes ses forces"
+      }
+    ]
+  },
+  {
+    "kanji": "一",
+    "meaning": "un",
+    "readings": [
+      "イチ",
+      "ひつ"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "一月",
+        "reading": "いちがつ",
+        "meaning": "janvier"
+      },
+      {
+        "japanese": "一日",
+        "reading": "いちにち・ついたち",
+        "meaning": "1er du mois"
+      },
+      {
+        "japanese": "一石二鳥",
+        "reading": "いっせきにちょう",
+        "meaning": "une pierre, deux coups"
+      },
+      {
+        "japanese": "一朝一夕にはできない",
+        "reading": "いっちょういっせきにはできない",
+        "meaning": "ne pas pouvoir faire en un soir"
+      }
+    ]
+  },
+  {
+    "kanji": "二",
+    "meaning": "deux",
+    "readings": [
+      "ニ",
+      "ふつ",
+      "ふた"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "二月",
+        "reading": "にがつ",
+        "meaning": "février"
+      },
+      {
+        "japanese": "二日",
+        "reading": "ふつか",
+        "meaning": "2 jours, 2 du mois"
+      },
+      {
+        "japanese": "二人",
+        "reading": "ふたり",
+        "meaning": "2 personnes"
+      },
+      {
+        "japanese": "うり二つ",
+        "reading": "うりふたつ",
+        "meaning": "se ressembler comme deux gouttes d'eau",
+        "comment": "うり=sorte de pastèque"
+      }
+    ]
+  },
+  {
+    "kanji": "三",
+    "meaning": "trois",
+    "readings": [
+      "サン",
+      "みっ"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "三月",
+        "reading": "さんがつ",
+        "meaning": "mars"
+      },
+      {
+        "japanese": "三日",
+        "reading": "みっか",
+        "meaning": "3ème jour du mois"
+      },
+      {
+        "japanese": "三人",
+        "reading": "さんにん",
+        "meaning": "3 personnes"
+      },
+      {
+        "japanese": "三日ぼうず",
+        "reading": "みっかぼうず",
+        "meaning": "manque de persévérance (bonze de 3 jours)"
+      },
+      {
+        "japanese": "石の上にも三年",
+        "reading": "いしのうえにもさんねん",
+        "meaning": "3 ans sur une pierre"
+      },
+      {
+        "japanese": "三人よれば文じゅのちえ",
+        "reading": "さんにんよればもんじゅのちえ",
+        "meaning": "avec trois personnes, on aura une idée de génie",
+        "comment":"文じゅ=dieu qui donne des idées"
+      }
+    ]
+  },
+  {
+    "kanji": "夕",
+    "meaning": "soir, crépuscule",
+    "writing":"ク丶",
+    "comment":"la lune qui apparait",
+    "readings": [
+      "セキ","ゆう"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "漢字は一朝一夕におぼえられない",
+        "reading": "かんじはいちょういっせきにおぼえられない",
+        "meaning": "On ne peut pas apprendre des kanji en un jour"
+      },
+      {
+        "japanese": "夕日",
+        "reading": "ゆうひ",
+        "meaning": "soleil couchant"
+      },
+      {
+        "japanese": "夕食",
+        "reading": "ゆうしょく",
+        "meaning": "repas du soir"
+      },
+      {
+        "japanese": "夕刊",
+        "reading": "ゆうかん",
+        "meaning": "édition du soir"
+      },
+      {
+        "japanese": "夕べ",
+        "reading": "ゆうべ",
+        "meaning": "soirée, soir"
+      },
+      {
+        "japanese": "夕やけ",
+        "reading": "ゆうやけ",
+        "meaning": "embrasement du soleil couchant"
+      },
+      {
+        "japanese": "朝夕は、さむいです",
+        "reading": "あさゆうは、さむいです",
+        "meaning": "il fait froid le matin et le soir"
+      }
+    ]
+  },
+  {
+    "kanji": "字",
+    "meaning": "lettre",
+    "writing": "ウ了一",
+    "readings": [
+      "ジ"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "漢字",
+        "reading": "かんじ",
+        "meaning": "kanji"
+      },
+      {
+        "japanese": "きれいな字をかく",
+        "reading": "きれいなじをかく",
+        "meaning": "écrire de belles lettres"
+      },
+      {
+        "japanese": "数字",
+        "reading": "すうじ",
+        "meaning": "lettre"
+      }
+    ]
+  },
+  {
+    "kanji": "学",
+    "meaning": "étudier, apprendre",
+    "writing": "丶丶ノワ了一",
+    "readings": [
+      "ガク","まな（ぶ）"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "学習する",
+        "reading": "がくしゅうする",
+        "meaning": "étudier"
+      },
+      {
+        "japanese": "学生",
+        "reading": "がくせい",
+        "meaning": "élèves et étudiants"
+      },
+      {
+        "japanese": "学年",
+        "reading": "がくねん",
+        "meaning": "niveau d'étude"
+      },
+      {
+        "japanese": "学力",
+        "reading": "がくりょく",
+        "meaning": "niveau des connaissances"
+      },
+      {
+        "japanese": "学校",
+        "reading": "がっこう",
+        "meaning": "école (primaire - université)"
+      },
+      {
+        "japanese": "大学で医学を学びました",
+        "reading": "だいがくでいがくをまなびました",
+        "meaning": "j'ai étudié la médecine à l'université"
+      }
+    ]
+  },
+  {
+    "kanji": "上",
+    "meaning": "haut, au-dessus, excellent, monter, début",
+    "writing": "ト一",
+    "readings": [
+      "ジョウ","うえ","かみ","あ（げる）","のぼ（る）"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "上流",
+        "reading": "じょうりゅう",
+        "meaning": "amont"
+      },
+      {
+        "japanese": "上旬",
+        "reading": "じょうじゅん",
+        "meaning": "première décade du mois"
+      },
+      {
+        "japanese": "上半身",
+        "reading": "じょうはんしん",
+        "meaning": "buste"
+      },
+      {
+        "japanese": "水上",
+        "reading": "すいじょう",
+        "meaning": "sur eau"
+      },
+      {
+        "japanese": "上品な",
+        "reading": "じょうひんな",
+        "meaning": "élégant"
+      },
+      {
+        "japanese": "上空",
+        "reading": "じゅうくう",
+        "meaning": "le ciel"
+      },
+      {
+        "japanese": "上をむいて歩く",
+        "reading": "うえをむいてあるく",
+        "meaning": "être positif"
+      },
+      {
+        "japanese": "石の上にも三年",
+        "reading": "いしのうえにもさんねん",
+        "meaning": "3 ans sur une pierre"
+      },
+      {
+        "japanese": "川上であそぶ",
+        "reading": "かわかみであそぶ",
+        "meaning": "jouer en amont de la rivière"
+      },
+      {
+        "japanese": "にもつを上げる",
+        "reading": "にもつをあげる",
+        "meaning": "monter le bagage"
+      },
+      {
+        "japanese": "上りの電車",
+        "reading": "のぼりのでんしゃ",
+        "meaning": "train allant vers les grandes villes"
+      }
+    ]
+  },
+  {
+    "kanji": "下",
+    "meaning": "bas, descendre, sortir",
+    "writing": "一ト",
+    "readings": [
+      "カ","ゲ","した","しも","お（ろす）","くだ（る）","もと"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "下流",
+        "reading": "かりゅう",
+        "meaning": "aval"
+      },
+      {
+        "japanese": "下半身",
+        "reading": "かはんしん",
+        "meaning": "partie inférieure du corps"
+      },
+      {
+        "japanese": "下旬",
+        "reading": "げじゅん",
+        "meaning": "troisième décade de mois"
+      },
+      {
+        "japanese": "下品な",
+        "reading": "げひんな",
+        "meaning": "grossier"
+      },
+      {
+        "japanese": "下をむいて歩く",
+        "reading": "したをむいてあるく",
+        "meaning": "être négatif"
+      },
+      {
+        "japanese": "川下でおよぐ",
+        "reading": "かわしもでおよぐ",
+        "meaning": "nager en aval"
+      },
+      {
+        "japanese": "にもつを下ろす",
+        "reading": "にもつをおろす",
+        "meaning": "descendre le bagage"
+      },
+      {
+        "japanese": "下りの電車",
+        "reading": "くだりのでんしゃ",
+        "meaning": "trains allant vers la province"
+      },
+      {
+        "japanese": "川を下る",
+        "reading": "かわをくだる",
+        "meaning": "descendre la rivière"
+      },
+      {
+        "japanese": "足下にきをつける",
+        "reading": "あしもとにくをつける",
+        "meaning": "faire attention aux marches"
+      },
+      {
+        "japanese": "足下を見られる",
+        "reading": "あしもとをみられる",
+        "meaning": "profiter de la faiblesse des autres"
+      }
+    ]
+  },
+  {
+    "kanji": "中",
+    "meaning": "centre, intérieur, entre A et B, au milieu, frapper l'épicentre",
+    "writing": "口|",
+    "readings": [
+      "チュウ","なか"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "中心",
+        "reading": "ちゅうしん",
+        "meaning": "centre"
+      },
+      {
+        "japanese": "中央",
+        "reading": "ちゅうおう",
+        "meaning": "centre"
+      },
+      {
+        "japanese": "車中",
+        "reading": "しゃちゅう",
+        "meaning": "dans la voiture"
+      },
+      {
+        "japanese": "中止する",
+        "reading": "ちゅうしする",
+        "meaning": "annuler"
+      },
+      {
+        "japanese": "中間テスト",
+        "reading": "ちゅうかんテスト",
+        "meaning": "examen a mi-terme"
+      },
+      {
+        "japanese": "中学",
+        "reading": "ちゅうがく",
+        "meaning": "collège"
+      },
+      {
+        "japanese": "中国",
+        "reading": "ちゅうごく",
+        "meaning": "la Chine"
+      },
+      {
+        "japanese": "中どく",
+        "reading": "ちゅうどく",
+        "meaning": "intoxication",
+        "comment": "どく=poison"
+      },
+      {
+        "japanese": "天気よほうが的中する",
+        "reading": "てんきよほうがてきちゅうする",
+        "meaning": "Les prévision météo se réalisent"
+      },
+      {
+        "japanese": "家の中",
+        "reading": "いえのなか",
+        "meaning": "dans la maison"
+      },
+      {
+        "japanese": "まん中",
+        "reading": "まんなか",
+        "meaning": "centre"
+      },
+      {
+        "japanese": "中身",
+        "reading": "なかみ",
+        "meaning": "contenu",
+        "commentaire":"身=corps"
+      }
+    ]
+  },
+  {
+    "kanji": "人",
+    "meaning": "personne, humain",
+    "writing": "ノ丶",
+    "readings": [
+      "ジン","ニン","ひと"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "日本人",
+        "reading": "にほんじん",
+        "meaning": "les japonais"
+      },
+      {
+        "japanese": "中国人",
+        "reading": "ちゅうごくじん",
+        "meaning": "les chinois"
+      },
+      {
+        "japanese": "人口",
+        "reading": "じんこう",
+        "meaning": "population"
+      },
+      {
+        "japanese": "人工",
+        "reading": "じんこう",
+        "meaning": "artificiel"
+      },
+      {
+        "japanese": "人生",
+        "reading": "じんせい",
+        "meaning": "la vie"
+      },
+      {
+        "japanese": "老人",
+        "reading": "ろうじん",
+        "meaning": "personne âgée",
+        "commentaire":"老=vieillesse"
+      },
+      {
+        "japanese": "美人",
+        "reading": "びじん",
+        "meaning": "belle femme"
+      },
+      {
+        "japanese": "名人",
+        "reading": "めいじん",
+        "meaning": "maître"
+      },
+      {
+        "japanese": "人間",
+        "reading": "にんげん",
+        "meaning": "être-humain"
+      },
+      {
+        "japanese": "人魚",
+        "reading": "にんぎょ",
+        "meaning": "sirène"
+      },
+      {
+        "japanese": "人形",
+        "reading": "にんぎょう",
+        "meaning": "poupée"
+      },
+      {
+        "japanese": "人数",
+        "reading": "にんずう",
+        "meaning": "nombre de personne"
+      },
+      {
+        "japanese": "女の人",
+        "reading": "おんなのひと",
+        "meaning": "femme"
+      },
+      {
+        "japanese": "人びと",
+        "reading": "ひとびと",
+        "meaning": "le peuple, les gens"
+      },
+      {
+        "japanese": "人里はなれた村",
+        "reading": "ひとざとはなれたむら",
+        "meaning": "village loin de la population"
+      }
+    ]
+  },
+  {
+    "kanji": "四",
+    "meaning": "quatre",
+    "writing": "|フル一",
+    "comment":"Il y a un 4 caché dans 四",
+    "readings": [
+      "シ",
+      "よ（っ）"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "四角形",
+        "reading": "しかくけい",
+        "meaning": "carré"
+      },
+      {
+        "japanese": "四国",
+        "reading": "しこく",
+        "meaning": "Shikoku"
+      },
+      {
+        "japanese": "四季",
+        "reading": "しき",
+        "meaning": "4 saisons"
+      },
+      {
+        "japanese": "四苦八苦",
+        "reading": "しくはっく",
+        "meaning": "faire beaucoup d'effort avec la peine (galérer)",
+        "comment":"苦=souffrir"
+      },
+      {
+        "japanese": "四面そか",
+        "reading": "しめんそか",
+        "meaning": "être entouré des ennemies",
+        "comment":"面=face"
+      },
+      {
+        "japanese": "四月",
+        "reading": "しがつ",
+        "meaning": "avril"
+      },
+      {
+        "japanese": "四日",
+        "reading": "よっか",
+        "meaning": "le 4 du mois"
+      },
+      {
+        "japanese": "四人",
+        "reading": "よにん",
+        "meaning": "4 personnes"
+      }
+    ]
+  },
+  {
+    "kanji": "五",
+    "meaning": "cinq",
+    "writing": "一|フ一",
+    "readings": [
+      "ゴ",
+      "いつ"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "五月",
+        "reading": "ごがつ",
+        "meaning": "mai"
+      },
+      {
+        "japanese": "五日",
+        "reading": "いつか",
+        "meaning": "le 5 du mois"
+      },
+      {
+        "japanese": "五人",
+        "reading": "ごにん",
+        "meaning": "5 personnes"
+      },
+      {
+        "japanese": "四捨五入する",
+        "reading": "ししゃごにゅうする",
+        "meaning": "arroundir un nombre (à 4 on jette, à 5 on prend)",
+        "commentaire":"捨=jeter"
+      },
+      {
+        "japanese": "五体満足",
+        "reading": "ごだいまんぞく",
+        "meaning": "en excellente santé",
+        "commentaire":"満足=satisfait"
+      },
+      {
+        "japanese": "五十歩百歩",
+        "reading": "c'est kif-kif",
+        "meaning": "reculer de 50 pas, c'est reculer de 100 pas"
+      }
+    ]
+  },
+  {
+    "kanji": "空",
+    "meaning": "ciel, vide, imaginaire, avion",
+    "writing": "ウル工",
+    "readings": [
+      "クウ","そら","あ（く）","から"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "空気",
+        "reading": "くうき",
+        "meaning": "de l'air"
+      },
+      {
+        "japanese": "空中",
+        "reading": "くうちゅう",
+        "meaning": "dans le vide"
+      },
+      {
+        "japanese": "空港",
+        "reading": "くうこう",
+        "meaning": "aéroport"
+      },
+      {
+        "japanese": "ひこうきは日本の上空をとんでいる",
+        "reading": "ひこうきはにほんのじょうくうをとんでいる",
+        "meaning": "l'avion vole au dessus du Japon"
+      },
+      {
+        "japanese": "青い空",
+        "reading": "あおいそら",
+        "meaning": "ciel bleu"
+      },
+      {
+        "japanese": "青空",
+        "reading": "あおぞら",
+        "meaning": "ciel bleu"
+      },
+      {
+        "japanese": "大空",
+        "reading": "おおぞら",
+        "meaning": "grand ciel"
+      },
+      {
+        "japanese": "空耳をつかう",
+        "reading": "そらみみをつかう",
+        "meaning": "être semblant de ne pas entendre"
+      },
+      {
+        "japanese": "ここ、空いてますか",
+        "reading": "ここ、あいてますか",
+        "meaning": "Est-ce libre ici ?"
+      },
+      {
+        "japanese": "空っぽの",
+        "reading": "からっぽの",
+        "meaning": "vide"
+      }
+    ]
+  },
+  {
+    "kanji": "家",
+    "meaning": "maison, foyer, famille, celui qui nourrit sa famille avec le travail spécialisé",
+    "commentaire":"",
+    "readings": [
+      "カ","ケ","いえ","や"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "一家そろって出かける",
+        "reading": "いっかそろってでかける",
+        "meaning": "sortir en famille"
+      },
+      {
+        "japanese": "家族",
+        "reading": "かぞく",
+        "meaning": "famille"
+      },
+      {
+        "japanese": "家庭",
+        "reading": "かてい",
+        "meaning": "foyer"
+      },
+      {
+        "japanese": "作家",
+        "reading": "さっか",
+        "meaning": "écrivain"
+      },
+      {
+        "japanese": "音楽家",
+        "reading": "おんがくか",
+        "meaning": "musicien"
+      },
+      {
+        "japanese": "画家",
+        "reading": "がか",
+        "meaning": "peintre"
+      },
+      {
+        "japanese": "音楽家",
+        "reading": "おんがくか",
+        "meaning": "spécialiste"
+      },
+      {
+        "japanese": "家来",
+        "reading": "けらい",
+        "meaning": "vassal"
+      },
+      {
+        "japanese": "家にかえる",
+        "reading": "いえにかえる",
+        "meaning": "rentrer chez soi"
+      },
+      {
+        "japanese": "家じをいそぐ",
+        "reading": "いえじをいそぐ",
+        "meaning": "se dépécher de rentrer chez soi"
+      },
+      {
+        "japanese": "わが家",
+        "reading": "わがや",
+        "meaning": "chez moi"
+      },
+      {
+        "japanese": "家ちん",
+        "reading": "やちん",
+        "meaning": "loyer"
+      }
+    ]
+  },
+  {
+    "kanji": "先",
+    "meaning": "avant, précédent, celui qui précède, personne excellente",
+    "writing": "ノ十一ル",
+    "readings": [
+      "セン",
+      "さき"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "先生",
+        "reading": "せんせい",
+        "meaning": "professeur"
+      },
+      {
+        "japanese": "先日",
+        "reading": "せんじつ",
+        "meaning": "l'autre jour (passé)"
+      },
+      {
+        "japanese": "先月",
+        "reading": "せんげつ",
+        "meaning": "mois dernier"
+      },
+      {
+        "japanese": "先しゅう",
+        "reading": "せんしゅう",
+        "meaning": "semaine dernière"
+      },
+      {
+        "japanese": "先進国",
+        "reading": "せんしんこく",
+        "meaning": "pays développé"
+      },
+      {
+        "japanese": "えんぴつの先",
+        "reading": "えんぴつのさき",
+        "meaning": "la pointe d'un crayon"
+      },
+      {
+        "japanese": "店先に花をかざる",
+        "reading": "みせさきにはなをかざる",
+        "meaning": "Décorer la deventure du magasin avec des fleurs"
+      },
+      {
+        "japanese": "手先がきようだ",
+        "reading": "てさきがきようだ",
+        "meaning": "être adroit de ses mains"
+      },
+      {
+        "japanese": "一寸先は、やま",
+        "reading": "いっすんさきは、やま",
+        "meaning": "Nul ne sait ce qui arrivera demain (à 1 mettre devant, il fait tout noir)"
+      }
+    ]
+  },
+  {
+    "kanji": "花",
+    "meaning": "fleur, qch de beau, moment fleuri, les meilleurs moments",
+    "writing": "一いイ匕",
+    "readings": [
+      "カ","はな","ばな"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "花だん",
+        "reading": "かだん",
+        "meaning": "parterre"
+      },
+      {
+        "japanese": "花ふん",
+        "reading": "かふん",
+        "meaning": "pollen"
+      },
+      {
+        "japanese": "ぞう花",
+        "reading": "ぞうか",
+        "meaning": "fleur artificielle"
+      },
+      {
+        "japanese": "花見をする",
+        "reading": "はなみをする",
+        "meaning": "aller voir les cerisier en fleurs"
+      },
+      {
+        "japanese": "花びら",
+        "reading": "はなびら",
+        "meaning": "pétale"
+      },
+      {
+        "japanese": "花むこと",
+        "reading": "はなむこと",
+        "meaning": "nouveau marié"
+      },
+      {
+        "japanese": "花よめ",
+        "reading": "はなよめ",
+        "meaning": "nouvelle mariée"
+      },
+      {
+        "japanese": "花火大会",
+        "reading": "はなびたいかい",
+        "meaning": "fête des feux d'artifice"
+      },
+      {
+        "japanese": "火花がちる",
+        "reading": "ひばながちる",
+        "meaning": "les étincelles jaillissent"
+      },
+      {
+        "japanese": "草花",
+        "reading": "くさばな",
+        "meaning": "plantes et fleurs"
+      }
+    ]
+  },
+  {
+    "kanji": "見",
+    "meaning": "voir,regarder, idée, avis",
+    "writing": "目ル",
+    "readings": [
+      "ケン","み（る）"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "美術館を見学する",
+        "reading": "びじゅつかんをけんがくする",
+        "meaning": "visiter le musée"
+      },
+      {
+        "japanese": "工場を見学する",
+        "reading": "こうじょうをけんがくする",
+        "meaning": "visiter l'usine"
+      },
+      {
+        "japanese": "おまつりを見物する",
+        "reading": "おまつりをけんぶつする",
+        "meaning": "assister à la fête"
+      },
+      {
+        "japanese": "発見する",
+        "reading": "はっけんする",
+        "meaning": "découvrir"
+      },
+      {
+        "japanese": "意見",
+        "reading": "いけん",
+        "meaning": "avis"
+      },
+      {
+        "japanese": "お手紙をはい見しました",
+        "reading": "おてがみをはいけんしました",
+        "meaning": "J'ai lu votre lettre"
+      },
+      {
+        "japanese": "外見を気にする",
+        "reading": "がいけんをきにする",
+        "meaning": "se préoccuper de son apparence"
+      },
+      {
+        "japanese": "見本",
+        "reading": "みほん",
+        "meaning": "modèle"
+      },
+      {
+        "japanese": "えいがを見る",
+        "reading": "えいがをみる",
+        "meaning": "regarder un film"
+      }
+    ]
+  },
+  {
+    "kanji": "元",
+    "meaning": "Début, origine, chef",
+    "writing": "ニル",
+    "readings": [
+      "ゲン",
+      "ガン",
+      "もと"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "兄さんが元気にはしる",
+        "reading": "にいさんがげんきにはしる",
+        "meaning": ""
+      },
+      {
+        "japanese": "国家元首",
+        "reading": "こうかげんしゅ",
+        "meaning": "chef d'état"
+      },
+      {
+        "japanese": "元日",
+        "reading": "がんじつ",
+        "meaning": "le 1er janvier"
+      },
+      {
+        "japanese": "元旦",
+        "reading": "がんたん",
+        "meaning": "le 1er janvier"
+      },
+      {
+        "japanese": "元どおりにがたづける",
+        "reading": "もとどおりにかたづける",
+        "meaning": "ranger comme avant"
+      },
+      {
+        "japanese": "地元のやさいをたべる",
+        "reading": "じもとのやさいをたべる",
+        "meaning": "manger les légumes locaux"
+      },
+      {
+        "japanese": "身元をしかめる",
+        "reading": "みもとをたしかめる",
+        "meaning": "vérifier son identité"
+      }
+    ]
+  },
+  {
+    "kanji": "光",
+    "meaning": "illuminer, lumière, vue, honneur, temps",
+    "writing": "｜丶ノ一ル",
+    "readings": [
+      "コウ","ひか（る）","ひかり"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "日光",
+        "reading": "にっこう",
+        "meaning": "lumière du soleil"
+      },
+      {
+        "japanese": "月光",
+        "reading": "げっこう",
+        "meaning": "lumière de la lune"
+      },
+      {
+        "japanese": "光景",
+        "reading": "こうけい",
+        "meaning": "spectacle, scène"
+      },
+      {
+        "japanese": "観光する",
+        "reading": "かんこうする",
+        "meaning": "visiter (touriste)"
+      },
+      {
+        "japanese": "ぴかぴか光っている",
+        "reading": "ぴかぴかひかっている",
+        "meaning": "ça brille"
+      },
+      {
+        "japanese": "月の光",
+        "reading": "つきのひかり",
+        "meaning": "lumière de la lune"
+      }
+    ]
+  },
+  {
+    "kanji": "糸",
+    "meaning": "fil, objet fin",
+    "writing": "くム小",
+    "readings": [
+      "シ",
+      "いと"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "金糸",
+        "reading": "きんし",
+        "meaning": "fil d'or (pour la broderie)"
+      },
+      {
+        "japanese": "たこ糸",
+        "reading": "たこいと",
+        "meaning": "fil du cerf-volant"
+      },
+      {
+        "japanese": "ふうせんの糸",
+        "reading": "ふうせんのいと",
+        "meaning": "fil du ballon"
+      },
+      {
+        "japanese": "毛糸",
+        "reading": "けいと",
+        "meaning": "laine pour tricot"
+      },
+      {
+        "japanese": "かいけつの糸口を見つける",
+        "reading": "かいけつのいとぐちをみつける",
+        "meaning": "trouver l'indice pour la résolution"
+      }
+    ]
+  }
+]
