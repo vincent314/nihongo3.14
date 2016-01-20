@@ -3216,5 +3216,489 @@
         "meaning": "entrendre le buit des vagues"
       }
     ]
+  },
+  {
+    "kanji": "肉",
+    "meaning": "viande, chair, pulpe, directement, parenté",
+    "readings": [
+      "ニク"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "牛肉",
+        "reading": "ぎゅうにく",
+        "meaning": "bœuf"
+      },
+      {
+        "japanese": "鳥肉",
+        "reading": "とりにく",
+        "meaning": "viande de volaille"
+      },
+      {
+        "japanese": "馬肉",
+        "reading": "ばにく",
+        "meaning": "viande de cheval"
+      },
+      {
+        "japanese": "魚肉",
+        "reading": "ぎょにく",
+        "meaning": "chair de poisson"
+      },
+      {
+        "japanese": "きん肉",
+        "reading": "きんにく",
+        "meaning": "muscle (humain et animaux)"
+      },
+      {
+        "japanese": "果肉",
+        "reading": "かにく",
+        "meaning": "pulpe de fruits"
+      },
+      {
+        "japanese": "肉眼で見える",
+        "reading": "にくがんでみえる",
+        "meaning": "on peut voir à l'œil nu"
+      },
+      {
+        "japanese": "肉親をさがす",
+        "reading": "にくしんをさがす",
+        "meaning": "chercher un parenté (disparu ou séparé)"
+      }
+    ]
+  },
+  {
+    "kanji": "皮",
+    "meaning": "peau d'animaux",
+    "readings": [
+      "ヒ","かわ"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "皮ふ",
+        "reading": "ひふ",
+        "meaning": "peau humaine"
+      },
+      {
+        "japanese": "フランス人はよく皮肉をいう",
+        "reading": "フランスじんはよくひにくをいう",
+        "meaning": "Les français disent souvent des ironies"
+      },
+      {
+        "japanese": "へび・ねこの皮でがっきをつくっていた",
+        "reading": "へび・ねこのかわでがっきをつくっていた",
+        "meaning": "On fabriquait des instruments de musique avec la peau de serpent / chat"
+      },
+      {
+        "japanese": "毛皮のコートをきる",
+        "reading": "けがわのコートをきる",
+        "meaning": "porter le manteau en fourrure"
+      },
+      {
+        "japanese": "まんじゅう・ぎょうざの皮",
+        "reading": "まんじゅう・ぎょうざのかわ",
+        "meaning": "croûte de …"
+      }
+    ]
+  },
+  {
+    "kanji": "米",
+    "meaning": "riz",
+    "readings": [
+      "ベイ","マイ","こめ"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "日本は米食がおもだ",
+        "reading": "にほんはべいしょく",
+        "meaning": "Au Japon, le riz est le repas principal."
+      },
+      {
+        "japanese": "日本は米作がさかんだ",
+        "reading": "にほはべいさくがさかんだ",
+        "meaning": "Au Japon, la culture de riz est active"
+      },
+      {
+        "japanese": "米国",
+        "reading": "べいこく",
+        "meaning": "USA"
+      },
+      {
+        "japanese": "日米",
+        "reading": "にちべい",
+        "meaning": "nippo-américain"
+      },
+      {
+        "japanese": "欧米",
+        "reading": "おうべい",
+        "meaning": "pays occidentaux"
+      },
+      {
+        "japanese": "白米をたべる",
+        "reading": "はくまいをたべる",
+        "meaning": "manger le riz blanc"
+      },
+      {
+        "japanese": "お米をたいて、ごはんをつくる",
+        "reading": "おこめをたいて、ごはんをつくる",
+        "meaning": "On cuit le riz et prépare le riz",
+        "comment":"こめ=grain de riz que l'on cuit"
+      }
+    ]
+  },
+  {
+    "kanji": "麦",
+    "meaning": "blé",
+    "readings": [
+      "バク","むぎ"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "麦芽",
+        "reading": "ばくが",
+        "meaning": "malt"
+      },
+      {
+        "japanese": "小麦",
+        "reading": "こむぎ",
+        "meaning": "blé"
+      },
+      {
+        "japanese": "大麦",
+        "reading": "おおむぎ",
+        "meaning": "orge"
+      },
+      {
+        "japanese": "麦茶",
+        "reading": "むぎちゃ",
+        "meaning": "thé d'orge (qui se boit froid en été au Japon, rafraichissant)"
+      }
+    ]
+  },
+  {
+    "kanji": "豆",
+    "meaning": "grain de soja",
+    "readings": [
+      "トウ","ズ","まめ"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "豆腐",
+        "reading": "とうふ",
+        "meaning": "soja fermanté"
+      },
+      {
+        "japanese": "豆乳",
+        "reading": "とうにゅう",
+        "meaning": "lait de soja"
+      },
+      {
+        "japanese": "大豆",
+        "reading": "だいず",
+        "meaning": "grain de soja"
+      },
+      {
+        "japanese": "小豆",
+        "reading": "あずき",
+        "meaning": "haricot rouge",
+        "comment": "attention : prononciation d'usage"
+      },
+      {
+        "japanese": "空豆",
+        "reading": "そらまめ",
+        "meaning": "fève"
+      },
+      {
+        "japanese": "いんげん豆",
+        "reading": "いんげんまめ",
+        "meaning": "haricot"
+      },
+      {
+        "japanese": "コーヒー豆",
+        "reading": "コーヒーまめ",
+        "meaning": "grain de café"
+      },
+      {
+        "japanese": "はとに豆をやる",
+        "reading": "はとにまめをやる",
+        "meaning": "donner du sojas aux pigeons"
+      },
+      {
+        "japanese": "せつぶんに豆まきをする",
+        "reading": "せつぶんにまめまきをする",
+        "meaning": "À 'setsubun', on lance des grains de soja grillés (pour chasser les démons)"
+      }
+    ]
+  },
+  {
+    "kanji": "田",
+    "meaning": "rizière, grand espace de production naturelle",
+    "readings": [
+      "デン","た"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "水田",
+        "reading": "すいでん",
+        "meaning": "rizière"
+      },
+      {
+        "japanese": "世界一の油田はサウジアラビアとクウェートにある",
+        "reading": "せかいいちのゆでんはサウジアラビアとクウェートにある",
+        "meaning": "Les plus grands champs pétrolifères du monde sont en Arabie Saudite et au Koweit"
+      },
+      {
+        "japanese": "田中さんはたんぼで田うえをじている",
+        "reading": "たなかさんはたんぼでたうえをしている",
+        "meaning": "M. Tanaka est en train de repiquer le riz dans la rizière"
+      },
+      {
+        "japanese": "田村さんはひろい田畑をもっている",
+        "reading": "たむらさんはひろいたはたをもっている",
+        "meaning": "M. Tamura possède de vastes rizières et champs"
+      }
+    ]
+  },
+  {
+    "kanji": "林",
+    "meaning": "bois (ou forêt) géré par les hommes, rassemblement de choses alignées",
+    "readings": [
+      "リン","はやし"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "山林",
+        "reading": "さんりん",
+        "meaning": "forêt dans la montagne (forêt qu'on exploite)"
+      },
+      {
+        "japanese": "竹林をさんさくする",
+        "reading": "ちくりんをさんさくする",
+        "meaning": "se promener dans la forêt de bambous"
+      },
+      {
+        "japanese": "林道のせいびをする",
+        "reading": "りんどうのせいびをする",
+        "meaning": "aménager les chemins forestiers"
+      },
+      {
+        "japanese": "高いビルが林立している",
+        "reading": "たかいビルがりんりつしている",
+        "meaning": "Beaucoup de grands bâtiments s'alignent"
+      },
+      {
+        "japanese": "林の中でくりをひろった。",
+        "reading": "はやしのなかでくりをひろった。",
+        "meaning": "J'ai ramassé des châtaignes dans les bois"
+      }
+    ]
+  },
+  {
+    "kanji": "森",
+    "meaning": "forêt ou bois sauvage profonde et épaisse, solennel, calme, beaucoup",
+    "readings": [
+      "シン","もり"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "日本の国土の三分の二は森林である。",
+        "reading": "にほんのこくどのさんぶんのにはしんりんである。",
+        "meaning": "2/3 du territoire japonais est de la forêt."
+      },
+      {
+        "japanese": "森羅万象",
+        "reading": "しんらばんしょう",
+        "meaning": "tous les êtres de l'univers"
+      },
+      {
+        "japanese": "森さんと森のおくをさんぽした",
+        "reading": "もりさんともりのおくをさんぽした",
+        "meaning": "Je me suis promené dans le fond de la forêt avec M.Mori"
+      }
+    ]
+  },
+  {
+    "kanji": "穴",
+    "meaning": "trou, défaut manque, déficit",
+    "readings": [
+      "けつ","あな"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "古代のぼ穴",
+        "reading": "こだいのぼけつ",
+        "meaning": "fosse de tombe d'antiquité"
+      },
+      {
+        "japanese": "おとし穴におちた",
+        "reading": "おとしあなにおちた",
+        "meaning": "Je suis tombé dans un trou piégé"
+      },
+      {
+        "japanese": "サッカーチームに穴が空いた",
+        "reading": "サッカーチームにあながあいた",
+        "meaning": "Il manque des joueurs dans l'équipe de foot"
+      },
+      {
+        "japanese": "このプレゼンは穴だちけだ",
+        "reading": "このプレゼンはあなだらけだ",
+        "meaning": "Cette présentation a plein de failles"
+      },
+      {
+        "japanese": "漢検は穴うめもんだいがむずかしい",
+        "reading": "かんけんはあなうめもんだいがむずかしい",
+        "meaning": "Dans le Kanken, les questions «combler les trous» sont difficiles"
+      },
+      {
+        "japanese": "穴があったら入りたい",
+        "reading": "あながあったらはいりたい",
+        "meaning": "J'ai tellement honte que j'ai envie de me cacher dans un trou (de souris)"
+      }
+    ]
+  },
+  {
+    "kanji": "舟",
+    "meaning": "barque",
+    "readings": [
+      "ふね","ふな"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "小舟",
+        "reading": "こぶね",
+        "meaning": "barque"
+      },
+      {
+        "japanese": "ささ舟",
+        "reading": "ささぶね",
+        "meaning": "barque en bambou nain (jeu manuel d'enfant)"
+      },
+      {
+        "japanese": "舟をこぐ",
+        "reading": "ふねをこぐ",
+        "meaning": "ramer dans une barque = s'endormir en classe"
+      },
+      {
+        "japanese": "さしみの舟もりをちゅうもんした",
+        "reading": "さしみのふねもりをちゅうもんした",
+        "meaning": "J'ai commandé un bateau de Sashimi"
+      }
+    ]
+  },
+  {
+    "kanji": "音",
+    "meaning": "son, voix, bruit, musique",
+    "readings": [
+      "オン","イン","おと","ね"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "音楽",
+        "reading": "おんがく",
+        "meaning": "la musique"
+      },
+      {
+        "japanese": "漢字の中国語の読み方が音読みです",
+        "reading": "かんじのちゅうごくごのよみかたがおんよみです",
+        "meaning": "La lecture chinoise des Kanji est «onyomi»"
+      },
+      {
+        "japanese": "五十音は「あいうえお」のことです。",
+        "reading": "ごじゅうおんは「あいうえお」のことです。",
+        "meaning": "50 sons veut dire «あいうえお»"
+      },
+      {
+        "japanese": "日本語には、五つの「あいうえお」の母音と十四ほどの子音がある。",
+        "reading": "にほんごには、いつつの「あいうえお」のぼいんとじゅうよんほどのしいんがある",
+        "meaning": "En japonais, il y a 5 voyelles «aiueo» et 14 consonnes"
+      },
+      {
+        "japanese": "たいこの音がどんどんひびく",
+        "reading": "たいこのおとがどんどんひびく",
+        "meaning": "Le bruit de tambour résonne"
+      },
+      {
+        "japanese": "足音が聞こえる",
+        "reading": "あしおとがきこえる",
+        "meaning": "J'entends les bruits de pas"
+      },
+      {
+        "japanese": "美しいふえの音が聞こえる",
+        "reading": "うつくしいふえのねがきこえる",
+        "meaning": "J'entends le beau son de la flûte"
+      },
+      {
+        "japanese": "音色のすばらしいバイオリン",
+        "reading": "ねいろのすばらしいバイオリン",
+        "meaning": "Le violon qui a une magnifique sonnorité"
+      }
+    ]
+  },
+  {
+    "kanji": "雪",
+    "meaning": "neige",
+    "readings": [
+      "セツ","ゆき"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "人生の風雪にたえる",
+        "reading": "じんせいのふうせつにたえる",
+        "meaning": "Supporter les galères de la vie"
+      },
+      {
+        "japanese": "せき雪二十cm",
+        "reading": "せきせつ二十センチ",
+        "meaning": "20cm de neige cumulée"
+      },
+      {
+        "japanese": "青森けんは雪国だ",
+        "reading": "あおもりけんはゆきぐにだ",
+        "meaning": "La préfecture d'Aomori est un pays de neige"
+      },
+      {
+        "japanese": "こな雪がふっている",
+        "reading": "こなゆきがふっている",
+        "meaning": "De la neige poudreuse tombe"
+      },
+      {
+        "japanese": "大雪のあと、雪だるまをつくった。",
+        "reading": "おおゆきのあと、ゆきだるまをつくった",
+        "meaning": "Après la grande neige, j'ai fabriqué un bonhomme de neige."
+      },
+      {
+        "japanese": "いざ行かん雪見にころぶところまで",
+        "reading": "いざゆかんゆきみにころぶところまで",
+        "meaning": "Allons-y admirer le paysage de neige jusqu'à ce que nous tombions."
+      }
+    ]
+  },
+  {
+    "kanji": "電",
+    "meaning": "éclair, électricité",
+    "readings": [
+      "デン"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "電車",
+        "reading": "でんしゃ",
+        "meaning": "train"
+      },
+      {
+        "japanese": "電気",
+        "reading": "でんき",
+        "meaning": "électricité"
+      },
+      {
+        "japanese": "電話",
+        "reading": "でんわ",
+        "meaning": "téléphone"
+      },
+      {
+        "japanese": "電力",
+        "reading": "でんりょく",
+        "meaning": "énergie électrique"
+      }
+    ]
   }
 ]
