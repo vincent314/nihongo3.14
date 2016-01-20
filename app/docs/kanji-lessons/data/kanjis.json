@@ -3632,5 +3632,73 @@
         "meaning": "Le violon qui a une magnifique sonnorité"
       }
     ]
+  },
+  {
+    "kanji": "雪",
+    "meaning": "neige",
+    "readings": [
+      "セツ","ゆき"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "人生の風雪にたえる",
+        "reading": "じんせいのふうせつにたえる",
+        "meaning": "Supporter les galères de la vie"
+      },
+      {
+        "japanese": "せき雪二十cm",
+        "reading": "せきせつ二十センチ",
+        "meaning": "20cm de neige cumulée"
+      },
+      {
+        "japanese": "青森けんは雪国だ",
+        "reading": "あおもりけんはゆきぐにだ",
+        "meaning": "La préfecture d'Aomori est un pays de neige"
+      },
+      {
+        "japanese": "こな雪がふっている",
+        "reading": "こなゆきがふっている",
+        "meaning": "De la neige poudreuse tombe"
+      },
+      {
+        "japanese": "大雪のあと、雪だるまをつくった。",
+        "reading": "おおゆきのあと、ゆきだるまをつくった",
+        "meaning": "Après la grande neige, j'ai fabriqué un bonhomme de neige."
+      },
+      {
+        "japanese": "いざ行かん雪見にころぶところまで",
+        "reading": "いざゆかんゆきみにころぶところまで",
+        "meaning": "Allons-y admirer le paysage de neige jusqu'à ce que nous tombions."
+      }
+    ]
+  },
+  {
+    "kanji": "電",
+    "meaning": "éclair, électricité",
+    "readings": [
+      "デン"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "電車",
+        "reading": "でんしゃ",
+        "meaning": "train"
+      },
+      {
+        "japanese": "電気",
+        "reading": "でんき",
+        "meaning": "électricité"
+      },
+      {
+        "japanese": "電話",
+        "reading": "でんわ",
+        "meaning": "téléphone"
+      },
+      {
+        "japanese": "電力",
+        "reading": "でんりょく",
+        "meaning": "énergie électrique"
+      }
+    ]
   }
 ]
