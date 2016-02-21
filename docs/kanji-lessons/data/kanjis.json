@@ -189,8 +189,8 @@
         "meaning": "un regard (〜ぼれ=coup de foudre)"
       },
       {
-        "japanese": "ま",
-        "reading": "目のあたりにする",
+        "japanese": "目のあたりにする",
+        "reading": "まのあたりにする",
         "meaning": "constater qq chose de négatif"
       }
     ]
@@ -475,7 +475,7 @@
         "meaning": "répliquer"
       },
       {
-        "japanese": "口数がすくない",
+        "japanese": "口数くない",
         "reading": "くちがすくない",
         "meaning": "ne pas être volubile"
       },
@@ -573,7 +573,7 @@
         "meaning": "femme"
       },
       {
-        "japanese": "てんにょ",
+        "japanese": "天女",
         "reading": "てんにょ",
         "meaning": "nymphe céleste"
       },
@@ -3309,7 +3309,7 @@
     "vocabulary": [
       {
         "japanese": "日本は米食がおもだ",
-        "reading": "にほんはべいしょく",
+        "reading": "にほんはべいしょくがおもだ",
         "meaning": "Au Japon, le riz est le repas principal."
       },
       {
@@ -3698,6 +3698,127 @@
         "japanese": "電力",
         "reading": "でんりょく",
         "meaning": "énergie électrique"
+      }
+    ]
+  },
+  {
+    "kanji": "戸",
+    "meaning": "porte, maison, foyer",
+    "readings": [
+      "コ","と"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "戸外へ出た。",
+        "reading": "こがいへでた。",
+        "meaning": "je suis sorti en dehors de la porte"
+      },
+      {
+        "japanese": "この村の戸数は２０こだ。",
+        "reading": "このむらのこすうは２０こだ",
+        "meaning": "Le nombre de foyers de ce village est de 20."
+      },
+      {
+        "japanese": "雨戸をあける",
+        "reading": "あまどをあける",
+        "meaning": "Ouvrir le volet"
+      },
+      {
+        "japanese": "戸じまりをきちんとしてから家を出てね。",
+        "reading": "とじまりをきちんとしてからいえをでてね。",
+        "meaning": "Sortez de la maison après bien fermer les fenêtres et la porte à clé"
+      },
+      {
+        "japanese": "あみ戸",
+        "reading": "あみど",
+        "meaning": "fenêtre et porte avec filet (pour éviter les insectes)"
+      }
+    ]
+  },
+  {
+    "kanji": "衣",
+    "meaning": "vêtement",
+    "readings": [
+      "イ","ころも"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "ダンスの衣しょうをえらんだ。",
+        "reading": "ダンスのいしょうをえらんだ。",
+        "meaning": "J'ai choisi le costume de danse."
+      },
+      {
+        "japanese": "衣食足りて礼節を知る",
+        "reading": "いしょくたりてれいせつをしる",
+        "meaning": "Il faut un minimum de bien-être pour pratiquer la vertue."
+      },
+      {
+        "japanese": "六月と十月に衣がえをする",
+        "reading": "ろくがつとじゅうがつにころもがえをする",
+        "meaning": "On change de êtements de l'armoire en juin et octobre"
+      },
+      {
+        "japanese": "てんぷらの衣がサクサクでおいしい。",
+        "reading": "てんぷらのころもがサクサクでおいしい。",
+        "meaning": "La pâte à frire de tempura est croustillante et bonne"
+      },
+      {
+        "japanese": "天女の羽衣",
+        "reading": "てんにょのはごろも",
+        "meaning": "robe en plume magique de la «femme du ciel»"
+      }
+    ]
+  },
+  {
+    "kanji": "皿",
+    "meaning": "assiette, quelque chose en forme d'assiette",
+    "readings": [
+      "さら"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "りょうりを皿に入れる",
+        "reading": "りょうりをさらにいれる",
+        "meaning": "mettre la cuisine dans l'assiette"
+      },
+      {
+        "japanese": "回転ずしは一皿二百円だ",
+        "reading": "かいてんずしはひとさらにひゃくえん",
+        "meaning": "Chez le sushi tournant, une assiette coûte 200 yen"
+      },
+      {
+        "japanese": "かっぱのあたまに皿がある。",
+        "reading": "かっぱのあたまにさらがある。",
+        "meaning": "Sur la tête de «kappa», il y a une assiette (monstre jp)"
+      },
+      {
+        "japanese": "はい皿",
+        "reading": "はいざら",
+        "meaning": "cendrier"
+      }
+    ]
+  },
+  {
+    "kanji": "六",
+    "meaning": "six",
+    "readings": [
+      "ロク","むっ（つ）"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "六さい",
+        "reading": "ろくさい",
+        "meaning": "6 ans"
+      },
+      {
+        "japanese": "六つ",
+        "reading": "むっつ",
+        "meaning": "6 objets"
+      },
+      {
+        "japanese": "六月六日",
+        "reading": "ろくがつむいか",
+        "meaning": "le 6 juin"
       }
     ]
   }
