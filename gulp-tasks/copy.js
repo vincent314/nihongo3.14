@@ -17,6 +17,6 @@ gulp.task('copy:fonts', ['clean'], function () {
 });
 
 gulp.task('copy:others', ['clean'], function () {
-  gulp.src(['*.{ico,png,txt}', 'CNAME', 'images/**/*.webp','**/*.html','**/*.jpg'], {cwd: config.app})
+  gulp.src(['*.{ico,png,txt}', 'CNAME', 'CORS','images/**/*.webp','**/*.html','**/*.jpg'], {cwd: config.app})
     .pipe(gulp.dest(config.dist));
 });

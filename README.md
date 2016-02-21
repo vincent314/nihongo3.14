@@ -9,7 +9,10 @@ converted into HTML.
 Download and run localy
 -------------------
 
-Install [Git](http://git-scm.com/), [NodeJS](http://nodejs.org/), [bower](http://bower.io/) and [grunt](http://gruntjs.com/)
+Install [Git](http://git-scm.com/), [NodeJS](http://nodejs.org/), [bower](http://bower.io/) and [gulp](http://gruntjs.com/)
+
+    npm install -g bower
+    npm install -g gulp
 
 Download sources from 
 
@@ -23,11 +26,20 @@ Create file es-auth.js (used for ElasticSearch indexing) on root folder (replace
       password: 'XXXXXX'
     };
     
-Downloads dependencies
+###Downloads dependencies
 
     npm install
     bower install
-    
-Run
 
-    grunt serve
+###Run
+    
+    gulp serve
+    
+###Build
+
+    gulp build
+    
+###Publish
+
+    cd output
+    surge
