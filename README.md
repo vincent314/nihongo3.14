@@ -41,5 +41,5 @@ Create file es-auth.js (used for ElasticSearch indexing) on root folder (replace
     
 ###Publish
 
-    cd output
+    cd output/nihongo3.14_gh-pages
     surge
