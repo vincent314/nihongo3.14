@@ -3821,5 +3821,196 @@
         "meaning": "le 6 juin"
       }
     ]
+  },
+  {
+    "kanji": "七",
+    "meaning": "sept, beaucoup",
+    "readings": [
+      "シチ",
+      "なな（つ）",
+      "なの"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "十一月十五日は七五三です。",
+        "reading": "じゅういちがつじゅうごにちはしちごさんです。",
+        "meaning": "Le 15 novembre est la fête de 7,5,3 ans"
+      },
+      {
+        "japanese": "七面鳥",
+        "reading": "しちめんちょう",
+        "meaning": "dinde"
+      },
+      {
+        "japanese": "はいくは五・七・五の１７音でつくる。",
+        "reading": "はいくはご・しち・ごの１７おんでつくる。",
+        "meaning": "Le haïku se construit en 17 sons de 5,7,5."
+      },
+      {
+        "japanese": "七月七日は七夕です。",
+        "reading": "しちがつなのかはたなばたです。",
+        "meaning": "Le 7 juillet est la fête des étoiles 'Tanabata'"
+      },
+      {
+        "japanese": "七つ",
+        "reading": "ななつ",
+        "meaning": "7 objets"
+      }
+    ]
+  },
+  {
+    "kanji": "八",
+    "meaning": "huit, beaucoup, huit (toutes) directions",
+    "readings": [
+      "ハチ","やっ（つ）","よう"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "八方美人",
+        "reading": "はっぽうびじん",
+        "meaning": "faire la petite sainte, hypocrite"
+      },
+      {
+        "japanese": "はら八分目がちょうどよい。",
+        "reading": "はらはちぶんめがちょうどよい。",
+        "meaning": "C'est bien de manger modérement (80% rempli)"
+      },
+      {
+        "japanese": "この土日は、インフルエンザで七転八倒でした。",
+        "reading": "このどにちは、インフルエンザでしちてんばっとうでした。",
+        "meaning": "Je me tordais de douleur ce week-end à cause de la grippe.(se tourenr 7 fois, tomber 8 fois)"
+      },
+      {
+        "japanese": "七転び八起き",
+        "reading": "ななころびやお",
+        "meaning": "tomber 7 fois, se lever 8 fois"
+      },
+      {
+        "japanese": "八ツはしをやつたべた。",
+        "reading": "やツはしをやつたべた。",
+        "meaning": "J'ai mangé huit Yatsuhashi (gâteau traditionnel de Kyoto)"
+      },
+      {
+        "japanese": "四月八日は花まつりです。",
+        "reading": "しがつようかははなまつりです。",
+        "meaning": "Le 8 avril est la fête des fleurs (l'anniversaire de Bouddha)"
+      }
+    ]
+  },
+  {
+    "kanji": "寸",
+    "meaning": "ancienne unité 1寸=3.3cm, petit, taille",
+    "readings": [
+      "スン"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "家を出る寸前に雨がふり出した。",
+        "reading": "いえをでるすんぜんにあめがふりだした。",
+        "meaning": "Juste avant de sortir de la maison, il a commencé à pleuvoir"
+      },
+      {
+        "japanese": "一寸ぼうしのお話は、フランスのPetit Poucetににている。",
+        "reading": "いっすんぼうしのおはなしは、フランスのPetit Poucetににている。",
+        "meaning": "L'histoire de 'Bonze de 1 sun' ressemble à celle du 'Petit Poucet'"
+      },
+      {
+        "japanese": "寸法",
+        "reading": "すんぽう",
+        "meaning": "taille"
+      },
+      {
+        "japanese": "一寸の虫にも五分のたましい",
+        "reading": "いっすんのむしにもごぶのたましい",
+        "meaning": "Il n'est si petit chat qui n'égratigne"
+      }
+    ]
+  },
+  {
+    "kanji": "尺",
+    "meaning": "ancienne unité 1尺=33cm,taille",
+    "readings": [
+      "シャク"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "尺八をふく",
+        "reading": "しゃくはちをふく",
+        "meaning": "jouer la flûte en bambou"
+      },
+      {
+        "japanese": "尺度",
+        "reading": "しゃくど",
+        "meaning": "échelle, critère"
+      },
+      {
+        "japanese": "人間は万物の尺度である。",
+        "reading": "にんげんはばんぶつのしゃくどである。",
+        "meaning": "Man is the mesure of all things"
+      }
+    ]
+  },
+  {
+    "kanji": "百",
+    "meaning": "cent, beaucoup",
+    "readings": [
+      "ヒャク"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "百人一首",
+        "reading": "ひゃくにんいっしゅ",
+        "meaning": "jeu de cartes de 100 poèmes"
+      },
+      {
+        "japanese": "百発百中である。",
+        "reading": "やっぱつやくちゅうである。",
+        "meaning": "réussir à chaque coup."
+      },
+      {
+        "japanese": "百聞は一見にしかず。",
+        "reading": "ひゃくぶんはいっけんにしかず",
+        "meaning": "Mieux vaut voir une fois qu'entendre cent fois."
+      },
+      {
+        "japanese": "百人力",
+        "reading": "ひゃくにんりき",
+        "meaning": "énorme force"
+      }
+    ]
+  },
+  {
+    "kanji": "万",
+    "meaning": "dix mille, beaucoup, tout",
+    "readings": [
+      "マン","バン"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "かぜは万病の元です。",
+        "reading": "かぜはまんびょうのもとです。",
+        "meaning": "Le rhume est l'origine de toutes les maladies."
+      },
+      {
+        "japanese": "つるは千年、かめは万年",
+        "reading": "つるはせんねん、かめはまんねん",
+        "meaning": "La grue vie 100 ans, la tortue 10.000 ans"
+      },
+      {
+        "japanese": "万事うまくいった。",
+        "reading": "ばんじうまくいった。",
+        "meaning": "Tout s'est bien passé"
+      },
+      {
+        "japanese": "万国はくらんかい",
+        "reading": "ばんこくはくらんかい",
+        "meaning": "expo universelle (万国=tous les pays)"
+      },
+      {
+        "japanese": "千差万別の意見",
+        "reading": "せんさばんべつのいけん",
+        "meaning": "Les opinions diverses"
+      }
+    ]
   }
 ]
