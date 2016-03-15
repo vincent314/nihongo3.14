@@ -613,6 +613,22 @@ angular.module('nihongo').constant('CONFIG', {
         {
           title:'Calligraphie 4',
           file:'cours_04.html'
+        },
+        {
+          title:'Calligraphie 5',
+          file:'cours_05.html'
+        },
+        {
+          title:'Calligraphie 6',
+          file:'cours_06.html'
+        },
+        {
+          title:'Calligraphie 7',
+          file:'cours_07.html'
+        },
+        {
+          title:'Calligraphie 8',
+          file:'cours_08.html'
         }
       ]
     }

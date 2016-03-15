@@ -1,4 +1,4 @@
-Cours 3
+Cours 4
 ==============
 
 ![Calligraphie 4](img/Vincent.cours4.jpg)
