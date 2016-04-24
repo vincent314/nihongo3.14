@@ -4463,7 +4463,403 @@
       {
         "japanese": "歩みののろいかめ",
         "reading": "あゆみののろいかめ",
-        "meaning": "Tortie qui a une marche lente"
+        "meaning": "Tortue qui a une marche lente"
+      }
+    ]
+  },
+  {
+    "kanji": "考",
+    "meaning": "réfléchir, enquêter, exameniner",
+    "comment":"土+ノ : personne âgée qui réfléchi",
+    "readings": [
+      "コウ","かんが（える）"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "考古学を学ぶ",
+        "reading": "こうこがくをまなぶ",
+        "meaning": "étudier l'archéologie"
+      },
+      {
+        "japanese": "子犬が生まれたので、名前を考える",
+        "reading": "こいぬがうまれたので、なまえをかんがえる",
+        "meaning": "Des chiots sont nés et je réfléchi aux prénoms"
+      },
+      {
+        "japanese": "日本人の考え方",
+        "reading": "にほんじのかんがえかた",
+        "meaning": "La manière de penser des japonais"
+      },
+      {
+        "japanese": "「考えておきます。」は「ノー」といういみのときがほとんどだ。",
+        "reading": "「かんがえておきます。」は「ノー」といういみのときがほとんどだ。",
+        "meaning": "«Je vais réfléchir» veut dire «Non» pour la plupart des cas."
+      }
+    ]
+  },
+  {
+    "kanji": "示",
+    "meaning": "montrer, indiquer",
+    "readings": [
+      "シ","しめ（す）"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "書道の展示会を見に行った。",
+        "reading": "しょどうのてんじかいをみにいった",
+        "meaning": "Je suis allé voir l'exposition de calligraphie."
+      },
+      {
+        "japanese": "部下に指示を出す。",
+        "reading": "ぶかにしじをだす。",
+        "meaning": "Donne une indication au subordoné."
+      },
+      {
+        "japanese": "実物を示して話すとよくわかる。",
+        "reading": "じつぶつをしめしてはなすとよくわかる。",
+        "meaning": "Si l'on parle en montrant l'objet réel, on comprend bien."
+      }
+    ]
+  },
+  {
+    "kanji": "走",
+    "meaning": "courir, s'enfuir, parcourir, circuler",
+    "readings": [
+      "ソウ","はし（る）"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "百メートル走で力走した。",
+        "reading": "ひゃくメートルそうでりきそうした。",
+        "meaning": "J'ai couru de toutes mes forces la course de 100m."
+      },
+      {
+        "japanese": "町の中を国道が走っている。",
+        "reading": "まちのなかをこくどうがはしっている。",
+        "meaning": "La route nationale parcourt la ville."
+      },
+      {
+        "japanese": "日本全国を電車やバスが走っている。",
+        "reading": "にほんぜんこくをでんしゃやバスがはしっている。",
+        "meaning": "Dans tout le pays du Japon, les trains les bus circulent."
+      },
+      {
+        "japanese": "走り書きする",
+        "reading": "はしりがきする",
+        "meaning": "écrire à la hâte"
+      }
+    ]
+  },
+  {
+    "kanji": "出",
+    "meaning": "sortir, apparaître",
+    "readings": [
+      "しゅつ","だ（す）","で（る）"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "外出する",
+        "reading": "がいしゅつ",
+        "meaning": "Je sors"
+      },
+      {
+        "japanese": "出火する",
+        "reading": "しゅっかする",
+        "meaning": "départ de feu"
+      },
+      {
+        "japanese": "大きな音を立てたり、大きなこえを出したりしないてください",
+        "reading": "おおきなおとをたてたり、おおきなこえをだしたりしないてください",
+        "meaning": "Ne faites pas de bruit, ni sortir «une grande noix»"
+      },
+      {
+        "japanese": "土曜日は人出がおおい",
+        "reading": "どようびはひとでがおおい",
+        "meaning": "Le samedi, il y a beaucoup de gens qui sortent."
+      },
+      {
+        "japanese": "出口",
+        "reading": "でぐち",
+        "meaning": "sortie"
+      },
+      {
+        "japanese": "出かける",
+        "reading": "でかける",
+        "meaning": "sortir (pour s'amuser)"
+      }
+    ]
+  },
+  {
+    "kanji": "来",
+    "meaning": "venir, depuis ce temps, prochain",
+    "comment": "dessin de blé qui sort",
+    "readings": [
+      "ライ","く（る）","きた（る）"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "来月",
+        "reading": "らいげつ",
+        "meaning": "mois prochain"
+      },
+      {
+        "japanese": "来年",
+        "reading": "らいねん",
+        "meaning": "année prochaine"
+      },
+      {
+        "japanese": "来週",
+        "reading": "らいしゅう",
+        "meaning": "semaine prochaine"
+      },
+      {
+        "japanese": "来日する",
+        "reading": "らいにちする",
+        "meaning": "venir au Japon (pour quelqu'un d'important)"
+      },
+      {
+        "japanese": "未来",
+        "reading": "みらい",
+        "meaning": "future"
+      },
+      {
+        "japanese": "「あ、バスが来た。」",
+        "reading": "「あ、バスがきた。」",
+        "meaning": "tiens, le bus est arrivé"
+      },
+      {
+        "japanese": "三年前、日本に来ました。",
+        "reading": "さんねんまえ、にほんにきました。",
+        "meaning": "Il y a 3 ans, je suis venu au Japon."
+      },
+      {
+        "japanese": "来る四月四日、フランスの大とうりょうが来日します。",
+        "reading": "きたるしがつよっか、フランスのだいとうりょうがらいにちします。",
+        "meaning": "Le 4 avril prochain, le président français vient au Japon."
+      }
+    ]
+  },
+  {
+    "kanji": "書",
+    "meaning": "écrire, livre, écriture",
+    "comment":"dessin d'un pinceau avec du papier",
+    "readings": [
+      "ショ","か（く）"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "読書",
+        "reading": "どくしょ",
+        "meaning": "lecture"
+      },
+      {
+        "japanese": "じ書",
+        "reading": "じしょ",
+        "meaning": "dictionnaire"
+      },
+      {
+        "japanese": "書道",
+        "reading": "しょどう",
+        "meaning": "calligraphie"
+      },
+      {
+        "japanese": "書体",
+        "reading": "しょたい",
+        "meaning": "forme d'écriture"
+      },
+      {
+        "japanese": "かい書",
+        "reading": "かいしょ",
+        "meaning": "style 'carré'"
+      },
+      {
+        "japanese": "行書",
+        "reading": "ぎょうしょ",
+        "meaning": "style semi-cursif"
+      },
+      {
+        "japanese": "そう書",
+        "reading": "そうしょ",
+        "meaning": "style cursif"
+      },
+      {
+        "japanese": "走り書きする",
+        "reading": "はしりがきする",
+        "meaning": "écrire rapidement"
+      },
+      {
+        "japanese": "書きぞめを書く",
+        "reading": "かきぞめをかく",
+        "meaning": "écrire la première calligraphie de l'année"
+      }
+    ]
+  },
+  {
+    "kanji": "生",
+    "meaning": "vivre, naître, la vie, personne qui vit avec ce métier, pure, cru",
+    "readings": [
+      "セイ","ショウ","い（きる）","い（かす）","い（ける）","う（まれる）"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "先生",
+        "reading": "せんせい",
+        "meaning": "professeur"
+      },
+      {
+        "japanese": "学生",
+        "reading": "がくせい",
+        "meaning": "étudiant"
+      },
+      {
+        "japanese": "生と",
+        "reading": "せいと",
+        "meaning": "élève"
+      },
+      {
+        "japanese": "一生",
+        "reading": "いっしょう",
+        "meaning": "une vie"
+      },
+      {
+        "japanese": "生きることと死ぬこと",
+        "reading": "いきることとしぬこと",
+        "meaning": "vivre et mourir"
+      },
+      {
+        "japanese": "金魚を長く生かしたい",
+        "reading": "きんぎょをながくいかしたい",
+        "meaning": "Je veux faire vivre mon poisson rouge longtemps."
+      },
+      {
+        "japanese": "生花の先生",
+        "reading": "いけばなのせんせい",
+        "meaning": "professeur de l'art floral"
+      },
+      {
+        "japanese": "赤ちゃんが生まれた。",
+        "reading": "あかちゃんがうまれた。",
+        "meaning": "Un bébé est né."
+      },
+      {
+        "japanese": "リールはシャル・ド・ゴールを生んだ町です。",
+        "reading": "リールはシャル・ド・ゴールをうんだまちです。",
+        "meaning": "Lille est la ville natale de Charles de Gaulle."
+      },
+      {
+        "japanese": "ひげが生える。",
+        "reading": "ひげがはえる。",
+        "meaning": "La barbe pousse."
+      },
+      {
+        "japanese": "ひげを生やす。",
+        "reading": "ひげをはやす。",
+        "meaning": "Je fais pousser la barbe."
+      },
+      {
+        "japanese": "生魚",
+        "reading": "なまざかな",
+        "meaning": "poisson cru"
+      },
+      {
+        "japanese": "生ビール",
+        "reading": "なまビール",
+        "meaning": "Bière à la pression"
+      }
+    ]
+  },
+  {
+    "kanji": "言",
+    "meaning": "dire, mot",
+    "readings": [
+      "ゲン","ゴン","い（う）","こと"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "言語",
+        "reading": "げんご",
+        "meaning": "langue language"
+      },
+      {
+        "japanese": "方言",
+        "reading": "ほうげん",
+        "meaning": "dialecte patois"
+      },
+      {
+        "japanese": "言動",
+        "reading": "げんどう",
+        "meaning": "faits et dits"
+      },
+      {
+        "japanese": "伝言",
+        "reading": "でんごん",
+        "meaning": "message"
+      },
+      {
+        "japanese": "言",
+        "reading": "ごん",
+        "meaning": "silence"
+      },
+      {
+        "japanese": "なかなか言うことを聞かない。",
+        "reading": "なかなかいうことをきかない。",
+        "comment": "prononcé ici «ゆ»",
+        "meaning": "ne pas écouter ce que les gens disent."
+      },
+      {
+        "japanese": "言葉づかいに気をつける",
+        "reading": "ことばづかいにきをつける",
+        "meaning": "faire attention aux langages"
+      },
+      {
+        "japanese": "母に小言を言われた",
+        "reading": "ははにこごとをいわれた",
+        "meaning": "Ma mère m'a grondé.",
+        "comment": "小言 petits mots désagréables"
+      },
+      {
+        "japanese": "ね言を言う",
+        "reading": "ねことをいう",
+        "meaning": "parler en dormant"
+      }
+    ]
+  },
+  {
+    "kanji": "話",
+    "meaning": "parler, historie, conte",
+    "readings": [
+      "ワ","はな（す）","はなし"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "電話",
+        "reading": "でんわ",
+        "meaning": "téléphone"
+      },
+      {
+        "japanese": "会話",
+        "reading": "かいわ",
+        "meaning": "conversation"
+      },
+      {
+        "japanese": "神話",
+        "reading": "しんわ",
+        "meaning": "mythe"
+      },
+      {
+        "japanese": "中国語を話す",
+        "reading": "ちゅうごくごをはなす",
+        "meaning": "parler le chinois"
+      },
+      {
+        "japanese": "話しあいをする",
+        "reading": "はなしあいをする",
+        "meaning": "discuter, échanger des vues"
+      },
+      {
+        "japanese": "むかし話",
+        "reading": "むかしばなし",
+        "meaning": "histoire ancienne, fable"
       }
     ]
   }
