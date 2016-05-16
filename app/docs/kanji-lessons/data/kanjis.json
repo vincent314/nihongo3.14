@@ -5200,5 +5200,697 @@
         "meaning": "En France, la popularité du Japonais s'élève."
       }
     ]
+  },
+  {
+    "kanji": "長",
+    "meaning": "long, grandir, âgé, chef",
+    "readings": [
+      "チョウ","なが（い）"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "長男",
+        "reading": "ちょうなん",
+        "meaning": "fils aîné"
+      },
+      {
+        "japanese": "長女",
+        "reading": "ちょうじょ",
+        "meaning": "fille aînée"
+      },
+      {
+        "japanese": "村長",
+        "reading": "そんちょう",
+        "meaning": "maire du village"
+      },
+      {
+        "japanese": "校長",
+        "reading": "こうちょう",
+        "meaning": "chef d'établissement scolaire"
+      },
+      {
+        "japanese": "長所",
+        "reading": "ちょうしょ",
+        "meaning": "qualité, avantage"
+      },
+      {
+        "japanese": "しょくぶつの生長",
+        "reading": "しょくぶつのせいちょう",
+        "meaning": "croissance des végétaux"
+      },
+      {
+        "japanese": "社長",
+        "reading": "しゃちょう",
+        "meaning": "chef d'entreprise"
+      },
+      {
+        "japanese": "かみが長い",
+        "reading": "かみがながい",
+        "meaning": "avoir les cheveux longs"
+      },
+      {
+        "japanese": "おきなわは長生きの人が多い。",
+        "reading": "おきなわはながいきのひとがおおい。",
+        "meaning": "À Okinawa, les gens vivent longtemps."
+      }
+    ]
+  },
+  {
+    "kanji": "何",
+    "meaning": "quelque chose inconnue, quoi, quel, quelque chose",
+    "readings": [
+      "なに","なん"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "これは何？",
+        "reading": "これはなに？",
+        "meaning": "Qu'est-ce que c'est ?"
+      },
+      {
+        "japanese": "何か食べるものある？何もないよ。",
+        "reading": "なにかたべるものある？なにもないよ。",
+        "meaning": "Y-a-t-il quelque chose à manger ? Il n'y a plus rien."
+      },
+      {
+        "japanese": "これは何ですか。",
+        "reading": "これはなんですか。",
+        "meaning": "Qu'est-ce que c'est ?"
+      },
+      {
+        "japanese": "何人",
+        "reading": "なんにん",
+        "meaning": "Combien de personnes ?"
+      },
+      {
+        "japanese": "何回",
+        "reading": "なんかい",
+        "meaning": "Combien de fois ?"
+      },
+      {
+        "japanese": "何本",
+        "reading": "なんぼん",
+        "meaning": "Combien d'objets longs ?"
+      },
+      {
+        "japanese": "何時",
+        "reading": "なんじ",
+        "meaning": "Quelle heure ?"
+      }
+    ]
+  },
+  {
+    "kanji": "今",
+    "meaning": "maintenant, actuel",
+    "readings": [
+      "コン","いま"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "今月",
+        "reading": "こんげつ",
+        "meaning": "Ce mois-ci"
+      },
+      {
+        "japanese": "今週",
+        "reading": "こんしゅう",
+        "meaning": "cette semaine"
+      },
+      {
+        "japanese": "今ばん",
+        "reading": "こんばん",
+        "meaning": "ce soir"
+      },
+      {
+        "japanese": "今夜",
+        "reading": "こんや",
+        "meaning": "cette nuit"
+      },
+      {
+        "japanese": "今回",
+        "reading": "こんかい",
+        "meaning": "cette fois"
+      },
+      {
+        "japanese": "今日",
+        "reading": "こんにち",
+        "meaning": "À nos jours"
+      },
+      {
+        "japanese": "「ただ今」「おかえり」",
+        "reading": "「ただいま」「おかえり」",
+        "meaning": "«Je suis rentré» «Bienvenue»"
+      },
+      {
+        "japanese": "今日",
+        "reading": "きょう",
+        "meaning": "Aujourd'hui"
+      },
+      {
+        "japanese": "今朝",
+        "reading": "けさ",
+        "meaning": "ce matin"
+      }
+    ]
+  },
+  {
+    "kanji": "時",
+    "meaning": "Temps, heure",
+    "readings": [
+      "ジ","とき"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "時間",
+        "reading": "じかん",
+        "meaning": "heure"
+      },
+      {
+        "japanese": "日時",
+        "reading": "にちじ",
+        "meaning": "date et heure"
+      },
+      {
+        "japanese": "四時八分",
+        "reading": "よじはっぷん",
+        "meaning": "4h08"
+      },
+      {
+        "japanese": "時代",
+        "reading": "じだい",
+        "meaning": "ère, époque"
+      },
+      {
+        "japanese": "九時六分",
+        "reading": "くじろっぷん",
+        "meaning": "9h06"
+      },
+      {
+        "japanese": "時差",
+        "reading": "じさ",
+        "meaning": "décalage horaire"
+      },
+      {
+        "japanese": "「光いん矢のごとし」は、時のたつのははやいということわざです。",
+        "reading": "「こういんやのごとし」は、ときのたつのははやいということわざです。",
+        "meaning": "«Le temps est comme une flèche» est le proverbe qui dit «le temps passe vite»"
+      },
+      {
+        "japanese": "時計",
+        "reading": "とけい",
+        "meaning": "horloge, montre"
+      }
+    ]
+  },
+  {
+    "kanji": "分",
+    "meaning": "Diviser, quantité divisée",
+    "readings": [
+      "フン","プン","ブン","ブ","わ（ける）"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "四時五分",
+        "reading": "よじごぶん",
+        "meaning": "4h05"
+      },
+      {
+        "japanese": "九時三分",
+        "reading": "くじさんぷん",
+        "meaning": "9h03"
+      },
+      {
+        "japanese": "半分",
+        "reading": "はんぶん",
+        "meaning": "moitié"
+      },
+      {
+        "japanese": "水分",
+        "reading": "すいぶん",
+        "meaning": "liquide (eau)"
+      },
+      {
+        "japanese": "日本の国土の三分の二は森林です。",
+        "reading": "にほんのこくどのさんぶんのにんはしんりんです。",
+        "meaning": "2/3 du territoire japponais sont des forêts"
+      },
+      {
+        "japanese": "一寸の虫にも五分のたましい",
+        "reading": "いっすんのむしにもごぶんのたましい",
+        "meaning": "Il n'est si petit chat qui n'égratigne"
+      },
+      {
+        "japanese": "ケーキを五人分に分けた。",
+        "reading": "ケーキをごにんぶんにわけた。",
+        "meaning": "J'ai divisé le gâteau pour 5 personnes."
+      }
+    ]
+  },
+  {
+    "kanji": "私",
+    "meaning": "Moi, privé, en cachette",
+    "readings": [
+      "シ","わたくし","わたし"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "私語",
+        "reading": "しご",
+        "meaning": "bavardage quand il ne faut pas"
+      },
+      {
+        "japanese": "私物",
+        "reading": "しぶつ",
+        "meaning": "affaires personnelles"
+      },
+      {
+        "japanese": "私立の学校",
+        "reading": "しりつのがっこう",
+        "meaning": "Établissement scolaires privés"
+      },
+      {
+        "japanese": "私は学生です。",
+        "reading": "わたしはがくせいです。",
+        "meaning": "Je suis étudiant"
+      }
+    ]
+  },
+  {
+    "kanji": "前",
+    "meaning": "devant, avant, précédent",
+    "readings": [
+      "ぜん","まえ"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "前年",
+        "reading": "ぜんねん",
+        "meaning": "l'année d'avant"
+      },
+      {
+        "japanese": "前回",
+        "reading": "ぜんかい",
+        "meaning": "la dernière fois"
+      },
+      {
+        "japanese": "かんけんが目前にせまる。",
+        "reading": "かんけんがもくぜんにせまる。",
+        "meaning": "Le kanken approche"
+      },
+      {
+        "japanese": "前日",
+        "reading": "ぜんしつ",
+        "meaning": "la veille"
+      },
+      {
+        "japanese": "午前九時",
+        "reading": "ごぜんくじ",
+        "meaning": "9h00"
+      },
+      {
+        "japanese": "食前に",
+        "reading": "しょくぜんに",
+        "meaning": "avant le repas"
+      },
+      {
+        "japanese": "前半",
+        "reading": "ぜんはん",
+        "meaning": "première moitié"
+      },
+      {
+        "japanese": "前書き",
+        "reading": "まえがき",
+        "meaning": "préface"
+      },
+      {
+        "japanese": "いすの前に犬がいます。",
+        "reading": "いすのまえにいぬがいます。",
+        "meaning": "Il y a un chien devant la chaise."
+      },
+      {
+        "japanese": "名前",
+        "reading": "なまえ",
+        "meaning": "nom"
+      },
+      {
+        "japanese": "前向きに考える。",
+        "reading": "まえむきにかんがえる",
+        "meaning": "Réflechir dans le sens positif."
+      }
+    ]
+  },
+  {
+    "kanji": "後",
+    "meaning": "après, plus tard, derrière, dernier",
+    "readings": [
+      "ゴ","コウ","あと","うし（ろ）","のち"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "最後に",
+        "reading": "さいごに",
+        "meaning": "en dernier"
+      },
+      {
+        "japanese": "三日後",
+        "reading": "みっかご",
+        "meaning": "3 jours plus tard"
+      },
+      {
+        "japanese": "後日",
+        "reading": "ごじつ",
+        "meaning": "ultérieurement"
+      },
+      {
+        "japanese": "午後九時",
+        "reading": "ごごくじ",
+        "meaning": "21h00"
+      },
+      {
+        "japanese": "食後に",
+        "reading": "しょくごに",
+        "meaning": "après le repas"
+      },
+      {
+        "japanese": "後半",
+        "reading": "ごはん",
+        "meaning": "seconde partie"
+      },
+      {
+        "japanese": "後書き",
+        "reading": "あとがき",
+        "meaning": "postface"
+      },
+      {
+        "japanese": "後で行きます。",
+        "reading": "あとでいきます。",
+        "meaning": "J'y vais plus tard."
+      },
+      {
+        "japanese": "いすの後ろに犬がいます。",
+        "reading": "いすのうしろにいぬがいます。",
+        "meaning": "Il y a un chien derrière la chaise."
+      },
+      {
+        "japanese": "後ほどいきます。",
+        "reading": "のちほどいきます。",
+        "meaning": "J'y vais plus tard."
+      }
+    ]
+  },
+  {
+    "kanji": "毎",
+    "meaning": "chaque",
+    "comment": "dessin de la mère qui se coiffe tous les matins avec une épingle à chignon.",
+    "readings": [
+      "マイ"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "毎日",
+        "reading": "まいにち",
+        "meaning": "chaque jour"
+      },
+      {
+        "japanese": "毎月",
+        "reading": "まいつき",
+        "meaning": "chaque mois"
+      },
+      {
+        "japanese": "毎回",
+        "reading": "まいかい",
+        "meaning": "chaque fois"
+      },
+      {
+        "japanese": "毎年、母と海へ行く。",
+        "reading": "まいとし、ははとうみへいく。",
+        "meaning": "Chaque année, je vais à la mer avec ma mère."
+      }
+    ]
+  },
+  {
+    "kanji": "朝",
+    "meaning": "matin",
+    "readings": [
+      "チョウ","あさ"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "毎日、朝食をとりましょう",
+        "reading": "まいにち、ちょうしょくをとりましょう",
+        "meaning": "prenons le petit déjeuner tous les jours"
+      },
+      {
+        "japanese": "朝刊を読む。",
+        "reading": "ちょうかんをよむ。",
+        "meaning": "Je lis l'édition du matin du journal"
+      },
+      {
+        "japanese": "一朝一夕にはできない",
+        "reading": "いっちょういっせきにはできない",
+        "meaning": "ne pas pouvoir faire en un jour"
+      },
+      {
+        "japanese": "王朝",
+        "reading": "おうちょう",
+        "meaning": "dynastie"
+      },
+      {
+        "japanese": "朝日がのぼる。",
+        "reading": "あさひがのぼる。",
+        "meaning": "Le soleil se lève."
+      },
+      {
+        "japanese": "朝ねぼうをした。",
+        "reading": "あさねぼうをした。",
+        "meaning": "J'ai fais la grasse matinée"
+      },
+      {
+        "japanese": "毎朝",
+        "reading": "まいあさ",
+        "meaning": "tous les matins"
+      },
+      {
+        "japanese": "今朝",
+        "reading": "けさ",
+        "meaning": "ce matin"
+      }
+    ]
+  },
+  {
+    "kanji": "午",
+    "meaning": "midi",
+    "readings": [
+      "ゴ"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "正午",
+        "reading": "しょうご",
+        "meaning": "midi"
+      },
+      {
+        "japanese": "午前",
+        "reading": "ごぜん",
+        "meaning": "avant midi"
+      },
+      {
+        "japanese": "午後",
+        "reading": "ごご",
+        "meaning": "après midi"
+      },
+      {
+        "japanese": "子午線",
+        "reading": "しごせん",
+        "meaning": "méridien"
+      }
+    ]
+  },
+  {
+    "kanji": "昼",
+    "meaning": "midi",
+    "readings": [
+      "チュウ","ひる"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "昼食",
+        "reading": "ちゅうしょく",
+        "meaning": "repas du midi"
+      },
+      {
+        "japanese": "白昼夢",
+        "reading": "はくちゅうむ",
+        "meaning": "rêverie"
+      },
+      {
+        "japanese": "昼ごはん",
+        "reading": "ひるごはん",
+        "meaning": "repas du midi"
+      },
+      {
+        "japanese": "昼休み",
+        "reading": "ひるやすみ",
+        "meaning": "pause du midi"
+      },
+      {
+        "japanese": "昼間",
+        "reading": "ひるま",
+        "meaning": "durant l'après midi"
+      },
+      {
+        "japanese": "お昼は何を食べた？",
+        "reading": "おひるはなにをたべた？",
+        "meaning": "Qu'est-ce que tu as mangé ce midi ?"
+      }
+    ]
+  },
+  {
+    "kanji": "晩",
+    "meaning": "soir, tard",
+    "comment":"soleil + sortir / echapper",
+    "readings": [
+      "バン"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "晩ごはん",
+        "reading": "ばんごはん",
+        "meaning": "repas du soir"
+      },
+      {
+        "japanese": "今晩",
+        "reading": "こんばん",
+        "meaning": "ce soir"
+      },
+      {
+        "japanese": "晩年",
+        "reading": "ばんねん",
+        "meaning": "la dernière période de la vie"
+      }
+    ]
+  },
+  {
+    "kanji": "夜",
+    "meaning": "nuit, soir",
+    "readings": [
+      "ヤ","よ","よる"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "日本語の夜間フランスにかっよっています。",
+        "reading": "にほんごのやかんフランスにかよっています。",
+        "meaning": "Je prends des cours du soir pour apprendre le japonais"
+      },
+      {
+        "japanese": "日夜はたらく",
+        "reading": "にちやはたらく",
+        "meaning": "travailler jour et nuit"
+      },
+      {
+        "japanese": "昼夜をとわずべんきょうする",
+        "reading": "ちゅうやをとわずべんきょうする",
+        "meaning": "Étudier dur jour et nuit"
+      },
+      {
+        "japanese": "夜食にラーメンを食べる",
+        "reading": "やしょくにラーメンをたべる。",
+        "meaning": "Je mange des ramen tard le soir"
+      },
+      {
+        "japanese": "今夜は十五夜です。",
+        "reading": "こんやはじゅうごやです。",
+        "meaning": "Cette nuit, c'est la pleine lune."
+      },
+      {
+        "japanese": "夜中",
+        "reading": "よなか",
+        "meaning": "minuit"
+      },
+      {
+        "japanese": "夜空",
+        "reading": "よぞら",
+        "meaning": "ciel de nuit"
+      },
+      {
+        "japanese": "夜の一人歩きはあぶない。",
+        "reading": "よるのひとりあるきはあぶない。",
+        "meaning": "Il est dangereux de marcher seul la nuit dehors."
+      }
+    ]
+  },
+  {
+    "kanji": "買",
+    "meaning": "acheter",
+    "comment": "filet + coquillage",
+    "readings": [
+      "バイ","か（う）"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "インターネットで売買する",
+        "reading": "インターネットでばいばいする",
+        "meaning": "faire du commerce par internet"
+      },
+      {
+        "japanese": "買い物する",
+        "reading": "かいものする",
+        "meaning": "faire des courses, shopping"
+      },
+      {
+        "japanese": "買い食いする",
+        "reading": "かいぐいする",
+        "meaning": "acheter à manger et consommer dans la rue"
+      },
+      {
+        "japanese": "バーチーの買い出しに行く",
+        "reading": "バーチーのかいだしにいく",
+        "meaning": "aller faire des achats pour la fête"
+      },
+      {
+        "japanese": "安物がいのぜにうしない。",
+        "reading": "やすものがいぜにうしない。",
+        "meaning": "Bon marché, ruine"
+      }
+    ]
+  },
+  {
+    "kanji": "週",
+    "meaning": "semaine",
+    "readings": [
+      "しゅう"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "先週",
+        "reading": "せんしゅう",
+        "meaning": "semaine dernière"
+      },
+      {
+        "japanese": "今週",
+        "reading": "こんしゅう",
+        "meaning": "cette semaine"
+      },
+      {
+        "japanese": "来週",
+        "reading": "らいしゅう",
+        "meaning": "semaine prochaine"
+      },
+      {
+        "japanese": "週日",
+        "reading": "しゅうじつ",
+        "meaning": "jours de la semaine"
+      },
+      {
+        "japanese": "週末",
+        "reading": "しゅうまつ",
+        "meaning": "weekend"
+      },
+      {
+        "japanese": "読書週間",
+        "reading": "どくしょしゅうかん",
+        "meaning": "Bon weekend"
+      }
+    ]
   }
 ]
