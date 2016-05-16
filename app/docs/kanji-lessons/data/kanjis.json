@@ -4862,5 +4862,343 @@
         "meaning": "histoire ancienne, fable"
       }
     ]
+  },
+  {
+    "kanji": "正",
+    "meaning": "correct, just, officiel, corriger",
+    "readings": [
+      "セイ","ショウ","ただ（しい）（しく）（す）","まさ"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "正方形",
+        "reading": "せいほうけい",
+        "meaning": "un carré"
+      },
+      {
+        "japanese": "正門",
+        "reading": "せいもん",
+        "meaning": "portail officiel"
+      },
+      {
+        "japanese": "お正月",
+        "reading": "おしょうがつ",
+        "meaning": "nouvel an"
+      },
+      {
+        "japanese": "正午",
+        "reading": "しょうご",
+        "meaning": "midi"
+      },
+      {
+        "japanese": "正体をあらわす",
+        "reading": "しょうたいをあらわす",
+        "meaning": "révéler son vrai caractère"
+      },
+      {
+        "japanese": "正しい漢字を書く",
+        "reading": "ただしいかんじをかく",
+        "meaning": "écrire des kanji corrects"
+      },
+      {
+        "japanese": "まちがいを正す",
+        "reading": "まちがいをただす",
+        "meaning": "corriger des fautes"
+      },
+      {
+        "japanese": "正にそのとおりです",
+        "reading": "まさにそのとおりです",
+        "meaning": "c'est tout à fait cela"
+      },
+      {
+        "japanese": "正ゆめ",
+        "reading": "まさゆめ",
+        "meaning": "rêve prémonitoire"
+      }
+    ]
+  },
+  {
+    "kanji": "白",
+    "meaning": "blanc, clair, pure",
+    "readings": [
+      "ハク","ビャク","しろ（い）","しら"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "白鳥",
+        "reading": "はくちょう",
+        "meaning": "cygne"
+      },
+      {
+        "japanese": "白人",
+        "reading": "はくじん",
+        "meaning": "blanc(pers)"
+      },
+      {
+        "japanese": "白米",
+        "reading": "はくまい",
+        "meaning": "riz blanc"
+      },
+      {
+        "japanese": "白衣",
+        "reading": "はくい",
+        "meaning": "blouse blanche"
+      },
+      {
+        "japanese": "白夜",
+        "reading": "びゃくや",
+        "meaning": "soleil de minuit"
+      },
+      {
+        "japanese": "白いかもめ、白いなみ",
+        "reading": "しろいかもめ、しろいなみ",
+        "meaning": "mouette blanche, vague blanche"
+      },
+      {
+        "japanese": "人を白い目で見る",
+        "reading": "ひとをしろいめでみる",
+        "meaning": "regarder quelqu'un avec le regard froid ou la haine (yeux blancs)"
+      },
+      {
+        "japanese": "白雪ひめと七人の小人",
+        "reading": "しらゆきひめとしちにんのこびと",
+        "meaning": "Blanche neige et les 7 nains"
+      },
+      {
+        "japanese": "白羽の矢が立つ",
+        "reading": "しらはのやがたつ",
+        "meaning": "être désigné à un poste important",
+        "comment" : "la flèche aux plumes blanches est importante"
+      }
+    ]
+  },
+  {
+    "kanji": "青",
+    "meaning": "bleu ou vert",
+    "readings": [
+      "セイ","あお（い）"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "青年",
+        "reading": "せいねん",
+        "meaning": "les jeunes gens"
+      },
+      {
+        "japanese": "青春",
+        "reading": "せいしゅん",
+        "meaning": "la jeunesse (période)",
+        "comment": "pritemps bleu"
+      },
+      {
+        "japanese": "青果市場",
+        "reading": "せいかいちば",
+        "meaning": "marché aux légumes et aux fruits"
+      },
+      {
+        "japanese": "青天白日",
+        "reading": "せいてんはくじつ",
+        "meaning": "beau temps / innocent (clair)",
+        "comment": "ciel bleu et jour blanc"
+      },
+      {
+        "japanese": "青空",
+        "reading": "あおぞら",
+        "meaning": "ciel bleu"
+      },
+      {
+        "japanese": "青物",
+        "reading": "あおもの",
+        "meaning": "légumes verts"
+      },
+      {
+        "japanese": "となりのしばふは青い。",
+        "reading": "となりのしばふはあおい。",
+        "meaning": "The grass is always greener on the other side of the fence"
+      }
+    ]
+  },
+  {
+    "kanji": "赤",
+    "meaning": "rouge, complètement, pure, communisme",
+    "readings": [
+      "セキ","シャク","あか"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "赤十字",
+        "reading": "せきじゅうじ",
+        "meaning": "croix rouge"
+      },
+      {
+        "japanese": "赤銅いろ",
+        "reading": "しゃくどういろ",
+        "meaning": "couleur cuivre rouge (bronzé)"
+      },
+      {
+        "japanese": "赤ちゃん",
+        "reading": "あかちゃん",
+        "meaning": "bébé"
+      },
+      {
+        "japanese": "赤子",
+        "reading": "あかご",
+        "meaning": "bébé"
+      },
+      {
+        "japanese": "赤字",
+        "reading": "あかじ",
+        "meaning": "déficit"
+      },
+      {
+        "japanese": "赤の他人",
+        "reading": "あかのたにん",
+        "meaning": "inconnu"
+      },
+      {
+        "japanese": "となりの花は赤い。",
+        "reading": "となりのはなはあかい。",
+        "meaning": "c'est mieux chez les autres"
+      },
+      {
+        "japanese": "朱に交われば赤くなる。",
+        "reading": "しゅにまじわれば赤くなる。",
+        "meaning": "En touchant le vermillon, on se salit de rouge.",
+        "comment": "on arrive à ressembler aux gens qui l'on fréquente."
+      }
+    ]
+  },
+  {
+    "kanji": "多",
+    "meaning": "Nombreux",
+    "comment": "dessin de 2 steaks",
+    "readings": [
+      "タ","おお（い）"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "多数",
+        "reading": "たすう",
+        "meaning": "nombreux"
+      },
+      {
+        "japanese": "多々",
+        "reading": "たた",
+        "meaning": "beaucoup"
+      },
+      {
+        "japanese": "多少",
+        "reading": "たしょう",
+        "meaning": "un peu"
+      },
+      {
+        "japanese": "多才",
+        "reading": "たさい",
+        "meaning": "avoir du talent dans plusieurs domaines"
+      },
+      {
+        "japanese": "多忙な",
+        "reading": "たぼうな",
+        "meaning": "toujours occupé"
+      },
+      {
+        "japanese": "多角的な",
+        "reading": "たかくてきな",
+        "meaning": "varié, diversifié"
+      },
+      {
+        "japanese": "多種多様な",
+        "reading": "たしゅたような",
+        "meaning": "très varié, très diversifié"
+      },
+      {
+        "japanese": "今年は雪が多い。",
+        "reading": "ことしはゆきがおおい。",
+        "meaning": "Il neige beaucoup cette année."
+      }
+    ]
+  },
+  {
+    "kanji": "少",
+    "meaning": "peu nombreux",
+    "readings": [
+      "ショウ","すく（ない）","すこ（し）"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "少数",
+        "reading": "しょうすう",
+        "meaning": "peu nombreux"
+      },
+      {
+        "japanese": "少々",
+        "reading": "しょうしょう",
+        "meaning": "un peu"
+      },
+      {
+        "japanese": "少年",
+        "reading": "しょうねん",
+        "meaning": "garçon"
+      },
+      {
+        "japanese": "少女",
+        "reading": "しょうじょ",
+        "meaning": "fille"
+      },
+      {
+        "japanese": "少食です",
+        "reading": "しょうしょくです",
+        "meaning": "Je mange un peu"
+      },
+      {
+        "japanese": "今年は雪が少ない。",
+        "reading": "ことしはゆきがすくない。",
+        "meaning": "Il neige un peu cette année."
+      },
+      {
+        "japanese": "漢字が少しわかります。",
+        "reading": "かんじがすこしわかります。",
+        "meaning": "Je comprends un peu les Kanji"
+      }
+    ]
+  },
+  {
+    "kanji": "高",
+    "meaning": "élevé",
+    "readings": [
+      "コウ","たか（い）","たか（まる）"
+    ],
+    "vocabulary": [
+      {
+        "japanese": "高山",
+        "reading": "こうざん",
+        "meaning": "haute montagne"
+      },
+      {
+        "japanese": "高校生",
+        "reading": "こうこうせい",
+        "meaning": "lycéen"
+      },
+      {
+        "japanese": "高所",
+        "reading": "こうしょ",
+        "meaning": "hauteur"
+      },
+      {
+        "japanese": "最高",
+        "reading": "さいこう",
+        "meaning": "maximum, extrême"
+      },
+      {
+        "japanese": "高校生のとき日本一高い山、ふじ山で高山びょうになった。",
+        "reading": "こうこうせいのときにほんいちたかいやま、ふじさんでこうざんびょうになった。",
+        "meaning": "Quand j'étais lycéen, j'ai eu le mal des montagnes à Mt Fuji, la plus haute montagne du Japon."
+      },
+      {
+        "japanese": "フランスでは日本語の人気が高まっている。",
+        "reading": "フランスではにほんごのにんきがたかまっている。",
+        "meaning": "En France, la popularité du Japonais s'élève."
+      }
+    ]
   }
 ]
